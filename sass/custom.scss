@@ -61,19 +61,23 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
   --alt-green: #18b485;
 
   // landing-page variable
-  --alt-text-light: #232529;
+  --alt-text-dark: #232529;
   --alt-navy-blue: #161d3b;
   --alt-navy-blue-light: rgba(255, 255, 255, 0.15);
   --alt-gray: #f4f4f4;
+  --alt-gray-50: #626366;
 }
 
 a {
   text-decoration: none;
   color: var(--alt-text-light);
 }
-ul > li {
+ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+
 p,
 h1,
 h2,
@@ -92,4 +96,5 @@ h6 {
 @import "role-select";
 @import "steps-page";
 @import "forms";
-@import "freelance-landing-page";
+@import "landing-page";
+// @import "freelance-landing-page";

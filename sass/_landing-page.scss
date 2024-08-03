@@ -1,0 +1,203 @@
+.alt_header_section {
+  background-color: red;
+  background-image: url("../assets/images/freelance-landing-page/hero-bg.svg"),
+    url("../assets/images/freelance-landing-page/header-right-bg.svg");
+  background-size: cover, 29% 45%;
+  background-position: center center, top right;
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, scroll;
+  .brand_logo {
+    margin-right: 24px;
+    img {
+      font-size: 0px;
+    }
+  }
+  .header_nav {
+    ul {
+      li {
+        display: inline-block;
+        a {
+          color: var(--alt-text-dark);
+          font-family: var(--bs-body-font-family);
+          font-size: 16px;
+          font-weight: 600;
+          text-transform: capitalize;
+          line-height: 22.4px;
+          padding: 0 16px;
+          transition: ease-in-out 0.3s;
+          &:hover {
+            color: var(--alt-primary);
+          }
+        }
+      }
+    }
+  }
+  .alt_header_search {
+    input {
+      border: 0;
+      border-radius: 25px;
+      background-color: var(--alt-gray);
+      padding: 12px 12px 12px 35px;
+      &:focus {
+        outline: none;
+      }
+    }
+    input::placeholder {
+      color: var(--alt-gray-50);
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+    input::-webkit-input-placeholder {
+      color: var(--alt-gray-50);
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    input:-moz-placeholder {
+      color: var(--alt-gray-50);
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    input::-moz-placeholder {
+      color: var(--alt-gray-50);
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+
+    input:-ms-input-placeholder {
+      color: var(--alt-gray-50);
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+    button {
+      background-color: transparent;
+      border: 0;
+      position: absolute;
+      top: 54%;
+      left: 7px;
+      transform: translateY(-50%);
+      &:focus {
+        outline: none;
+      }
+      i {
+      }
+    }
+  }
+  .alt_header_button {
+    .mobile_nav_btn {
+      background: transparent;
+      border: 0;
+      font-size: 18px;
+      transition: ease-in-out 0.3s;
+      &:hover {
+        color: var(--alt-primary);
+      }
+    }
+  }
+}
+
+// hero section
+
+.hero_section {
+  background-image: url(../assets/images/freelance-landing-page/hero-left.svg),
+    url(../assets/images/freelance-landing-page/hero-right.svg);
+  background-position: top 26% left 4%, top 26% right 4%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 20%, 20%;
+  background-attachment: scroll, scroll;
+
+  @media (max-width: 992px) {
+    background-image: unset;
+  }
+
+  padding-top: 42px;
+  padding-bottom: 231px;
+  // switch
+  .toggle-switch {
+    display: flex;
+    position: relative;
+    width: 250px;
+    background: var(--alt-gray);
+    border-radius: 50px;
+    padding: 5px;
+    input[type="radio"] {
+      display: none;
+    }
+  }
+  .toggle-label {
+    flex: 1;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: var(--bs-body-font-family);
+  }
+  #freelancer:checked ~ .toggle-label[for="freelancer"],
+  #business:checked ~ .toggle-label[for="business"] {
+    background: var(--alt-navy-blue);
+    color: white;
+  }
+  //   title
+  .hero_content {
+    h1 {
+      font-weight: 400;
+      font-family: var(--bs-secondary-font-family);
+      color: var(--alt-text-dark);
+      line-height: 1.05;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      transition: ease-in-out 0.3s;
+      @media (min-width: 320px) {
+        font-size: 47px;
+      }
+      @media (min-width: 576px) {
+        font-size: 60px;
+      }
+      @media (min-width: 992px) {
+        font-size: 95px;
+      }
+    }
+    p {
+      font-size: 20px;
+      line-height: 1.4;
+      font-weight: 400;
+      font-family: var(--bs-body-font-family);
+      color: var(--alt-text-dark);
+    }
+    button {
+      margin-top: 56px;
+      padding: 16px 40px !important;
+    }
+  }
+}
+
+// company logos
+.company_logo_section {
+  margin-top: -200px;
+  padding-top: 94px;
+  padding-bottom: 52px;
+  .company_logos_content {
+    h2 {
+      font-family: var(--bs-body-font-family);
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 1.4;
+      color: var(--alt-text-dark);
+      margin-bottom: 32px;
+    }
+    .company_logos {
+      img {
+        width: auto;
+      }
+    }
+  }
+}
