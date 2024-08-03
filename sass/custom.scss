@@ -87,9 +87,9 @@ h6 {
 
 // add my custom scss file to the end of the import stack
 
-// @import "sign-up";
+@import "sign-up";
 @import "buttons";
-// @import "role-select";
-// @import "steps-page";
-// @import "forms";
+@import "role-select";
+@import "steps-page";
+@import "forms";
 @import "freelance-landing-page";
