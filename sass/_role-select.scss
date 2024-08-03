@@ -1,0 +1,75 @@
+.role-select-form {
+  h2 {
+    font-family: var(--bg-heading-font-family);
+    font-weight: 700;
+    font-size: 2rem;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    color: var(--alt-dark-light);
+    margin-bottom: 0.75rem;
+  }
+  p {
+    font-family: var(--bs-body-font-family);
+    font-size: 1rem;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.3;
+    letter-spacing: normal;
+    text-align: left;
+    color: var(--alt-dark-light);
+    margin-bottom: 2.5rem;
+  }
+}
+.role-select-input {
+  position: relative;
+  overflow: hidden;
+  max-width: 250px;
+  height: 15.625rem;
+  background-color: var(--alt-gray-light-150);
+  border-radius: 1.25rem;
+  @media (max-width: 575.98px) {
+    width: 100%;
+    height: auto;
+  }
+}
+.role-checkbox-label {
+  top: 0.25rem;
+
+  img {
+    width: auto;
+    height: auto;
+  }
+}
+.role-freelancer {
+  position: relative;
+  @media (min-width: 320px) {
+    bottom: -12px;
+    right: -15px;
+  }
+  @media (min-width: 575.98px) {
+    bottom: -36px;
+    right: -21px;
+  }
+}
+
+.role-business {
+  position: relative;
+  @media (min-width: 320px) {
+    bottom: -37px;
+    right: -15px;
+  }
+  @media (min-width: 575.98px) {
+    bottom: -47px;
+    right: -14px;
+  }
+}
+
+.role-freelancer img {
+  width: 100%;
+}
+.role-business img {
+  width: 100%;
+}

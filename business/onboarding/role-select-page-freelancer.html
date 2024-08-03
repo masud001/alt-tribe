@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>role select</title>
+    <!-- css links  -->
+    <link rel="stylesheet" href="../../css/custom.min.css" />
+  </head>
+  <body>
+    <!-- role select main container  -->
+    <div class="page-wrapper">
+      <div class="page-right d-none d-xl-block"></div>
+      <div class="container">
+        <div class="row">
+          <div class="page-logo">
+            <img
+              src="../../assets/images/logo/all-tribe-logo.png"
+              alt="all-tribe logo"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col d-flex flex-column gap-5">
+            <div class="pb-5 pb-sm-0">
+              <form action="" class="role-select-form py-4 py-lg-none">
+                <h2>Select the role</h2>
+                <p>
+                  Please select your desired role for this platform. Whether
+                  you're looking to freelance or hire, simply choose the option
+                  that suits your needs.
+                </p>
+                <div class="d-flex flex-row align-items-between gap-4">
+                  <div class="form-check role-select-input">
+                    <div class="p-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="user-type"
+                        id="freelancer"
+                      />
+                      <label
+                        class="form-check-label checkbox-label role-checkbox-label d-block"
+                        for="freelancer"
+                      >
+                        Freelancer <br />
+                        <small>I am looking for work</small>
+                        <div class="role-freelancer">
+                          <img
+                            src="../../assets/images/freelancer.svg"
+                            alt="role select freelancer"
+                          />
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-check role-select-input">
+                    <div class="p-3">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="user-type"
+                        id="business"
+                        checked
+                      />
+                      <label
+                        class="form-check-label checkbox-label role-checkbox-label d-block"
+                        for="business"
+                      >
+                        Business
+                        <br />
+                        <small>I am hiring</small>
+                        <div class="role-business">
+                          <img
+                            src="../../assets/images/business.svg"
+                            alt="role select business"
+                          />
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- buttons  -->
+            <div class="w-100 control-buttons">
+              <div class="d-flex justify-content-between gap-2">
+                <a href="./role-select-page-freelancer.html">
+                  <button
+                    class="btn btn-alt-outline rounded-pill"
+                    type="button"
+                  >
+                    Back
+                  </button>
+                </a>
+                <a href="./signup.html">
+                  <button
+                    class="btn btn-alt-primary rounded-pill"
+                    type="button"
+                  >
+                    Continue
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col d-none d-xl-block">
+            <div class="page-thumb">
+              <img
+                class="img-fluid max-auto"
+                src="../../assets/images/signup.svg"
+                alt="signup right"
+              />
+              <div class="text-center">
+                <h2 class="text-center">
+                  Start turning your ideas into reality.
+                </h2>
+                <p class="text-center">
+                  Create a free account now and work with top-class talent from
+                  around the world. Start your 3 month trial today, no credit
+                  card necessary.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

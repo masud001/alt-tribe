@@ -1,0 +1,115 @@
+.btn-alt-outline {
+  background-color: transparent;
+  color: var(--alt-dark-light);
+  border: 0.063rem solid var(--alt-gray-light);
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-family: var(--bs-body-font-family);
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: normal;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-alt-outline:hover {
+  background-color: var(--alt-primary);
+  color: var(--alt-black);
+}
+
+// radio buttons
+.alt-input-check-btn-secondary {
+  --bs-btn-font-size: 0.875rem;
+  --bs-btn-font-weight: 600;
+  --bs-btn-hover-bg: var(--alt-gray-light);
+  --bs-btn-border-color: var(--alt-gray-light);
+  --bs-btn-hover-color: var(--alt-black);
+
+  .form-check {
+    min-height: 0 !important;
+  }
+}
+
+.form-check-input:checked + .form-check-label::before {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.active-professional-experience-js {
+  border: 1px solid var(--alt-black) !important;
+  color: var(--alt-black);
+  background-color: var(--alt-gray-light);
+}
+.active-commitment-type-js {
+  border: 1px solid var(--alt-black) !important;
+  color: var(--alt-black);
+  background-color: var(--alt-gray-light);
+}
+.active-organization-size-js {
+  border: 1px solid var(--alt-black) !important;
+  color: var(--alt-black);
+  background-color: var(--alt-gray-light);
+}
+
+.recommended-class {
+  width: 10px;
+  height: 10px;
+  background-color: #4476da;
+  display: block;
+  border-radius: 50%;
+}
+.recommended-class-wrapper {
+  background-color: #d4d9e9;
+  padding: 2px 8px;
+  border-radius: 15px;
+  font-size: 10px;
+  font-family: var(--bs-body-font-family);
+  margin-left: 5px;
+}
+
+// landing page buttons
+.alt-btn-light-primary {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--alt-text-light);
+  border: 1px solid var(--alt-primary);
+  background-color: var(--alt-primary);
+  &:hover {
+    border: 1px solid var(--alt-primary);
+    background-color: transparent;
+  }
+}
+
+.alt-btn-light-outline-primary {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--alt-text-light);
+  border: 1px solid var(--alt-primary);
+  background-color: transparent;
+  &:hover {
+    border: 1px solid var(--alt-primary);
+    background-color: var(--alt-primary);
+    color: var(--alt-black);
+  }
+}
+.alt-btn-light-link-primary {
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--alt-text-light);
+  border: 1px solid transparent;
+  background-color: transparent;
+  &:hover {
+    border: 1px solid var(--alt-primary);
+    background-color: transparent;
+    color: var(--alt-black);
+  }
+}

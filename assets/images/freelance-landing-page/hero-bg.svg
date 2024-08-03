@@ -1,0 +1,51 @@
+<svg width="1440" height="839" viewBox="0 0 1440 839" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2_196667)">
+<path d="M0 95L1441 798" stroke="#EDEEF0"/>
+<path d="M0 8L1441 711" stroke="#EDEEF0"/>
+<path d="M0 -79L1441 624" stroke="#EDEEF0"/>
+<path d="M0 -166L1441 537" stroke="#EDEEF0"/>
+<path d="M0 -253L1441 450" stroke="#EDEEF0"/>
+<path d="M0 -340L1441 363" stroke="#EDEEF0"/>
+<path d="M0 -427L1441 276" stroke="#EDEEF0"/>
+<path d="M0 -514L1441 189" stroke="#EDEEF0"/>
+<path d="M0 -601L1441 102" stroke="#EDEEF0"/>
+<path d="M0 -688L1441 15" stroke="#EDEEF0"/>
+<path d="M0 182L1441 885" stroke="#EDEEF0"/>
+<path d="M0 269L1441 972" stroke="#EDEEF0"/>
+<path d="M0 356L1441 1059" stroke="#EDEEF0"/>
+<path d="M0 443L1441 1146" stroke="#EDEEF0"/>
+<path d="M0 530L1441 1233" stroke="#EDEEF0"/>
+<path d="M0 617L1441 1320" stroke="#EDEEF0"/>
+<path d="M0 704L1441 1407" stroke="#EDEEF0"/>
+<path d="M1441 119L-1.01328e-05 822" stroke="#EDEEF0"/>
+<path d="M1441 32L-1.01328e-05 735" stroke="#EDEEF0"/>
+<path d="M1441 -55L-1.01328e-05 648" stroke="#EDEEF0"/>
+<path d="M1441 -142L-1.01328e-05 561" stroke="#EDEEF0"/>
+<path d="M1441 -229L-1.01328e-05 474" stroke="#EDEEF0"/>
+<path d="M1441 -316L-1.01328e-05 387" stroke="#EDEEF0"/>
+<path d="M1441 -403L-1.01328e-05 300" stroke="#EDEEF0"/>
+<path d="M1441 -490L-1.01328e-05 213" stroke="#EDEEF0"/>
+<path d="M1441 -577L-1.01328e-05 126" stroke="#EDEEF0"/>
+<path d="M1441 -664L-1.01328e-05 39" stroke="#EDEEF0"/>
+<path d="M1441 206L-1.01328e-05 909" stroke="#EDEEF0"/>
+<path d="M1441 293L-1.01328e-05 996" stroke="#EDEEF0"/>
+<path d="M1441 380L-1.01328e-05 1083" stroke="#EDEEF0"/>
+<path d="M1441 467L-1.01328e-05 1170" stroke="#EDEEF0"/>
+<path d="M1441 554L-1.01328e-05 1257" stroke="#EDEEF0"/>
+<path d="M1441 641L-1.01328e-05 1344" stroke="#EDEEF0"/>
+<path d="M1441 728L-1.01328e-05 1431" stroke="#EDEEF0"/>
+<g filter="url(#filter0_f_2_196667)">
+<circle cx="719.5" cy="-150.5" r="767.5" fill="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_2_196667" x="-276" y="-1146" width="1991" height="1991" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="114" result="effect1_foregroundBlur_2_196667"/>
+</filter>
+<clipPath id="clip0_2_196667">
+<rect width="1441" height="846" fill="white"/>
+</clipPath>
+</defs>
+</svg>
