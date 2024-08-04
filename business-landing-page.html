@@ -72,7 +72,14 @@
                     class="rounded-pill text-capitalize alt-btn-light-primary"
                     >Sign up</a
                   >
-                  <button class="mobile_nav_btn d-md-none">
+                  <!-- mobile menu active button -->
+                  <button
+                    class="mobile_nav_btn d-md-none"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample"
+                  >
                     <i class="fa-solid fa-bars"></i>
                   </button>
                 </div>
@@ -81,6 +88,58 @@
           </div>
         </div>
       </header>
+
+      <!-- mobile menu  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <a href="" class="offcanvas-title" id="offcanvasExampleLabel">
+            <img src="./assets/images/logo/all-tribe-logo.png" alt="" />
+          </a>
+          <div class="ms-auto"></div>
+
+          <div class="">
+            <button class="btn btn-outline-light text-secondary" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+        <div class="offcanvas-body position-relative">
+          <div class="h-100 d-flex flex-column justify-content-between">
+            <div class="mobile_nav">
+              <ul>
+                <li><a href="/#">About us</a></li>
+                <li><a href="/#">FAQ</a></li>
+                <li><a href="/#">Blogs</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <div class="d-flex flex-column gap-3">
+                <a href="" class="btn alt-btn-light-primary rounded-pill"
+                  >Sign up</a
+                >
+                <a
+                  href=""
+                  class="btn alt-btn-light-outline-primary rounded-pill"
+                  >Log in</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu  -->
+
       <!-- hero section  -->
       <section class="hero_section">
         <div class="container-xxl">
@@ -480,6 +539,214 @@
               <p>Step 1</p>
               <h3>Apply for job</h3>
               <h6>Find suitable projects and express your interest.</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="talent_section">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col col-md-6 offset-md-3">
+            <div class="section_title pb-4 pb-md-0">
+              <h2>
+                Great talent is always <br />
+                a part of Alt Tribe
+              </h2>
+              <p>
+                Find the perfect fit for your next big project and hire them
+                without any hassle.
+              </p>
+            </div>
+          </div>
+
+          <div class="row pt-5 gy-4">
+            <!-- col  -->
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="telant_content_wrapper border border-secondary-subtle"
+              >
+                <div class="talent_content position-relative">
+                  <span class="ratting btn-alt-outline py-1 px-1 rounded-pill">
+                    <span class="me-1"
+                      ><img
+                        class=""
+                        src="./assets/images/freelance-landing-page/icons/Star.svg"
+                        alt=""
+                    /></span>
+                    <span class="me-2">Star</span></span
+                  >
+                  <div class="talent_img pb-3">
+                    <img
+                      src="https://via.placeholder.com/74x74"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="pb-2">John Doe</h3>
+                  <h4 class="pb-3">UI/UX designer</h4>
+                  <button class="btn-alt-outline rounded-pill">
+                    $45 / Hour
+                  </button>
+                  <div
+                    class="pt-4 review d-flex gap-2 justify-content-start align-items-center"
+                  >
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="number">4.0</span>
+                    <span class="text-body-tertiary">|</span>
+                    <span class="review">25 Reviews</span>
+                  </div>
+                </div>
+                <div class="telent_bg">
+                  <img
+                    src="./assets/images/freelance-landing-page/telent-1.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- col  -->
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="telant_content_wrapper border border-secondary-subtle"
+              >
+                <div class="talent_content position-relative">
+                  <span class="ratting btn-alt-outline py-1 px-1 rounded-pill">
+                    <span class="me-1"
+                      ><img
+                        class=""
+                        src="./assets/images/freelance-landing-page/icons/Star.svg"
+                        alt=""
+                    /></span>
+                    <span class="me-2">Star</span></span
+                  >
+                  <div class="talent_img pb-3">
+                    <img
+                      src="https://via.placeholder.com/74x74"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="pb-2">John Doe</h3>
+                  <h4 class="pb-3">UI/UX designer</h4>
+                  <button class="btn-alt-outline rounded-pill">
+                    $45 / Hour
+                  </button>
+                  <div
+                    class="pt-4 review d-flex gap-2 justify-content-start align-items-center"
+                  >
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="number">4.0</span>
+                    <span class="text-body-tertiary">|</span>
+                    <span class="review">25 Reviews</span>
+                  </div>
+                </div>
+                <div class="telent_bg">
+                  <img
+                    src="./assets/images/freelance-landing-page/telent-2.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- col  -->
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="telant_content_wrapper border border-secondary-subtle"
+              >
+                <div class="talent_content position-relative">
+                  <span class="ratting btn-alt-outline py-1 px-1 rounded-pill">
+                    <span class="me-1"
+                      ><img
+                        class=""
+                        src="./assets/images/freelance-landing-page/icons/Star.svg"
+                        alt=""
+                    /></span>
+                    <span class="me-2">Star</span></span
+                  >
+                  <div class="talent_img pb-3">
+                    <img
+                      src="https://via.placeholder.com/74x74"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="pb-2">John Doe</h3>
+                  <h4 class="pb-3">UI/UX designer</h4>
+                  <button class="btn-alt-outline rounded-pill">
+                    $45 / Hour
+                  </button>
+                  <div
+                    class="pt-4 review d-flex gap-2 justify-content-start align-items-center"
+                  >
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="number">4.0</span>
+                    <span class="text-body-tertiary">|</span>
+                    <span class="review">25 Reviews</span>
+                  </div>
+                </div>
+                <div class="telent_bg">
+                  <img
+                    src="./assets/images/freelance-landing-page/telent-3.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- col  -->
+            <div class="col col-sm-6 col-md-4 col-lg-3">
+              <div
+                class="telant_content_wrapper border border-secondary-subtle"
+              >
+                <div class="talent_content position-relative">
+                  <span class="ratting btn-alt-outline py-1 px-1 rounded-pill">
+                    <span class="me-1"
+                      ><img
+                        class=""
+                        src="./assets/images/freelance-landing-page/icons/Star.svg"
+                        alt=""
+                    /></span>
+                    <span class="me-2">Star</span></span
+                  >
+                  <div class="talent_img pb-3">
+                    <img
+                      src="https://via.placeholder.com/74x74"
+                      class="rounded-circle"
+                      alt=""
+                    />
+                  </div>
+                  <h3 class="pb-2">John Doe</h3>
+                  <h4 class="pb-3">UI/UX designer</h4>
+                  <button class="btn-alt-outline rounded-pill">
+                    $45 / Hour
+                  </button>
+                  <div
+                    class="pt-4 review d-flex gap-2 justify-content-start align-items-center"
+                  >
+                    <span class="star"><i class="fa-solid fa-star"></i></span>
+                    <span class="number">4.0</span>
+                    <span class="text-body-tertiary">|</span>
+                    <span class="review">25 Reviews</span>
+                  </div>
+                </div>
+                <div class="telent_bg">
+                  <img
+                    src="./assets/images/freelance-landing-page/telent-4.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col d-flex justify-content-center pt-5">
+              <a
+                href=""
+                class="btn rounded-pill btn-alt-outline border border-secondary-subtle"
+              >
+                view all
+              </a>
             </div>
           </div>
         </div>

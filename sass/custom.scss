@@ -6,6 +6,10 @@ $form-check-input-checked-bg-color: var(--alt-gray-light);
 $form-check-input-focus-border: #ffd600;
 $form-check-input-focus-box-shadow: 0 0 0 0.15rem var(--alt-black);
 $input-focus-border-color: #ffd600;
+$accordion-border-color: transparent;
+$accordion-button-focus-box-shadow: 0;
+$accordion-button-active-bg: transparent;
+$accordion-button-active-color: var(--alt-dark-light);
 
 // select input form
 $form-select-color: #595959;
@@ -66,6 +70,7 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
   --alt-navy-blue-light: rgba(255, 255, 255, 0.15);
   --alt-gray: #f4f4f4;
   --alt-gray-50: #626366;
+  --alt-gold: #eda211;
 }
 
 a {
@@ -98,3 +103,17 @@ h6 {
 @import "forms";
 @import "landing-page";
 // @import "freelance-landing-page";
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+  transition: all 0.5s;
+  left: 0;
+  position: absolute;
+  margin-left: unset !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+}
+.accordion-button::after {
+  transition: all 0.5s;
+}
