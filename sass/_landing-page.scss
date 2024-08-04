@@ -207,6 +207,7 @@
 .section_grid {
   padding-top: 104px;
   padding-bottom: 80px;
+  margin-top: -53px;
 
   .grid_content_wrapper {
     padding: 40px;
@@ -700,7 +701,7 @@
   }
 }
 .accordion-button {
-  border-bottom: 1px solid var(--alt-gray-light);
+  border-bottom: 1px solid #33343b;
   font-weight: 600 !important;
   font-size: 20px !important;
   font-family: var(--bs-body-font-family) !important;
@@ -905,5 +906,23 @@
       font-size: 20px;
       text-align: center;
     }
+  }
+}
+
+// dark mode
+.dark_theme {
+  .alt_header_section {
+    background-image: url("../assets/images/business-landing-page/hero-bg.png"),
+      url("../assets/images/freelance-landing-page/header-right-bg.svg");
+  }
+  .section_freelance {
+    background-image: url("../assets/images/business-landing-page/freelance-section-dark-bg.svg");
+    background-size: cover;
+  }
+  .accordion-button {
+    background-color: var(--alt-dark-theme-primary) !important;
+  }
+  .promo_section {
+    margin-top: -1px;
   }
 }

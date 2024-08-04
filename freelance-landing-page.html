@@ -72,7 +72,14 @@
                     class="rounded-pill text-capitalize alt-btn-light-primary"
                     >Sign up</a
                   >
-                  <button class="mobile_nav_btn d-md-none">
+                  <!-- mobile menu active button -->
+                  <button
+                    class="mobile_nav_btn d-md-none"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample"
+                  >
                     <i class="fa-solid fa-bars"></i>
                   </button>
                 </div>
@@ -81,6 +88,56 @@
           </div>
         </div>
       </header>
+      <!-- mobile menu  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <a href="" class="offcanvas-title" id="offcanvasExampleLabel">
+            <img src="./assets/images/logo/all-tribe-logo.png" alt="" />
+          </a>
+          <div class="ms-auto"></div>
+
+          <div class="">
+            <button class="btn btn-outline-light text-secondary" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+        <div class="offcanvas-body position-relative">
+          <div class="h-100 d-flex flex-column justify-content-between">
+            <div class="mobile_nav">
+              <ul>
+                <li><a href="/#">About us</a></li>
+                <li><a href="/#">FAQ</a></li>
+                <li><a href="/#">Blogs</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <div class="d-flex flex-column gap-3">
+                <a href="" class="btn alt-btn-light-primary rounded-pill"
+                  >Sign up</a
+                >
+                <a
+                  href=""
+                  class="btn alt-btn-light-outline-primary rounded-pill"
+                  >Log in</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu  -->
       <!-- hero section  -->
       <section class="hero_section">
         <div class="container-xxl">
