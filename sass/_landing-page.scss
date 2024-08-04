@@ -1,5 +1,5 @@
 .alt_header_section {
-  background-color: red;
+  background-color: transparent;
   background-image: url("../assets/images/freelance-landing-page/hero-bg.svg"),
     url("../assets/images/freelance-landing-page/header-right-bg.svg");
   background-size: cover, 29% 45%;
@@ -198,6 +198,405 @@
       img {
         width: auto;
       }
+    }
+  }
+}
+
+// section grid
+
+.section_grid {
+  padding-top: 104px;
+  padding-bottom: 80px;
+
+  .grid_content_wrapper {
+    padding: 40px;
+    border-radius: 16px;
+    background-color: var(--alt-gray);
+    height: 460px;
+    &.grid_content_img_bg_1 {
+      background-image: url(../assets/images/freelance-landing-page/grid-img-1.png);
+      background-repeat: no-repeat;
+      background-size: 78% 44%;
+      background-position: bottom right;
+      background-attachment: scroll;
+      object-fit: cover;
+      @media (min-width: 576px) {
+        background-size: 55% 44%;
+      }
+      @media (min-width: 768px) {
+        background-size: 76% 36%;
+      }
+      @media (min-width: 992px) {
+        background-size: 78% 44%;
+      }
+    }
+    &.grid_content_img_bg_2 {
+      background-color: var(--alt-gray);
+      background-image: url(../assets/images/freelance-landing-page/grid-img-2.png);
+      background-repeat: no-repeat;
+      background-size: 78%;
+      background-position: bottom right;
+      background-attachment: scroll;
+      -o-object-fit: cover;
+      object-fit: cover;
+      @media (max-width: 575.98px) {
+        background-position: top 25px right 25px;
+      }
+      @media (min-width: 576px) {
+        background-position: top 25px right 25px;
+      }
+      @media (min-width: 992px) {
+        background-position: bottom right;
+      }
+    }
+    &.grid_content_img_bg_3 {
+      background-color: var(--alt-gray);
+      background-image: url(../assets/images/freelance-landing-page/grid-img-3.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: bottom left;
+      background-attachment: scroll;
+      -o-object-fit: cover;
+      object-fit: cover;
+      @media (min-width: 576px) {
+        background-size: 70% 65%;
+        background-position: bottom center;
+      }
+      @media (min-width: 768px) {
+        background-size: 100% 44%;
+      }
+      @media (min-width: 992px) {
+        background-size: 100%;
+        background-position: bottom left;
+      }
+    }
+    &.grid_content_img_bg_4 {
+      background-color: var(--alt-gray);
+      background-image: url(../assets/images/freelance-landing-page/grid-img-4.png);
+      background-repeat: no-repeat;
+      background-size: 62%;
+      background-position: top 40px right 40px;
+      background-attachment: scroll;
+      -o-object-fit: cover;
+      object-fit: cover;
+      @media (min-width: 576px) {
+        background-size: 42%;
+      }
+      @media (min-width: 768px) {
+        background-size: 65%;
+      }
+      @media (min-width: 992px) {
+        background-size: 62%;
+      }
+    }
+    &.grid_content_img_bg_5 {
+      background-image: url(../assets/images/freelance-landing-page/grid-img-5.png);
+      background-repeat: no-repeat;
+      background-size: 62%;
+      background-position: bottom center;
+      background-attachment: scroll;
+      -o-object-fit: cover;
+      object-fit: cover;
+      @media (min-width: 576px) {
+        background-size: 42%;
+      }
+      @media (min-width: 992px) {
+        background-size: 62%;
+      }
+    }
+    &.theme_dark {
+      background-color: var(--alt-navy-blue);
+      h2 {
+        color: #ffffff !important;
+      }
+      p {
+        color: #ffffff !important;
+      }
+      .grid_icon {
+        background-color: var(--alt-navy-blue-light) !important;
+      }
+    }
+    .grid_content {
+      .grid_icon {
+        background-color: var(--alt-navy-blue);
+        width: 48px;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+        border-radius: 50%;
+        margin-bottom: 24px;
+        img {
+          margin: 0 auto;
+          width: 15px;
+        }
+      }
+      h2 {
+        font-family: var(--bs-body-font-family);
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 1.2;
+        color: var(--alt-text-dark);
+        margin-bottom: 12px;
+      }
+      p {
+        font-family: var(--bs-body-font-family);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.4;
+        color: var(--alt-text-dark);
+      }
+    }
+  }
+}
+// section_freelance
+.section_freelance {
+  background-color: var(--alt-gray);
+  background-image: url("../assets/images/freelance-landing-page/freelance-section-bg.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+
+  padding-top: 104px;
+  padding-bottom: 54px;
+
+  .section_title {
+    @media (max-width: 576px) {
+      padding-bottom: 30px;
+    }
+  }
+  .freelance_section_img {
+    img {
+    }
+  }
+  .freelance_content {
+    h3 {
+      font-family: var(--bs-body-font-family);
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--alt-text-dark);
+      line-height: 38.4px;
+      @media (min-width: 576px) {
+        font-size: 32px;
+      }
+    }
+    h5 {
+      font-family: var(--bs-body-font-family);
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--alt-text-dark);
+      padding-top: 16px;
+      padding-bottom: 10px;
+      @media (min-width: 576px) {
+        font-size: 24px;
+        padding-top: 32px;
+        padding-bottom: 20px;
+      }
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 16px;
+      li {
+        font-family: var(--bs-body-font-family);
+        font-weight: 400;
+        line-height: 22.4px;
+        color: var(--alt-text-dark);
+        padding-bottom: 6px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+        @media (min-width: 576px) {
+          font-size: 14px;
+          padding-bottom: 12px;
+        }
+      }
+    }
+  }
+}
+
+// category section
+.category_section {
+  padding-top: 104px;
+  padding-bottom: 04px;
+  .section_title {
+    padding-bottom: 0px;
+    h2 {
+      text-align: left;
+    }
+    p {
+      text-align: left;
+      padding-top: 20px;
+      padding-bottom: 52px;
+    }
+  }
+  .category_content {
+    @media (min-width: 320px) {
+      padding: 20px;
+    }
+    @media (min-width: 992px) {
+      padding: 40px;
+    }
+    img {
+      margin-bottom: 30px;
+    }
+    h4 {
+      font-size: 20px;
+      font-weight: 600;
+      font-family: var(--bs-body-font-family);
+      line-height: 24px;
+      color: var(--alt-text-dark);
+    }
+    p {
+      font-family: var(--bs-body-font-family);
+      font-weight: 400;
+      font-size: 16px;
+      color: var(--alt-text-dark);
+      padding-top: 8px;
+      padding-bottom: 16px;
+    }
+    a {
+      font-size: 14px;
+      font-family: var(--bs-body-font-family);
+      font-weight: 500;
+      line-height: 19.6px;
+      text-decoration: underline;
+      color: var(--alt-text-dark);
+    }
+  }
+}
+
+// freelance experience section
+.freelance_experience {
+  background-color: var(--alt-gray);
+  padding: 104px 0;
+  .freelance_experience_content {
+    padding: 32px;
+    border-radius: 16px;
+
+    p {
+      font-family: var(--bs-body-font-family);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 19.6px;
+    }
+    h3 {
+      font-family: var(--bs-body-font-family);
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      padding-top: 21px;
+      padding-bottom: 8px;
+    }
+    h6 {
+      font-family: var(--bs-body-font-family);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22.4px;
+    }
+    &.step_1 {
+      height: 299px;
+      color: var(--alt-text-dark);
+      background-color: var(--alt-primary);
+      background-image: url(../assets/images/freelance-landing-page/indicatore-1.png);
+      background-position: top 0px center;
+      background-repeat: no-repeat;
+      background-size: 50%;
+      @media (min-width: 768px) {
+        background-size: 90%;
+      }
+    }
+    &.step_2 {
+      color: #ffffff;
+      background-color: var(--alt-primary);
+      background-image: linear-gradient(
+          0deg,
+          rgba(35, 37, 41, 0.7),
+          rgba(35, 37, 41, 0.7)
+        ),
+        url("../assets/images/freelance-landing-page/indicatore-2.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      height: 299px;
+      @media (min-width: 768px) {
+        height: unset;
+      }
+    }
+    &.step_3 {
+      height: 299px;
+      background-color: #eeeeee;
+      @media (min-width: 768px) {
+        height: unset;
+      }
+    }
+    &.step_4 {
+      height: 299px;
+      color: #ffffff;
+      background-color: var(--alt-primary);
+      background-image: linear-gradient(
+          0deg,
+          rgba(35, 37, 41, 0.7),
+          rgba(35, 37, 41, 0.7)
+        ),
+        url("../assets/images/freelance-landing-page/indicatore-4.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+  .indicatore_1 {
+    position: absolute;
+    top: -100px;
+    left: 4px;
+    transform: translate(8%, 35%);
+  }
+  .indicatore_2 {
+    position: absolute;
+    right: 12px;
+    top: -80px;
+    transform: translate(0px, 0px);
+  }
+  .indicatore_3 {
+    position: absolute;
+    bottom: -38px;
+    left: -44px;
+    transform: translate(0px, 4px);
+  }
+  .indicatore_4 {
+    position: absolute;
+    right: 0;
+    top: -93px;
+    transform: translate(-12px, -3px);
+  }
+}
+
+// section title
+.section_title {
+  padding-bottom: 64px;
+  h2 {
+    font-family: var(--bs-secondary-font-family);
+    font-size: 32px;
+    font-weight: 400;
+    color: var(--alt-text-dark);
+    margin-bottom: 20px;
+    text-align: start;
+    @media (min-width: 576px) {
+      font-size: 65px;
+      line-height: 64.4px;
+      text-align: center;
+    }
+  }
+  p {
+    font-family: var(--bs-body-font-family);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: var(--alt-text-dark);
+    @media (min-width: 576px) {
+      font-size: 20px;
+      text-align: center;
     }
   }
 }
