@@ -1,0 +1,40 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+$custom-theme-colors: (
+  alt-primary: #ffd600,
+  // dashboard colors for business
+  alt-text-clr: #232529,
+  alt-border-clt: #f0f0f0,
+  alt-gray-bg-clr: #f4f4f4,
+  alt-bg-hover-clr: #161d3b,
+);
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+$custom-grid-breakpoints: (
+  xxl: 1440px,
+);
+$grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// custom google font import
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+  --bs-body-font-family: "Inter", sans-serif;
+  --bs-heading-font-family: "Merriweather", serif;
+  --bs-secondary-font-family: "Alice", serif;
+  // color scheme
+  --alt-gold: #eda211;
+  --alt-primary: #ffd600;
+  --alt-gray-bg-color: #f4f4f4;
+  --alt-text-clr: #232529;
+  --alt-bg-hover-clr: #161d3b;
+}
+
+// add my custom scss file to the end of the import stack
+
+@import "business/_reset-browser";
+@import "business/_dashboard-home";
+

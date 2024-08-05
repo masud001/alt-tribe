@@ -1,0 +1,1114 @@
+<!-- 
+bdb = business dashboard; 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome icons links  -->
+    <link
+      rel="stylesheet"
+      href="../../assets/fontawesomes/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/fontawesomes/css/all.min.css" />
+    <title>Business Dashboard</title>
+    <link rel="stylesheet" href="../../css/bisuness.dashboard.min.css" />
+  </head>
+  <body>
+    <header class="alt_bdb_header">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-lg-2 border-end border-light-subtle">
+            <div
+              class="alt_bdb_logo d-flex justify-content-between align-items-lg-start"
+            >
+              <div class="d-flex flex-row gap-2 align-items-start">
+                <!-- mobile menu bar  -->
+                <button
+                  class="btn bg-light bg-transparent p-0 me-2 d-lg-none"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                  aria-controls="offcanvasExample"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/menu-bar-icons.svg"
+                    alt=""
+                  />
+                </button>
+                <!-- logo  -->
+                <div
+                  class="d-flex flex-row flex-lg-column align-items-center align-items-lg-start justify-content-start"
+                >
+                  <a href="/#">
+                    <img
+                      src="../../assets/images/business-dashboard/logo.svg"
+                      alt="logo"
+                    />
+                  </a>
+                  <!-- role badge  -->
+                  <div class="ms-2 ms-lg-0">
+                    <span class="badge rounded-pill text-bg-warning"
+                      >Business</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- notification for mobile  -->
+              <div class="d-flex align-items-center gap-3">
+                <a href="" class="d-lg-none">
+                  <img
+                    src="../../assets/images/business-dashboard/Search.svg"
+                    alt="search icon"
+                  />
+                </a>
+                <div class="notification_icon d-lg-none">
+                  <div type="button" class="position-relative">
+                    <img
+                      src="../../assets/images/business-dashboard/notification.svg"
+                      alt=""
+                    />
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-1"
+                      ><span class="visually-hidden"
+                        >unread messages</span
+                      ></span
+                    >
+                  </div>
+                </div>
+                <button
+                  class="d-none d-lg-block btn bg-light bg-transparent p-0"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/menu_open-icon.svg"
+                    alt="mobile icons"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 pt-3 pt-lg-0">
+            <div class="wellcome_message d-flex mt-1 align-items-center">
+              <p class="fs-6">
+                Hi, Good evening <strong> James Jacobe</strong>
+                <span
+                  ><img
+                    src="../../assets/images/business-dashboard/Waving Hand.svg"
+                    alt=""
+                /></span>
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div
+              class="alt_bdb_notification d-none d-lg-flex gap-4 justify-content-end align-items-center"
+            >
+              <!-- search bar -->
+              <div class="alt_bdb_header_search position-relative">
+                <form action="">
+                  <input
+                    class="position-relative bg-alt-gray-bg-clr border-0"
+                    type="text"
+                    placeholder="Search"
+                  />
+                  <button type="submit">
+                    <img
+                      src="../../assets/images/business-dashboard/Search.svg"
+                      alt="search icon"
+                    />
+                  </button>
+                </form>
+              </div>
+              <!--  -->
+              <div class="alt_bdb_plus_icon rounded-pill bg-black">
+                <img
+                  src="../../assets/images/business-dashboard/plus-icons.svg"
+                  alt="notification icon"
+                />
+              </div>
+              <!--  -->
+              <div class="notification_icon">
+                <div type="button" class="position-relative">
+                  <img
+                    src="../../assets/images/business-dashboard/notification.svg"
+                    alt=""
+                  />
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-1"
+                    ><span class="visually-hidden">unread messages</span></span
+                  >
+                </div>
+              </div>
+              <!--  -->
+              <div class="alt_bdb_avatar">
+                <a href="">
+                  <img
+                    src="https://via.placeholder.com/32x32"
+                    alt="user icon"
+                    class="rounded-circle"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- mobile menu  -->
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header mobile_canvas">
+        <div class="d-flex align-items-center gap-3">
+          <button
+            type="button"
+            class="btn-close fs-5 text-dark"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <div
+            class="offcanvas-title d-flex align-items-center"
+            id="offcanvasExampleLabel"
+          >
+            <img src="../../assets/images/business-dashboard/logo.svg" alt="" />
+            <div class="ms-2 ms-lg-0">
+              <span class="badge rounded-pill text-bg-warning">Business</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-2 ms-auto">
+          <div class="alt_bdb_plus_icon rounded-pill bg-black">
+            <img
+              src="../../assets/images/business-dashboard/plus-icons.svg"
+              alt="notification icon"
+            />
+          </div>
+          <div class="alt_bdb_avatar">
+            <a href="">
+              <img
+                src="https://i.pravatar.cc/32"
+                alt="user icon"
+                class="rounded-circle"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          Some text as placeholder. In real life you can have the elements you
+          have chosen. Like, text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            Dropdown button
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu end -->
+
+    <main class="main_section">
+      <div class="container-xxl">
+        <div class="row">
+          <!-- sidebar start -->
+          <div
+            class="col-lg-2 border-end border-light-subtle d-none d-lg-block"
+          >
+            <aside class="alt_bdb_sidebar">
+              <ul class="py-4 border-bottom border-light-subtle">
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/dashboard-icon.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Explore -Freelancers.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Explore Freelancers</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/leaderboard.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>My Projects</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Contests.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Contests</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Calendar.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Events</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Community.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Community</span>
+                  </a>
+                </li>
+              </ul>
+              <!--  -->
+              <ul class="py-2">
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/My tribes.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>My tribes</span>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- create tribe  -->
+              <div
+                class="sidebar_wizard wizard_bg d-flex flex-column justify-content-end bg-alt-gray-bg-clr rounded-3 p-2"
+              >
+                <h3 class="">Create a Tribe</h3>
+                <p class="">
+                  Make the most of Alt Tribe by forming your own tribe.
+                </p>
+                <a href=""
+                  >Start now
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+              </div>
+            </aside>
+          </div>
+          <!-- sidebar left end -->
+          <div class="col-lg-7">
+            <!--  -->
+            <div
+              class="alt_bdb_promo promo_bg mb-5 d-flex flex-column justify-content-start border border-light-subtle"
+            >
+              <h3>
+                Unlock your recruiting <br />
+                potential!
+              </h3>
+              <p>
+                Maximize your reach and connect with top talent by <br />
+                completing your profile.
+              </p>
+              <div class="">
+                <a href="" class="btn btn-outline-warning rounded-pill"
+                  >Complete profile
+                  <span class="ms-2"
+                    ><i class="fa-solid fa-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <!-- project details  -->
+            <div
+              class="priject_details_section_title d-flex justify-content-between align-items-center"
+            >
+              <div
+                class="d-flex gap-2 justify-content-start align-items-center"
+              >
+                <img
+                  src="../../assets/images/business-dashboard/Project updates.svg"
+                  alt=""
+                />
+                <h3>Project updates</h3>
+              </div>
+              <div class="d-flex gap-2 align-items-center">
+                <a href=""
+                  >view all
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+              </div>
+            </div>
+            <!-- project lists  -->
+            <div class="projects_lists dark_theme rounded-3 mb-2">
+              <div class="d-flex flex-column gap-3">
+                <div
+                  class="prokect_title d-flex flex-column flex-sm-row align-items-start gap-2 justify-content-between"
+                >
+                  <h4>
+                    <strong>New delivery</strong> in G Trading social media for
+                    e commerce...
+                  </h4>
+                  <!-- badge  -->
+                  <div
+                    class="alt_bdb_badge d-flex align-items-center gap-2 btn rounded-pill"
+                  >
+                    <span
+                      class="badge rounded-circle p-1 bg-danger border-2 border-danger"
+                      ><span class="visually-hidden">badge messages</span></span
+                    >
+                    <span>Payment Pending</span>
+                  </div>
+                </div>
+                <!--  -->
+                <div
+                  class="project_owner d-flex flex-column flex-sm-row justify-content-between align-items-start gap-2"
+                >
+                  <div
+                    class="d-flex flex-wrap justify-content-start align-items-center gap-3"
+                  >
+                    <div
+                      class="project_list_avater d-flex align-items-center gap-2"
+                    >
+                      <img src="https://via.placeholder.com/32x32" alt="" />
+                      <h5 class="text-capitalize">
+                        <strong>Abel Marshal</strong>
+                      </h5>
+                    </div>
+                    <div class="dots"></div>
+                    <div class="milestone">
+                      <h5>
+                        <span class="me-2"
+                          ><i class="fa-solid fa-bag-shopping"></i
+                        ></span>
+                        Milestone 1
+                      </h5>
+                    </div>
+                    <div class="dots"></div>
+                    <div class="time">
+                      <span>
+                        <span><i class="fa-regular fa-clock"></i></span> 2 hours
+                        ago</span
+                      >
+                    </div>
+                  </div>
+                  <div class="">
+                    <a href="" class="btn btn-outline-warning rounded-pill"
+                      >Deposit Amount
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- project lists  -->
+            <!-- project lists  -->
+            <div class="projects_lists rounded-3 mb-2">
+              <div class="d-flex flex-column gap-3">
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-2 justify-content-between"
+                >
+                  <h4>
+                    <strong>New delivery</strong> in G Trading social media for
+                    e commerce...
+                  </h4>
+                  <!-- badge  -->
+                  <div
+                    class="alt_bdb_badge d-flex align-items-center gap-2 btn rounded-pill"
+                  >
+                    <span
+                      class="badge rounded-circle p-1 bg-danger border-2 border-danger"
+                      ><span class="visually-hidden">badge messages</span></span
+                    >
+                    <span>Payment Pending</span>
+                  </div>
+                </div>
+                <!--  -->
+                <div
+                  class="project_owner d-flex flex-column flex-sm-row justify-content-between align-items-start gap-2"
+                >
+                  <div
+                    class="d-flex flex-wrap justify-content-start align-items-center gap-3"
+                  >
+                    <div
+                      class="project_list_avater d-flex align-items-center gap-2"
+                    >
+                      <img src="https://via.placeholder.com/32x32" alt="" />
+                      <h5 class="text-capitalize">
+                        <strong>Abel Marshal</strong>
+                      </h5>
+                    </div>
+                    <div class="dots"></div>
+                    <div class="milestone">
+                      <h5>
+                        <span class="me-2"
+                          ><i class="fa-solid fa-bag-shopping"></i
+                        ></span>
+                        Milestone 1
+                      </h5>
+                    </div>
+                    <div class="dots"></div>
+                    <div
+                      class="time d-flex justify-content-start align-items-center gap-2"
+                    >
+                      <span><i class="fa-regular fa-clock"></i></span>
+                      <span>2 hours ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- project lists  -->
+            <!-- project lists  -->
+            <div class="projects_lists rounded-3 mb-2">
+              <div class="d-flex flex-column gap-3">
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-2 justify-content-between"
+                >
+                  <h4>
+                    <strong>New delivery</strong> in G Trading social media for
+                    e commerce...
+                  </h4>
+                  <!-- badge  -->
+                  <div
+                    class="alt_bdb_badge d-flex align-items-center gap-2 btn rounded-pill"
+                  >
+                    <span
+                      class="badge rounded-circle p-1 bg-warning border-2 border-warning"
+                      ><span class="visually-hidden">badge messages</span></span
+                    >
+                    <span>Agreement</span>
+                  </div>
+                </div>
+                <!--  -->
+                <div
+                  class="project_owner d-flex flex-column flex-sm-row justify-content-between align-items-start gap-2"
+                >
+                  <div
+                    class="d-flex flex-wrap justify-content-start align-items-center gap-3"
+                  >
+                    <div
+                      class="project_list_avater d-flex align-items-center gap-2"
+                    >
+                      <img src="https://via.placeholder.com/32x32" alt="" />
+                      <h5 class="text-capitalize">
+                        <strong>Abel Marshal</strong>
+                      </h5>
+                    </div>
+                    <div class="dots"></div>
+                    <div class="milestone">
+                      <h5>
+                        <span class="me-2"
+                          ><i class="fa-solid fa-bag-shopping"></i
+                        ></span>
+                        Milestone 1
+                      </h5>
+                    </div>
+                    <div class="dots"></div>
+                    <div
+                      class="time d-flex justify-content-start align-items-center gap-2"
+                    >
+                      <span><i class="fa-regular fa-clock"></i></span>
+                      <span>2 hours ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- project lists  -->
+            <!-- project lists  -->
+            <div class="projects_lists rounded-3 mb-2">
+              <div class="d-flex flex-column gap-3">
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-2 justify-content-between"
+                >
+                  <h4>
+                    <strong>New delivery</strong> in G Trading social media for
+                    e commerce...
+                  </h4>
+                  <!-- badge  -->
+                  <div
+                    class="alt_bdb_badge d-flex align-items-center gap-2 btn rounded-pill"
+                  >
+                    <span
+                      class="badge rounded-circle p-1 bg-warning border-2 border-warning"
+                      ><span class="visually-hidden">badge messages</span></span
+                    >
+                    <span>Agreement</span>
+                  </div>
+                </div>
+                <!--  -->
+                <div
+                  class="project_owner d-flex flex-column flex-sm-row justify-content-between align-items-start gap-2"
+                >
+                  <div
+                    class="d-flex flex-wrap justify-content-start align-items-center gap-3"
+                  >
+                    <div
+                      class="project_list_avater d-flex align-items-center gap-2"
+                    >
+                      <img src="https://via.placeholder.com/32x32" alt="" />
+                      <h5 class="text-capitalize">
+                        <strong>Abel Marshal</strong>
+                      </h5>
+                    </div>
+                    <div class="dots"></div>
+                    <div class="milestone">
+                      <h5>
+                        <span class="me-2"
+                          ><i class="fa-solid fa-bag-shopping"></i
+                        ></span>
+                        Milestone 1
+                      </h5>
+                    </div>
+                    <div class="dots"></div>
+                    <div
+                      class="time d-flex justify-content-start align-items-center gap-2"
+                    >
+                      <span><i class="fa-regular fa-clock"></i></span>
+                      <span>2 hours ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- project lists  -->
+            <!-- project lists  -->
+            <div class="projects_lists rounded-3 mb-2">
+              <div class="d-flex flex-column gap-3">
+                <div
+                  class="d-flex flex-column flex-sm-row align-items-start gap-2 justify-content-between"
+                >
+                  <h4>
+                    <strong>New delivery</strong> in G Trading social media for
+                    e commerce...
+                  </h4>
+                  <!-- badge  -->
+                  <div
+                    class="alt_bdb_badge d-flex align-items-center gap-2 btn rounded-pill"
+                  >
+                    <span
+                      class="badge rounded-circle p-1 bg-info border-2 border-info"
+                      ><span class="visually-hidden">badge messages</span></span
+                    >
+                    <span>Working process</span>
+                  </div>
+                </div>
+                <!--  -->
+                <div
+                  class="project_owner d-flex flex-column flex-sm-row justify-content-between align-items-start gap-2"
+                >
+                  <div
+                    class="d-flex flex-wrap justify-content-start align-items-center gap-3"
+                  >
+                    <div
+                      class="project_list_avater d-flex align-items-center gap-2"
+                    >
+                      <img src="https://via.placeholder.com/32x32" alt="" />
+                      <h5 class="text-capitalize">
+                        <strong>Abel Marshal</strong>
+                      </h5>
+                    </div>
+                    <div class="dots"></div>
+                    <div class="milestone">
+                      <h5>
+                        <span class="me-2"
+                          ><i class="fa-solid fa-bag-shopping"></i
+                        ></span>
+                        Milestone 1
+                      </h5>
+                    </div>
+                    <div class="dots"></div>
+                    <div
+                      class="time d-flex justify-content-start align-items-center gap-2"
+                    >
+                      <span><i class="fa-regular fa-clock"></i></span>
+                      <span>2 hours ago</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- project lists end -->
+
+            <!-- Trending  -->
+            <div
+              class="priject_details_section_title mt-5 d-flex justify-content-between align-items-center"
+            >
+              <div
+                class="d-flex gap-2 justify-content-start align-items-center"
+              >
+                <img
+                  src="../../assets/images/business-dashboard/tranding.svg"
+                  alt=""
+                />
+                <h3>Trending freelancers</h3>
+              </div>
+              <div class="d-flex gap-2 align-items-center">
+                <a href=""
+                  >view all
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+              </div>
+            </div>
+            <!-- trending profiles  -->
+            <div class="py-3 pb-5">
+              <div class="row gy-3">
+                <!--  -->
+                <div class="col col-sm-6 col-lg-4">
+                  <div
+                    class="telant_content_wrapper border border-secondary-subtle"
+                  >
+                    <div class="talent_content position-relative text-center">
+                      <span
+                        class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                      >
+                        <span class=""
+                          ><img
+                            class=""
+                            src="../../assets/images/business-dashboard/bookmark.svg"
+                            alt=""
+                        /></span>
+                      </span>
+                      <div class="talent_img pb-3">
+                        <img
+                          src="https://via.placeholder.com/74x74"
+                          class="rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <h3 class="pb-2">John Doe</h3>
+                      <h4 class="pb-3">UI/UX designer</h4>
+                      <button
+                        class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                      >
+                        <strong>$45 / Hour</strong>
+                      </button>
+                      <div class="rising_start mt-3">
+                        <button
+                          class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                        >
+                          <span
+                            ><img
+                              src="../../assets/images/business-dashboard/Star.svg"
+                              alt=""
+                          /></span>
+                          Rising Star
+                        </button>
+                      </div>
+                      <div
+                        class="pt-4 review d-flex gap-2 justify-content-center align-items-center"
+                      >
+                        <span class="star"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="number">4.0</span>
+                        <span class="text-body-tertiary">|</span>
+                        <span class="review">25 Reviews</span>
+                      </div>
+                      <button
+                        class="mt-3 border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Invite to Project
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col col-sm-6 col-lg-4">
+                  <div
+                    class="telant_content_wrapper border border-secondary-subtle"
+                  >
+                    <div class="talent_content position-relative text-center">
+                      <span
+                        class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                      >
+                        <span class=""
+                          ><img
+                            class=""
+                            src="../../assets/images/business-dashboard/bookmark.svg"
+                            alt=""
+                        /></span>
+                      </span>
+                      <div class="talent_img pb-3">
+                        <img
+                          src="https://via.placeholder.com/74x74"
+                          class="rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <h3 class="pb-2">John Doe</h3>
+                      <h4 class="pb-3">UI/UX designer</h4>
+                      <button
+                        class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                      >
+                        <strong>$45 / Hour</strong>
+                      </button>
+                      <div class="rising_start mt-3">
+                        <button
+                          class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                        >
+                          <span
+                            ><img
+                              src="../../assets/images/business-dashboard/Star.svg"
+                              alt=""
+                          /></span>
+                          Rising Star
+                        </button>
+                      </div>
+                      <div
+                        class="pt-4 review d-flex gap-2 justify-content-center align-items-center"
+                      >
+                        <span class="star"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="number">4.0</span>
+                        <span class="text-body-tertiary">|</span>
+                        <span class="review">25 Reviews</span>
+                      </div>
+                      <button
+                        class="mt-3 border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Invite to Project
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <!--  -->
+                <div class="col col-sm-6 col-lg-4">
+                  <div
+                    class="telant_content_wrapper border border-secondary-subtle"
+                  >
+                    <div class="talent_content position-relative text-center">
+                      <span
+                        class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                      >
+                        <span class=""
+                          ><img
+                            class=""
+                            src="../../assets/images/business-dashboard/bookmark.svg"
+                            alt=""
+                        /></span>
+                      </span>
+                      <div class="talent_img pb-3">
+                        <img
+                          src="https://via.placeholder.com/74x74"
+                          class="rounded-circle"
+                          alt=""
+                        />
+                      </div>
+                      <h3 class="pb-2">John Doe</h3>
+                      <h4 class="pb-3">UI/UX designer</h4>
+                      <button
+                        class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                      >
+                        <strong>$45 / Hour</strong>
+                      </button>
+                      <div class="rising_start mt-3">
+                        <button
+                          class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                        >
+                          <span
+                            ><img
+                              src="../../assets/images/business-dashboard/Star.svg"
+                              alt=""
+                          /></span>
+                          Rising Star
+                        </button>
+                      </div>
+                      <div
+                        class="pt-4 review d-flex gap-2 justify-content-center align-items-center"
+                      >
+                        <span class="star"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="number">4.0</span>
+                        <span class="text-body-tertiary">|</span>
+                        <span class="review">25 Reviews</span>
+                      </div>
+                      <button
+                        class="mt-3 border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Invite to Project
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+              </div>
+            </div>
+          </div>
+          <!-- sidebar right  -->
+          <div class="col-lg-3">
+            <aside class="alt_bdb_right_sidebar">
+              <div class="referal_card mb-5">
+                <h3>
+                  Refer <br />
+                  your friends!
+                </h3>
+                <p>
+                  Introduce your friends to <br />
+                  AltTribe and enjoy extra perks.
+                </p>
+                <div
+                  class="d-flex gap-2 justify-content-start align-items-center"
+                >
+                  <button
+                    class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                  >
+                    Refer now
+                  </button>
+                  <div class="d-flex gap-2 align-items-center">
+                    <a href="">Dismiss </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- updates title  -->
+              <div
+                class="priject_details_section_title mt-5 d-flex justify-content-between align-items-center"
+              >
+                <div
+                  class="d-flex gap-2 justify-content-start align-items-center"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/envelope.svg"
+                    alt=""
+                  />
+                  <h3>My drafts</h3>
+                </div>
+                <div class="d-flex gap-2 align-items-center">
+                  <a href=""
+                    >view all
+                    <span><i class="fa-solid fa-angle-right"></i></span>
+                  </a>
+                </div>
+              </div>
+
+              <div class="update_lists mb-5">
+                <!--  -->
+                <div
+                  class="update_single_list border-bottom border-light-subtle mt-1 pb-3"
+                >
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                      <p>Social media branding</p>
+                      <span class="update_badge">Branding specialist</span>
+                    </div>
+                    <span class="mt-1">
+                      <i class="fa-regular fa-clock"></i>
+                      <span>2 hours ago</span>
+                    </span>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="update_single_list mt-2 pb-3">
+                  <div class="d-flex justify-content-between align-items-start">
+                    <div class="">
+                      <p>Social media branding</p>
+                      <span class="update_badge">Branding specialist</span>
+                    </div>
+                    <span class="mt-1">
+                      <i class="fa-regular fa-clock"></i>
+                      <span>2 hours ago</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- updates title  -->
+              <div
+                class="priject_details_section_title mt-5 d-flex justify-content-between align-items-center"
+              >
+                <div
+                  class="d-flex gap-2 justify-content-start align-items-center"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/updates.svg"
+                    alt=""
+                  />
+                  <h3>Updates</h3>
+                </div>
+              </div>
+
+              <div class="update_lists mb-3">
+                <!--  -->
+                <div class="single_lists">
+                  <div class="pb-3 border-bottom border-light-subtle">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span class="update_badge">
+                        <span
+                          ><img
+                            src="../../assets/images/business-dashboard/contest-icons.svg"
+                            alt=""
+                        /></span>
+                        Contest
+                      </span>
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>2 hours ago</span>
+                      </span>
+                    </div>
+                    <div class="single_lists_title py-2">
+                      <p>Tech website design contest</p>
+                    </div>
+                    <div
+                      class="clients_timeline d-flex align-items-center gap-2 justify-content-start"
+                    >
+                      <div class="avatar d-flex gap-2 align-items-center">
+                        <img src="https://via.placeholder.com/32x32" alt="" />
+                        <h5 class="text-capitalize">
+                          <strong>Abel Marshal</strong>
+                        </h5>
+                      </div>
+                      <div class="dots"></div>
+                      <div class="closing_time">
+                        <p>Closing in 10 days</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3 border-bottom border-light-subtle">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span class="update_badge">
+                        <span
+                          ><img
+                            src="../../assets/images/business-dashboard/contest-icons.svg"
+                            alt=""
+                        /></span>
+                        Contest
+                      </span>
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>2 hours ago</span>
+                      </span>
+                    </div>
+                    <div class="single_lists_title py-2">
+                      <p>Tech website design contest</p>
+                    </div>
+                    <div
+                      class="clients_timeline d-flex align-items-center gap-2 justify-content-start"
+                    >
+                      <div class="avatar d-flex gap-2 align-items-center">
+                        <img src="https://via.placeholder.com/32x32" alt="" />
+                        <h5 class="text-capitalize">
+                          <strong>Abel Marshal</strong>
+                        </h5>
+                      </div>
+                      <div class="dots"></div>
+                      <div class="closing_time">
+                        <p>Closing in 10 days</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <span class="update_badge">
+                        <span
+                          ><img
+                            src="../../assets/images/business-dashboard/contest-icons.svg"
+                            alt=""
+                        /></span>
+                        Contest
+                      </span>
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>2 hours ago</span>
+                      </span>
+                    </div>
+                    <div class="single_lists_title py-2">
+                      <p>Tech website design contest</p>
+                    </div>
+                    <div
+                      class="clients_timeline d-flex align-items-center gap-2 justify-content-start"
+                    >
+                      <div class="avatar d-flex gap-2 align-items-center">
+                        <img src="https://via.placeholder.com/32x32" alt="" />
+                        <h5 class="text-capitalize">
+                          <strong>Abel Marshal</strong>
+                        </h5>
+                      </div>
+                      <div class="dots"></div>
+                      <div class="closing_time">
+                        <p>Closing in 10 days</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../../assets/vendor/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
