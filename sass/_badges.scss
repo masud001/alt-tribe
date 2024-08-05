@@ -1,0 +1,47 @@
+.alt-badge {
+  color: var(--alt-text-clr);
+  font-weight: 500;
+  border-radius: 25px;
+  padding: 4px 10px;
+  font-size: 12px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+.alt-agreement {
+  color: #423ba3;
+  background-color: #f0efff;
+}
+.alt-completed {
+  color: #107f57;
+  background-color: #ceede1;
+}
+.alt-progress {
+  color: #9d5d11;
+  background-color: #f8ede5;
+}
+.alt-dark {
+  color: #232529;
+  background-color: #ecedf0;
+}
+
+.alt-badge-outline {
+  color: #595959;
+  border: 1px solid #d3d7d3;
+}
+
+// dots
+.alt-dots {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 2px;
+  background-color: #d3d7d3;
+}
+.alt-dots-dark {
+  background-color: #232529 !important;
+}
+.alt-dots-danger {
+  background-color: #e01e5a !important;
+}
