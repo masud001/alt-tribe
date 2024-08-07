@@ -105,17 +105,19 @@
 // hero section
 
 .hero_section {
+  &.hero_business_section {
+    background-image: url("../assets/images/business-landing-page/hero-section/hero-left-bg.svg"),
+      url("../assets/images/business-landing-page/hero-section/hero-right-bg.svg");
+  }
   background-image: url(../assets/images/freelance-landing-page/hero-left.svg),
     url(../assets/images/freelance-landing-page/hero-right.svg);
   background-position: top 26% left 4%, top 26% right 4%;
   background-repeat: no-repeat, no-repeat;
   background-size: 20%, 20%;
   background-attachment: scroll, scroll;
-
   @media (max-width: 992px) {
     background-image: unset;
   }
-
   padding-top: 42px;
   padding-bottom: 231px;
   // switch
@@ -348,6 +350,22 @@
       }
     }
   }
+  &.bg-alt-dark-theme {
+    .grid_content_wrapper {
+      &.grid_content_img_bg_1 {
+        background-image: url(../assets/images/business-landing-page/grid-section/grid-section-1.png);
+      }
+      &grid_content_img_bg_2 {
+        background-image: url(../assets/images/business-landing-page/grid-section/grid-section-2.png);
+      }
+      &grid_content_img_bg_3 {
+        background-image: url(../assets/images/business-landing-page/grid-section/grid-section-3.png);
+      }
+      &grid_content_img_bg_4 {
+        background-image: url(../assets/images/business-landing-page/grid-section/grid-section-4.png);
+      }
+    }
+  }
 }
 // section_freelance
 .section_freelance {
@@ -570,6 +588,30 @@
     top: -93px;
     transform: translate(-12px, -3px);
   }
+  &.business_experience {
+    .freelance_experience_content {
+      &.step_2 {
+        background-image: linear-gradient(
+            0deg,
+            rgba(35, 37, 41, 0.7),
+            rgba(35, 37, 41, 0.7)
+          ),
+          url("../assets/images/business-landing-page/indicatore-2.png");
+      }
+
+      &.step_4 {
+        background-image: url(../assets/images/freelance-landing-page/indicatore-4.png);
+      }
+      &.step_4 {
+        background-image: linear-gradient(
+            0deg,
+            rgba(35, 37, 41, 0.7),
+            rgba(35, 37, 41, 0.7)
+          ),
+          url("../assets/images/business-landing-page/indicatore-4.png");
+      }
+    }
+  }
 }
 
 // slider
@@ -634,8 +676,10 @@
     .slider_item {
       padding: 32px;
       border-radius: 16px;
-
+      min-height: 336px;
       margin-right: 24px !important;
+      display: flex;
+      flex-direction: column;
 
       span {
         img {
@@ -651,6 +695,7 @@
         padding-bottom: 40px;
       }
       .commentor_details {
+        margin-top: auto;
         .avater {
           width: 28px;
           height: 28px;
@@ -826,8 +871,9 @@
         align-items: center;
         object-fit: cover;
         img {
-          width: 100%;
-          height: 100%;
+          width: 74px;
+          height: 74px;
+          border-radius: 50%;
         }
       }
       h3 {
@@ -932,7 +978,7 @@
   transition: all 0.5s;
 }
 
-// dark mode
+// dark mode business landing page
 .dark_theme {
   .alt_header_section {
     background-image: url("../assets/images/business-landing-page/hero-bg.png"),

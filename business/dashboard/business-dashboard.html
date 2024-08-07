@@ -66,7 +66,14 @@ bdb = business dashboard;
                   />
                 </a>
                 <div class="notification_icon d-lg-none">
-                  <div type="button" class="position-relative">
+                  <div
+                    type="button"
+                    class="position-relative"
+                    class="position-relative"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#notification_canvas"
+                    aria-controls="notification_canvas"
+                  >
                     <img
                       src="../../assets/images/business-dashboard/notification.svg"
                       alt=""
@@ -129,9 +136,17 @@ bdb = business dashboard;
                   alt="notification icon"
                 />
               </div>
-              <!--  -->
+              <!-- notification for desktop -->
               <div class="notification_icon">
-                <div type="button" class="position-relative">
+                <button
+                  type="button"
+                  class="position-relative"
+                  type="button"
+                  class="position-relative"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#notification_canvas"
+                  aria-controls="notification_canvas"
+                >
                   <img
                     src="../../assets/images/business-dashboard/notification.svg"
                     alt=""
@@ -140,17 +155,150 @@ bdb = business dashboard;
                     class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-1"
                     ><span class="visually-hidden">unread messages</span></span
                   >
-                </div>
+                </button>
               </div>
               <!--  -->
-              <div class="alt_bdb_avatar">
-                <a href="">
+              <div class="alt_bdb_avatar position-relative">
+                <button
+                  type="button"
+                  class=""
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   <img
                     src="https://via.placeholder.com/32x32"
                     alt="user icon"
                     class="rounded-circle"
                   />
-                </a>
+                </button>
+
+                <!-- PROFILE MENU  -->
+                <div class="dropdown-menu dropdown-menu-end">
+                  <div class="profile_menu_section">
+                    <div
+                      class="profile_menu text-lg-center border-bottom border-light-subtle"
+                    >
+                      <div class="profile_image">
+                        <img
+                          class="mx-lg-auto"
+                          src="https://i.pravatar.cc/72"
+                          alt=""
+                        />
+                      </div>
+                      <div class="profile_details text-lg-center">
+                        <h2 class="mt-lg-2">Roberto Danial</h2>
+                        <h4>roberto34@gmail.com</h4>
+                        <div class="solopreneur">
+                          <img
+                            src="../../assets/images/freelance-dashboard/icons/Solopreneur.svg"
+                            alt=""
+                          />
+                          <span>Solopreneur</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="referal_friend_card">
+                      <h3>Refer a friend</h3>
+                      <p>Introduce your friends to AltTribe!</p>
+                    </div>
+                    <div class="alt_bdb_sidebar">
+                      <ul class="py-4 border-bottom border-light-subtle">
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Createfreelancerprofile.svg"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Create freelancer profile</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="active d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/building-city-town.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>My business profile</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Myprojectshistory.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>My projects history</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Saved.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Saved</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Settings.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Settings</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--  -->
+                      <ul class="py-2">
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Logout.svg"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Log out</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -159,7 +307,6 @@ bdb = business dashboard;
     </header>
 
     <!-- mobile menu  -->
-
     <div
       class="offcanvas offcanvas-start"
       tabindex="-1"
@@ -192,13 +339,18 @@ bdb = business dashboard;
             />
           </div>
           <div class="alt_bdb_avatar">
-            <a href="">
+            <button
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#businessProfileMenu"
+              aria-controls="businessProfileMenu"
+            >
               <img
                 src="https://i.pravatar.cc/32"
                 alt="user icon"
                 class="rounded-circle"
               />
-            </a>
+            </button>
           </div>
         </div>
       </div>
@@ -331,6 +483,427 @@ bdb = business dashboard;
       </div>
     </div>
     <!-- mobile menu end -->
+
+    <!-- profile menu for mobile  -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="businessProfileMenu"
+      aria-labelledby="profilemenu_for_business"
+    >
+      <div class="offcanvas-header">
+        <div class="d-flex align-items-center gap-3">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <div
+            class="offcanvas-title d-flex align-items-center"
+            id="profilemenu_for_business"
+          >
+            <img src="../../assets/images/business-dashboard/logo.svg" alt="" />
+            <div class="ms-2 ms-lg-0">
+              <span class="badge rounded-pill text-bg-warning">Business</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <div class="profile_menu_section_for_mobile">
+          <div
+            class="profile_menu d-flex flex-row justify-content-start align-items-start gap-3 border-bottom border-light-subtle"
+          >
+            <div class="profile_image">
+              <img class="mx-lg-auto" src="https://i.pravatar.cc/72" alt="" />
+            </div>
+            <div class="profile_details text-lg-start">
+              <h2 class="mt-lg-2">Roberto Danial 2</h2>
+              <h4>roberto34@gmail.com</h4>
+              <div class="solopreneur">
+                <img
+                  src="../../assets/images/freelance-dashboard/icons/Solopreneur.svg"
+                  alt=""
+                />
+                <span>Solopreneur</span>
+              </div>
+            </div>
+          </div>
+          <div class="referal_friend_card">
+            <h3>Refer a friend</h3>
+            <p>Introduce your friends to AltTribe!</p>
+          </div>
+          <div class="alt_bdb_sidebar">
+            <ul class="py-4 border-bottom border-light-subtle">
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Createfreelancerprofile.svg"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Create freelancer profile</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="active d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/building-city-town.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>My business profile</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Myprojectshistory.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>My projects history</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Saved.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Saved</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Settings.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Settings</span>
+                </a>
+              </li>
+            </ul>
+            <!--  -->
+            <ul class="py-2">
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Logout.svg"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Log out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- profile menu for mobile end -->
+
+    <!-- notification canvas start  -->
+    <div
+      class="offcanvas offcanvas-end notification_canvas_wrapper"
+      tabindex="-1"
+      id="notification_canvas"
+      aria-labelledby="notification_canvas"
+    >
+      <div class="offcanvas-header px-4">
+        <h5 class="offcanvas-title notification_title" id="notification_canvas">
+          Notification
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="notification_menu">
+          <ul
+            class="nav-pills border-bottom border-2 px-4"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="" role="presentation">
+              <button
+                class="active position-relative"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                All (7)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Invite and responses (2)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Updates (2)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-reminders-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-reminders"
+                type="button"
+                role="tab"
+                aria-controls="pills-reminders"
+                aria-selected="false"
+              >
+                Reminders (3)
+              </button>
+            </li>
+          </ul>
+          <div
+            class="tab-content notification_tab_content"
+            id="pills-tabContent"
+          >
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              <h2>Today</h2>
+              <div class="">
+                <!-- single_notification  -->
+                <div class="single_notification unread">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV </strong>is
+                        inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time"
+                        ><i class="fa-regular fa-clock"></i> 1m ago</span
+                      >
+                      <span class="dots"
+                        ><i class="fa-solid fa-ellipsis"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV </strong>is
+                        inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time"
+                        ><i class="fa-regular fa-clock"></i> 1m ago</span
+                      >
+                      <span class="dots"
+                        ><i class="fa-solid fa-ellipsis"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification unread">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV </strong>is
+                        inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time"
+                        ><i class="fa-regular fa-clock"></i> 1m ago</span
+                      >
+                      <span class="dots"
+                        ><i class="fa-solid fa-ellipsis"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV </strong>is
+                        inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time"
+                        ><i class="fa-regular fa-clock"></i> 1m ago</span
+                      >
+                      <span class="dots"
+                        ><i class="fa-solid fa-ellipsis"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <h2>Profile</h2>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+            >
+              <h2>Contact</h2>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-reminders"
+              role="tabpanel"
+              aria-labelledby="pills-reminders-tab"
+            >
+              <h2>reminders</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- notification canvas end -->
 
     <main class="main_section">
       <div class="container-xxl">

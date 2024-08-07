@@ -35,7 +35,194 @@
     flex-shrink: 0;
   }
 }
+.alt_bdb_avatar {
+  button {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    padding: 0;
+  }
+}
+// dropdown profile menu section
 
+.profile_menu_section {
+  padding: 20px;
+  width: 302px;
+}
+.profile_menu {
+  padding-bottom: 16px;
+  .profile_image {
+    img {
+      width: 71px;
+      height: 71px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-shrink: 0;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  .profile_details {
+    h2 {
+      font-size: 20px;
+      font-weight: 600;
+      font-family: var(--bs-body-font-family);
+      color: #1f1f1f;
+    }
+    h4 {
+      font-size: 12px;
+      font-weight: 600;
+      font-family: var(--bs-body-font-family);
+      color: #808080;
+      margin-top: 4px;
+      margin-bottom: 8px;
+    }
+    .solopreneur {
+      img {
+        width: 18px;
+        height: 18px;
+        background-color: black;
+        border-radius: 50%;
+      }
+      span {
+        font-size: 12px;
+        font-weight: 500;
+        font-family: var(--bs-body-font-family);
+        color: #1e1e1e;
+      }
+    }
+  }
+}
+.referal_friend_card {
+  margin-top: 16px;
+  background-color: #f8ede5;
+  padding: 16px;
+  border-radius: 8px;
+  background-image: url("../../assets/images/freelance-dashboard/icons/starts.svg");
+  background-position: top 10px right 11px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  h3 {
+    font-weight: 600;
+    font-size: 14px;
+    font-family: var(--bs-heading-font-family);
+    color: var(--alt-text-clr);
+    margin-bottom: 6px;
+  }
+  p {
+    font-weight: 500;
+    font-family: var(--bs-body-font-family);
+    font-size: 12px;
+    color: var(--alt-text-clr);
+  }
+}
+// dropdown profile menu section end
+// notification section start
+.offcanvas.offcanvas-end.notification_canvas_wrapper {
+  width: 580px !important;
+}
+.notification_icon {
+  button {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    padding: 0;
+  }
+}
+.notification_title {
+  font-weight: 600;
+  font-size: 20px;
+  font-family: var(--bs-heading-font-family);
+}
+.notification_menu ul li {
+  display: inline-block;
+  margin-right: 28px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.notification_menu ul li button {
+  border: 0;
+  outline: none;
+  background-color: transparent;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--alt-text-clr);
+}
+.notification_menu ul li button.active {
+  color: black !important;
+  font-weight: 600;
+}
+.notification_menu ul li button.active::after {
+  content: "";
+  border-bottom: 3px solid black;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  border-radius: 5px 5px 0 0;
+}
+.notification_tab_content {
+  h2 {
+    color: #5c5e63;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 400;
+    padding: 16px 24px;
+  }
+  .profile_avater {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: start;
+    align-items: start;
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      line-height: 32px;
+      text-align: center;
+    }
+    h4 {
+      font-size: 14px;
+      font-weight: 400;
+      color: #212229;
+      font-family: var(--bs-body-font-family);
+    }
+  }
+  .time {
+    font-size: 12px;
+    color: var(--alt-text-clr);
+    font-weight: 500;
+    font-family: var(--bs-body-font-family);
+  }
+  .dots {
+    color: #232529;
+  }
+  .notification_buttons {
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--alt-text-clr);
+      font-family: var(--bs-body-font-family);
+      text-decoration: underline;
+      &:hover {
+        color: var(--alt-text-clr);
+      }
+    }
+  }
+  .single_notification {
+    padding: 16px 24px;
+    background-color: #ffffff;
+  }
+  .single_notification.unread {
+    background-color: var(--alt-gray-bg-color);
+  }
+}
+// notification section end
 .mobile_canvas {
   .alt_bdb_plus_icon {
     width: 32px;
@@ -86,6 +273,14 @@
           }
           .alt_dbd_menu_icon {
             background-color: var(--alt-primary) !important;
+          }
+        }
+        &.active {
+          span {
+            color: var(--alt-gold) !important;
+          }
+          .alt_dbd_menu_icon {
+            background-color: var(--alt-gold) !important;
           }
         }
       }

@@ -45,3 +45,25 @@
 .alt-dots-danger {
   background-color: #e01e5a !important;
 }
+
+// Rectangle shape padge
+
+.rectangle-badge {
+  width: 8px;
+  height: 8px;
+  margin-right: 8px;
+  background-color: var(--alt-gray-bg-clr);
+  display: inline-block;
+}
+.orange-rectangle {
+  background-color: #eda211;
+}
+.green-rectangle {
+  background-color: #22a365;
+}
+.blue-rectangle {
+  background-color: #423ba3;
+}
+.punk-rectangle {
+  background-color: #F96767;
+}
