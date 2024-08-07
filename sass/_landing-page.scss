@@ -950,6 +950,13 @@
       text-align: center;
     }
   }
+  h5 {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--alt-gold);
+    margin-bottom: 8px;
+  }
   p {
     font-family: var(--bs-body-font-family);
     font-size: 18px;
