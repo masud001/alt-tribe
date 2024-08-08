@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome icons  -->
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesomes/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/fontawesomes/css/all.min.css" />
+
+    <!-- slider css  -->
+    <link rel="stylesheet" href="./assets/vendor/css/slick.css" />
+    <link rel="stylesheet" href="./assets/vendor/css/slick-theme.css" />
+
+    <title>Search page</title>
+    <link rel="stylesheet" href="./css/custom.min.css" />
+  </head>
+  <body class="light_theme search_page">
+    <section class="alt_header_section">
+      <!-- header  -->
+      <header class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <div
+              class="d-flex flex-row w-100 align-items-center justify-content-between py-4"
+            >
+              <div class="d-flex align-items-center">
+                <!-- logo  -->
+                <div class="brand_logo">
+                  <a href="./#"
+                    ><img
+                      src="./assets/images/freelance-landing-page/alt-logo-white.svg"
+                      alt="logo white"
+                  /></a>
+                </div>
+                <!-- menu  -->
+                <nav class="header_nav d-none d-md-block">
+                  <ul>
+                    <li><a href="/#">About us</a></li>
+                    <li><a href="/#">FAQ</a></li>
+                    <li><a href="/#">Blogs</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="d-flex align-items-center justify-content-end">
+                <!-- search bar -->
+                <div
+                  class="alt_header_search position-relative d-none d-lg-flex"
+                >
+                  <form action="">
+                    <input
+                      class="position-relative"
+                      type="text"
+                      placeholder="Search"
+                    />
+                    <button type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </form>
+                </div>
+                <!-- buttons  -->
+                <div class="alt_header_button ms-md-2 d-flex gap-2">
+                  <a
+                    href="/#"
+                    class="rounded-pill text-capitalize alt-btn-light-outline-primary d-none d-sm-block"
+                    >login</a
+                  >
+                  <a
+                    href="/#"
+                    class="rounded-pill text-capitalize alt-btn-light-primary"
+                    >Sign up</a
+                  >
+                  <!-- mobile menu active button -->
+                  <button
+                    class="mobile_nav_btn d-md-none"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample"
+                  >
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- mobile menu  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <a href="" class="offcanvas-title" id="offcanvasExampleLabel">
+            <img src="./assets/images/logo/all-tribe-logo.png" alt="" />
+          </a>
+          <div class="ms-auto"></div>
+
+          <div class="">
+            <button class="btn btn-outline-light text-secondary" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+        <div class="offcanvas-body position-relative">
+          <div class="h-100 d-flex flex-column justify-content-between">
+            <div class="mobile_nav">
+              <ul>
+                <li><a href="/#">About us</a></li>
+                <li><a href="/#">FAQ</a></li>
+                <li><a href="/#">Blogs</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <div class="d-flex flex-column gap-3">
+                <a href="" class="btn alt-btn-light-primary rounded-pill"
+                  >Sign up</a
+                >
+                <a
+                  href=""
+                  class="btn alt-btn-light-outline-primary rounded-pill"
+                  >Log in</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu  -->
+    </section>
+
+    <!-- search page content  -->
+    <div class="search_hero_section">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12 col-md-8 offset-md-2">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <div class="switch-container">
+                <div class="switch-labels for_business">
+                  <span id="offLabel" class="text-muted">for Business</span>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="toggleSwitch" />
+                  <span class="slider"></span>
+                </label>
+                <div class="switch-labels for_freelancer">
+                  <span id="onLabel" class="text-dark">for freelancer </span>
+                </div>
+              </div>
+              <div class="search-container">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Graphic designer"
+                />
+                <button class="search-button">
+                  <i class="fa-solid fa-magnifying-glass"></i> Search
+                </button>
+              </div>
+              <div class="tags-container">
+                <h4>popular</h4>
+                <span class="alt-badge alt-badge-outline bg-white alt-dark"
+                  >Graphic designer</span
+                >
+                <span class="alt-badge alt-badge-outline bg-white alt-dark"
+                  >Web developer</span
+                >
+                <span class="alt-badge alt-badge-outline bg-white alt-dark"
+                  >Content writer</span
+                >
+                <span class="alt-badge alt-badge-outline bg-white alt-dark"
+                  >Digital marketer</span
+                >
+                <span class="alt-badge alt-badge-outline bg-white alt-dark"
+                  >UI/UX designer</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="search_result_section">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col d-flex justify-content-between">
+            <div
+              class="buttons_container d-flex flex-wrap gap-2 gap-lg-3 align-items-center"
+            >
+              <!-- single check btn  -->
+              <div class="check_button">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btn-check-all"
+                  autocomplete="off"
+                />
+                <label class="btn" for="btn-check-all"> all</label>
+              </div>
+              <!-- single check btn  -->
+              <div class="check_button">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btn-check-Freelancers"
+                  autocomplete="off"
+                />
+                <label class="btn" for="btn-check-Freelancers">
+                  Freelancers</label
+                >
+              </div>
+              <!-- single check btn  -->
+              <div class="check_button">
+                <input
+                  type="checkbox"
+                  class="btn-check rounded-pill"
+                  id="btn-check-Contest"
+                  autocomplete="off"
+                />
+                <label class="btn" for="btn-check-Contest"> Contest</label>
+              </div>
+              <!-- single check btn  -->
+              <div class="check_button">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btn-check-Events"
+                  autocomplete="off"
+                />
+                <label class="btn" for="btn-check-Events"> Events</label>
+              </div>
+            </div>
+            <!-- sort container  -->
+            <div class="sort_container d-none d-lg-block">
+              <div class="d-flex align-items-center">
+                <div class="sort_dropdown position-relative">
+                  <button
+                    class="btn sort_btn alt-btn-light-outline-primary dropdown-toggle rounded"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Sort by
+                  </button>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <button
+                        class="dropdown-item text-capitalize fs-6"
+                        type="button"
+                      >
+                        Recommended
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item text-capitalize fs-6"
+                        type="button"
+                      >
+                        newest
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item text-capitalize fs-6"
+                        type="button"
+                      >
+                        height to low
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item text-capitalize fs-6"
+                        type="button"
+                      >
+                        low to height
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer top section (promo) -->
+    <section class="promo_section position-relative">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <div class="promo_bg">
+              <div class="promo_content d-flex flex-column justify-content-end">
+                <h2>
+                  Start your Alt Tribe journey today, <br />
+                  and elevate your impact.
+                </h2>
+                <div class="">
+                  <a href="/#" class="rounded-pill alt-btn-light-primary"
+                    >Join as a freelancer</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer_section">
+      <div class="container-xxl">
+        <div class="row gy-2 gy-md-0">
+          <div class="col-12 col-md-6">
+            <div class="footer_logo">
+              <a href="">
+                <img src="./assets/images/logo/all-tribe-logo.png" alt="" />
+              </a>
+              <p>&copy; 2024 Alt tribe, All rights reserved.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div
+              class="footer_nav d-flex flex-column align-items-start align-items-md-end"
+            >
+              <ul class="d-flex gap-3 justify-content-end">
+                <li><a href="/#">About us</a></li>
+                <li><a href="/#">FAQ</a></li>
+                <li><a href="/#">Terms & Conditions</a></li>
+                <li><a href="/#">Privacy policy</a></li>
+              </ul>
+              <p>
+                Need help? Contact us at <strong>+91 804 112 1109</strong> or
+                <strong>alttribe.world@gmail.com</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/js/jquery-1.11.0.min.js"></script>
+    <script src="./assets/vendor/js/jquery-migrate-1.2.1.min.js"></script>
+
+    <script>
+      document
+        .getElementById("toggleSwitch")
+        .addEventListener("change", function () {
+          const isChecked = this.checked;
+          document
+            .getElementById("offLabel")
+            .classList.toggle("text-dark", !isChecked);
+          document
+            .getElementById("offLabel")
+            .classList.toggle("text-muted", isChecked);
+          document
+            .getElementById("onLabel")
+            .classList.toggle("text-dark", isChecked);
+          document
+            .getElementById("onLabel")
+            .classList.toggle("text-muted", !isChecked);
+        });
+    </script>
+  </body>
+</html>
