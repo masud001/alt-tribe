@@ -195,7 +195,7 @@
     </div>
 
     <section class="search_result_section">
-      <div class="container-xxl">
+      <div class="container-xxl mb-4">
         <div class="row">
           <div class="col d-flex justify-content-between">
             <div
@@ -296,6 +296,437 @@
           </div>
         </div>
       </div>
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="sidebar_filter_section">
+              <h3>Filters</h3>
+              <!-- filater group  -->
+              <div
+                class="sidebar_filter_group border-bottom border-light-subtle"
+              >
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="full-time"
+                  />
+                  <label class="form_check_label" for="full-time">
+                    Full time
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="part-time"
+                  />
+                  <label class="form_check_label" for="part-time">
+                    Part time
+                  </label>
+                </div>
+              </div>
+              <!-- filater group (skills) -->
+              <div
+                class="sidebar_filter_group pt-3 border-bottom border-light-subtle"
+              >
+                <h5>skills</h5>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="Graphic-designing"
+                  />
+                  <label class="form_check_label" for="Graphic-designing">
+                    Graphic designing
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="Logo-designing"
+                  />
+                  <label class="form_check_label" for="Logo-designing">
+                    Logo designing
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="Illustration"
+                  />
+                  <label class="form_check_label" for="Illustration">
+                    Illustration
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="UI-UX-Designing"
+                  />
+                  <label class="form_check_label" for="UI-UX-Designing">
+                    UI UX Designing
+                  </label>
+                </div>
+                <!-- hidden content -->
+                <div class="hidden-content pb-3">
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="Designing"
+                    />
+                    <label class="form_check_label" for="Designing">
+                      Designing
+                    </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UI"
+                    />
+                    <label class="form_check_label" for="UI"> UI </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UX"
+                    />
+                    <label class="form_check_label" for="UX"> UX </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="html"
+                    />
+                    <label class="form_check_label" for="html"> html </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="css"
+                    />
+                    <label class="form_check_label" for="css"> css </label>
+                  </div>
+                </div>
+                <button
+                  class="text-capitalize more_btn view-more-btn"
+                  id="view-more-btn"
+                >
+                  +10 More
+                </button>
+              </div>
+              <!-- filater group (budget) -->
+              <div class="sidebar_filter_group pt-3">
+                <h5>budget</h5>
+                <div class="budget-range">
+                  <div class="range-slider">
+                    <input
+                      type="range"
+                      class="form-range"
+                      id="minBudgetRange"
+                      min="0"
+                      max="100"
+                      step="1"
+                      value="0"
+                    />
+                    <input
+                      type="range"
+                      class="form-range"
+                      id="maxBudgetRange"
+                      min="0"
+                      max="100"
+                      step="1"
+                      value="100"
+                    />
+                  </div>
+                  <div
+                    class="budget_input_range d-flex justify-content-between align-items-center mt-2"
+                  >
+                    <div>
+                      <label for="minBudget">Min</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="minBudget"
+                        value="$0.00"
+                      />
+                    </div>
+                    <div class="to">to</div>
+                    <div>
+                      <label for="maxBudget">Max</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="maxBudget"
+                        value="$100.00"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- filater group (category) -->
+              <div
+                class="sidebar_filter_group pt-3 border-bottom border-light-subtle"
+              >
+                <h5>Category</h5>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="Category-Product-Design"
+                  />
+                  <label class="form_check_label" for="Category-Product-Design">
+                    Product Design
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="Category-Illustration"
+                  />
+                  <label class="form_check_label" for="Category-Illustration">
+                    Illustration
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="Category-branding"
+                  />
+                  <label class="form_check_label" for="Category-branding">
+                    Branding
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="category-all"
+                  />
+                  <label class="form_check_label" for="category-all">
+                    All
+                  </label>
+                </div>
+                <!-- hidden content -->
+                <div class="hidden-content-category pb-3">
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="Designing"
+                    />
+                    <label class="form_check_label" for="Designing">
+                      Designing
+                    </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UI"
+                    />
+                    <label class="form_check_label" for="UI"> UI </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UX"
+                    />
+                    <label class="form_check_label" for="UX"> UX </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="html"
+                    />
+                    <label class="form_check_label" for="html"> html </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="css"
+                    />
+                    <label class="form_check_label" for="css"> css </label>
+                  </div>
+                </div>
+                <button
+                  class="text-capitalize more_btn view-more-btn-category"
+                  id="view-more-btn"
+                >
+                  +10 More
+                </button>
+              </div>
+              <!-- filater group (Posted date) -->
+              <div
+                class="sidebar_filter_group pt-3 border-bottom border-light-subtle"
+              >
+                <h5>Posted date</h5>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="date-Today"
+                  />
+                  <label class="form_check_label" for="date-Today">
+                    Today</label
+                  >
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="date-Yesterday"
+                  />
+                  <label class="form_check_label" for="date-Yesterday">
+                    Yesterday
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="date-This-week"
+                  />
+                  <label class="form_check_label" for="date-This-week">
+                    This week
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="date-This-month"
+                  />
+                  <label class="form_check_label" for="date-This-month">
+                    This month
+                  </label>
+                </div>
+                <!-- hidden content -->
+                <div class="hidden-content-time pb-3">
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="time-example-1"
+                    />
+                    <label class="form_check_label" for="time-example-1">
+                      time example 1
+                    </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="time-example-2"
+                    />
+                    <label class="form_check_label" for="time-example-2">
+                      time-example-2
+                    </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UX"
+                    />
+                    <label class="form_check_label" for="UX"> UX </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="html"
+                    />
+                    <label class="form_check_label" for="html"> html </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="css"
+                    />
+                    <label class="form_check_label" for="css"> css </label>
+                  </div>
+                </div>
+                <button class="text-capitalize more_btn view-more-btn-time">
+                  +10 More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- footer top section (promo) -->
@@ -357,6 +788,7 @@
     <script src="./assets/vendor/js/jquery-migrate-1.2.1.min.js"></script>
 
     <script>
+      // toggle switch js
       document
         .getElementById("toggleSwitch")
         .addEventListener("change", function () {
@@ -374,6 +806,117 @@
             .getElementById("onLabel")
             .classList.toggle("text-muted", !isChecked);
         });
+
+      // range slider js
+      document.addEventListener("DOMContentLoaded", function () {
+        const minRange = document.getElementById("minBudgetRange");
+        const maxRange = document.getElementById("maxBudgetRange");
+        const minBudget = document.getElementById("minBudget");
+        const maxBudget = document.getElementById("maxBudget");
+
+        minRange.addEventListener("input", updateBudgetsFromSlider);
+        maxRange.addEventListener("input", updateBudgetsFromSlider);
+        minBudget.addEventListener("input", updateSlidersFromInput);
+        maxBudget.addEventListener("input", updateSlidersFromInput);
+
+        function updateBudgetsFromSlider() {
+          let minValue = parseInt(minRange.value);
+          let maxValue = parseInt(maxRange.value);
+
+          if (minValue > maxValue) {
+            minValue = maxValue;
+            minRange.value = minValue;
+          }
+
+          minBudget.value = `$${minValue}.00`;
+          maxBudget.value = `$${maxValue}.00`;
+        }
+
+        function updateSlidersFromInput() {
+          let minValue = parseInt(
+            minBudget.value.replace("$", "").replace(".00", "")
+          );
+          let maxValue = parseInt(
+            maxBudget.value.replace("$", "").replace(".00", "")
+          );
+
+          if (isNaN(minValue)) minValue = 0;
+          if (isNaN(maxValue)) maxValue = 100;
+
+          if (minValue > maxValue) {
+            minValue = maxValue;
+          }
+
+          minRange.value = minValue;
+          maxRange.value = maxValue;
+
+          minBudget.value = `$${minValue}.00`;
+          maxBudget.value = `$${maxValue}.00`;
+        }
+
+        updateBudgetsFromSlider();
+      });
+
+      // view more button js
+      document.addEventListener("DOMContentLoaded", function () {
+        const viewMoreBtn = document.querySelector(".view-more-btn");
+        const viewMoreBtnCategory = document.querySelector(
+          ".view-more-btn-category"
+        );
+        const viewMoreBtnTime = document.querySelector(".view-more-btn-time");
+        const hiddenContent = document.querySelector(".hidden-content");
+        const hiddenContentCategory = document.querySelector(
+          ".hidden-content-category"
+        );
+        const hiddenContentTime = document.querySelector(
+          ".hidden-content-time"
+        );
+        // skils view more button
+        viewMoreBtn.addEventListener("click", function () {
+          hiddenContent.style.transition = "all 0.5s ease";
+          console.log("this is clicked");
+          if (
+            hiddenContent.style.display === "none" ||
+            hiddenContent.style.display === ""
+          ) {
+            hiddenContent.style.display = "block";
+            viewMoreBtn.textContent = "View Less";
+          } else {
+            hiddenContent.style.display = "none";
+            viewMoreBtn.textContent = "+10 More";
+          }
+        });
+        // category view more button
+        viewMoreBtnCategory.addEventListener("click", function () {
+          hiddenContentCategory.style.transition = "all 0.5s ease";
+          console.log("this is clicked");
+          if (
+            hiddenContentCategory.style.display === "none" ||
+            hiddenContentCategory.style.display === ""
+          ) {
+            hiddenContentCategory.style.display = "block";
+            viewMoreBtnCategory.textContent = "View Less";
+          } else {
+            hiddenContentCategory.style.display = "none";
+            viewMoreBtnCategory.textContent = "+10 More";
+          }
+        });
+        // time view more button
+        viewMoreBtnTime.addEventListener("click", function () {
+          hiddenContentTime.style.transition = "all 0.5s ease";
+          console.log("this is clicked");
+          if (
+            hiddenContentTime.style.display === "none" ||
+            hiddenContentTime.style.display === ""
+          ) {
+            hiddenContentTime.style.display = "block";
+            viewMoreBtnTime.textContent = "View Less";
+          } else {
+            hiddenContentTime.style.display = "none";
+            viewMoreBtnTime.textContent = "+10 More";
+          }
+        });
+      });
     </script>
   </body>
 </html>

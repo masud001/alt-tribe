@@ -218,3 +218,177 @@ input:checked + .slider:before {
     }
   }
 }
+
+.sidebar_filter_section {
+  font-family: var(--bs-body-font-family);
+  h3 {
+    font-weight: 500;
+    color: #202123;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+  }
+  .sidebar_filter_group {
+    padding-bottom: 24px;
+    h5 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #232529;
+      margin-bottom: 20px;
+      text-transform: capitalize;
+    }
+    .more_btn {
+      color: #232529;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: capitalize;
+      cursor: pointer;
+
+      border: none;
+      background-color: transparent;
+      transition: ease-in-out 0.3s;
+      &:hover {
+        color: #000000;
+        text-decoration: underline;
+      }
+    }
+
+    .single_check_box {
+      margin-bottom: 18px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .filter_check_input {
+        padding: 0;
+        height: initial;
+        width: initial;
+        margin-bottom: 0;
+        display: none;
+        cursor: pointer;
+      }
+      .form_check_label {
+        position: relative;
+        cursor: pointer;
+        &::before {
+          content: "";
+          -webkit-appearance: none;
+          background-color: #ffffff;
+          border: 2px solid #d9d9d9;
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+            inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+          padding: 10px;
+          display: inline-block;
+          position: relative;
+          vertical-align: middle;
+          cursor: pointer;
+          margin-right: 5px;
+          border-radius: 5px;
+        }
+      }
+      .filter_check_input:checked + .form_check_label:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 4px;
+        left: 9px;
+        width: 6px;
+        height: 14px;
+        border: solid #ffffff;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+      }
+      .filter_check_input:checked + .form_check_label::before {
+        background-color: #000000;
+        border: 2px solid #000000;
+      }
+    }
+  }
+}
+
+// budget range css
+.range-slider {
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+.range-slider input[type="range"] {
+  position: absolute;
+  width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  margin: 0;
+  pointer-events: none;
+}
+.range-slider input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  background: #ffd700;
+  border: none;
+  border-radius: 4px;
+}
+.range-slider input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 4px;
+  background: #ffd700;
+  border: none;
+  border-radius: 4px;
+}
+.range-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  pointer-events: all; /* Enable pointer events for the thumbs */
+  position: relative;
+  top: -4px; /* Adjust to center the thumb */
+  z-index: 10;
+  border: 3px solid #000;
+}
+.range-slider input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  pointer-events: all; /* Enable pointer events for the thumbs */
+  position: relative;
+  top: -4px; /* Adjust to center the thumb */
+  z-index: 10;
+  border: 3px solid #000;
+}
+.budget_input_range input[type="text"] {
+  width: 100px;
+  text-align: center;
+  border: 1px solid #d9d9d9;
+  background: transparent;
+  font-weight: 400;
+  font-size: 14px;
+  padding: 16px;
+}
+.budget-range input[type="text"]:focus {
+  outline: none;
+}
+.budget_input_range label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #717171;
+  margin-top: 10px;
+  display: block;
+}
+.budget_input_range .to {
+  font-size: 14px;
+  font-weight: 500;
+  color: #717171;
+  margin-top: 36px;
+  display: block;
+}
+
+.hidden-content,
+.hidden-content-category,
+.hidden-content-time {
+  display: none;
+}
