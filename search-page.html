@@ -194,7 +194,7 @@
       </div>
     </div>
 
-    <section class="search_result_section">
+    <section class="search_result_section_container">
       <div class="container-xxl mb-4">
         <div class="row">
           <div class="col d-flex justify-content-between">
@@ -245,7 +245,7 @@
               </div>
             </div>
             <!-- sort container  -->
-            <div class="sort_container d-none d-lg-block">
+            <div class="sort_container d-none d-xl-block">
               <div class="d-flex align-items-center">
                 <div class="sort_dropdown position-relative">
                   <button
@@ -295,10 +295,572 @@
             </div>
           </div>
         </div>
+        <!-- filter for mobile  -->
+        <div class="row py-3 d-xl-none">
+          <div class="col-12">
+            <div class="w-100 d-flex">
+              <button
+                class="filter_button p-3 btn w-100 border-top border-light-subtle rounded-0"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#filterOffcanvas"
+                aria-controls="filterOffcanvas"
+              >
+                <span
+                  ><img
+                    src="./assets/images/search-page/icons/filter.svg"
+                    alt=""
+                /></span>
+                Filter
+              </button>
+              <button
+                class="sort_button position-relative p-3 btn w-100 border-top border-light-subtle rounded-0"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span
+                  ><img src="./assets/images/search-page/icons/sort.svg" alt=""
+                /></span>
+                Sort
+              </button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                  <button
+                    class="dropdown-item text-capitalize fs-6"
+                    type="button"
+                  >
+                    Recommended
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item text-capitalize fs-6"
+                    type="button"
+                  >
+                    newest
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item text-capitalize fs-6"
+                    type="button"
+                  >
+                    height to low
+                  </button>
+                </li>
+                <li>
+                  <button
+                    class="dropdown-item text-capitalize fs-6"
+                    type="button"
+                  >
+                    low to height
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <!-- filter option for mobile start -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="filterOffcanvas"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filters</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="sidebar_filter_section">
+            <h3>Filters</h3>
+            <!-- filater group  -->
+            <div
+              class="sidebar_filter_group d-flex align-items-start flex-wrap gap-3 border-bottom border-light-subtle"
+            >
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="full-time"
+                />
+                <label class="form_check_label" for="full-time">
+                  Full time
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="part-time"
+                />
+                <label class="form_check_label" for="part-time">
+                  Part time
+                </label>
+              </div>
+            </div>
+            <!-- filater group (skills) -->
+            <div
+              class="sidebar_filter_group gap-3 pt-3 border-bottom border-light-subtle"
+            >
+              <h5>skills</h5>
+              <div class="d-flex align-items-start gap-3 flex-wrap">
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="Graphic-designing"
+                  />
+                  <label class="form_check_label" for="Graphic-designing">
+                    Graphic designing
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="Logo-designing"
+                  />
+                  <label class="form_check_label" for="Logo-designing">
+                    Logo designing
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="Illustration"
+                  />
+                  <label class="form_check_label" for="Illustration">
+                    Illustration
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="UI-UX-Designing"
+                  />
+                  <label class="form_check_label" for="UI-UX-Designing">
+                    UI UX Designing
+                  </label>
+                </div>
+                <!-- hidden content -->
+                <div class="hidden-content pb-3">
+                  <div class="d-flex align-items-start gap-3 flex-wrap">
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="Designing"
+                      />
+                      <label class="form_check_label" for="Designing">
+                        Designing
+                      </label>
+                    </div>
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="UI"
+                      />
+                      <label class="form_check_label" for="UI"> UI </label>
+                    </div>
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="UX"
+                      />
+                      <label class="form_check_label" for="UX"> UX </label>
+                    </div>
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="html"
+                      />
+                      <label class="form_check_label" for="html"> html </label>
+                    </div>
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="css"
+                      />
+                      <label class="form_check_label" for="css"> css </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="text-capitalize more_btn view-more-btn"
+                id="view-more-btn"
+              >
+                +10 More
+              </button>
+            </div>
+            <!-- filater group (budget) -->
+            <div class="sidebar_filter_group pt-3">
+              <h5>budget</h5>
+              <div class="budget-range">
+                <div class="range-slider">
+                  <input
+                    type="range"
+                    class="form-range"
+                    id="minBudgetRange"
+                    min="0"
+                    max="100"
+                    step="1"
+                    value="0"
+                  />
+                  <input
+                    type="range"
+                    class="form-range"
+                    id="maxBudgetRange"
+                    min="0"
+                    max="100"
+                    step="1"
+                    value="100"
+                  />
+                </div>
+                <div
+                  class="budget_input_range d-flex justify-content-between align-items-center mt-2"
+                >
+                  <div>
+                    <label for="minBudget">Min</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="minBudget"
+                      value="$0.00"
+                    />
+                  </div>
+                  <div class="to">to</div>
+                  <div>
+                    <label for="maxBudget">Max</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="maxBudget"
+                      value="$100.00"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- filater group (category) -->
+            <div
+              class="sidebar_filter_group pt-3 border-bottom border-light-subtle"
+            >
+              <h5>Category</h5>
+              <!-- single check box -->
+              <div class="d-flex align-items-start gap-3 flex-wrap">
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="Category-Product-Design"
+                  />
+                  <label class="form_check_label" for="Category-Product-Design">
+                    Product Design
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="Category-Illustration"
+                  />
+                  <label class="form_check_label" for="Category-Illustration">
+                    Illustration
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="Category-branding"
+                  />
+                  <label class="form_check_label" for="Category-branding">
+                    Branding
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="category-all"
+                  />
+                  <label class="form_check_label" for="category-all">
+                    All
+                  </label>
+                </div>
+                <!-- hidden content -->
+                <div class="hidden-content-category pb-3">
+                  <div class="d-flex align-items-start gap-3 flex-wrap">
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="Designing"
+                      />
+                      <label class="form_check_label" for="Designing">
+                        Designing
+                      </label>
+                    </div>
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="UI"
+                      />
+                      <label class="form_check_label" for="UI"> UI </label>
+                    </div>
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="UX"
+                      />
+                      <label class="form_check_label" for="UX"> UX </label>
+                    </div>
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="html"
+                      />
+                      <label class="form_check_label" for="html"> html </label>
+                    </div>
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="css"
+                      />
+                      <label class="form_check_label" for="css"> css </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button
+                class="text-capitalize more_btn view-more-btn-category"
+                id="view-more-btn"
+              >
+                +10 More
+              </button>
+            </div>
+            <!-- filater group (Posted date) -->
+            <div
+              class="sidebar_filter_group pt-3 border-bottom border-light-subtle"
+            >
+              <h5>Posted date</h5>
+              <div class="d-flex align-items-start gap-3 flex-wrap">
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="date-Today"
+                  />
+                  <label class="form_check_label" for="date-Today">
+                    Today</label
+                  >
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="date-Yesterday"
+                  />
+                  <label class="form_check_label" for="date-Yesterday">
+                    Yesterday
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="date-This-week"
+                  />
+                  <label class="form_check_label" for="date-This-week">
+                    This week
+                  </label>
+                </div>
+                <!-- single check box -->
+                <div class="single_check_box d-flex align-items-center gap-2">
+                  <input
+                    class="filter_check_input"
+                    type="checkbox"
+                    value=""
+                    id="date-This-month"
+                  />
+                  <label class="form_check_label" for="date-This-month">
+                    This month
+                  </label>
+                </div>
+                <!-- hidden content -->
+                <div class="hidden-content-time pb-3">
+                  <div class="d-flex align-items-start gap-3 flex-wrap">
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="time-example-1"
+                      />
+                      <label class="form_check_label" for="time-example-1">
+                        time example 1
+                      </label>
+                    </div>
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="time-example-2"
+                      />
+                      <label class="form_check_label" for="time-example-2">
+                        time-example-2
+                      </label>
+                    </div>
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="UX"
+                      />
+                      <label class="form_check_label" for="UX"> UX </label>
+                    </div>
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="html"
+                      />
+                      <label class="form_check_label" for="html"> html </label>
+                    </div>
+                    <!-- single check box -->
+                    <div
+                      class="single_check_box d-flex align-items-center gap-2"
+                    >
+                      <input
+                        class="filter_check_input"
+                        type="checkbox"
+                        value=""
+                        id="css"
+                      />
+                      <label class="form_check_label" for="css"> css </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="text-capitalize more_btn view-more-btn-time">
+                +10 More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 py-3 border-top border-light-subtle px-3 d-flex">
+          <button
+            class="filter_apply_btn_mobile btn alt-btn-light-primary rounded-pill w-25"
+          >
+            Apply
+          </button>
+        </div>
+      </div>
+      <!-- filter option for mobile end -->
+
       <div class="container-xxl">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-lg-3 d-none d-xl-flex">
             <div class="sidebar_filter_section">
               <h3>Filters</h3>
               <!-- filater group  -->
@@ -725,6 +1287,468 @@
               </div>
             </div>
           </div>
+          <div class="col-12 col-xl-9">
+            <div class="main_filter_container">
+              <h3 class="pt-2 pb-3">
+                Results for <span> “Graphic Design”</span>
+              </h3>
+              <!-- single filter item  -->
+              <div
+                class="single_filter_option position-relative w-100 d-flex flex-column flex-md-row gap-3 mb-3"
+              >
+                <div class="d-flex gap-3">
+                  <!-- image thumb  -->
+                  <div class="filter_image flex-shrink-0 d-none d-lg-flex">
+                    <img src="https://via.placeholder.com/230" alt="" />
+                  </div>
+                  <!-- content  -->
+                  <div class="filter_content p-3 d-flex flex-column gap-3">
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="avater">
+                        <img src="https://i.pravatar.cc/74" alt="" />
+                      </div>
+                      <div class="name d-flex flex-column gap-1">
+                        <div class="d-flex gap-2 align-items-center">
+                          <h4>John Smith</h4>
+                          <span
+                            class="ratting btn-alt-outline p-1 rounded-pill"
+                          >
+                            <span class=""
+                              ><img
+                                src="./assets/images/search-page/icons/Star.svg"
+                                alt=""
+                            /></span>
+                            <span class="ms-1 position-relative ranking"
+                              >Star</span
+                            >
+                          </span>
+                        </div>
+                        <div class="address d-flex flex-column">
+                          <div class="location d-flex align-items-center gap-2">
+                            <span>Branding</span>
+                            <span class="dots"></span>
+                            <div>
+                              <span
+                                ><i class="fa-solid fa-location-dot"></i
+                              ></span>
+                              Mumbai, India
+                            </div>
+                          </div>
+                          <div class="d-flex ratign align-items-center gap-2">
+                            <span
+                              ><img
+                                src="./assets/images/search-page/icons/ratign-star.svg"
+                                alt=""
+                            /></span>
+                            <span>4.0</span>
+                            <span class="dots"></span>
+                            <span>25 Reviews </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <span class="alt-badge alt-dark">design</span>
+                      <span class="alt-badge alt-dark">html</span>
+                      <span class="alt-badge alt-dark">css</span>
+                    </div>
+                    <div class="">
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Nobis, quisquam. Ipsam tempora earum est
+                        perferendis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- buttons -->
+                <div
+                  class="me-auto me-md-0 ms-md-auto filter_buttons p-3 d-flex flex-column justify-content-between flex-shrink-0"
+                >
+                  <div class="align-self-start align-self-md-end pb-3 price">
+                    <span>$45</span> / Hour
+                  </div>
+                  <div class="d-flex gap-2">
+                    <button
+                      class="rounded-pill text-capitalize alt-btn-light-primary"
+                    >
+                      Invite to project
+                    </button>
+                    <button class="bookmakr rounded-circle">
+                      <img
+                        src="./assets/images/search-page/icons/bookmark.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- single filter item  -->
+              <div
+                class="single_filter_option position-relative w-100 d-flex flex-column flex-md-row gap-3 mb-3"
+              >
+                <div class="d-flex gap-3">
+                  <!-- image thumb  -->
+                  <div class="filter_image flex-shrink-0 d-none d-lg-flex">
+                    <img src="https://via.placeholder.com/230" alt="" />
+                  </div>
+                  <!-- content  -->
+                  <div class="filter_content p-3 d-flex flex-column gap-3">
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="avater">
+                        <img src="https://i.pravatar.cc/74" alt="" />
+                      </div>
+                      <div class="name d-flex flex-column gap-1">
+                        <div class="d-flex gap-2 align-items-center">
+                          <h4>John Smith</h4>
+                          <span
+                            class="ratting btn-alt-outline p-1 rounded-pill"
+                          >
+                            <span class=""
+                              ><img
+                                src="./assets/images/search-page/icons/Star.svg"
+                                alt=""
+                            /></span>
+                            <span class="ms-1 position-relative ranking"
+                              >Star</span
+                            >
+                          </span>
+                        </div>
+                        <div class="address d-flex flex-column">
+                          <div class="location d-flex align-items-center gap-2">
+                            <span>Branding</span>
+                            <span class="dots"></span>
+                            <div>
+                              <span
+                                ><i class="fa-solid fa-location-dot"></i
+                              ></span>
+                              Mumbai, India
+                            </div>
+                          </div>
+                          <div class="d-flex ratign align-items-center gap-2">
+                            <span
+                              ><img
+                                src="./assets/images/search-page/icons/ratign-star.svg"
+                                alt=""
+                            /></span>
+                            <span>4.0</span>
+                            <span class="dots"></span>
+                            <span>25 Reviews </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <span class="alt-badge alt-dark">design</span>
+                      <span class="alt-badge alt-dark">html</span>
+                      <span class="alt-badge alt-dark">css</span>
+                    </div>
+                    <div class="">
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Nobis, quisquam. Ipsam tempora earum est
+                        perferendis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- buttons -->
+                <div
+                  class="me-auto me-md-0 ms-md-auto filter_buttons p-3 d-flex flex-column justify-content-between flex-shrink-0"
+                >
+                  <div class="align-self-start align-self-md-end pb-3 price">
+                    <span>$45</span> / Hour
+                  </div>
+                  <div class="d-flex gap-2">
+                    <button
+                      class="rounded-pill text-capitalize alt-btn-light-primary"
+                    >
+                      Invite to project
+                    </button>
+                    <button class="bookmakr rounded-circle">
+                      <img
+                        src="./assets/images/search-page/icons/bookmark.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- single filter item  -->
+              <div
+                class="single_filter_option position-relative w-100 d-flex flex-column flex-md-row gap-3 mb-3"
+              >
+                <div class="d-flex gap-3">
+                  <!-- image thumb  -->
+                  <div class="filter_image flex-shrink-0 d-none d-lg-flex">
+                    <img src="https://via.placeholder.com/230" alt="" />
+                  </div>
+                  <!-- content  -->
+                  <div class="filter_content p-3 d-flex flex-column gap-3">
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="avater">
+                        <img src="https://i.pravatar.cc/74" alt="" />
+                      </div>
+                      <div class="name d-flex flex-column gap-1">
+                        <div class="d-flex gap-2 align-items-center">
+                          <h4>John Smith</h4>
+                          <span
+                            class="ratting btn-alt-outline p-1 rounded-pill"
+                          >
+                            <span class=""
+                              ><img
+                                src="./assets/images/search-page/icons/Star.svg"
+                                alt=""
+                            /></span>
+                            <span class="ms-1 position-relative ranking"
+                              >Star</span
+                            >
+                          </span>
+                        </div>
+                        <div class="address d-flex flex-column">
+                          <div class="location d-flex align-items-center gap-2">
+                            <span>Branding</span>
+                            <span class="dots"></span>
+                            <div>
+                              <span
+                                ><i class="fa-solid fa-location-dot"></i
+                              ></span>
+                              Mumbai, India
+                            </div>
+                          </div>
+                          <div class="d-flex ratign align-items-center gap-2">
+                            <span
+                              ><img
+                                src="./assets/images/search-page/icons/ratign-star.svg"
+                                alt=""
+                            /></span>
+                            <span>4.0</span>
+                            <span class="dots"></span>
+                            <span>25 Reviews </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <span class="alt-badge alt-dark">design</span>
+                      <span class="alt-badge alt-dark">html</span>
+                      <span class="alt-badge alt-dark">css</span>
+                    </div>
+                    <div class="">
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Nobis, quisquam. Ipsam tempora earum est
+                        perferendis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- buttons -->
+                <div
+                  class="me-auto me-md-0 ms-md-auto filter_buttons p-3 d-flex flex-column justify-content-between flex-shrink-0"
+                >
+                  <div class="align-self-start align-self-md-end pb-3 price">
+                    <span>$45</span> / Hour
+                  </div>
+                  <div class="d-flex gap-2">
+                    <button
+                      class="rounded-pill text-capitalize alt-btn-light-primary"
+                    >
+                      Invite to project
+                    </button>
+                    <button class="bookmakr rounded-circle">
+                      <img
+                        src="./assets/images/search-page/icons/bookmark.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- single filter item  -->
+              <div
+                class="single_filter_option position-relative w-100 d-flex flex-column flex-md-row gap-3 mb-3"
+              >
+                <div class="d-flex gap-3">
+                  <!-- image thumb  -->
+                  <div class="filter_image flex-shrink-0 d-none d-lg-flex">
+                    <img src="https://via.placeholder.com/230" alt="" />
+                  </div>
+                  <!-- content  -->
+                  <div class="filter_content p-3 d-flex flex-column gap-3">
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="avater">
+                        <img src="https://i.pravatar.cc/74" alt="" />
+                      </div>
+                      <div class="name d-flex flex-column gap-1">
+                        <div class="d-flex gap-2 align-items-center">
+                          <h4>John Smith</h4>
+                          <span
+                            class="ratting btn-alt-outline p-1 rounded-pill"
+                          >
+                            <span class=""
+                              ><img
+                                src="./assets/images/search-page/icons/Star.svg"
+                                alt=""
+                            /></span>
+                            <span class="ms-1 position-relative ranking"
+                              >Star</span
+                            >
+                          </span>
+                        </div>
+                        <div class="address d-flex flex-column">
+                          <div class="location d-flex align-items-center gap-2">
+                            <span>Branding</span>
+                            <span class="dots"></span>
+                            <div>
+                              <span
+                                ><i class="fa-solid fa-location-dot"></i
+                              ></span>
+                              Mumbai, India
+                            </div>
+                          </div>
+                          <div class="d-flex ratign align-items-center gap-2">
+                            <span
+                              ><img
+                                src="./assets/images/search-page/icons/ratign-star.svg"
+                                alt=""
+                            /></span>
+                            <span>4.0</span>
+                            <span class="dots"></span>
+                            <span>25 Reviews </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <span class="alt-badge alt-dark">design</span>
+                      <span class="alt-badge alt-dark">html</span>
+                      <span class="alt-badge alt-dark">css</span>
+                    </div>
+                    <div class="">
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Nobis, quisquam. Ipsam tempora earum est
+                        perferendis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- buttons -->
+                <div
+                  class="me-auto me-md-0 ms-md-auto filter_buttons p-3 d-flex flex-column justify-content-between flex-shrink-0"
+                >
+                  <div class="align-self-start align-self-md-end pb-3 price">
+                    <span>$45</span> / Hour
+                  </div>
+                  <div class="d-flex gap-2">
+                    <button
+                      class="rounded-pill text-capitalize alt-btn-light-primary"
+                    >
+                      Invite to project
+                    </button>
+                    <button class="bookmakr rounded-circle">
+                      <img
+                        src="./assets/images/search-page/icons/bookmark.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- single filter item  -->
+              <div
+                class="single_filter_option position-relative w-100 d-flex flex-column flex-md-row gap-3 mb-3"
+              >
+                <div class="d-flex gap-3">
+                  <!-- image thumb  -->
+                  <div class="filter_image flex-shrink-0 d-none d-lg-flex">
+                    <img src="https://via.placeholder.com/230" alt="" />
+                  </div>
+                  <!-- content  -->
+                  <div class="filter_content p-3 d-flex flex-column gap-3">
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="avater">
+                        <img src="https://i.pravatar.cc/74" alt="" />
+                      </div>
+                      <div class="name d-flex flex-column gap-1">
+                        <div class="d-flex gap-2 align-items-center">
+                          <h4>John Smith</h4>
+                          <span
+                            class="ratting btn-alt-outline p-1 rounded-pill"
+                          >
+                            <span class=""
+                              ><img
+                                src="./assets/images/search-page/icons/Star.svg"
+                                alt=""
+                            /></span>
+                            <span class="ms-1 position-relative ranking"
+                              >Star</span
+                            >
+                          </span>
+                        </div>
+                        <div class="address d-flex flex-column">
+                          <div class="location d-flex align-items-center gap-2">
+                            <span>Branding</span>
+                            <span class="dots"></span>
+                            <div>
+                              <span
+                                ><i class="fa-solid fa-location-dot"></i
+                              ></span>
+                              Mumbai, India
+                            </div>
+                          </div>
+                          <div class="d-flex ratign align-items-center gap-2">
+                            <span
+                              ><img
+                                src="./assets/images/search-page/icons/ratign-star.svg"
+                                alt=""
+                            /></span>
+                            <span>4.0</span>
+                            <span class="dots"></span>
+                            <span>25 Reviews </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <span class="alt-badge alt-dark">design</span>
+                      <span class="alt-badge alt-dark">html</span>
+                      <span class="alt-badge alt-dark">css</span>
+                    </div>
+                    <div class="">
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Nobis, quisquam. Ipsam tempora earum est
+                        perferendis.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- buttons -->
+                <div
+                  class="me-auto me-md-0 ms-md-auto filter_buttons p-3 d-flex flex-column justify-content-between flex-shrink-0"
+                >
+                  <div class="align-self-start align-self-md-end pb-3 price">
+                    <span>$45</span> / Hour
+                  </div>
+                  <div class="d-flex gap-2">
+                    <button
+                      class="rounded-pill text-capitalize alt-btn-light-primary"
+                    >
+                      Invite to project
+                    </button>
+                    <button class="bookmakr rounded-circle">
+                      <img
+                        src="./assets/images/search-page/icons/bookmark.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -767,7 +1791,9 @@
             <div
               class="footer_nav d-flex flex-column align-items-start align-items-md-end"
             >
-              <ul class="d-flex gap-3 justify-content-end">
+              <ul
+                class="d-flex flex-wrap gap-3 justify-content-start justify-content-lg-end"
+              >
                 <li><a href="/#">About us</a></li>
                 <li><a href="/#">FAQ</a></li>
                 <li><a href="/#">Terms & Conditions</a></li>
@@ -785,7 +1811,6 @@
 
     <script src="./assets/vendor/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/vendor/js/jquery-1.11.0.min.js"></script>
-    <script src="./assets/vendor/js/jquery-migrate-1.2.1.min.js"></script>
 
     <script>
       // toggle switch js

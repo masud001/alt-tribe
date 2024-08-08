@@ -171,7 +171,7 @@ input:checked + .slider:before {
   }
 }
 
-.search_result_section {
+.search_result_section_container {
   margin-top: 82px;
   margin-bottom: 40px;
   @media (max-width: 576px) {
@@ -229,7 +229,10 @@ input:checked + .slider:before {
     margin-bottom: 24px;
   }
   .sidebar_filter_group {
-    padding-bottom: 24px;
+    padding-bottom: 16px;
+    @media (min-width: 1199px) {
+      padding-bottom: 24px;
+    }
     h5 {
       font-size: 16px;
       font-weight: 600;
@@ -254,7 +257,10 @@ input:checked + .slider:before {
     }
 
     .single_check_box {
-      margin-bottom: 18px;
+      margin-bottom: 10px;
+      @media (min-width: 1199px) {
+        margin-bottom: 18px;
+      }
       &:last-child {
         margin-bottom: 0;
       }
@@ -304,7 +310,9 @@ input:checked + .slider:before {
     }
   }
 }
-
+.filter_apply_btn_mobile {
+  margin-left: auto;
+}
 // budget range css
 .range-slider {
   position: relative;
@@ -391,4 +399,112 @@ input:checked + .slider:before {
 .hidden-content-category,
 .hidden-content-time {
   display: none;
+}
+
+// main_filter_container css
+.search_result_section_container {
+  .filter_button {
+  }
+  .sort_button {
+  }
+}
+.main_filter_container {
+  h3 {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--alt-gray-light-200);
+    span {
+      font-weight: 700;
+      color: #232529;
+    }
+  }
+}
+
+.single_filter_option {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  .filter_image {
+    img {
+      border-top-left-radius: 12px;
+      border-bottom-left-radius: 12px;
+    }
+  }
+  .filter_content {
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      color: #5c5e63;
+    }
+    .avater {
+      img {
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+      }
+    }
+    .btn-alt-outline {
+      background-color: var(--alt-navy-blue);
+      color: #fff;
+      padding-bottom: 5px !important;
+      padding: 5px 9px 5px 6px !important;
+      line-height: 0 !important;
+    }
+    .ranking {
+      font-size: 14px;
+      font-weight: 500;
+      top: 1px;
+      left: -2px;
+    }
+    .address {
+    }
+    .name {
+      h4 {
+        font-size: 16px;
+        font-weight: 500;
+        color: #232529;
+      }
+    }
+    .dots {
+      width: 5px;
+      height: 5px;
+      background-color: #dadadb;
+      border-radius: 50%;
+    }
+    .location {
+      font-size: 14px;
+      font-weight: 500;
+      color: #232529;
+    }
+    .ratign {
+      font-size: 14px;
+      font-weight: 400;
+      color: #595959;
+    }
+  }
+  .bookmakr {
+    width: 41px;
+    height: 41px;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+    display: flex;
+    border: 1px solid #d9d9d9;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    @media (max-width: 768px) {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+    }
+  }
+  .price {
+    span {
+      font-size: 24px;
+      font-weight: 500;
+      color: #232529;
+    }
+    font-size: 14px;
+    font-weight: 500;
+    color: #5c5e63;
+  }
 }
