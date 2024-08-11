@@ -216,3 +216,19 @@
     color: #595959;
   }
 }
+
+.withdraw_modal {
+  h4 {
+    font-family: var(--bs-heading-font-family);
+    color: #000000;
+  }
+  h5 {
+    font-family: var(--bs-body-font-family);
+  }
+  p {
+    font-size: 12px;
+    font-family: var(--bs-body-font-family);
+    font-weight: 400;
+    color: var(--alt-text-clr);
+  }
+}

@@ -1,0 +1,82 @@
+.buttons_container {
+  .check_button {
+    .btn-check:checked + .btn {
+      background-color: #161d3b;
+      color: #fff;
+      border: 1px solid #161d3b;
+    }
+    .btn-check + .btn {
+      background-color: #ffffff;
+      color: #161d3b;
+      border: 1px solid #dedede;
+      border-radius: 25px;
+      padding: 12px 24px;
+      text-transform: capitalize;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: var(--bs-body-font-family);
+      @media (max-width: 576px) {
+        padding: 8px 16px;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.tranding_event_slider {
+  background-color: #f9f9f9;
+  padding: 24px;
+  border-radius: 16px;
+  .tranding_content {
+    h3 {
+      font-family: var(--bs-heading-font-family);
+      color: var(--alt-text-clr);
+      font-size: 20px;
+      font-weight: 700;
+    }
+    p {
+      font-family: var(--bs-body-font-family);
+      color: var(--alt-text-clr);
+      font-weight: 400;
+      font-size: 14px;
+      margin-top: 12px;
+      margin-bottom: 24px;
+    }
+    button {
+      &:hover {
+        border: 1px solid var(--alt-primary) !important;
+      }
+    }
+  }
+}
+.tranding_event_slider_wrapper {
+  .slider_item {
+    padding: 16px;
+    width: 345px;
+    height: 212px;
+    color: #ffffff;
+    &.slider_items_bg_1 {
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0) 100%
+        ),
+        url("../../assets/images/business-dashboard/events-page/slider_items_bg_1.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: scroll;
+    }
+    h3 {
+      font-family: var(--bs-body-font-family);
+      font-size: 16px;
+      font-weight: 500;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      font-family: var(--bs-body-font-family);
+      text-transform: uppercase;
+    }
+  }
+}

@@ -14,7 +14,7 @@ bdb = business dashboard;
       href="../../assets/fontawesomes/css/fontawesome.min.css"
     />
     <link rel="stylesheet" href="../../assets/fontawesomes/css/all.min.css" />
-    <title>Business setting page</title>
+    <title>Business Event page</title>
     <link rel="stylesheet" href="../../css/bisuness.dashboard.min.css" />
   </head>
   <body>
@@ -103,7 +103,7 @@ bdb = business dashboard;
                 <span class="icon"
                   ><i class="fa-solid fa-arrow-left-long"></i
                 ></span>
-                <span class="m-1"> Setting</span>
+                <span class="m-1 fs-5"> <strong>Events</strong></span>
               </a>
             </div>
           </div>
@@ -1039,713 +1039,77 @@ bdb = business dashboard;
           <!-- sidebar left end -->
 
           <div class="col-12 col-lg-10">
-            <!-- setting page tab content  -->
-            <div
-              class="container-fluid business_settings p-0 d-flex align-items-center align-items-lg-start"
-            >
-              <div class="row w-100">
-                <div class="col-12 col-lg-3">
-                  <ul
-                    class="nav nav-pills d-flex flex-row flex-lg-column nav-pills align-items-start"
-                    id="pills-tab"
-                    role="tablist"
-                  >
-                    <li
-                      class="d-inline-flex d-lg-block text-lg-start"
-                      role="presentation"
-                    >
-                      <button
-                        class="active position-relative text-start"
-                        id="my-account-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#my-account"
-                        type="button"
-                        role="tab"
-                        aria-controls="my-account"
-                        aria-selected="true"
-                      >
-                        my account
-                      </button>
-                    </li>
-                    <li
-                      class="d-inline-flex d-lg-block text-lg-start"
-                      role="presentation"
-                    >
-                      <button
-                        class="position-relative w-100 text-start"
-                        id="payment-details-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#payment-details"
-                        type="button"
-                        role="tab"
-                        aria-controls="payment-details"
-                        aria-selected="false"
-                      >
-                        payment details
-                      </button>
-                    </li>
-                    <li
-                      class="d-inline-flex d-lg-block text-lg-start"
-                      role="presentation"
-                    >
-                      <button
-                        class="position-relative w-100 text-start"
-                        id="My-documents-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#My-documents"
-                        type="button"
-                        role="tab"
-                        aria-controls="My-documents"
-                        aria-selected="false"
-                      >
-                        My documents
-                      </button>
-                    </li>
-                    <li
-                      class="d-inline-flex d-lg-block text-lg-start"
-                      role="presentation"
-                    >
-                      <button
-                        class="position-relative w-100 text-start"
-                        id="Email-Preference-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#Email-Preference"
-                        type="button"
-                        role="tab"
-                        aria-controls="Email-Preference"
-                        aria-selected="false"
-                      >
-                        Email Preference
-                      </button>
-                    </li>
-                    <li
-                      class="d-inline-flex d-lg-block text-lg-start"
-                      role="presentation"
-                    >
-                      <button
-                        class="position-relative w-100 text-start"
-                        id="Referral-Program-tab"
-                        data-bs-toggle="pill"
-                        data-bs-target="#Referral-Program"
-                        type="button"
-                        role="tab"
-                        aria-controls="Referral-Program"
-                        aria-selected="false"
-                      >
-                        Referral Program
-                      </button>
-                    </li>
-                  </ul>
+            <div class="">
+              <!-- tags  -->
+              <div
+                class="buttons_container d-flex flex-wrap gap-2 gap-lg-3 align-items-center"
+              >
+                <!-- single check btn  -->
+                <div class="check_button">
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-check-all"
+                    autocomplete="off"
+                  />
+                  <label class="btn" for="btn-check-all"> all</label>
                 </div>
-                <div class="col-12 col-lg-9">
-                  <div
-                    class="tab-content business_tab_content w-100"
-                    id="pills-tabContent"
+                <!-- single check btn  -->
+                <div class="check_button">
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="btn-check-Freelancers"
+                    autocomplete="off"
+                  />
+                  <label class="btn" for="btn-check-Freelancers">
+                    Published</label
                   >
-                    <div
-                      class="tab-pane fade show active"
-                      id="my-account"
-                      role="tabpanel"
-                      aria-labelledby="my-account-tab"
-                    >
-                      <h3>my account</h3>
-
-                      <div class="business_account_details mb-3">
-                        <h6>Solopreneur</h6>
-                        <div class="row gy-3 gy-lg-4">
-                          <div class="col-12 col-md-6">
-                            <div class="">
-                              <p>Membership fee</p>
-                              <h4>$20.00+ tax</h4>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-6">
-                            <div class="">
-                              <p>Current Billing Date</p>
-                              <h4>Jun 9,2023 - jul 9,2023</h4>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-6">
-                            <div class="">
-                              <p>Payment method</p>
-                              <h4>PayPal-5263</h4>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-6">
-                            <div class="">
-                              <p>Network Size</p>
-                              <h4>100 Freelancer, 10 Solopreneur</h4>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-6">
-                            <div class="">
-                              <p>Connection requests</p>
-                              <h4>5/10 Consumed</h4>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-6">
-                            <div class="">
-                              <p>DM to freelancers outside connection</p>
-                              <h4>3/5</h4>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="">
-                          <button class="btn btn-alt-outline rounded-pill">
-                            View membership plan
-                          </button>
-                        </div>
-                      </div>
-                      <div class="business_account_details mb-3">
-                        <h6>Account details</h6>
-                        <div class="row flex-column gy-3 gy-lg-4">
-                          <div class="col-12 col-md-5">
-                            <div class="position-relative">
-                              <p>Email Address</p>
-                              <h4>jdeo@content.com</h4>
-                              <a class="pen_icon" href="">
-                                <span><i class="fa-solid fa-pen"></i></span>
-                              </a>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-5">
-                            <div class="position-relative">
-                              <p>Password</p>
-                              <h4>**********</h4>
-                              <a class="pen_icon" href="">
-                                <span><i class="fa-solid fa-pen"></i></span>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
+                </div>
+                <!-- single check btn  -->
+                <div class="check_button">
+                  <input
+                    type="checkbox"
+                    class="btn-check rounded-pill"
+                    id="btn-check-Contest"
+                    autocomplete="off"
+                  />
+                  <label class="btn" for="btn-check-Contest"> Registered</label>
+                </div>
+              </div>
+              <!-- tranding event slider  -->
+              <div class="tranding_event_slider">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="tranding_content">
+                      <h3>Trending events</h3>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed do.
+                      </p>
                       <div class="">
                         <button
-                          class="btn btn-alt-outline rounded-pill text-danger"
+                          class="btn btn-alt-outline rounded-pill border border-secondary-subtle"
                         >
-                          <span class="me-2">
-                            <i class="fa-solid fa-ban"></i
-                          ></span>
-                          Do you want to close this account?
+                          View all
                         </button>
                       </div>
                     </div>
-                    <div
-                      class="tab-pane fade"
-                      id="payment-details"
-                      role="tabpanel"
-                      aria-labelledby="payment-details-tab"
-                    >
-                      <h3>payment details</h3>
-                      <div class="business_account_details mb-3">
-                        <h6>Available Fund</h6>
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="">
-                              <p>Your Available balance</p>
-                              <h2>$552.23</h2>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="">
-                          <button
-                            class="btn btn-alt-outline bg-alt-primary border border-alt-primary rounded-pill"
-                            type="button"
-                            data-bs-toggle="modal"
-                            data-bs-target="#withdrawModal"
-                          >
-                            Withdraw Now
-                          </button>
-                        </div>
-                      </div>
-                      <div class="business_account_details mb-3">
-                        <h6>withdraw Account details</h6>
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="">
-                              <p>Money will be withdraw from</p>
-                              <h2 class="mb-2 fs-5">PayPal-5263</h2>
-                              <p>
-                                Money will be automatically withdrawn from
-                                PayPal account, starting from 02 Sep, 2023 till
-                                02 Sep, 2024
-                              </p>
-                              <div
-                                class="d-flex border-top border-secondary-subtle mt-4 align-items-center justify-content-between pt-3"
-                              >
-                                <p>
-                                  Last Withdrawal: <strong>Nov 23, 2023</strong>
-                                </p>
-                                <a
-                                  href=""
-                                  class="text-decoration-underline text-dark-emphasis"
-                                  >View history</a
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="business_account_details mb-3">
-                        <label
-                          class="btn text-start w-100 h-100"
-                          for="btn-check-4"
-                        >
-                          <input
-                            type="radio"
-                            class="card_input"
-                            id="btn-check-4"
-                            autocomplete="off"
-                          />
-                          <h6>Withdrawal Method</h6>
-                          <div class="row">
-                            <div class="col-12">
-                              <div class="d-flex align-items-start gap-2">
-                                <img
-                                  src="../../assets/images/business-dashboard/Mastercard.svg"
-                                  alt=""
-                                  class="bg-white px-1 border border-light-subtle py-1 rounded flex-shrink-0"
-                                />
-                                <div class="">
-                                  <h2 class="mb-2 fs-6 fw-medium">
-                                    Mastercard ending in 4567
-                                  </h2>
-                                  <p><small>Expiry 06/2024</small></p>
-                                  <p>
-                                    Set as default
-                                    <a
-                                      href="/"
-                                      class="text-decoration-underline text-black ms-1"
-                                      >Edit</a
-                                    >
-                                  </p>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </label>
-                      </div>
-
-                      <div class="">
-                        <button
-                          class="btn btn-alt-outline border border-light-subtle bg-light-subtle rounded-pill"
-                        >
-                          + Add another method
-                        </button>
-                      </div>
-                    </div>
-                    <!-- My documents -->
-                    <div
-                      class="tab-pane fade"
-                      id="My-documents"
-                      role="tabpanel"
-                      aria-labelledby="My-documents-tab"
-                    >
-                      <h3>My documents</h3>
-                      <div class="business_account_details rounded-0">
-                        <div class="">
-                          <h4>Location Verification</h4>
-                          <p>Only JPEG and PDFS are accepted</p>
-                        </div>
-                        <div class="">
-                          <button
-                            class="btn btn-alt-outline border border-light-subtle bg-light-subtle rounded-pill"
-                          >
-                            Upload Documents
-                          </button>
-                        </div>
-                      </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="tranding_event_slider_wrapper">
                       <div
-                        class="business_account_details border-top border-secondary-subtle rounded-0"
+                        class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
                       >
-                        <div class="">
-                          <h4>ID Document Verification</h4>
-                          <p>Only JPEG and PDFS are accepted</p>
-                        </div>
-                        <div class="">
-                          <button
-                            class="btn btn-alt-outline border border-light-subtle bg-light-subtle rounded-pill"
-                          >
-                            Upload Documents
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Email Preference -->
-                    <div
-                      class="tab-pane fade"
-                      id="Email-Preference"
-                      role="tabpanel"
-                      aria-labelledby="Email-Preference-tab"
-                    >
-                      <h3>Email Preference</h3>
-                      <div class="business_account_details mb-3">
-                        <div class="row gy-3">
-                          <div class="col-12 col-md-5">
-                            <div class="position-relative">
-                              <h4>Project Suggestion</h4>
-                              <p>Get the Project suggestion</p>
-                              <div class="pen_icon">
-                                <div
-                                  class="form-check form-switch switch_check_input_form"
-                                >
-                                  <input
-                                    class="form-check-input switch_check_input"
-                                    type="checkbox"
-                                    role="switch"
-                                    id="flexSwitchCheckDefault"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-5">
-                            <div class="position-relative">
-                              <h4>Payment</h4>
-                              <p>Get the Project suggestion</p>
-                              <div class="pen_icon">
-                                <div
-                                  class="form-check form-switch switch_check_input_form"
-                                >
-                                  <input
-                                    class="form-check-input switch_check_input"
-                                    type="checkbox"
-                                    role="switch"
-                                    id="flexSwitchCheckDefault"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-5">
-                            <div class="position-relative">
-                              <h4>Message</h4>
-                              <p>Get the Project suggestion</p>
-                              <div class="pen_icon">
-                                <div
-                                  class="form-check form-switch switch_check_input_form"
-                                >
-                                  <input
-                                    class="form-check-input switch_check_input"
-                                    type="checkbox"
-                                    role="switch"
-                                    id="flexSwitchCheckDefault"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-5">
-                            <div class="position-relative">
-                              <h4>Community</h4>
-                              <p>Get the Project suggestion</p>
-                              <div class="pen_icon">
-                                <div
-                                  class="form-check form-switch switch_check_input_form"
-                                >
-                                  <input
-                                    class="form-check-input switch_check_input"
-                                    type="checkbox"
-                                    role="switch"
-                                    id="flexSwitchCheckDefault"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-5">
-                            <div class="position-relative">
-                              <h4>Contract</h4>
-                              <p>Get the Project suggestion</p>
-                              <div class="pen_icon">
-                                <div
-                                  class="form-check form-switch switch_check_input_form"
-                                >
-                                  <input
-                                    class="form-check-input switch_check_input"
-                                    type="checkbox"
-                                    role="switch"
-                                    id="flexSwitchCheckDefault"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-5">
-                            <div class="position-relative">
-                              <h4>Tribe</h4>
-                              <p>Get the Project suggestion</p>
-                              <div class="pen_icon">
-                                <div
-                                  class="form-check form-switch switch_check_input_form"
-                                >
-                                  <input
-                                    class="form-check-input switch_check_input"
-                                    type="checkbox"
-                                    role="switch"
-                                    id="flexSwitchCheckDefault"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-5">
-                            <div class="position-relative">
-                              <h4>Contest</h4>
-                              <p>Get the Project suggestion</p>
-                              <div class="pen_icon">
-                                <div
-                                  class="form-check form-switch switch_check_input_form"
-                                >
-                                  <input
-                                    class="form-check-input switch_check_input"
-                                    type="checkbox"
-                                    role="switch"
-                                    id="flexSwitchCheckDefault"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-12 col-md-5">
-                            <div class="position-relative">
-                              <h4>Events</h4>
-                              <p>Get the Project suggestion</p>
-                              <div class="pen_icon">
-                                <div
-                                  class="form-check form-switch switch_check_input_form"
-                                >
-                                  <input
-                                    class="form-check-input switch_check_input"
-                                    type="checkbox"
-                                    role="switch"
-                                    id="flexSwitchCheckDefault"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="business_account_details mb-3">
-                        <div class="row">
-                          <div class="col-12 col-md-5">
-                            <div class="position-relative">
-                              <h4>Unsubscribe from all emails</h4>
-                              <p>Or check here to turn off all email:</p>
-                              <div class="pen_icon">
-                                <div
-                                  class="form-check form-switch switch_check_input_form"
-                                >
-                                  <input
-                                    class="form-check-input switch_check_input"
-                                    type="checkbox"
-                                    role="switch"
-                                    id="flexSwitchCheckDefault"
-                                  />
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Referral Program -->
-                    <div
-                      class="tab-pane fade"
-                      id="Referral-Program"
-                      role="tabpanel"
-                      aria-labelledby="Referral-Program-tab"
-                    >
-                      <h3>Referral Program</h3>
-                      <div class="refaral_program p-3 rounded-4 mb-3">
-                        <h4 class="mb-2">Refer a friend and get points</h4>
-                        <p>
-                          Refer a friend to Alt Tribe and you will both earn up
-                          to 100 points.
-                        </p>
-                        <p class="point pt-5">
-                          Total earnings:
-                          <span>
-                            <img
-                              src="../../assets/images/business-dashboard/point-star.svg"
-                              alt=""
-                          /></span>
-                          <strong>300 points</strong>
-                        </p>
-                        <button class="refaral-copy-btn rounded-1 mt-3">
-                          http://alttribe.com/referal/cvbnkgv
-                          <span class="ms-3"
-                            ><i class="fa-regular fa-clone"></i
-                          ></span>
-                        </button>
-                      </div>
-                      <div class="business_account_details mb-3">
-                        <div class="row">
-                          <div class="col-12">
-                            <div class="position-relative mb-4">
-                              <h6 class="mb-1">How it works?</h6>
-                              <p>
-                                Lorem ipsum dolor sit amet, consectetur adipis.
-                              </p>
-                            </div>
-                            <!--  -->
-                            <div
-                              class="how_refaral_works d-flex gap-2 align-items-start mb-3"
-                            >
-                              <img
-                                src="../../assets/images/business-dashboard/christmas-gift.svg"
-                                alt=""
-                              />
-                              <div class="">
-                                <h4><strong>Send Invitation</strong></h4>
-                                <p>
-                                  Encourage your friends to join Alt Tribe
-                                  through their referral link.
-                                </p>
-                              </div>
-                            </div>
-                            <!--  -->
-                            <div
-                              class="how_refaral_works d-flex gap-2 align-items-start mb-3"
-                            >
-                              <img
-                                src="../../assets/images/business-dashboard/christmas-gift.svg"
-                                alt=""
-                              />
-                              <div class="">
-                                <h4><strong>Registration</strong></h4>
-                                <p>
-                                  Get rewarded with up to 100 points when your
-                                  friend signs up and completes two payrolls
-                                </p>
-                              </div>
-                            </div>
-                            <!--  -->
-                            <div
-                              class="how_refaral_works d-flex gap-2 align-items-start mb-3"
-                            >
-                              <img
-                                src="../../assets/images/business-dashboard/christmas-gift.svg"
-                                alt=""
-                              />
-                              <div class="">
-                                <h4><strong>Claim your reward</strong></h4>
-                                <p>
-                                  We'll notify you when your reward is
-                                  available. To claim it, please check your
-                                  reward points
-                                </p>
-                              </div>
-                            </div>
-                            <div class="">
-                              <p>
-                                Want to learn more about the referral program?
-                                <a
-                                  href=""
-                                  class="text-decoration-underline text-dark"
-                                  ><strong
-                                    >Check out our referral port</strong
-                                  ></a
-                                >
-                                or visit our
-                                <a
-                                  href=""
-                                  class="text-decoration-underline text-dark"
-                                >
-                                  <strong>Help centre</strong></a
-                                >
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="business_account_details mb-3">
-                        <div class="row">
-                          <div class="col-12">
-                            <div
-                              class="position-relative d-flex align-items-start mb-4"
-                            >
-                              <div class="">
-                                <h6 class="mb-1">Invited friends</h6>
-                                <p>
-                                  Lorem ipsum dolor sit amet, consectetur
-                                  adipis.
-                                </p>
-                              </div>
-                              <a
-                                href=""
-                                class="text-secondary text-decoration-underline ms-auto"
-                              >
-                                view all</a
-                              >
-                            </div>
-                          </div>
-                          <div class="col-12">
-                            <div class="d-flex flex-column gap-2">
-                              <div class="d-flex align-items-center gap-2">
-                                <img
-                                  src="https://i.pravatar.cc/42"
-                                  class="rounded-circle bg-secondary flex-shrink-0"
-                                  alt=""
-                                />
-                                <div class="">
-                                  <h4><strong>Kaylynn Donin</strong></h4>
-                                  <p>kaylynndonin@gmail.com</p>
-                                </div>
-                                <div
-                                  class="ms-auto alt-badge-light rounded-pill d-flex gap-2 align-items-center"
-                                >
-                                  <span class="rounded-circle p-1 bg-success"
-                                    ><span class="visually-hidden"
-                                      >badge messages</span
-                                    ></span
-                                  >
-                                  <span>Accepted</span>
-                                </div>
-                              </div>
-                              <div class="d-flex align-items-center gap-2">
-                                <img
-                                  src="https://i.pravatar.cc/42"
-                                  class="rounded-circle bg-secondary flex-shrink-0"
-                                  alt=""
-                                />
-                                <div class="">
-                                  <p>kaylynndonin@gmail.com</p>
-                                </div>
-                                <div
-                                  class="ms-auto alt-badge-light rounded-pill d-flex gap-2 align-items-center"
-                                >
-                                  <span class="rounded-circle p-1 bg-warning"
-                                    ><span class="visually-hidden"
-                                      >badge messages</span
-                                    ></span
-                                  >
-                                  <span>Accepted</span>
-                                </div>
-                              </div>
-                              <div class="d-flex align-items-center gap-2">
-                                <img
-                                  src="https://i.pravatar.cc/42"
-                                  class="rounded-circle bg-secondary flex-shrink-0"
-                                  alt=""
-                                />
-                                <div class="">
-                                  <p>kaylynndonin@gmail.com</p>
-                                </div>
-                                <div
-                                  class="ms-auto alt-badge-light rounded-pill d-flex gap-2 align-items-center"
-                                >
-                                  <span class="rounded-circle p-1 bg-warning"
-                                    ><span class="visually-hidden"
-                                      >badge messages</span
-                                    ></span
-                                  >
-                                  <span>Accepted</span>
-                                </div>
-                              </div>
-                            </div>
+                        <div class="d-flex gap-2">
+                          <img
+                            src="https://i.pravatar.cc/42"
+                            class="rounded-circle flex-shrink-0"
+                            alt=""
+                          />
+                          <div class="">
+                            <p>Quick Atmos</p>
+                            <h3>UI/UX Design Conference</h3>
                           </div>
                         </div>
                       </div>
@@ -1758,78 +1122,6 @@ bdb = business dashboard;
         </div>
       </div>
     </main>
-
-    <!-- withdrow modal start  -->
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="withdrawModal"
-      tabindex="-1"
-      aria-labelledby="withdrawModal"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog withdraw_modal">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title fs-6" id="withdrawModal">Withdraw fund</h4>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <h5 class="fs-4 text-center mb-3">$ 552.23</h5>
-            <p class="text-center">Payment Transfer Fee $1.00</p>
-
-            <div class="business_account_details mt-3 mb-3">
-              <h6>Transfer to</h6>
-              <div class="row">
-                <div class="col-12">
-                  <div class="d-flex align-items-start gap-2">
-                    <img
-                      src="../../assets/images/business-dashboard/Mastercard.svg"
-                      alt=""
-                      class="bg-white px-1 border border-light-subtle py-1 rounded flex-shrink-0"
-                    />
-                    <div class="">
-                      <h2 class="mb-1 fs-6 fw-medium">
-                        Mastercard ending in 4567
-                      </h2>
-                      <p><small>Expiry 06/2024</small></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <p class="text-center">
-              Experience peace of mind with our secure payment system. Your
-              <br />
-              transaction is encrypted for a safe and seamless payment process.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-alt-outline bg-white border border-light-subtle rounded-pill"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-
-            <button
-              class="btn btn-alt-outline bg-alt-primary border border-alt-primary rounded-pill"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#withdrawModal"
-            >
-              Withdraw $101.00
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <script src="../../assets/vendor/js/bootstrap.bundle.min.js"></script>
   </body>
