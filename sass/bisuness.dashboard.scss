@@ -36,5 +36,6 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
 // add my custom scss file to the end of the import stack
 
 @import "business/_reset-browser";
+@import "badges";
 @import "business/_dashboard-home";
 @import "business/business-setting";

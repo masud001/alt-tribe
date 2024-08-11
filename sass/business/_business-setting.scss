@@ -67,6 +67,13 @@
   border-radius: 16px;
   background-color: #f9f9f9;
   padding: 20px;
+  h2 {
+    font-size: 28px;
+    font-family: var(--bs-body-font-family);
+    font-weight: 600;
+    color: #232529;
+    text-transform: capitalize;
+  }
   h6 {
     font-size: 16px;
     font-family: var(--bs-body-font-family);
@@ -114,9 +121,9 @@
     position: absolute;
     color: #595959;
     font-size: 14px;
-    top: 50%;
+    top: 0%;
     right: 20px;
-    transform: translateY(-50%);
+    transform: translateY(0%);
     cursor: pointer;
     transition: ease-in-out 0.3s;
     &.hover {
@@ -124,5 +131,88 @@
         color: var(--alt-primary);
       }
     }
+  }
+  .card_input {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  label {
+    &:first-child {
+      border: none;
+    }
+  }
+}
+
+.switch_check_input_form {
+  &.form-switch {
+    .switch_check_input {
+      &.form-check-input {
+        background-color: #d4d4d4;
+        width: 39px;
+        height: 19px;
+        fill: red !important;
+        &:focus {
+          border-color: transparent !important;
+          box-shadow: none !important;
+        }
+        &:checked {
+          background-color: #161d3b !important;
+        }
+      }
+    }
+  }
+}
+
+.refaral_program {
+  background-image: url("../../assets/images/business-dashboard/refelar-bg.svg");
+  background-position: bottom right 20px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: contain;
+  background-color: #161d3b;
+  color: #ffffff;
+  @media (min-width: 320px) {
+    height: 400px;
+    background-position: bottom center;
+    background-size: 50%;
+  }
+  @media (min-width: 576px) {
+    height: 400px;
+    background-position: bottom right 20px;
+    background-size: 50%;
+  }
+  @media (min-width: 992px) {
+    height: auto;
+    background-position: bottom right 20px;
+    background-size: 42%;
+  }
+  h4 {
+    font-family: var(--bs-heading-font-family);
+    font-weight: 600;
+    font-size: 20px;
+  }
+  p {
+    font-family: var(--bs-body-font-family);
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .refaral-copy-btn {
+    border: 1px dashed #595959;
+    background-color: #353c59;
+    color: #ffffff;
+    padding: 12px;
+  }
+}
+
+.how_refaral_works {
+  img {
+    width: 40px;
+    height: 40px;
+    background-color: #ffd600;
+    border-radius: 5px;
+    padding: 3px;
+    color: #595959;
   }
 }
