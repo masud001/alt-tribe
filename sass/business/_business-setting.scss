@@ -1,0 +1,128 @@
+.breadcrumb {
+  a {
+    color: var(--alt-text-clr);
+    transition: ease-in-out 0.3s;
+    .icon {
+      position: relative;
+      left: 0;
+      transition: ease-in-out 0.3s;
+    }
+    &:hover {
+      color: #000000;
+      .icon {
+        left: -5px;
+      }
+    }
+  }
+}
+
+.business_settings {
+  ul {
+    li {
+      @media (min-width: 992px) {
+        width: 100%;
+      }
+      button {
+        border: none;
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 500;
+        color: #595959;
+        font-family: var(--bs-body-font-family);
+        background-color: #fff;
+        transition: ease-in-out 0.3s;
+        padding: 8px 12px;
+        &.active {
+          background-color: #f3f3f3;
+          color: #091420 !important;
+          border-radius: 8px;
+        }
+        @media (min-width: 992px) {
+          padding: 12px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.business_tab_content {
+  h3 {
+    font-size: 20px;
+    font-family: var(--bs-heading-font-family);
+    font-weight: 600;
+    color: var(--alt-text-clr);
+    text-transform: capitalize;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    @media (min-width: 992px) {
+      margin-bottom: 16px;
+      margin-top: 0;
+    }
+  }
+}
+
+.business_account_details {
+  position: relative;
+  border-radius: 16px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  h6 {
+    font-size: 16px;
+    font-family: var(--bs-body-font-family);
+    font-weight: 600;
+    color: #232529;
+    text-transform: capitalize;
+    margin-bottom: 32px;
+  }
+  p {
+    font-size: 14px;
+    font-family: var(--bs-body-font-family);
+    font-weight: 400;
+    color: #595959;
+    line-height: 18.2px;
+    margin-bottom: 8px;
+  }
+  h4 {
+    font-size: 14px;
+    font-family: var(--bs-body-font-family);
+    font-weight: 600;
+    color: #232529;
+    line-height: 19.6px;
+  }
+  button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: 1px solid #cacaca;
+    background-color: #ffffff;
+    font-size: 14px;
+    font-family: var(--bs-body-font-family);
+    font-weight: 400;
+
+    @media (max-width: 767px) {
+      position: relative;
+      margin-bottom: 20px;
+      margin-left: 20px;
+    }
+
+    &:hover {
+      border: 1px solid var(--alt-primary);
+    }
+  }
+  .pen_icon {
+    position: absolute;
+    color: #595959;
+    font-size: 14px;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    &.hover {
+      i {
+        color: var(--alt-primary);
+      }
+    }
+  }
+}
