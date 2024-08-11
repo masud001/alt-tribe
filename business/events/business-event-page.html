@@ -14,6 +14,15 @@ bdb = business dashboard;
       href="../../assets/fontawesomes/css/fontawesome.min.css"
     />
     <link rel="stylesheet" href="../../assets/fontawesomes/css/all.min.css" />
+    <!-- slider css  -->
+    <link rel="stylesheet" href="../../assets/vendor/css/slick.css" />
+    <link rel="stylesheet" href="../../assets/vendor/css/slick-theme.css" />
+    <!-- select 2 css -->
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/css/select2-bootstrap4.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/vendor/css/select2.min.css" />
     <title>Business Event page</title>
     <link rel="stylesheet" href="../../css/bisuness.dashboard.min.css" />
   </head>
@@ -1078,9 +1087,9 @@ bdb = business dashboard;
                 </div>
               </div>
               <!-- tranding event slider  -->
-              <div class="tranding_event_slider">
-                <div class="row">
-                  <div class="col-4">
+              <div class="tranding_event_slider mt-4 mb-5">
+                <div class="row gy-4">
+                  <div class="col-12 col-md-3">
                     <div class="tranding_content">
                       <h3>Trending events</h3>
                       <p>
@@ -1096,8 +1105,73 @@ bdb = business dashboard;
                       </div>
                     </div>
                   </div>
-                  <div class="col-8">
-                    <div class="tranding_event_slider_wrapper">
+                  <div class="col-12 col-md-9">
+                    <div class="tranding_event_slider_wrapper js_slider">
+                      <!-- single slider item -->
+                      <div
+                        class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                      >
+                        <div class="d-flex gap-2">
+                          <img
+                            src="https://i.pravatar.cc/42"
+                            class="rounded-circle flex-shrink-0"
+                            alt=""
+                          />
+                          <div class="">
+                            <p>Quick Atmos</p>
+                            <h3>UI/UX Design Conference</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- single slider item -->
+                      <div
+                        class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                      >
+                        <div class="d-flex gap-2">
+                          <img
+                            src="https://i.pravatar.cc/42"
+                            class="rounded-circle flex-shrink-0"
+                            alt=""
+                          />
+                          <div class="">
+                            <p>Quick Atmos</p>
+                            <h3>UI/UX Design Conference</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- single slider item -->
+                      <div
+                        class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                      >
+                        <div class="d-flex gap-2">
+                          <img
+                            src="https://i.pravatar.cc/42"
+                            class="rounded-circle flex-shrink-0"
+                            alt=""
+                          />
+                          <div class="">
+                            <p>Quick Atmos</p>
+                            <h3>UI/UX Design Conference</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- single slider item -->
+                      <div
+                        class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                      >
+                        <div class="d-flex gap-2">
+                          <img
+                            src="https://i.pravatar.cc/42"
+                            class="rounded-circle flex-shrink-0"
+                            alt=""
+                          />
+                          <div class="">
+                            <p>Quick Atmos</p>
+                            <h3>UI/UX Design Conference</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- single slider item -->
                       <div
                         class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
                       >
@@ -1118,11 +1192,1086 @@ bdb = business dashboard;
                 </div>
               </div>
             </div>
+
+            <div class="row">
+              <!-- filter tools bar -->
+              <div class="col-12 d-flex gap-2 gap-md-3 align-items-center">
+                <!-- search box  -->
+                <div class="search_box d-flex justify-content-center">
+                  <span class="pe-md-1"
+                    ><i class="fa-solid fa-magnifying-glass"></i
+                  ></span>
+                  <input
+                    class="d-none d-md-flex"
+                    type="text"
+                    placeholder="Search for contests here"
+                  />
+                </div>
+                <!-- filter box  -->
+                <button
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#filterOffcanvas"
+                  aria-controls="filterOffcanvas"
+                  class="filter_box border-0 d-flex justify-content-center d-flex"
+                >
+                  <span
+                    ><img
+                      src="../../assets/images/business-dashboard/events-page/filter_list_icon.svg"
+                      alt=""
+                  /></span>
+                  <span class="d-none d-sm-flex">filters</span>
+                </button>
+                <!-- sort box -->
+                <div class="position-relative">
+                  <button
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    class="sort_box border-0 d-flex align-items-center justify-content-center"
+                  >
+                    <span>Sort by:</span>
+                    <span>
+                      <strong class="d-none d-sm-flex">
+                        Recommended</strong
+                      ></span
+                    >
+                    <span class="ms-md-2"
+                      ><i class="fa-solid fa-caret-down"></i
+                    ></span>
+                  </button>
+
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Recommended
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Latest
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Oldest
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Low to high
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        High to low
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Most entries
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Fewest entries
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="create_new_btn ms-auto">
+                  <button
+                    class="btn btn-alt-outline bg-alt-primary border border-alt-primary rounded-pill"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#createEventCanvas"
+                    aria-controls="createEventCanvas"
+                  >
+                    Create new
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
 
+    <!-- filter option -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="filterOffcanvas"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filters</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="sidebar_filter_section">
+          <h3>Filters</h3>
+          <!-- filater group  -->
+          <div
+            class="sidebar_filter_group d-flex align-items-start flex-wrap gap-3 border-bottom border-light-subtle"
+          >
+            <!-- single check box -->
+            <div class="single_check_box d-flex align-items-center gap-2">
+              <input
+                class="filter_check_input"
+                type="checkbox"
+                value=""
+                id="full-time"
+              />
+              <label class="form_check_label" for="full-time">
+                Full time
+              </label>
+            </div>
+            <!-- single check box -->
+            <div class="single_check_box d-flex align-items-center gap-2">
+              <input
+                class="filter_check_input"
+                type="checkbox"
+                value=""
+                id="part-time"
+              />
+              <label class="form_check_label" for="part-time">
+                Part time
+              </label>
+            </div>
+          </div>
+          <!-- filater group (skills) -->
+          <div
+            class="sidebar_filter_group gap-3 pt-3 border-bottom border-light-subtle"
+          >
+            <h5>skills</h5>
+            <div class="d-flex align-items-start gap-3 flex-wrap">
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="Graphic-designing"
+                />
+                <label class="form_check_label" for="Graphic-designing">
+                  Graphic designing
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="Logo-designing"
+                />
+                <label class="form_check_label" for="Logo-designing">
+                  Logo designing
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="Illustration"
+                />
+                <label class="form_check_label" for="Illustration">
+                  Illustration
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="UI-UX-Designing"
+                />
+                <label class="form_check_label" for="UI-UX-Designing">
+                  UI UX Designing
+                </label>
+              </div>
+              <!-- hidden content -->
+              <div class="hidden-content pb-3">
+                <div class="d-flex align-items-start gap-3 flex-wrap">
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="Designing"
+                    />
+                    <label class="form_check_label" for="Designing">
+                      Designing
+                    </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UI"
+                    />
+                    <label class="form_check_label" for="UI"> UI </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UX"
+                    />
+                    <label class="form_check_label" for="UX"> UX </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="html"
+                    />
+                    <label class="form_check_label" for="html"> html </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="css"
+                    />
+                    <label class="form_check_label" for="css"> css </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="text-capitalize more_btn view-more-btn"
+              id="view-more-btn"
+            >
+              +10 More
+            </button>
+          </div>
+          <!-- filater group (budget) -->
+          <div class="sidebar_filter_group pt-3">
+            <h5>budget</h5>
+            <div class="budget-range">
+              <div class="range-slider">
+                <input
+                  type="range"
+                  class="form-range"
+                  id="minBudgetRange"
+                  min="0"
+                  max="100"
+                  step="1"
+                  value="0"
+                />
+                <input
+                  type="range"
+                  class="form-range"
+                  id="maxBudgetRange"
+                  min="0"
+                  max="100"
+                  step="1"
+                  value="100"
+                />
+              </div>
+              <div
+                class="budget_input_range d-flex justify-content-between align-items-center mt-2"
+              >
+                <div>
+                  <label for="minBudget">Min</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="minBudget"
+                    value="$0.00"
+                  />
+                </div>
+                <div class="to">to</div>
+                <div>
+                  <label for="maxBudget">Max</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="maxBudget"
+                    value="$100.00"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- filater group (category) -->
+          <div
+            class="sidebar_filter_group pt-3 border-bottom border-light-subtle"
+          >
+            <h5>Category</h5>
+            <!-- single check box -->
+            <div class="d-flex align-items-start gap-3 flex-wrap">
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="Category-Product-Design"
+                />
+                <label class="form_check_label" for="Category-Product-Design">
+                  Product Design
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="Category-Illustration"
+                />
+                <label class="form_check_label" for="Category-Illustration">
+                  Illustration
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="Category-branding"
+                />
+                <label class="form_check_label" for="Category-branding">
+                  Branding
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="category-all"
+                />
+                <label class="form_check_label" for="category-all"> All </label>
+              </div>
+              <!-- hidden content -->
+              <div class="hidden-content-category pb-3">
+                <div class="d-flex align-items-start gap-3 flex-wrap">
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="Designing"
+                    />
+                    <label class="form_check_label" for="Designing">
+                      Designing
+                    </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UI"
+                    />
+                    <label class="form_check_label" for="UI"> UI </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UX"
+                    />
+                    <label class="form_check_label" for="UX"> UX </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="html"
+                    />
+                    <label class="form_check_label" for="html"> html </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="css"
+                    />
+                    <label class="form_check_label" for="css"> css </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="text-capitalize more_btn view-more-btn-category"
+              id="view-more-btn"
+            >
+              +10 More
+            </button>
+          </div>
+          <!-- filater group (Posted date) -->
+          <div
+            class="sidebar_filter_group pt-3 border-bottom border-light-subtle"
+          >
+            <h5>Posted date</h5>
+            <div class="d-flex align-items-start gap-3 flex-wrap">
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="date-Today"
+                />
+                <label class="form_check_label" for="date-Today"> Today</label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="date-Yesterday"
+                />
+                <label class="form_check_label" for="date-Yesterday">
+                  Yesterday
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="date-This-week"
+                />
+                <label class="form_check_label" for="date-This-week">
+                  This week
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="date-This-month"
+                />
+                <label class="form_check_label" for="date-This-month">
+                  This month
+                </label>
+              </div>
+              <!-- hidden content -->
+              <div class="hidden-content-time pb-3">
+                <div class="d-flex align-items-start gap-3 flex-wrap">
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="time-example-1"
+                    />
+                    <label class="form_check_label" for="time-example-1">
+                      time example 1
+                    </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="time-example-2"
+                    />
+                    <label class="form_check_label" for="time-example-2">
+                      time-example-2
+                    </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UX"
+                    />
+                    <label class="form_check_label" for="UX"> UX </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="html"
+                    />
+                    <label class="form_check_label" for="html"> html </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="css"
+                    />
+                    <label class="form_check_label" for="css"> css </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="text-capitalize more_btn view-more-btn-time">
+              +10 More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 py-3 border-top border-light-subtle px-3 d-flex">
+        <button
+          class="filter_apply_btn_mobile bg-alt-primary btn alt-btn-light-primary rounded-pill w-25"
+        >
+          Apply
+        </button>
+      </div>
+    </div>
+    <!-- filter option-->
+
+    <!-- create event canvas start-->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="createEventCanvas"
+      aria-labelledby="createEventCanvas"
+    >
+      <div class="offcanvas-header border-bottom border-light-subtle">
+        <h5 class="offcanvas-title fs-5 fw-bold" id="createEventCanvas">
+          Create event
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- switcher  -->
+        <div class="events_container mb-3">
+          <h4>Contest visibility</h4>
+          <div class="toggle-switch">
+            <input
+              type="radio"
+              id="freelancer"
+              name="visibility_toggle"
+              checked
+            />
+            <label for="freelancer" class="toggle-label text-capitalize"
+              >public</label
+            >
+            <input type="radio" id="business" name="visibility_toggle" />
+            <label for="business" class="toggle-label text-capitalize"
+              >Private</label
+            >
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="input-label">Event title </label>
+          <input
+            type="email"
+            class="input-field"
+            id="email"
+            placeholder="Graphic Designers Meet up "
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="input-label">Programs </label>
+          <input
+            type="email"
+            class="input-field"
+            id="email"
+            placeholder="Programs"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="description" class="input-label">Description </label>
+
+          <textarea
+            class="input-field"
+            placeholder="Eg: My responsibilities include"
+            id="description"
+            rows="3"
+          ></textarea>
+        </div>
+        <!-- switcher  -->
+        <div class="events_container mb-3">
+          <h4>Contest visibility</h4>
+          <div class="toggle-switch">
+            <input type="radio" id="no_limit" name="limit" checked />
+            <label for="no_limit" class="toggle-label text-capitalize"
+              >No limits</label
+            >
+            <input type="radio" id="set_limit" name="limit" />
+            <label for="set_limit" class="toggle-label text-capitalize"
+              >Set limits</label
+            >
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="input-label">Thumbnail </label>
+          <div
+            class="alt-input-file rounded text-center position-relative overflow-hidden"
+          >
+            <img src="../../assets/images/icons/image-upload.svg" alt="" />
+            <p class="mb-0">
+              Drag and drop your files here or
+              <a href=""> <strong>Browse</strong></a>
+            </p>
+            <small>(support .png, .jpg, .jpeg Max.file size : 20MB )</small>
+            <input
+              type="file"
+              id="formFile"
+              class="input-file-upload opacity-0 position-absolute w-100 h-100 top-0 start-0"
+            />
+          </div>
+        </div>
+        <!-- date  -->
+        <div class="mb-3">
+          <div class="row">
+            <div class="col">
+              <label for="start_date" class="input-label text-capitalize"
+                >start date
+              </label>
+              <input
+                type="date"
+                class="input-field"
+                id="start_date"
+                placeholder="10-10-2021"
+              />
+            </div>
+            <div class="col">
+              <label for="end_date" class="input-label text-capitalize"
+                >end date
+              </label>
+              <input
+                type="date"
+                class="input-field"
+                id="end_date"
+                placeholder="10-10-2021"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- event type (online/offline) -->
+        <!-- switcher  -->
+        <div class="events_container mb-3">
+          <h4>Event type</h4>
+          <div class="toggle-switch">
+            <input type="radio" id="online" name="event_type" checked />
+            <label for="online" class="toggle-label text-capitalize"
+              >Online</label
+            >
+            <input type="radio" id="offline" name="event_type" />
+            <label for="offline" class="toggle-label text-capitalize"
+              >offline</label
+            >
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="input-label">Address line 1 </label>
+          <input
+            type="email"
+            class="input-field"
+            id="email"
+            placeholder="676306 "
+          />
+        </div>
+        <!-- location  -->
+        <div class="mb-3">
+          <div class="row">
+            <div class="col">
+              <div class="mb-0">
+                <label class="input-label" for="country_name">Country</label>
+
+                <select
+                  class="w-100 input-select"
+                  multiple
+                  data-placeholder="Select Tags"
+                  data-allow-clear="1"
+                  id="country_name"
+                >
+                  <option>country name 1</option>
+                  <option>country name 2</option>
+                  <option>country name 3</option>
+                  <option>country name 4</option>
+                  <option>country name 5</option>
+                  <option>country name 6</option>
+                  <option>country name 7</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="mb-0">
+                <label class="input-label" for="city_name">City</label>
+
+                <select
+                  class="w-100 input-select"
+                  multiple
+                  data-placeholder="Select Tags"
+                  data-allow-clear="1"
+                  id="city_name"
+                >
+                  <option>city name 1</option>
+                  <option>city name 2</option>
+                  <option>city name 3</option>
+                  <option>city name 4</option>
+                  <option>city name 5</option>
+                  <option>city name 6</option>
+                  <option>city name 7</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="row">
+            <div class="col-6">
+              <label for="email" class="input-label">Registration fee </label>
+              <input
+                type="email"
+                class="input-field"
+                id="email"
+                placeholder="$0.00 "
+              />
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="sidebar_filter_section">
+            <h6 class="input-label">Enable coupons</h6>
+            <div
+              class="sidebar_filter_group d-flex align-items-start flex-wrap gap-3"
+            >
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="50off"
+                />
+                <label class="form_check_label" for="50off">
+                  Get 50% off
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="25off"
+                />
+                <label class="form_check_label" for="25off"> $25 off </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 py-3 border-top border-light-subtle px-3 d-flex">
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#eventCreationModal"
+          class="filter_apply_btn_mobile bg-alt-primary btn alt-btn-light-primary rounded-pill w-25"
+        >
+          Continue
+        </button>
+      </div>
+    </div>
+    <!-- create event canvas end-->
+
+    <!-- event creation modal start -->
+    <div
+      class="modal fade"
+      id="eventCreationModal"
+      tabindex="-1"
+      aria-labelledby="eventCreationModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="../../assets/images/business-dashboard/events-page/modal-icon.svg"
+                alt="success icon"
+              />
+              <h3 class="mt-3 fs-4 fw-bold">Event has been created.</h3>
+              <p>
+                Your official event has been created <br />
+                successfully
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="">
+              <button
+                type="button"
+                class="filter_apply_btn_mobile bg-white btn alt-btn-light-primary rounded-pill border border-light-subtle"
+                data-bs-dismiss="modal"
+              >
+                Skip
+              </button>
+
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#invitepeopleModal"
+                class="filter_apply_btn_mobile bg-alt-primary btn alt-btn-light-primary rounded-pill"
+              >
+                Invite people
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- event creation modal  end-->
+
+    <!-- invite people modal start -->
+    <div
+      class="modal fade"
+      id="invitepeopleModal"
+      tabindex="-1"
+      aria-labelledby="invitepeopleModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex gap-2 align-items-center">
+              <h5 class="fs-6 fw-bold">Graphic Designers Meet up</h5>
+              <span
+                class="alt-badge alt-badge-outline bg-white alt-dark mb-0 bg-secondary-subtle"
+                >Private</span
+              >
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <div class="modal_search_box">
+                <span class="pe-2"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+                <input
+                  type="text"
+                  placeholder="Search for an existing member or add new using email id"
+                />
+              </div>
+
+              <div class="my-3">
+                <h5 class="mb-4">Selected members (4)</h5>
+                <!-- single people  -->
+                <div
+                  class="modal_single_people d-flex justify-content-between border-bottom border-light-subtle pb-3 mb-3"
+                >
+                  <div class="d-flex gap-2 align-items-start">
+                    <img
+                      src="https://i.pravatar.cc/42"
+                      class="rounded-circle flex-shrink-0"
+                      alt=""
+                    />
+                    <div class="">
+                      <h4 class="">James Jacobe</h4>
+                      <p class="d-flex gap-3 align-items-center">
+                        <span>Graphic Designer</span>
+                        <span class="dots"></span>
+                        <span>jamesjacobe@gmail.com</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <!-- single people  -->
+                <div
+                  class="modal_single_people d-flex justify-content-between border-bottom border-light-subtle pb-3 mb-3"
+                >
+                  <div class="d-flex gap-2 align-items-start">
+                    <img
+                      src="https://i.pravatar.cc/42"
+                      class="rounded-circle flex-shrink-0"
+                      alt=""
+                    />
+                    <div class="">
+                      <h4 class="">James Jacobe</h4>
+                      <p class="d-flex gap-3 align-items-center">
+                        <span>Graphic Designer</span>
+                        <span class="dots"></span>
+                        <span>jamesjacobe@gmail.com</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <!-- single people  -->
+                <div
+                  class="modal_single_people d-flex justify-content-between border-bottom border-light-subtle pb-3 mb-3"
+                >
+                  <div class="d-flex gap-2 align-items-start">
+                    <img
+                      src="https://i.pravatar.cc/42"
+                      class="rounded-circle flex-shrink-0"
+                      alt=""
+                    />
+                    <div class="">
+                      <h4 class="">James Jacobe</h4>
+                      <p class="d-flex gap-3 align-items-center">
+                        <span>Graphic Designer</span>
+                        <span class="dots"></span>
+                        <span>jamesjacobe@gmail.com</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <!-- single people  -->
+                <div
+                  class="modal_single_people d-flex justify-content-between border-bottom border-light-subtle pb-3 mb-3"
+                >
+                  <div class="d-flex gap-2 align-items-start">
+                    <img
+                      src="https://i.pravatar.cc/42"
+                      class="rounded-circle flex-shrink-0"
+                      alt=""
+                    />
+                    <div class="">
+                      <h4 class="">James Jacobe</h4>
+                      <p class="d-flex gap-3 align-items-center">
+                        <span>Graphic Designer</span>
+                        <span class="dots"></span>
+                        <span>jamesjacobe@gmail.com</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="">
+              <button
+                type="button"
+                class="filter_apply_btn_mobile bg-white btn alt-btn-light-primary rounded-pill border border-light-subtle"
+                data-bs-dismiss="modal"
+              >
+                Copy invite link
+              </button>
+
+              <button
+                type="button"
+                class="filter_apply_btn_mobile bg-alt-primary btn alt-btn-light-primary rounded-pill"
+              >
+                Send invite
+                <span> <i class="fa-solid fa-arrow-right-long"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- invite people modal end -->
+
     <script src="../../assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/js/jquery-1.11.0.min.js"></script>
+    <script src="../../assets/vendor/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../../assets/vendor/js/slick.min.js"></script>
+    <script src="../../assets/vendor/js/select2.min.js"></script>
+    <script src="../../assets/vendor/js/script.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".js_slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 2,
+          centerMode: true,
+          adaptiveHeight: true,
+          variableWidth: false,
+          prevArrow:
+            "<button class='arrow_prev'><i class='fa-solid fa-angle-left'></i></button>",
+          nextArrow:
+            "<button class='arrow_next'><i class='fa-solid fa-angle-right'></i></button>",
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                centerMode: false,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                centerMode: false,
+              },
+            },
+          ],
+        });
+      });
+    </script>
   </body>
 </html>

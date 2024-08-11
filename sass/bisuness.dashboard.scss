@@ -29,6 +29,7 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
   --alt-gold: #eda211;
   --alt-primary: #ffd600;
   --alt-gray-bg-color: #f4f4f4;
+  --alt-gray-light: #d9d9d9;
   --alt-text-clr: #232529;
   --alt-bg-hover-clr: #161d3b;
 }
@@ -40,3 +41,6 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
 @import "business/_dashboard-home";
 @import "business/business-setting";
 @import "business/business-events";
+@import "search-page";
+@import "sign-up";
+@import "forms";
