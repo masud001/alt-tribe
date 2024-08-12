@@ -8,6 +8,7 @@ $custom-theme-colors: (
   alt-border-clt: #f0f0f0,
   alt-gray-bg-clr: #f4f4f4,
   alt-bg-hover-clr: #161d3b,
+  alt-bg-clr: #f9f9f9,
 );
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
