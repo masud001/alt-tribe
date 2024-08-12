@@ -1,28 +1,31 @@
-.buttons_container {
-  .check_button {
-    .btn-check:checked + .btn {
-      background-color: #161d3b;
-      color: #fff;
-      border: 1px solid #161d3b;
-    }
-    .btn-check + .btn {
-      background-color: #ffffff;
-      color: #161d3b;
-      border: 1px solid #dedede;
-      border-radius: 25px;
-      padding: 12px 24px;
-      text-transform: capitalize;
-      font-size: 14px;
-      font-weight: 600;
-      font-family: var(--bs-body-font-family);
-      @media (max-width: 576px) {
-        padding: 8px 16px;
-        font-size: 12px;
+.event_page_content {
+  ul {
+    &.content_tabs {
+      li {
+        button {
+          background-color: #ffffff;
+          color: #161d3b;
+          border: 1px solid #dedede;
+          border-radius: 25px;
+          padding: 12px 24px;
+          text-transform: capitalize;
+          font-size: 14px;
+          font-weight: 600;
+          font-family: var(--bs-body-font-family);
+          &.active {
+            background-color: #161d3b;
+            color: #fff;
+            border: 1px solid #161d3b;
+          }
+          @media (max-width: 576px) {
+            padding: 8px 16px;
+            font-size: 12px;
+          }
+        }
       }
     }
   }
 }
-
 .tranding_event_slider {
   background-color: #f9f9f9;
   padding: 24px;

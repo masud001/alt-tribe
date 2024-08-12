@@ -1047,779 +1047,839 @@ bdb = business dashboard;
           </div>
           <!-- sidebar left end -->
 
+          <!-- main content start -->
           <div class="col-12 col-lg-10">
-            <div class="">
-              <!-- tags  -->
-              <div
-                class="buttons_container d-flex flex-wrap gap-2 gap-lg-3 align-items-center"
+            <!-- tab content start here  -->
+            <div class="event_page_content">
+              <ul
+                id="pills-tab"
+                class="content_tabs d-flex align-items-center justify-content-start gap-3 mb-4"
+                role="tablist"
               >
-                <!-- single check btn  -->
-                <div class="check_button">
-                  <input
-                    type="checkbox"
-                    class="btn-check"
-                    id="btn-check-all"
-                    autocomplete="off"
-                  />
-                  <label class="btn" for="btn-check-all"> all</label>
-                </div>
-                <!-- single check btn  -->
-                <div class="check_button">
-                  <input
-                    type="checkbox"
-                    class="btn-check"
-                    id="btn-check-Freelancers"
-                    autocomplete="off"
-                  />
-                  <label class="btn" for="btn-check-Freelancers">
-                    Published</label
+                <li role="presentation">
+                  <button
+                    class="active position-relative text-start"
+                    id="all-event-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#all-event"
+                    type="button"
+                    role="tab"
+                    aria-controls="all-event"
+                    aria-selected="true"
                   >
-                </div>
-                <!-- single check btn  -->
-                <div class="check_button">
-                  <input
-                    type="checkbox"
-                    class="btn-check rounded-pill"
-                    id="btn-check-Contest"
-                    autocomplete="off"
-                  />
-                  <label class="btn" for="btn-check-Contest"> Registered</label>
-                </div>
-              </div>
-              <!-- tranding event slider  -->
-              <div class="tranding_event_slider mt-4 mb-5">
-                <div class="row gy-4">
-                  <div class="col-12 col-md-3">
-                    <div class="tranding_content">
-                      <h3>Trending events</h3>
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed do.
-                      </p>
-                      <div class="">
+                    All
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    id="published-event-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#published-event"
+                    type="button"
+                    role="tab"
+                    aria-controls="published-event"
+                    aria-selected="true"
+                  >
+                    Published
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    id="registered-event-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#registered-event"
+                    type="button"
+                    role="tab"
+                    aria-controls="registered-event"
+                    aria-selected="true"
+                  >
+                    Registered
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="all-event"
+                  role="tabpanel"
+                  aria-labelledby="all-events"
+                >
+                  <!-- tranding event slider  -->
+                  <div class="tranding_event_slider mt-4 mb-5">
+                    <div class="row gy-4">
+                      <div class="col-12 col-md-3">
+                        <div class="tranding_content">
+                          <h3>Trending events</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sed do.
+                          </p>
+                          <div class="">
+                            <button
+                              class="btn btn-alt-outline rounded-pill border border-secondary-subtle"
+                            >
+                              View all
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-9">
+                        <div class="tranding_event_slider_wrapper js_slider">
+                          <!-- single slider item -->
+                          <div
+                            class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                          >
+                            <div class="d-flex gap-2">
+                              <img
+                                src="https://i.pravatar.cc/42"
+                                class="rounded-circle flex-shrink-0"
+                                alt=""
+                              />
+                              <div class="">
+                                <p>Quick Atmos</p>
+                                <h3>UI/UX Design Conference</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- single slider item -->
+                          <div
+                            class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                          >
+                            <div class="d-flex gap-2">
+                              <img
+                                src="https://i.pravatar.cc/42"
+                                class="rounded-circle flex-shrink-0"
+                                alt=""
+                              />
+                              <div class="">
+                                <p>Quick Atmos</p>
+                                <h3>UI/UX Design Conference</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- single slider item -->
+                          <div
+                            class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                          >
+                            <div class="d-flex gap-2">
+                              <img
+                                src="https://i.pravatar.cc/42"
+                                class="rounded-circle flex-shrink-0"
+                                alt=""
+                              />
+                              <div class="">
+                                <p>Quick Atmos</p>
+                                <h3>UI/UX Design Conference</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- single slider item -->
+                          <div
+                            class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                          >
+                            <div class="d-flex gap-2">
+                              <img
+                                src="https://i.pravatar.cc/42"
+                                class="rounded-circle flex-shrink-0"
+                                alt=""
+                              />
+                              <div class="">
+                                <p>Quick Atmos</p>
+                                <h3>UI/UX Design Conference</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- single slider item -->
+                          <div
+                            class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                          >
+                            <div class="d-flex gap-2">
+                              <img
+                                src="https://i.pravatar.cc/42"
+                                class="rounded-circle flex-shrink-0"
+                                alt=""
+                              />
+                              <div class="">
+                                <p>Quick Atmos</p>
+                                <h3>UI/UX Design Conference</h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- filter tools bar -->
+                  <div class="row">
+                    <div
+                      class="col-12 d-flex gap-2 gap-md-3 align-items-center"
+                    >
+                      <!-- search box  -->
+                      <div class="search_box d-flex justify-content-center">
+                        <span class="pe-md-1"
+                          ><i class="fa-solid fa-magnifying-glass"></i
+                        ></span>
+                        <input
+                          class="d-none d-md-flex"
+                          type="text"
+                          placeholder="Search for contests here"
+                        />
+                      </div>
+                      <!-- filter box  -->
+                      <button
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#filterOffcanvas"
+                        aria-controls="filterOffcanvas"
+                        class="filter_box border-0 d-flex justify-content-center d-flex"
+                      >
+                        <span
+                          ><img
+                            src="../../assets/images/business-dashboard/events-page/filter_list_icon.svg"
+                            alt=""
+                        /></span>
+                        <span class="d-none d-sm-flex">filters</span>
+                      </button>
+                      <!-- sort box -->
+                      <div class="position-relative">
                         <button
-                          class="btn btn-alt-outline rounded-pill border border-secondary-subtle"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          class="sort_box border-0 d-flex align-items-center justify-content-center"
                         >
-                          View all
+                          <span>Sort by:</span>
+                          <span>
+                            <strong class="d-none d-sm-flex">
+                              Recommended</strong
+                            ></span
+                          >
+                          <span class="ms-md-2"
+                            ><i class="fa-solid fa-caret-down"></i
+                          ></span>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Recommended
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Latest
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Oldest
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Low to high
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              High to low
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Most entries
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Fewest entries
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="create_new_btn ms-auto">
+                        <button
+                          class="btn btn-alt-outline bg-alt-primary border border-alt-primary rounded-pill"
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#createEventCanvas"
+                          aria-controls="createEventCanvas"
+                        >
+                          Create new
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-md-9">
-                    <div class="tranding_event_slider_wrapper js_slider">
-                      <!-- single slider item -->
+                  <!-- event tags row -->
+                  <div class="row pt-4 pb-5">
+                    <div
+                      class="col-12 d-flex gap-2 flex-wrap justify-content-start justify-content-lg-between"
+                    >
                       <div
-                        class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                        class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_1"
                       >
-                        <div class="d-flex gap-2">
+                        <h3>Web Development</h3>
+                      </div>
+                      <div
+                        class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_2"
+                      >
+                        <h3>App Development</h3>
+                      </div>
+                      <div
+                        class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_3"
+                      >
+                        <h3>Graphic Design</h3>
+                      </div>
+                      <div
+                        class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_4"
+                      >
+                        <h3>Product Design</h3>
+                      </div>
+                      <div
+                        class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_5"
+                      >
+                        <h3>Illustration</h3>
+                      </div>
+                      <div
+                        class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_6"
+                      >
+                        <h3>3D Art & Animation</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single event card -->
+                  <div class="row gy-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
                           <img
-                            src="https://i.pravatar.cc/42"
-                            class="rounded-circle flex-shrink-0"
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
                             alt=""
                           />
-                          <div class="">
-                            <p>Quick Atmos</p>
-                            <h3>UI/UX Design Conference</h3>
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                              >online</span
+                            >
+                            <span class="registration text-capitalize"
+                              >registration fee</span
+                            >
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs</span
+                            >
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
                           </div>
                         </div>
                       </div>
-                      <!-- single slider item -->
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                       <div
-                        class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
                       >
-                        <div class="d-flex gap-2">
+                        <div class="card_image_thumb">
                           <img
-                            src="https://i.pravatar.cc/42"
-                            class="rounded-circle flex-shrink-0"
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
                             alt=""
                           />
-                          <div class="">
-                            <p>Quick Atmos</p>
-                            <h3>UI/UX Design Conference</h3>
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                              >online</span
+                            >
+                            <span class="registration text-capitalize"
+                              >registration fee</span
+                            >
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs</span
+                            >
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
                           </div>
                         </div>
                       </div>
-                      <!-- single slider item -->
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                       <div
-                        class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
                       >
-                        <div class="d-flex gap-2">
+                        <div class="card_image_thumb">
                           <img
-                            src="https://i.pravatar.cc/42"
-                            class="rounded-circle flex-shrink-0"
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
                             alt=""
                           />
-                          <div class="">
-                            <p>Quick Atmos</p>
-                            <h3>UI/UX Design Conference</h3>
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                              >online</span
+                            >
+                            <span class="registration text-capitalize"
+                              >registration fee</span
+                            >
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs</span
+                            >
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
                           </div>
                         </div>
                       </div>
-                      <!-- single slider item -->
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                       <div
-                        class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
                       >
-                        <div class="d-flex gap-2">
+                        <div class="card_image_thumb">
                           <img
-                            src="https://i.pravatar.cc/42"
-                            class="rounded-circle flex-shrink-0"
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
                             alt=""
                           />
-                          <div class="">
-                            <p>Quick Atmos</p>
-                            <h3>UI/UX Design Conference</h3>
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                              >online</span
+                            >
+                            <span class="registration text-capitalize"
+                              >registration fee</span
+                            >
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs</span
+                            >
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
                           </div>
                         </div>
                       </div>
-                      <!-- single slider item -->
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
                       <div
-                        class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
                       >
-                        <div class="d-flex gap-2">
+                        <div class="card_image_thumb">
                           <img
-                            src="https://i.pravatar.cc/42"
-                            class="rounded-circle flex-shrink-0"
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
                             alt=""
                           />
-                          <div class="">
-                            <p>Quick Atmos</p>
-                            <h3>UI/UX Design Conference</h3>
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span class="card_location">
+                              <span
+                                ><i class="fa-solid fa-location-dot"></i
+                              ></span>
+                              Kochi, India</span
+                            >
+                            <span class="registration text-capitalize"
+                              >registration fee</span
+                            >
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs</span
+                            >
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                              >online</span
+                            >
+                            <span class="registration text-capitalize"
+                              >registration fee</span
+                            >
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs</span
+                            >
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                              >online</span
+                            >
+                            <span class="registration text-capitalize"
+                              >registration fee</span
+                            >
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs</span
+                            >
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                              >online</span
+                            >
+                            <span class="registration text-capitalize"
+                              >registration fee</span
+                            >
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs</span
+                            >
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                              >online</span
+                            >
+                            <span class="registration text-capitalize"
+                              >registration fee</span
+                            >
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs</span
+                            >
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
+                </div>
+                <div
+                  class="tab-pane fade bg-warning"
+                  id="published-event"
+                  role="tabpanel"
+                  aria-labelledby="published-event-tab"
+                >
+                  Published
+                </div>
+                <div
+                  class="tab-pane fade bg-info"
+                  id="registered-event"
+                  role="tabpanel"
+                  aria-labelledby="registered-event-tab"
+                >
+                  Registered
                 </div>
               </div>
             </div>
-
-            <!-- filter tools bar -->
-            <div class="row">
-              <div class="col-12 d-flex gap-2 gap-md-3 align-items-center">
-                <!-- search box  -->
-                <div class="search_box d-flex justify-content-center">
-                  <span class="pe-md-1"
-                    ><i class="fa-solid fa-magnifying-glass"></i
-                  ></span>
-                  <input
-                    class="d-none d-md-flex"
-                    type="text"
-                    placeholder="Search for contests here"
-                  />
-                </div>
-                <!-- filter box  -->
-                <button
-                  type="button"
-                  data-bs-toggle="offcanvas"
-                  data-bs-target="#filterOffcanvas"
-                  aria-controls="filterOffcanvas"
-                  class="filter_box border-0 d-flex justify-content-center d-flex"
-                >
-                  <span
-                    ><img
-                      src="../../assets/images/business-dashboard/events-page/filter_list_icon.svg"
-                      alt=""
-                  /></span>
-                  <span class="d-none d-sm-flex">filters</span>
-                </button>
-                <!-- sort box -->
-                <div class="position-relative">
-                  <button
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                    class="sort_box border-0 d-flex align-items-center justify-content-center"
-                  >
-                    <span>Sort by:</span>
-                    <span>
-                      <strong class="d-none d-sm-flex">
-                        Recommended</strong
-                      ></span
-                    >
-                    <span class="ms-md-2"
-                      ><i class="fa-solid fa-caret-down"></i
-                    ></span>
-                  </button>
-
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                      <button class="dropdown-item" type="button">
-                        Recommended
-                      </button>
-                    </li>
-                    <li>
-                      <button class="dropdown-item" type="button">
-                        Latest
-                      </button>
-                    </li>
-                    <li>
-                      <button class="dropdown-item" type="button">
-                        Oldest
-                      </button>
-                    </li>
-                    <li>
-                      <button class="dropdown-item" type="button">
-                        Low to high
-                      </button>
-                    </li>
-                    <li>
-                      <button class="dropdown-item" type="button">
-                        High to low
-                      </button>
-                    </li>
-                    <li>
-                      <button class="dropdown-item" type="button">
-                        Most entries
-                      </button>
-                    </li>
-                    <li>
-                      <button class="dropdown-item" type="button">
-                        Fewest entries
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="create_new_btn ms-auto">
-                  <button
-                    class="btn btn-alt-outline bg-alt-primary border border-alt-primary rounded-pill"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#createEventCanvas"
-                    aria-controls="createEventCanvas"
-                  >
-                    Create new
-                  </button>
-                </div>
-              </div>
-            </div>
-            <!-- event tags row -->
-            <div class="row pt-4 pb-5">
-              <div
-                class="col-12 d-flex gap-2 flex-wrap justify-content-start justify-content-lg-between"
-              >
-                <div
-                  class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_1"
-                >
-                  <h3>Web Development</h3>
-                </div>
-                <div
-                  class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_2"
-                >
-                  <h3>App Development</h3>
-                </div>
-                <div
-                  class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_3"
-                >
-                  <h3>Graphic Design</h3>
-                </div>
-                <div
-                  class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_4"
-                >
-                  <h3>Product Design</h3>
-                </div>
-                <div
-                  class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_5"
-                >
-                  <h3>Illustration</h3>
-                </div>
-                <div
-                  class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_6"
-                >
-                  <h3>3D Art & Animation</h3>
-                </div>
-              </div>
-            </div>
-            <!-- single event card -->
-            <div class="row gy-4">
-              <div class="col-12 col-sm-6 col-md-6 col-xl-4">
-                <div class="single_event_card_wrapper rounded-3 bg-alt-bg-clr">
-                  <div class="card_image_thumb">
-                    <img
-                      src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-3">
-                    <div
-                      class="card_avater mb-3 d-flex gap-2 align-items-start"
-                    >
-                      <img
-                        src="https://i.pravatar.cc/48"
-                        class="rounded-circle flex-shrink-0 img-fluid"
-                        alt=""
-                      />
-                      <div class="">
-                        <p>WJ Studio</p>
-                        <h4>DesignSpectra Challenge</h4>
-                      </div>
-                    </div>
-                    <div class="card_tags">
-                      <span
-                        class="online alt-badge alt-completed text-capitalize"
-                        >online</span
-                      >
-                      <span class="registration text-capitalize"
-                        >registration fee</span
-                      >
-                      <span class="registration_fee">$20</span>
-                    </div>
-                    <div class="date_time mt-3">
-                      <span><i class="fa-regular fa-calendar"></i></span>
-                      <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
-                    </div>
-                    <div
-                      class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
-                    >
-                      <span class="card_end_time">
-                        <span class="alt-dots alt-dots-danger"></span> Ends in
-                        03:00 hrs</span
-                      >
-                      <button class="card_register_now_btn">
-                        Register now
-                      </button>
-                      <button class="card_bookmark">
-                        <i class="fa-regular fa-bookmark"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-6 col-xl-4">
-                <div class="single_event_card_wrapper rounded-3 bg-alt-bg-clr">
-                  <div class="card_image_thumb">
-                    <img
-                      src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-3">
-                    <div
-                      class="card_avater mb-3 d-flex gap-2 align-items-start"
-                    >
-                      <img
-                        src="https://i.pravatar.cc/48"
-                        class="rounded-circle flex-shrink-0 img-fluid"
-                        alt=""
-                      />
-                      <div class="">
-                        <p>WJ Studio</p>
-                        <h4>DesignSpectra Challenge</h4>
-                      </div>
-                    </div>
-                    <div class="card_tags">
-                      <span
-                        class="online alt-badge alt-completed text-capitalize"
-                        >online</span
-                      >
-                      <span class="registration text-capitalize"
-                        >registration fee</span
-                      >
-                      <span class="registration_fee">$20</span>
-                    </div>
-                    <div class="date_time mt-3">
-                      <span><i class="fa-regular fa-calendar"></i></span>
-                      <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
-                    </div>
-                    <div
-                      class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
-                    >
-                      <span class="card_end_time">
-                        <span class="alt-dots alt-dots-danger"></span> Ends in
-                        03:00 hrs</span
-                      >
-                      <button class="card_register_now_btn">
-                        Register now
-                      </button>
-                      <button class="card_bookmark">
-                        <i class="fa-regular fa-bookmark"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-6 col-xl-4">
-                <div class="single_event_card_wrapper rounded-3 bg-alt-bg-clr">
-                  <div class="card_image_thumb">
-                    <img
-                      src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-3">
-                    <div
-                      class="card_avater mb-3 d-flex gap-2 align-items-start"
-                    >
-                      <img
-                        src="https://i.pravatar.cc/48"
-                        class="rounded-circle flex-shrink-0 img-fluid"
-                        alt=""
-                      />
-                      <div class="">
-                        <p>WJ Studio</p>
-                        <h4>DesignSpectra Challenge</h4>
-                      </div>
-                    </div>
-                    <div class="card_tags">
-                      <span
-                        class="online alt-badge alt-completed text-capitalize"
-                        >online</span
-                      >
-                      <span class="registration text-capitalize"
-                        >registration fee</span
-                      >
-                      <span class="registration_fee">$20</span>
-                    </div>
-                    <div class="date_time mt-3">
-                      <span><i class="fa-regular fa-calendar"></i></span>
-                      <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
-                    </div>
-                    <div
-                      class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
-                    >
-                      <span class="card_end_time">
-                        <span class="alt-dots alt-dots-danger"></span> Ends in
-                        03:00 hrs</span
-                      >
-                      <button class="card_register_now_btn">
-                        Register now
-                      </button>
-                      <button class="card_bookmark">
-                        <i class="fa-regular fa-bookmark"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-6 col-xl-4">
-                <div class="single_event_card_wrapper rounded-3 bg-alt-bg-clr">
-                  <div class="card_image_thumb">
-                    <img
-                      src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-3">
-                    <div
-                      class="card_avater mb-3 d-flex gap-2 align-items-start"
-                    >
-                      <img
-                        src="https://i.pravatar.cc/48"
-                        class="rounded-circle flex-shrink-0 img-fluid"
-                        alt=""
-                      />
-                      <div class="">
-                        <p>WJ Studio</p>
-                        <h4>DesignSpectra Challenge</h4>
-                      </div>
-                    </div>
-                    <div class="card_tags">
-                      <span
-                        class="online alt-badge alt-completed text-capitalize"
-                        >online</span
-                      >
-                      <span class="registration text-capitalize"
-                        >registration fee</span
-                      >
-                      <span class="registration_fee">$20</span>
-                    </div>
-                    <div class="date_time mt-3">
-                      <span><i class="fa-regular fa-calendar"></i></span>
-                      <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
-                    </div>
-                    <div
-                      class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
-                    >
-                      <span class="card_end_time">
-                        <span class="alt-dots alt-dots-danger"></span> Ends in
-                        03:00 hrs</span
-                      >
-                      <button class="card_register_now_btn">
-                        Register now
-                      </button>
-                      <button class="card_bookmark">
-                        <i class="fa-regular fa-bookmark"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-6 col-xl-4">
-                <div class="single_event_card_wrapper rounded-3 bg-alt-bg-clr">
-                  <div class="card_image_thumb">
-                    <img
-                      src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-3">
-                    <div
-                      class="card_avater mb-3 d-flex gap-2 align-items-start"
-                    >
-                      <img
-                        src="https://i.pravatar.cc/48"
-                        class="rounded-circle flex-shrink-0 img-fluid"
-                        alt=""
-                      />
-                      <div class="">
-                        <p>WJ Studio</p>
-                        <h4>DesignSpectra Challenge</h4>
-                      </div>
-                    </div>
-                    <div class="card_tags">
-                      <span class="card_location">
-                        <span><i class="fa-solid fa-location-dot"></i></span>
-                        Kochi, India</span
-                      >
-                      <span class="registration text-capitalize"
-                        >registration fee</span
-                      >
-                      <span class="registration_fee">$20</span>
-                    </div>
-                    <div class="date_time mt-3">
-                      <span><i class="fa-regular fa-calendar"></i></span>
-                      <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
-                    </div>
-                    <div
-                      class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
-                    >
-                      <span class="card_end_time">
-                        <span class="alt-dots alt-dots-danger"></span> Ends in
-                        03:00 hrs</span
-                      >
-                      <button class="card_register_now_btn">
-                        Register now
-                      </button>
-                      <button class="card_bookmark">
-                        <i class="fa-regular fa-bookmark"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-6 col-xl-4">
-                <div class="single_event_card_wrapper rounded-3 bg-alt-bg-clr">
-                  <div class="card_image_thumb">
-                    <img
-                      src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-3">
-                    <div
-                      class="card_avater mb-3 d-flex gap-2 align-items-start"
-                    >
-                      <img
-                        src="https://i.pravatar.cc/48"
-                        class="rounded-circle flex-shrink-0 img-fluid"
-                        alt=""
-                      />
-                      <div class="">
-                        <p>WJ Studio</p>
-                        <h4>DesignSpectra Challenge</h4>
-                      </div>
-                    </div>
-                    <div class="card_tags">
-                      <span
-                        class="online alt-badge alt-completed text-capitalize"
-                        >online</span
-                      >
-                      <span class="registration text-capitalize"
-                        >registration fee</span
-                      >
-                      <span class="registration_fee">$20</span>
-                    </div>
-                    <div class="date_time mt-3">
-                      <span><i class="fa-regular fa-calendar"></i></span>
-                      <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
-                    </div>
-                    <div
-                      class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
-                    >
-                      <span class="card_end_time">
-                        <span class="alt-dots alt-dots-danger"></span> Ends in
-                        03:00 hrs</span
-                      >
-                      <button class="card_register_now_btn">
-                        Register now
-                      </button>
-                      <button class="card_bookmark">
-                        <i class="fa-regular fa-bookmark"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-6 col-xl-4">
-                <div class="single_event_card_wrapper rounded-3 bg-alt-bg-clr">
-                  <div class="card_image_thumb">
-                    <img
-                      src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-3">
-                    <div
-                      class="card_avater mb-3 d-flex gap-2 align-items-start"
-                    >
-                      <img
-                        src="https://i.pravatar.cc/48"
-                        class="rounded-circle flex-shrink-0 img-fluid"
-                        alt=""
-                      />
-                      <div class="">
-                        <p>WJ Studio</p>
-                        <h4>DesignSpectra Challenge</h4>
-                      </div>
-                    </div>
-                    <div class="card_tags">
-                      <span
-                        class="online alt-badge alt-completed text-capitalize"
-                        >online</span
-                      >
-                      <span class="registration text-capitalize"
-                        >registration fee</span
-                      >
-                      <span class="registration_fee">$20</span>
-                    </div>
-                    <div class="date_time mt-3">
-                      <span><i class="fa-regular fa-calendar"></i></span>
-                      <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
-                    </div>
-                    <div
-                      class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
-                    >
-                      <span class="card_end_time">
-                        <span class="alt-dots alt-dots-danger"></span> Ends in
-                        03:00 hrs</span
-                      >
-                      <button class="card_register_now_btn">
-                        Register now
-                      </button>
-                      <button class="card_bookmark">
-                        <i class="fa-regular fa-bookmark"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-6 col-xl-4">
-                <div class="single_event_card_wrapper rounded-3 bg-alt-bg-clr">
-                  <div class="card_image_thumb">
-                    <img
-                      src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-3">
-                    <div
-                      class="card_avater mb-3 d-flex gap-2 align-items-start"
-                    >
-                      <img
-                        src="https://i.pravatar.cc/48"
-                        class="rounded-circle flex-shrink-0 img-fluid"
-                        alt=""
-                      />
-                      <div class="">
-                        <p>WJ Studio</p>
-                        <h4>DesignSpectra Challenge</h4>
-                      </div>
-                    </div>
-                    <div class="card_tags">
-                      <span
-                        class="online alt-badge alt-completed text-capitalize"
-                        >online</span
-                      >
-                      <span class="registration text-capitalize"
-                        >registration fee</span
-                      >
-                      <span class="registration_fee">$20</span>
-                    </div>
-                    <div class="date_time mt-3">
-                      <span><i class="fa-regular fa-calendar"></i></span>
-                      <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
-                    </div>
-                    <div
-                      class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
-                    >
-                      <span class="card_end_time">
-                        <span class="alt-dots alt-dots-danger"></span> Ends in
-                        03:00 hrs</span
-                      >
-                      <button class="card_register_now_btn">
-                        Register now
-                      </button>
-                      <button class="card_bookmark">
-                        <i class="fa-regular fa-bookmark"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-6 col-xl-4">
-                <div class="single_event_card_wrapper rounded-3 bg-alt-bg-clr">
-                  <div class="card_image_thumb">
-                    <img
-                      src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                  <div class="p-3">
-                    <div
-                      class="card_avater mb-3 d-flex gap-2 align-items-start"
-                    >
-                      <img
-                        src="https://i.pravatar.cc/48"
-                        class="rounded-circle flex-shrink-0 img-fluid"
-                        alt=""
-                      />
-                      <div class="">
-                        <p>WJ Studio</p>
-                        <h4>DesignSpectra Challenge</h4>
-                      </div>
-                    </div>
-                    <div class="card_tags">
-                      <span
-                        class="online alt-badge alt-completed text-capitalize"
-                        >online</span
-                      >
-                      <span class="registration text-capitalize"
-                        >registration fee</span
-                      >
-                      <span class="registration_fee">$20</span>
-                    </div>
-                    <div class="date_time mt-3">
-                      <span><i class="fa-regular fa-calendar"></i></span>
-                      <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
-                    </div>
-                    <div
-                      class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
-                    >
-                      <span class="card_end_time">
-                        <span class="alt-dots alt-dots-danger"></span> Ends in
-                        03:00 hrs</span
-                      >
-                      <button class="card_register_now_btn">
-                        Register now
-                      </button>
-                      <button class="card_bookmark">
-                        <i class="fa-regular fa-bookmark"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <!-- tab content end here  -->
           </div>
+          <!-- main content end -->
         </div>
       </div>
     </main>
