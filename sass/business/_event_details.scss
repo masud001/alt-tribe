@@ -1,0 +1,137 @@
+.avater_group {
+  background-color: #efefef;
+  padding: 2px 20px 2px 11px;
+  border-radius: 30px;
+}
+.add_speacker {
+  text-decoration: underline;
+  color: #232529;
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  &:hover {
+    color: var(--alt-text-clr);
+  }
+}
+.event_bg {
+  width: 100%;
+  height: 186px;
+  img {
+    width: 100%;
+    height: 186px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}
+.event_details_page_profile {
+  position: relative;
+  margin-top: -70px;
+}
+.event_details_page_profile_content {
+  h2 {
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--alt-text-clr);
+  }
+  h5 {
+    color: #5c5e63;
+    font-weight: 400;
+    text-transform: capitalize;
+  }
+}
+.event_details_page_profile_img {
+  width: 104px;
+  height: 104px;
+  img {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.registration_fee {
+  border: 1px solid #cacaca;
+  background-color: #fff;
+  font-size: 14px;
+  border-radius: 25px;
+  padding: 2px 8px;
+}
+
+// Event discussion
+// comments section desing
+
+.tab_content_details {
+  h5 {
+    font-family: var(--abs-body-font-family);
+    color: var(--alt-text-clr);
+    font-size: 16px;
+    line-height: 18.2px;
+    font-weight: 500;
+    text-transform: capitalize;
+  }
+}
+
+.comments_details {
+}
+.comment_input {
+  input {
+    border: 1px solid #cacaca;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 25px;
+    padding: 2px 8px;
+    &:focus-visible {
+      outline: none;
+      border-color: var(--alt-primary);
+    }
+  }
+}
+.avater_image {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+.reply_btn {
+  button {
+    border: none;
+    background-color: transparent;
+    color: var(--alt-text-clr);
+    font-size: 12px;
+    line-height: 18.2px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: ease-in-out 0.3s;
+    &:hover {
+      color: var(--alt-primary);
+    }
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
+
+// social links
+.social_links {
+  display: flex;
+  gap: 8px;
+  flex-direction: row;
+  span {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #efefef;
+    display: inline-block;
+    text-align: center;
+    line-height: 32px;
+    font-size: 14px;
+  }
+}

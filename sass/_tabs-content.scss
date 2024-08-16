@@ -1,0 +1,60 @@
+.tab_content {
+  ul {
+    li {
+      button {
+        font-family: var(--bs-body-font-family);
+        color: #595959;
+
+        line-height: 18.2px;
+        font-weight: 600;
+        text-transform: capitalize;
+        background-color: transparent;
+        border: none;
+        padding-bottom: 10px;
+        @media (min-width: 320px) {
+          font-size: 12px;
+        }
+        @media (min-width: 768px) {
+          font-size: 14px;
+        }
+        &.active {
+          color: var(--alt-text-clr);
+          border-bottom: 2px solid var(--alt-text-clr);
+        }
+      }
+    }
+  }
+  .tab-content {
+    h3 {
+      font-family: var(--bs-body-font-family);
+      color: var(--alt-text-clr);
+      font-size: 16px;
+      line-height: 18.2px;
+      font-weight: 500;
+      text-transform: capitalize;
+      margin-bottom: 12px;
+    }
+    p {
+      font-family: var(--bs-body-font-family);
+      color: var(--alt-text-clr);
+      font-size: 14px;
+      line-height: 18.2px;
+      font-weight: 400;
+    }
+    ul {
+      list-style-type: disc;
+      padding: 0 0 0 20px;
+      li {
+        font-family: var(--bs-body-font-family);
+        color: var(--alt-text-clr);
+        font-size: 14px;
+        line-height: 18.2px;
+        font-weight: 400;
+        padding-bottom: 8px;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

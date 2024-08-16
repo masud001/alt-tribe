@@ -38,10 +38,29 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
 // add my custom scss file to the end of the import stack
 
 @import "business/_reset-browser";
-@import "badges";
 @import "business/_dashboard-home";
 @import "business/business-setting";
 @import "business/business-events";
+@import "business/event_details";
 @import "search-page";
+@import "buttons";
+@import "badges";
 @import "sign-up";
 @import "forms";
+@import "steps-page";
+@import "avater";
+@import "tabs-content";
+
+// custom design for the business dashboard
+.p-font {
+  font-family: var(--bs-body-font-family);
+  color: var(--alt-text-clr);
+  font-size: 14px;
+  line-height: 18.2px;
+}
+.h-font {
+  font-family: var(--bs-heading-font-family);
+  color: var(--alt-text-clr);
+  font-size: 24px;
+  line-height: 30px;
+}
