@@ -50,6 +50,7 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
 @import "steps-page";
 @import "avater";
 @import "tabs-content";
+@import "contest-details-page";
 
 // custom design for the business dashboard
 .p-font {
