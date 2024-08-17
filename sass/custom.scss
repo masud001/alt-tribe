@@ -30,6 +30,7 @@ $custom-theme-colors: (
 
   // dashboard colors for business
   alt-text-clr: #232529,
+  alt-bg-clr: #f9f9f9,
 );
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
@@ -114,4 +115,5 @@ h6 {
 @import "landing-page";
 @import "about-us-page";
 @import "search-page";
+@import "business/business-tribe";
 // @import "freelance-landing-page";
