@@ -1,0 +1,101 @@
+ <!-- tab content start here  -->
+                <div class="event_details_page_content tab_content">
+                  <ul
+                    id="pills-tab"
+                    class="d-flex align-items-center justify-content-start gap-1 gap-lg-3 mb-4 border-bottom border-light-subtle"
+                    role="tablist"
+                  >
+                    <li role="presentation">
+                      <button
+                        class="active position-relative text-start"
+                        id="one-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#one"
+                        type="button"
+                        role="tab"
+                        aria-controls="one"
+                        aria-selected="true"
+                      >
+                        All
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="two-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#two"
+                        type="button"
+                        role="tab"
+                        aria-controls="two"
+                        aria-selected="true"
+                      >
+                       In progress
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="three-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#three"
+                        type="button"
+                        role="tab"
+                        aria-controls="three"
+                        aria-selected="true"
+                      >
+                       Agreements
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="four-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#four"
+                        type="button"
+                        role="tab"
+                        aria-controls="four"
+                        aria-selected="true"
+                      >
+                        4
+                      </button>
+                    </li>
+                  </ul>
+
+                  <div
+                    class="tab-content tab_content_details"
+                    id="pills-tabContent"
+                  >
+                    <div
+                      class="tab-pane fade show active"
+                      id="one"
+                      role="tabpanel"
+                      aria-labelledby="one"
+                    >
+                      1
+                    </div>
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="two"
+                      role="tabpanel"
+                      aria-labelledby="two-tab"
+                    >
+                      2
+                    </div>
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="three"
+                      role="tabpanel"
+                      aria-labelledby="three-tab"
+                    >
+                      3
+                    </div>
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="four"
+                      role="tabpanel"
+                      aria-labelledby="four-tab"
+                    >
+                      4
+                    </div>
+                  </div>
+                </div>
+                <!-- tab content end here  -->

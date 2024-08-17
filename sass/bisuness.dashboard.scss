@@ -43,6 +43,7 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
 @import "business/business-setting";
 @import "business/business-events";
 @import "business/event_details";
+@import "business/business-tribe";
 @import "search-page";
 @import "buttons";
 @import "badges";
