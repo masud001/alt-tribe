@@ -33,6 +33,7 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
   --alt-gray-light: #d9d9d9;
   --alt-text-clr: #232529;
   --alt-bg-hover-clr: #161d3b;
+  --alt-navy-blue: #161d3b;
 }
 
 // add my custom scss file to the end of the import stack
@@ -51,6 +52,7 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
 @import "avater";
 @import "tabs-content";
 @import "contest-details-page";
+@import "search-page";
 
 // custom design for the business dashboard
 .p-font {
