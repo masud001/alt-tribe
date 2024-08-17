@@ -77,3 +77,59 @@
 .punk-rectangle {
   background-color: #f96767;
 }
+
+// status dots badges
+.dot-status-success {
+  --color: #2b8657;
+  position: relative;
+  color: var(--color);
+  font-size: 12px;
+  left: 10px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color);
+    transform: translateY(-50%);
+  }
+}
+.dot-status-secondary {
+  --color: #939393;
+  position: relative;
+  color: var(--color);
+  font-size: 12px;
+  left: 10px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color);
+    transform: translateY(-50%);
+  }
+}
+.dot-status-danger {
+  --color: #e22929;
+  position: relative;
+  color: var(--color);
+  font-size: 12px;
+  left: 10px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--color);
+    transform: translateY(-50%);
+  }
+}

@@ -26,7 +26,7 @@ bdb = business dashboard;
     <link rel="stylesheet" href="../../css/bisuness.dashboard.min.css" />
     <title>Business Tribe page</title>
   </head>
-  <body>
+  <body class="tribe_page">
     <header class="alt_bdb_header">
       <div class="container-xxl">
         <div class="row">
@@ -1135,9 +1135,9 @@ bdb = business dashboard;
                           </div>
                           <button
                             type="button"
-                            data-bs-toggle="offcanvas"
-                            data-bs-target="#manageMembers"
-                            aria-controls="manageMembers"
+                            data-bs-toggle="modal"
+                            data-bs-target="#manageMembersModal"
+                            aria-controls="manageMembersModal"
                             class="text-decoration-underline add_speacker"
                           >
                             Manage members
@@ -1916,50 +1916,263 @@ bdb = business dashboard;
       </div>
     </main>
 
-    <!-- add manageMembers offcanver start -->
+    <!-- add manageMembers modal start -->
 
     <div
-      class="offcanvas offcanvas-end"
+      class="modal fade"
+      id="manageMembersModal"
       tabindex="-1"
-      id="manageMembers"
-      aria-labelledby="staticBackdropLabel"
+      role="dialog"
+      aria-labelledby="managememnersModalLabel"
+      aria-hidden="true"
     >
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="staticBackdropLabel">Manage members</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">Manage members</div>
-      <div
-        class="w-100 py-3 border-top border-light-subtle px-3 d-flex justify-content-end gap-3"
-      >
-        <button
-          type="button"
-          class="btn bg-white alt-btn-light-primary rounded-pill"
-        >
-          Cancel
-        </button>
-        <button
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#invitepeopleModal"
-          class="bg-alt-primary btn alt-btn-light-primary rounded-pill"
-        >
-          Sent invite
-        </button>
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="">
+              <h5 class="modal-title" id="managememnersModalLabel">
+                Who else you want to be in Aufait tribe?
+              </h5>
+              <p>5 members</p>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex gap-3 align-items-center mb-3">
+              <div class="flex-grow-1 position-relative tribe_search">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input
+                  type="text"
+                  placeholder="Search for an existing member or add new using email id"
+                />
+              </div>
+              <div class="">
+                <button class="btn-alt-outline rounded-pill">+ Add</button>
+              </div>
+            </div>
+            <!-- tab content start here  -->
+            <div class="event_details_page_content tab_content">
+              <ul
+                id="pills-tab"
+                class="d-flex align-items-center justify-content-start gap-1 gap-lg-3 mb-4 border-bottom border-light-subtle"
+                role="tablist"
+              >
+                <li role="presentation">
+                  <button
+                    class="active position-relative text-start"
+                    id="one-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#Members"
+                    type="button"
+                    role="tab"
+                    aria-controls="one"
+                    aria-selected="true"
+                  >
+                    Members
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    id="two-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#MyAgreements"
+                    type="button"
+                    role="tab"
+                    aria-controls="two"
+                    aria-selected="true"
+                  >
+                    My Agreements
+                  </button>
+                </li>
+              </ul>
+
+              <div
+                class="tab-content tab_content_details"
+                id="pills-tabContent"
+              >
+                <div
+                  class="tab-pane fade show active"
+                  id="Members"
+                  role="tabpanel"
+                  aria-labelledby="one"
+                >
+                  <div class="member_table">
+                    <table class="table align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">Members</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Role</th>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="">
+                          <th scope="row">
+                            <div class="d-flex gap-2 align-items-center">
+                              <div class="avater_image_32">
+                                <img src="https://i.pravatar.cc/32" alt="" />
+                              </div>
+                              <div class="d-flex gap-2 align-items-center">
+                                <p>Cooper Lipshutz</p>
+                                <span class="alt-badge alt-dark m-0"
+                                  >Admin</span
+                                >
+                              </div>
+                            </div>
+                          </th>
+                          <td class="">
+                            <p>pamelaj22@gmail.com</p>
+                          </td>
+                          <td>
+                            <p><strong>Developer</strong></p>
+                          </td>
+                          <td><a href="">View Profile</a></td>
+                          <td>
+                            <span class=""
+                              ><i class="fa-solid fa-ellipsis-vertical"></i
+                            ></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade pb-5"
+                  id="MyAgreements"
+                  role="tabpanel"
+                  aria-labelledby="two-tab"
+                >
+                  <div class="member_table">
+                    <table class="table align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">Members</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Signed at</th>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="">
+                          <th scope="row">
+                            <div class="d-flex gap-2 align-items-center">
+                              <div class="avater_image_32">
+                                <img src="https://i.pravatar.cc/32" alt="" />
+                              </div>
+                              <div class="d-flex gap-2 align-items-center">
+                                <p>Cooper Lipshutz</p>
+                                <span class="alt-badge alt-dark m-0"
+                                  >Admin</span
+                                >
+                              </div>
+                            </div>
+                          </th>
+                          <td class="">
+                            <p>pamelaj22@gmail.com</p>
+                          </td>
+                          <td>
+                            <p>
+                              <span class="dot-status-success">Signed </span>
+                            </p>
+                          </td>
+                          <td><p>Nov 25,2023</p></td>
+                          <td><p>View Agreement</p></td>
+                          <td>
+                            <span class=""
+                              ><i class="fa-solid fa-ellipsis-vertical"></i
+                            ></span>
+                          </td>
+                        </tr>
+                        <tr class="">
+                          <th scope="row">
+                            <div class="d-flex gap-2 align-items-center">
+                              <div class="avater_image_32">
+                                <img src="https://i.pravatar.cc/32" alt="" />
+                              </div>
+                              <div class="d-flex gap-2 align-items-center">
+                                <p>Cooper Lipshutz</p>
+                                <span class="alt-badge alt-dark m-0"
+                                  >Admin</span
+                                >
+                              </div>
+                            </div>
+                          </th>
+                          <td class="">
+                            <p>pamelaj22@gmail.com</p>
+                          </td>
+                          <td>
+                            <p>
+                              <span class="dot-status-secondary">Pending </span>
+                            </p>
+                          </td>
+                          <td><a href="">Create Agreement</a></td>
+                          <td><p>View Agreement</p></td>
+                          <td>
+                            <span class=""
+                              ><i class="fa-solid fa-ellipsis-vertical"></i
+                            ></span>
+                          </td>
+                        </tr>
+                        <tr class="">
+                          <th scope="row">
+                            <div class="d-flex gap-2 align-items-center">
+                              <div class="avater_image_32">
+                                <img src="https://i.pravatar.cc/32" alt="" />
+                              </div>
+                              <div class="d-flex gap-2 align-items-center">
+                                <p>Cooper Lipshutz</p>
+                                <span class="alt-badge alt-dark m-0"
+                                  >Admin</span
+                                >
+                              </div>
+                            </div>
+                          </th>
+                          <td class="">
+                            <p>pamelaj22@gmail.com</p>
+                          </td>
+                          <td>
+                            <p>
+                              <span class="dot-status-danger">Not Signed </span>
+                            </p>
+                          </td>
+                          <td>
+                            <span class="alt-badge alt-dark m-0">
+                              <i class="fa-regular fa-clock"></i> Awaiting</span
+                            >
+                          </td>
+                          <td><p>View Agreement</p></td>
+                          <td>
+                            <span class=""
+                              ><i class="fa-solid fa-ellipsis-vertical"></i
+                            ></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tab content end here  -->
+          </div>
+        </div>
       </div>
     </div>
 
-    <!-- add manageMembers offcanver end -->
+    <!-- add manageMembers modal end -->
 
     <!-- edit info modal start -->
 
-    <!-- Modal Body -->
-    <!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
     <div
       class="modal fade"
       id="editInfo"
@@ -1968,10 +2181,7 @@ bdb = business dashboard;
       aria-labelledby="editInfo"
       aria-hidden="true"
     >
-      <div
-        class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md"
-        role="document"
-      >
+      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="editInfo">Create a tribe</h5>
@@ -1986,7 +2196,7 @@ bdb = business dashboard;
             <div class="">
               <div class="mb-4">
                 <div
-                  class="alt-input-file border-0 py-5 rounded text-center position-relative overflow-hidden"
+                  class="alt-input-file py-5 rounded text-center position-relative overflow-hidden"
                 >
                   <img
                     src="../../assets/images/business-dashboard/tribe/create-tribe-modal-img.svg"
@@ -2012,8 +2222,8 @@ bdb = business dashboard;
                   placeholder="Signature Design Tribe"
                 />
               </div>
-              <!-- tags  -->
-              <div class="mb-4">
+              <!-- select skills  -->
+              <div class="mb-4 skills_select_input">
                 <label class="input-label" for="add-tags">Tribe skills</label>
 
                 <select
@@ -2032,17 +2242,202 @@ bdb = business dashboard;
                   <option>tribe skills 7</option>
                 </select>
               </div>
+
+              <div class="mb-2">
+                <label for="description" class="input-label"
+                  >Description
+                </label>
+
+                <textarea
+                  class="input-field"
+                  placeholder="Eg: My responsibilities include"
+                  id="description"
+                  rows="3"
+                ></textarea>
+              </div>
             </div>
           </div>
           <div class="modal-footer">
             <button
               type="button"
-              class="btn btn-secondary"
+              class="btn-alt-outline rounded-pill"
               data-bs-dismiss="modal"
             >
-              Close
+              Cancel
             </button>
-            <button type="button" class="btn btn-primary">Save</button>
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#editInfo2"
+              class="btn-alt-outline bg-alt-primary rounded-pill"
+            >
+              Continue
+              <span class="ms-1"> <i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- edit info modal 2  -->
+    <div
+      class="modal fade"
+      id="editInfo2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="editInfo2title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editInfo2title">
+              Who else you want to be in Aufait tribe?
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <div class="flex-grow-1 position-relative tribe_search">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input
+                  type="text"
+                  placeholder="Search for an existing member or add new using email id"
+                />
+              </div>
+              <!-- single check box -->
+              <div
+                class="d-flex justify-content-between align-items-center border-bottom border-light-subtle mb-2"
+              >
+                <div
+                  class="tribe_single_check_box d-flex align-items-center gap-2"
+                >
+                  <input
+                    class="form_check_input"
+                    type="checkbox"
+                    value=""
+                    id="check1"
+                  />
+                  <label class="form_check_label" for="check1">
+                    <div class="label_content d-flex align-items-center gap-2">
+                      <div class="avater_image_48">
+                        <img
+                          src="https://i.pravatar.cc/48"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="">
+                        <h5 class="mb-1">Logiology</h5>
+                        <div class="d-flex align-items-center flex-wrap gap-2">
+                          <p>Graphic Designer</p>
+                          <span class="dots"></span>
+                          <p>jamesjacobe@gmail.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="">
+                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div>
+              <!-- single check box -->
+              <div
+                class="d-flex justify-content-between align-items-center border-bottom border-light-subtle mb-2"
+              >
+                <div
+                  class="tribe_single_check_box d-flex align-items-center gap-2"
+                >
+                  <input
+                    class="form_check_input"
+                    type="checkbox"
+                    value=""
+                    id="check2"
+                  />
+                  <label class="form_check_label" for="check2">
+                    <div class="label_content d-flex align-items-center gap-2">
+                      <div class="avater_image_48">
+                        <img
+                          src="https://i.pravatar.cc/48"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="">
+                        <h5 class="mb-1">Logiology</h5>
+                        <div class="d-flex align-items-center flex-wrap gap-2">
+                          <p>Graphic Designer</p>
+                          <span class="dots"></span>
+                          <p>jamesjacobe@gmail.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="">
+                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div>
+              <!-- single check box -->
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <div
+                  class="tribe_single_check_box d-flex align-items-center gap-2"
+                >
+                  <input
+                    class="form_check_input"
+                    type="checkbox"
+                    value=""
+                    id="check3"
+                  />
+                  <label class="form_check_label" for="check3">
+                    <div class="label_content d-flex align-items-center gap-2">
+                      <div class="avater_image_48">
+                        <img
+                          src="https://i.pravatar.cc/48"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="">
+                        <h5 class="mb-1">Logiology</h5>
+                        <div class="d-flex align-items-center flex-wrap gap-2">
+                          <p>Graphic Designer</p>
+                          <span class="dots"></span>
+                          <p>jamesjacobe@gmail.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="">
+                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn-alt-outline rounded-pill"
+              data-bs-dismiss="modal"
+            >
+              Copy invite link
+            </button>
+            <button
+              type="button"
+              class="btn-alt-outline bg-alt-primary rounded-pill"
+            >
+              Send invite
+              <span class="ms-1"> <i class="fa-solid fa-arrow-right"></i></span>
+            </button>
           </div>
         </div>
       </div>
@@ -2055,5 +2450,6 @@ bdb = business dashboard;
     <script src="../../assets/vendor/js/popper.min.js"></script>
     <script src="../../assets/vendor/js/bootstrap.min.js"></script>
     <script src="../../assets/vendor/js/select2.min.js"></script>
+    <script src="../../assets/vendor/js/script.js"></script>
   </body>
 </html>
