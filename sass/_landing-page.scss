@@ -85,8 +85,6 @@
       &:focus {
         outline: none;
       }
-      i {
-      }
     }
   }
   .alt_header_button {
@@ -102,7 +100,7 @@
   }
 }
 
-// hero section start here
+// hero section
 .hero_section {
   &.hero_business_section {
     background-image: url("../assets/images/business-landing-page/hero-section/hero-left-bg.svg"),
@@ -383,10 +381,7 @@
       padding-bottom: 30px;
     }
   }
-  .freelance_section_img {
-    img {
-    }
-  }
+
   .freelance_content {
     h3 {
       font-family: var(--bs-body-font-family);
@@ -680,10 +675,6 @@
       display: flex;
       flex-direction: column;
 
-      span {
-        img {
-        }
-      }
       p {
         font-family: var(--bs-body-font-family);
         font-size: 18px;
@@ -804,8 +795,6 @@
   padding: 40px;
   background-color: #fbfbfb;
   .footer_logo {
-    img {
-    }
     p {
       font-size: 14px;
       font-family: var(--bs-body-font-family);
@@ -889,19 +878,12 @@
         color: var(--alt-text-dark);
         line-height: 22.4px;
       }
-      button {
-      }
+
       .review {
         color: var(--alt-gray-dark);
 
         .star {
           color: var(--alt-gold);
-        }
-        .number {
-        }
-        .number {
-        }
-        .review {
         }
       }
     }
