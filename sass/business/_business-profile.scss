@@ -1,0 +1,32 @@
+.business_profile {
+  .h-font {
+    font-size: 20px !important;
+  }
+}
+.all_project_tags {
+  div {
+    position: relative;
+    @media (min-width: 991px) {
+      &::after {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 20px;
+        background-color: var(--alt-gray-light);
+        top: 50%;
+        transform: translateY(-50%);
+        right: -28px;
+      }
+      &:last-child {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+.business_update_time {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
