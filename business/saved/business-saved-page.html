@@ -1039,6 +1039,30 @@ bdb = business dashboard;
           <!-- main content start -->
           <div class="col-12 col-lg-10 pb-5">
             <div class="row">
+              <!-- filter row  -->
+              <div class="col-12 mb-4">
+                <div class="filter_section d-flex align-items-center gap-3">
+                  <div class="filter_input flex-grow-1">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input
+                      type="text"
+                      placeholder="Search for saved items here"
+                    />
+                  </div>
+                  <div class="filter_button">
+                    <button>
+                      <span class="me-1"
+                        ><img
+                          src="../../assets/images/business-dashboard/events-page/filter_list_icon.svg"
+                          alt=""
+                      /></span>
+                      Filters
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
               <div class="col-md-12">
                 <!-- tab content start here  -->
                 <div class="event_details_page_content tab_content">
@@ -1246,67 +1270,26 @@ bdb = business dashboard;
                         <div
                           class="single_filter_option position-relative w-100 d-flex flex-column flex-md-row gap-3 mb-3"
                         >
-                          <div class="d-flex gap-3">
-                            <!-- image thumb  -->
-                            <div
-                              class="filter_image flex-shrink-0 d-none d-lg-flex"
-                            >
-                              <img
-                                src="https://via.placeholder.com/230"
-                                alt=""
-                              />
-                            </div>
+                          <div class="d-flex w-100 gap-3">
                             <!-- content  -->
                             <div
-                              class="filter_content p-3 d-flex flex-column gap-3"
+                              class="filter_content p-3 d-flex flex-shrink-1 w-100 flex-column gap-3"
                             >
-                              <div class="d-flex gap-3 align-items-start">
+                              <div class="d-flex gap-3 align-items-center">
                                 <div class="avater">
                                   <img src="https://i.pravatar.cc/74" alt="" />
                                 </div>
                                 <div class="name d-flex flex-column gap-1">
                                   <div class="d-flex gap-2 align-items-center">
                                     <h4>John Smith</h4>
-                                    <span
-                                      class="ratting btn-alt-outline p-1 rounded-pill"
-                                    >
-                                      <span class=""
-                                        ><img
-                                          src="../../assets/images/search-page/icons/Star.svg"
-                                          alt=""
-                                      /></span>
-                                      <span
-                                        class="ms-1 position-relative ranking"
-                                        >Star</span
-                                      >
-                                    </span>
                                   </div>
                                   <div class="address d-flex flex-column">
                                     <div
                                       class="location d-flex align-items-center gap-2"
                                     >
-                                      <span>Branding</span>
-                                      <span class="dots"></span>
-                                      <div>
-                                        <span
-                                          ><i
-                                            class="fa-solid fa-location-dot"
-                                          ></i
-                                        ></span>
-                                        Mumbai, India
-                                      </div>
-                                    </div>
-                                    <div
-                                      class="d-flex ratign align-items-center gap-2"
-                                    >
-                                      <span
-                                        ><img
-                                          src="../../assets/images/search-page/icons/ratign-star.svg"
-                                          alt=""
-                                      /></span>
-                                      <span>4.0</span>
-                                      <span class="dots"></span>
-                                      <span>25 Reviews </span>
+                                      <p class="dezignation">
+                                        Graphic Designing
+                                      </p>
                                     </div>
                                   </div>
                                 </div>
@@ -1316,36 +1299,97 @@ bdb = business dashboard;
                                 <span class="alt-badge alt-dark">html</span>
                                 <span class="alt-badge alt-dark">css</span>
                               </div>
-                              <div class="">
-                                <p>
-                                  Lorem, ipsum dolor sit amet consectetur
-                                  adipisicing elit. Nobis, quisquam. Ipsam
-                                  tempora earum est perferendis.
-                                </p>
-                              </div>
-                            </div>
-                          </div>
-                          <!-- buttons -->
-                          <div
-                            class="me-auto me-md-0 ms-md-auto filter_buttons p-3 d-flex flex-column justify-content-between flex-shrink-0"
-                          >
-                            <div
-                              class="align-self-start align-self-md-end pb-3 price"
-                            >
-                              <span>$45</span> / Hour
-                            </div>
-                            <div class="d-flex gap-2">
-                              <button
-                                class="rounded-pill text-capitalize alt-btn-light-primary bg-white"
+                              <div
+                                class="d-flex justify-content-between align-items-center"
                               >
-                                Invite to project
-                              </button>
-                              <button class="bookmakr rounded-circle">
-                                <img
-                                  src="../../assets/images/search-page/icons/bookmark.svg"
-                                  alt=""
-                                />
-                              </button>
+                                <div
+                                  class="total_numbers d-inline-flex flex-column flex-lg-row align-items-center gap-lg-5"
+                                >
+                                  <p>
+                                    <span>Total members: </span>
+                                    <strong>5 Members</strong>
+                                  </p>
+                                  <p>
+                                    <span>Created on : </span>
+                                    <strong>Nov 23, 2023</strong>
+                                  </p>
+                                </div>
+                                <div class="">
+                                  <div
+                                    class="avater_group d-inline-flex align-items-center"
+                                  >
+                                    <span>Tribe</span>
+                                    <div class="avatars">
+                                      <a
+                                        href="https://twitter.com/jaffathecake/"
+                                        title="Jake on Twitter"
+                                        ><img
+                                          alt="Profile image for Jake Archibald"
+                                          class="avatar"
+                                          height="96"
+                                          width="96"
+                                          src="https://assets.codepen.io/5928893/avatar_jake.jpg"
+                                      /></a>
+                                      <a
+                                        href="https://twitter.com/bramus/"
+                                        title="Bramus on Twitter"
+                                        ><img
+                                          alt="Profile image for Bramus"
+                                          class="avatar"
+                                          height="96"
+                                          width="96"
+                                          src="https://assets.codepen.io/5928893/avatar_bramus.jpg"
+                                      /></a>
+                                      <a
+                                        href="https://twitter.com/una/"
+                                        title="Una on Twitter"
+                                        ><img
+                                          alt="Profile image for Una Kravets"
+                                          class="avatar"
+                                          height="96"
+                                          src="https://assets.codepen.io/5928893/avatar_una.jpg"
+                                      /></a>
+                                      <a
+                                        href="https://twitter.com/argyleink/"
+                                        title="Adam on Twitter"
+                                        ><img
+                                          alt="Profile image for Adam Argyle"
+                                          class="avatar"
+                                          height="96"
+                                          width="96"
+                                          src="https://assets.codepen.io/5928893/avatar_adam.jpg"
+                                      /></a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div
+                                class="d-flex flex-column flex-lg-row justify-content-lg-between gap-3 align-items-start align-items-lg-center border-top border-light-subtle pt-3"
+                              >
+                                <div class="">
+                                  <p>
+                                    Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Nobis, quisquam. Ipsam
+                                    tempora earum est perferendis.
+                                  </p>
+                                </div>
+                                <div class="">
+                                  <div class="d-flex gap-2">
+                                    <button
+                                      class="rounded-pill text-capitalize alt-btn-light-primary bg-white"
+                                    >
+                                      Invite to project
+                                    </button>
+                                    <button class="bookmakr rounded-circle">
+                                      <img
+                                        src="../../assets/images/search-page/icons/bookmark.svg"
+                                        alt=""
+                                      />
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -1357,7 +1401,61 @@ bdb = business dashboard;
                       role="tabpanel"
                       aria-labelledby="contest-tab"
                     >
-                      Contest
+                      <!-- for empty screen  -->
+                      <div
+                        class="bg-alt-bg-clr rounded-3 py-5 w-100 text-center h-auto d-flex flex-column gap-4 align-items-center justify-content-center"
+                      >
+                        <img
+                          src="../../assets/images/business-dashboard/tribe/empty-list-img.svg"
+                          alt=""
+                        />
+                        <p>
+                          There are no active projects. Once you start <br />
+                          applying to projects, they will appear here.
+                        </p>
+                        <div
+                          class="position-relative dropdown-center dropdown_buttons"
+                        >
+                          <button
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            class="dropdown-toggle alt-btn btn-alt-outline bg-alt-primary rounded-pill"
+                          >
+                            New Contest
+                          </button>
+                          <ul class="dropdown-menu m-0 p-0">
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span
+                                  ><img
+                                    src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                    alt=""
+                                /></span>
+                                Add new Contest
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span
+                                  ><img
+                                    src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                    alt="" /></span
+                                >Add existing Contest</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span
+                                  ><img
+                                    src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                    alt="" /></span
+                                >Explore Contest</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                     <div
                       class="tab-pane speaker_profile fade pb-5"
@@ -1365,7 +1463,63 @@ bdb = business dashboard;
                       role="tabpanel"
                       aria-labelledby="events-tab"
                     >
-                      Events (1)
+                      <!-- single tribe card -->
+                      <div
+                        class="tribe_card_wrapper bg-alt-bg-clr rounded-3 p-3 mb-3"
+                      >
+                        <div
+                          class="tribe_card_details d-flex gap-2 align-items-center mb-3"
+                        >
+                          <div class="avater_image flex-shrink-1">
+                            <img src="https://i.pravatar.cc/44" alt="" />
+                          </div>
+                          <div class="">
+                            <h5 class="">Logiology</h5>
+                            <h4>Branding design for Fintech startup</h4>
+                          </div>
+                        </div>
+                        <div class="tags mb-3">
+                          <span class="alt-badge alt-agreement">Agreement</span>
+                          <span
+                            class="alt-badge alt-badge-light d-inline-flex align-items-center"
+                          >
+                            <span class="alt-dots bg-primary me-1"></span>
+                            Agreement ready to sign</span
+                          >
+                          <span class="alt-badge alt-badge-outline"
+                            >$100-500</span
+                          >
+                        </div>
+
+                        <div
+                          class="d-flex flex-wrap gap-3 justify-content-between align-items-center border-top border-light-subtle pt-3"
+                        >
+                          <div class="d-flex gap-2 align-items-center">
+                            <p>Last update:</p>
+                            <span class="avater_image_32 flex-shrink-1"
+                              ><img src="https://i.pravatar.cc/32" alt=""
+                            /></span>
+                            <p class="h-font text-decoration-underline">
+                              <strong>Abel Marshal</strong>
+                            </p>
+                            <span class="dots"></span>
+                            <p class="">Nov 23, 2023</p>
+                          </div>
+                          <div class="d-flex gap-3 aligite">
+                            <button
+                              class="alt-btn btn-alt-outline rounded-pill"
+                            >
+                              View agreement
+                            </button>
+                            <button class="bookmakr rounded-circle">
+                              <img
+                                src="../../assets/images/search-page/icons/bookmark.svg"
+                                alt=""
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div
                       class="tab-pane speaker_profile fade pb-5"
@@ -1373,7 +1527,61 @@ bdb = business dashboard;
                       role="tabpanel"
                       aria-labelledby="projects-tab"
                     >
-                      Projects (2)
+                      <!-- for empty screen  -->
+                      <div
+                        class="bg-alt-bg-clr rounded-3 py-5 w-100 text-center h-auto d-flex flex-column gap-4 align-items-center justify-content-center"
+                      >
+                        <img
+                          src="../../assets/images/business-dashboard/tribe/empty-list-img.svg"
+                          alt=""
+                        />
+                        <p>
+                          There are no active projects. Once you start <br />
+                          applying to projects, they will appear here.
+                        </p>
+                        <div
+                          class="position-relative dropdown-center dropdown_buttons"
+                        >
+                          <button
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            class="dropdown-toggle alt-btn btn-alt-outline bg-alt-primary rounded-pill"
+                          >
+                            New project
+                          </button>
+                          <ul class="dropdown-menu m-0 p-0">
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span
+                                  ><img
+                                    src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                    alt=""
+                                /></span>
+                                Add new project
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span
+                                  ><img
+                                    src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                    alt="" /></span
+                                >Add existing project</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span
+                                  ><img
+                                    src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                    alt="" /></span
+                                >Explore project</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
