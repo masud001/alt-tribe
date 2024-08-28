@@ -1043,7 +1043,7 @@ bdb = business dashboard;
 
           <!-- main content start -->
           <div class="col-12 col-lg-10 pb-5">
-            <div class="row">
+            <div class="row gy-3 gy-lg-0">
               <div class="col-md-4">
                 <div class="bg-alt-bg-clr">
                   <div class="">
@@ -1193,7 +1193,7 @@ bdb = business dashboard;
                 <div class="event_details_page_content tab_content">
                   <ul
                     id="pills-tab"
-                    class="d-flex align-items-center justify-content-start gap-1 gap-lg-3 mb-4 border-bottom border-light-subtle"
+                    class="d-flex flex-wrap align-items-center justify-content-start gap-1 gap-lg-3 mb-4 border-bottom border-light-subtle"
                     role="tablist"
                   >
                     <li role="presentation">
@@ -1247,6 +1247,19 @@ bdb = business dashboard;
                         aria-selected="true"
                       >
                         Members
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="Freelancers-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#Freelancers"
+                        type="button"
+                        role="tab"
+                        aria-controls="Freelancers"
+                        aria-selected="true"
+                      >
+                        Freelancer
                       </button>
                     </li>
                   </ul>
@@ -1750,7 +1763,286 @@ bdb = business dashboard;
                       role="tabpanel"
                       aria-labelledby="Members-tab"
                     >
-                      <h2>member</h2>
+                      <div class="">
+                        <h4>Manage members</h4>
+                        <p>8 members</p>
+                        <div class="my-3">
+                          <div
+                            class="d-flex align-items-center gap-3 pt-4 pt-lg-0 mb-4"
+                          >
+                            <div
+                              class="flex-grow-1 position-relative tribe_search"
+                            >
+                              <span
+                                ><i class="fa-solid fa-magnifying-glass"></i
+                              ></span>
+                              <input type="text" placeholder="Search members" />
+                            </div>
+
+                            <div class="">
+                              <button
+                                type="button"
+                                class="btn-lg alt-btn btn-alt-outline rounded-pill"
+                              >
+                                + Add
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row gy-3">
+                          <!-- single member  -->
+                          <div
+                            class="single_members border-bottom border-light-subtle pb-3"
+                          >
+                            <div
+                              class="d-flex align-items-center justify-content-between"
+                            >
+                              <div
+                                class="d-flex flex-row gap-2 align-items-center"
+                              >
+                                <div class="avater_image_48 flex-shrink-1">
+                                  <img src="https://i.pravatar.cc/48" alt="" />
+                                  <span class="available online"></span>
+                                </div>
+                                <div class="">
+                                  <h6 class="h-font">
+                                    <strong>Talan Lipshutz</strong>
+                                  </h6>
+                                  <div
+                                    class="d-flex flex-wrap ratign align-items-center gap-2 text-alt-text-gray-clr"
+                                  >
+                                    <span>Co-ordinator</span>
+                                    <span class="dots"></span>
+                                    <span>jamesjacobe@gmail.com</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="d-flex align-items-center gap-3">
+                                <div class="">
+                                  <div
+                                    class="position-relative dropdown_buttons"
+                                  >
+                                    <button
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                      class="dropdown-toggle btn-lg alt-btn btn-alt-outline rounded-pill"
+                                    >
+                                      Admin
+                                    </button>
+                                    <ul
+                                      class="dropdown-menu dropdown-menu-end m-0 p-0"
+                                    >
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <span
+                                            ><img
+                                              src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                              alt=""
+                                          /></span>
+                                          Member
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <span
+                                            ><img
+                                              src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                              alt="" /></span
+                                          >Maneger</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <span
+                                            ><img
+                                              src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                              alt="" /></span
+                                          >Co-ordinator</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="">
+                                  <span
+                                    ><i
+                                      class="fa-solid fa-ellipsis-vertical"
+                                    ></i
+                                  ></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- single member  -->
+                          <div
+                            class="single_members border-bottom border-light-subtle pb-3"
+                          >
+                            <div
+                              class="d-flex align-items-center justify-content-between"
+                            >
+                              <div
+                                class="d-flex flex-row gap-2 align-items-center"
+                              >
+                                <div class="avater_image_48 flex-shrink-1">
+                                  <img src="https://i.pravatar.cc/48" alt="" />
+                                  <span class="available offline"></span>
+                                </div>
+                                <div class="">
+                                  <h6 class="h-font">
+                                    <strong>Talan Lipshutz</strong>
+                                  </h6>
+                                  <div
+                                    class="d-flex flex-wrap ratign align-items-center gap-2 text-alt-text-gray-clr"
+                                  >
+                                    <span>Co-ordinator</span>
+                                    <span class="dots"></span>
+                                    <span>jamesjacobe@gmail.com</span>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="d-flex align-items-center gap-3">
+                                <div class="">
+                                  <div
+                                    class="position-relative dropdown_buttons"
+                                  >
+                                    <button
+                                      type="button"
+                                      data-bs-toggle="dropdown"
+                                      aria-expanded="false"
+                                      class="dropdown-toggle btn-lg alt-btn btn-alt-outline rounded-pill"
+                                    >
+                                      Member
+                                    </button>
+                                    <ul
+                                      class="dropdown-menu dropdown-menu-end m-0 p-0"
+                                    >
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <span
+                                            ><img
+                                              src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                              alt=""
+                                          /></span>
+                                          Admin
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <span
+                                            ><img
+                                              src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                              alt="" /></span
+                                          >Maneger</a
+                                        >
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          <span
+                                            ><img
+                                              src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                              alt="" /></span
+                                          >Co-ordinator</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="">
+                                  <span
+                                    ><i
+                                      class="fa-solid fa-ellipsis-vertical"
+                                    ></i
+                                  ></span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="Freelancers"
+                      role="tabpanel"
+                      aria-labelledby="Freelancers-tab"
+                    >
+                      <!-- single filter item  -->
+                      <div
+                        class="single_filter_option position-relative w-100 d-flex flex-column flex-md-row gap-3 mb-3"
+                      >
+                        <div class="d-flex gap-3">
+                          <!-- content  -->
+                          <div
+                            class="filter_content p-3 d-flex flex-column gap-3"
+                          >
+                            <div class="d-flex gap-3 align-items-start">
+                              <div class="avater_image_48 flex-shrink-1">
+                                <img
+                                  src="https://i.pravatar.cc/48"
+                                  class="img-fluid rounded-circle"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="name d-flex flex-column gap-1">
+                                <div class="d-flex gap-2 align-items-center">
+                                  <h4>John Smith</h4>
+                                  <span
+                                    class="ratting btn-alt-outline p-1 rounded-pill"
+                                  >
+                                    <span class=""
+                                      ><img
+                                        src="../../assets/images/search-page/icons/Star.svg"
+                                        alt=""
+                                    /></span>
+                                    <span class="ms-1 position-relative ranking"
+                                      >Star</span
+                                    >
+                                  </span>
+                                </div>
+                                <div class="address d-flex flex-column">
+                                  <p>Product Designer</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="">
+                              <span class="alt-badge alt-dark">design</span>
+                              <span class="alt-badge alt-dark">html</span>
+                              <span class="alt-badge alt-dark">css</span>
+                            </div>
+                            <div class="">
+                              <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Nobis, quisquam. Ipsam tempora
+                                earum est perferendis.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- buttons -->
+                        <div
+                          class="me-auto me-md-0 ms-md-auto filter_buttons p-3 d-flex flex-column justify-content-between flex-shrink-0"
+                        >
+                          <div
+                            class="align-self-start align-self-md-end pb-3 price"
+                          >
+                            <span>$45</span> / Hour
+                          </div>
+                          <div class="d-flex gap-2">
+                            <button
+                              class="rounded-pill text-capitalize alt-btn-light-primary bg-white"
+                            >
+                              View Profile
+                            </button>
+                            <button class="bookmakr rounded-circle">
+                              <img
+                                src="../../assets/images/search-page/icons/bookmark.svg"
+                                alt=""
+                              />
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

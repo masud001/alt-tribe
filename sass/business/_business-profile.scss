@@ -30,3 +30,27 @@
   top: 15px;
   right: 15px;
 }
+
+#Members {
+  h4 {
+    font-size: 20px !important;
+    line-height: 24px !important;
+    font-family: var(--bs-body-font-family) !important;
+    font-weight: 600 !important;
+    color: var(--alt-text-clr) !important;
+  }
+  h6 {
+    font-size: 16px !important;
+    line-height: 20px !important;
+    font-family: var(--bs-body-font-family) !important;
+    font-weight: 500 !important;
+    color: var(--alt-text-clr) !important;
+  }
+  p {
+    font-size: 14px !important;
+    line-height: 18px !important;
+    font-family: var(--bs-body-font-family) !important;
+    font-weight: 400 !important;
+    color: var(--alt-text-gray-clr) !important;
+  }
+}

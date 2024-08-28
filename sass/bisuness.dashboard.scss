@@ -37,6 +37,7 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
   --alt-text-clr: #232529;
   --alt-bg-hover-clr: #161d3b;
   --alt-navy-blue: #161d3b;
+  --alt-text-gray-clr: #595959;
 }
 
 // add my custom scss file to the end of the import stack

@@ -108,14 +108,32 @@
   }
 }
 .avater_image_48 {
+  position: relative;
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  overflow: hidden;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 50%;
+  }
+  .available {
+    position: absolute;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: 4px;
+    right: 0px;
+    &.offline {
+      background-color: var(--alt-gray-light);
+      outline: 1px solid #fff;
+    }
+    &.online {
+      background-color: #17b26a;
+      outline: 1px solid #fff;
+    }
   }
 }
 
