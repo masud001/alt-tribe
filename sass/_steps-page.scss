@@ -386,8 +386,6 @@
   }
 }
 
-.add_social_links {
-}
 .input-field.social-link_input {
   padding-left: 165px;
   border-top-right-radius: 7px !important;
@@ -409,6 +407,16 @@
 .select-form-group {
   top: 1px !important;
   left: 6px !important;
+}
+.social_links_input {
+  input {
+    &.form-control {
+      &:focus {
+        box-shadow: none !important;
+        outline: 1px solid var(--alt-primary) !important;
+      }
+    }
+  }
 }
 
 // tribe page css

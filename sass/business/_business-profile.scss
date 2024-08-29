@@ -54,3 +54,16 @@
     color: var(--alt-text-gray-clr) !important;
   }
 }
+
+.edidt_info_canvas {
+  @media (min-width: 991px) {
+    width: 45% !important;
+  }
+
+  h6 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--bs-body-font-family);
+    color: var(--alt-text-clr);
+  }
+}

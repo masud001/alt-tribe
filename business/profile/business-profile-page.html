@@ -14,6 +14,13 @@ bdb = business dashboard;
       href="../../assets/fontawesomes/css/fontawesome.min.css"
     />
     <link rel="stylesheet" href="../../assets/fontawesomes/css/all.min.css" />
+    <!-- multi-select cdn links  -->
+    <link rel="stylesheet" href="../../assets/vendor/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/css/select2-bootstrap4.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/vendor/css/select2.min.css" />
     <!-- custom style sheet  -->
     <link rel="stylesheet" href="../../css/bisuness.dashboard.min.css" />
     <title>Business Profile page</title>
@@ -1076,7 +1083,7 @@ bdb = business dashboard;
                             <span
                               ><i class="fa-solid fa-building-columns"></i
                             ></span>
-                            <p class="p-font">Media & Entertainment</p>
+                            <p class="p-font">State</p>
                           </div>
                           <div class="d-flex gap-2 align-items-center">
                             <span
@@ -1103,6 +1110,10 @@ bdb = business dashboard;
                         >
                           <button
                             class="alt-btn-light-outline-primary rounded-pill"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#editProfile"
+                            aria-controls="editProfile"
                           >
                             Edit profile
                           </button>
@@ -2161,10 +2172,232 @@ bdb = business dashboard;
         </div>
       </div>
     </div>
-
     <!-- add speaker offcanver end -->
 
+    <!-- edit info canvas -->
+
+    <div
+      class="offcanvas offcanvas-end edidt_info_canvas"
+      data-bs-backdrop="static"
+      tabindex="-1"
+      id="editProfile"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Edit info</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <h6 class="">Basic info</h6>
+        <div class="">
+          <div class="mb-3">
+            <label for="name" class="input-label">Business name </label>
+            <input
+              type="text"
+              class="input-field"
+              id="name"
+              placeholder="SynthWave Technologies"
+            />
+          </div>
+          <div class="row gy-3">
+            <div class="col">
+              <div class="">
+                <label class="input-label" for="core-skill"
+                  >Business type</label
+                >
+
+                <select
+                  class="w-100 input-select"
+                  multiple
+                  data-placeholder="Select Business type"
+                  data-allow-clear="1"
+                  id="core-skill"
+                >
+                  <option>Business type 1</option>
+                  <option>Business type 2</option>
+                  <option>Business type 3</option>
+                  <option>Business type 4</option>
+                  <option>Business type 5</option>
+                  <option>Business type 6</option>
+                  <option>Business type 7</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="">
+                <label class="input-label" for="industry">Industry</label>
+
+                <select
+                  class="w-100 input-select"
+                  multiple
+                  data-placeholder="Select Media "
+                  data-allow-clear="1"
+                  id="industry"
+                >
+                  <option>Media & Entertainment 1</option>
+                  <option>Media & Entertainment 2</option>
+                  <option>Media & Entertainment 3</option>
+                  <option>Media & Entertainment 4</option>
+                  <option>Media & Entertainment 5</option>
+                  <option>Media & Entertainment 6</option>
+                  <option>Media & Entertainment 7</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <h6 class="py-3">Location</h6>
+
+          <div class="row gy-3">
+            <div class="col">
+              <div class="">
+                <label class="input-label" for="city-name">City</label>
+
+                <select
+                  class="w-100 input-select"
+                  multiple
+                  data-placeholder="City"
+                  data-allow-clear="1"
+                  id="city-name"
+                >
+                  <option>City 1</option>
+                  <option>City 2</option>
+                  <option>City 3</option>
+                  <option>City 4</option>
+                  <option>City 5</option>
+                  <option>City 6</option>
+                  <option>City 7</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="">
+                <label class="input-label" for="state">State</label>
+
+                <select
+                  class="w-100 input-select"
+                  multiple
+                  data-placeholder="State "
+                  data-allow-clear="1"
+                  id="state"
+                >
+                  <option>State 1</option>
+                  <option>State 2</option>
+                  <option>State 3</option>
+                  <option>State 4</option>
+                  <option>State 5</option>
+                  <option>State 6</option>
+                  <option>State 7</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row py-3">
+            <div class="col">
+              <div class="">
+                <label class="input-label" for="Country">Country</label>
+
+                <select
+                  class="w-100 input-select"
+                  multiple
+                  data-placeholder="country"
+                  data-allow-clear="1"
+                  id="Country"
+                >
+                  <option>Country name 1</option>
+                  <option>Country name 2</option>
+                  <option>Country name 3</option>
+                  <option>Country name 4</option>
+                  <option>Country name 5</option>
+                  <option>Country name 6</option>
+                  <option>Country name 7</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <div class="mb-3">
+                <label for="email" class="input-label">Email </label>
+                <input
+                  type="email"
+                  class="input-field"
+                  id="email"
+                  placeholder="marilynwestervelt@gmail.com "
+                />
+              </div>
+            </div>
+            <div class="col">
+              <div class="mb-3">
+                <label for="phonenumber" class="input-label"
+                  >Phone Number
+                </label>
+                <input
+                  type="phonenumber"
+                  class="input-field"
+                  id="phonenumber"
+                  placeholder="(415) 555‑0132"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="mb-2">
+            <!--  -->
+            <div class="">
+              <label for="" class="input-label">On the web</label>
+              <div class="input-group mb-3 social_links_input">
+                <button
+                  class="btn btn-outline-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Linkedin
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">solical links</a></li>
+                  <li><a class="dropdown-item" href="#">solical links</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">solical links</a>
+                  </li>
+
+                  <li><a class="dropdown-item" href="#">solical links</a></li>
+                </ul>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-label="Text input with dropdown button"
+                />
+              </div>
+            </div>
+            <!-- next work  -->
+            <div class="next-works">
+              <button class="add_more_btn">+ Add more</button>
+            </div>
+          </div>
+
+          <h6 class="py-3">Location</h6>
+          <div class="mb-2">
+            <label for="description" class="input-label">About business </label>
+            <textarea
+              class="input-field"
+              placeholder="Type about your business."
+              id="description"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="../../assets/vendor/js/bootstrap.bundle.min.js"></script>
+
     <script>
       // Get all buttons with class '.view-reply-btn-js'
       const viewReplyButtons = document.querySelectorAll(".view-reply-btn-js");
@@ -2193,5 +2426,10 @@ bdb = business dashboard;
         });
       });
     </script>
+    <script src="../../assets/vendor/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../assets/vendor/js/popper.min.js"></script>
+    <script src="../../assets/vendor/js/bootstrap.min.js"></script>
+    <script src="../../assets/vendor/js/select2.min.js"></script>
+    <script src="../../assets/vendor/js/script.js"></script>
   </body>
 </html>
