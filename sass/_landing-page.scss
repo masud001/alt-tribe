@@ -735,12 +735,6 @@
     }
   }
 }
-.accordion-button {
-  border-bottom: 1px solid #33343b;
-  font-weight: 600 !important;
-  font-size: 20px !important;
-  font-family: var(--bs-body-font-family) !important;
-}
 
 // promo
 .promo_section {
@@ -952,17 +946,23 @@
   }
 }
 
-.accordion-button::after {
+.landing_page_faq .accordion-button {
+  border-bottom: 1px solid #33343b;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+  font-family: var(--bs-body-font-family) !important;
+}
+.landing_page_faq .accordion-button::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
   transition: all 0.5s;
   left: 0;
   position: absolute;
   margin-left: unset !important;
 }
-.accordion-button:not(.collapsed)::after {
+.landing_page_faq .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
 }
-.accordion-button::after {
+.landing_page_faq .accordion-button::after {
   transition: all 0.5s;
 }
 
@@ -976,16 +976,16 @@
     background-image: url("../assets/images/business-landing-page/freelance-section-dark-bg.svg");
     background-size: cover;
   }
-  .accordion-button {
+  .landing_page_faq .accordion-button {
     background-color: var(--alt-dark-theme-primary) !important;
   }
   .promo_section {
     margin-top: -1px;
   }
-  .accordion-button::after {
+  .landing_page_faq .accordion-button::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
   }
-  .accordion-button:not(.collapsed)::after {
+  .landing_page_faq .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
   }
 }

@@ -1,0 +1,132 @@
+:root {
+  --clr: #5c5e63;
+}
+.milestone_item {
+  input:checked + label {
+    &.btn {
+      border: 1px solid var(--alt-primary);
+    }
+  }
+  label {
+    &.btn {
+      border: 1px solid #5c5e63;
+      &:hover {
+        border: 1px solid var(--alt-primary);
+      }
+    }
+  }
+}
+.single_milestone_content {
+  h5 {
+    font-size: 16px;
+    color: var(--alt-text-clr);
+    font-weight: 500;
+  }
+  ul {
+    display: block;
+    text-align: left;
+    li {
+      font-size: 12px;
+      color: var(--clr);
+      font-family: var(--alt-text-clr);
+      font-weight: 500;
+      position: relative;
+      left: 15px;
+      &::before {
+        content: "";
+        position: absolute;
+        left: -11px;
+        top: 54%;
+        transform: translateY(-50%);
+        width: 7px;
+        height: 7px;
+        background-color: rgba(0, 0, 0, 0);
+        border-radius: 50%;
+        border: 1px solid var(--clr);
+      }
+      span {
+        margin-left: 10px;
+        font-size: 16px;
+        color: var(--alt-text-clr);
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.setup_milestones {
+  .accordion {
+    border: none !important;
+    .accordion-item {
+      border: 1px solid var(--clr) !important;
+      margin: 24px 0px;
+      border-radius: 10px;
+      .accordion-button {
+        .edit_button {
+          z-index: 99;
+          cursor: default;
+          display: inline-block;
+          position: absolute;
+          right: 8%;
+          top: 50%;
+          transform: translateY(-50%);
+          text-transform: capitalize !important;
+          &:hover {
+            color: var(--alt-primary);
+          }
+        }
+        border: 0 !important;
+        color: var(--clr) !important;
+        text-transform: uppercase;
+        font-size: 12px !important;
+        font-weight: 600;
+        border-radius: 10px !important;
+        font-family: var(--bs-body-font-family);
+        &::after {
+          content: "\f0dd";
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
+          background-image: none;
+          color: var(--alt-text-clr);
+          right: 0;
+          left: unset;
+        }
+        &.collapsed {
+          .edit_button {
+            display: none;
+          }
+          border-radius: 10px;
+          &::after {
+            content: "\f0dd";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            background-image: none;
+            color: var(--alt-text-clr);
+            right: 0;
+            left: unset;
+          }
+        }
+      }
+      .accordion-body {
+        h5 {
+          font-size: 20px;
+          font-weight: 600;
+          font-family: var(--bs-body-font-family);
+          color: var(--alt-text-clr);
+        }
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          font-family: var(--bs-body-font-family);
+          color: var(--alt-text-clr);
+        }
+        .deliverable_items {
+          p {
+            padding: 15px 0;
+            border-bottom: 1px solid var(--alt-gray-light-100);
+          }
+        }
+      }
+    }
+  }
+}

@@ -341,3 +341,24 @@
     }
   }
 }
+
+.milestones_review {
+  h6 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: var(--bs-body-font-family);
+    color: #5c5e63;
+  }
+  h5 {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--bs-body-font-family);
+    color: var(--alt-text-clr);
+  }
+  p {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: var(--bs-body-font-family);
+    color: var(--alt-gray-light-200);
+  }
+}
