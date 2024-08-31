@@ -1,0 +1,2260 @@
+<!-- 
+bdb = business dashboard; 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome icons links  -->
+    <link
+      rel="stylesheet"
+      href="../../assets/fontawesomes/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/fontawesomes/css/all.min.css" />
+    <!-- multi-select cdn links  -->
+    <link rel="stylesheet" href="../../assets/vendor/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/css/select2-bootstrap4.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/vendor/css/select2.min.css" />
+
+    <!-- custom style sheet  -->
+    <link rel="stylesheet" href="../../css/bisuness.dashboard.min.css" />
+    <title>Business project initial business details page</title>
+  </head>
+  <body class="tribe_page">
+    <header class="alt_bdb_header">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-lg-2 border-end border-light-subtle">
+            <div
+              class="alt_bdb_logo d-flex justify-content-between align-items-lg-start"
+            >
+              <div class="d-flex flex-row gap-2 align-items-start">
+                <!-- mobile menu bar  -->
+                <button
+                  class="btn bg-light bg-transparent p-0 me-2 d-lg-none"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                  aria-controls="offcanvasExample"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/menu-bar-icons.svg"
+                    alt=""
+                  />
+                </button>
+                <!-- logo  -->
+                <div
+                  class="d-flex flex-row flex-lg-column align-items-center align-items-lg-start justify-content-start"
+                >
+                  <a href="/#">
+                    <img
+                      src="../../assets/images/business-dashboard/logo.svg"
+                      alt="logo"
+                    />
+                  </a>
+                  <!-- role badge  -->
+                  <div class="ms-2 ms-lg-0">
+                    <span class="badge rounded-pill text-bg-warning"
+                      >Business</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- notification for mobile  -->
+              <div class="d-flex align-items-center gap-3">
+                <a href="" class="d-lg-none">
+                  <img
+                    src="../../assets/images/business-dashboard/Search.svg"
+                    alt="search icon"
+                  />
+                </a>
+                <div class="notification_icon d-lg-none">
+                  <div
+                    type="button"
+                    class="position-relative"
+                    class="position-relative"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#notification_canvas"
+                    aria-controls="notification_canvas"
+                  >
+                    <img
+                      src="../../assets/images/business-dashboard/notification.svg"
+                      alt=""
+                    />
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-1"
+                      ><span class="visually-hidden"
+                        >unread messages</span
+                      ></span
+                    >
+                  </div>
+                </div>
+                <button
+                  class="d-none d-lg-block btn bg-light bg-transparent p-0"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/menu_open-icon.svg"
+                    alt="mobile icons"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 pt-3 pt-lg-0">
+            <div class="breadcrumb d-flex ps-2 mt-1 align-items-center">
+              <a href="" class="fs-6">
+                <span class="icon"
+                  ><i class="fa-solid fa-arrow-left-long"></i
+                ></span>
+                <span class="m-1 fs-5"> <strong>Project details</strong></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div
+              class="alt_bdb_notification d-none d-lg-flex gap-4 justify-content-end align-items-center"
+            >
+              <!-- search bar -->
+              <div class="alt_bdb_header_search position-relative">
+                <form action="">
+                  <input
+                    class="position-relative bg-alt-gray-bg-clr border-0"
+                    type="text"
+                    placeholder="Search"
+                  />
+                  <button type="submit">
+                    <img
+                      src="../../assets/images/business-dashboard/Search.svg"
+                      alt="search icon"
+                    />
+                  </button>
+                </form>
+              </div>
+              <!--  -->
+              <div class="alt_bdb_plus_icon rounded-pill bg-black">
+                <img
+                  src="../../assets/images/business-dashboard/plus-icons.svg"
+                  alt="notification icon"
+                />
+              </div>
+              <!-- notification for desktop -->
+              <div class="notification_icon">
+                <button
+                  type="button"
+                  class="position-relative"
+                  type="button"
+                  class="position-relative"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#notification_canvas"
+                  aria-controls="notification_canvas"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/notification.svg"
+                    alt=""
+                  />
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-1"
+                    ><span class="visually-hidden">unread messages</span></span
+                  >
+                </button>
+              </div>
+              <!--  -->
+              <div class="alt_bdb_avatar position-relative">
+                <button
+                  type="button"
+                  class=""
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://via.placeholder.com/32x32"
+                    alt="user icon"
+                    class="rounded-circle"
+                  />
+                </button>
+
+                <!-- PROFILE MENU  -->
+                <div class="dropdown-menu dropdown-menu-end">
+                  <div class="profile_menu_section">
+                    <div
+                      class="profile_menu text-lg-center border-bottom border-light-subtle"
+                    >
+                      <div class="profile_image">
+                        <img
+                          class="mx-lg-auto"
+                          src="https://i.pravatar.cc/72"
+                          alt=""
+                        />
+                      </div>
+                      <div class="profile_details text-lg-center">
+                        <h2 class="mt-lg-2">Roberto Danial</h2>
+                        <h4>roberto34@gmail.com</h4>
+                        <div class="solopreneur">
+                          <img
+                            src="../../assets/images/freelance-dashboard/icons/Solopreneur.svg"
+                            alt=""
+                          />
+                          <span>Solopreneur</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="referal_friend_card">
+                      <h3>Refer a friend</h3>
+                      <p>Introduce your friends to AltTribe!</p>
+                    </div>
+                    <div class="alt_bdb_sidebar">
+                      <ul class="py-4 border-bottom border-light-subtle">
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Createfreelancerprofile.svg"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Create freelancer profile</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="active d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/building-city-town.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>My business profile</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Myprojectshistory.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>My projects history</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Saved.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Saved</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Settings.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Settings</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--  -->
+                      <ul class="py-2">
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Logout.svg"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Log out</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- mobile menu  -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header mobile_canvas">
+        <div class="d-flex align-items-center gap-3">
+          <button
+            type="button"
+            class="btn-close fs-5 text-dark"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <div
+            class="offcanvas-title d-flex align-items-center"
+            id="offcanvasExampleLabel"
+          >
+            <img src="../../assets/images/business-dashboard/logo.svg" alt="" />
+            <div class="ms-2 ms-lg-0">
+              <span class="badge rounded-pill text-bg-warning">Business</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-2 ms-auto">
+          <div class="alt_bdb_plus_icon rounded-pill bg-black">
+            <img
+              src="../../assets/images/business-dashboard/plus-icons.svg"
+              alt="notification icon"
+            />
+          </div>
+          <div class="alt_bdb_avatar">
+            <button
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#businessProfileMenu"
+              aria-controls="businessProfileMenu"
+            >
+              <img
+                src="https://i.pravatar.cc/32"
+                alt="user icon"
+                class="rounded-circle"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="alt_bdb_sidebar">
+          <ul class="py-4 border-bottom border-light-subtle">
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/dashboard-icon.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Explore -Freelancers.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Explore Freelancers</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/leaderboard.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>My Projects</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Contests.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Contests</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Calendar.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Events</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Community.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Community</span>
+              </a>
+            </li>
+          </ul>
+          <!--  -->
+          <ul class="py-2">
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/My tribes.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>My tribes</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- create tribe  -->
+          <div
+            class="sidebar_wizard wizard_bg d-flex flex-column justify-content-end bg-alt-gray-bg-clr rounded-3 p-2"
+          >
+            <h3 class="">Create a Tribe</h3>
+            <p class="">
+              Make the most of Alt Tribe by forming your own tribe.
+            </p>
+            <a href=""
+              >Start now
+              <span><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <!-- mobile menu end -->
+
+    <!-- profile menu for mobile  -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="businessProfileMenu"
+      aria-labelledby="profilemenu_for_business"
+    >
+      <div class="offcanvas-header">
+        <div class="d-flex align-items-center gap-3">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <div
+            class="offcanvas-title d-flex align-items-center"
+            id="profilemenu_for_business"
+          >
+            <img src="../../assets/images/business-dashboard/logo.svg" alt="" />
+            <div class="ms-2 ms-lg-0">
+              <span class="badge rounded-pill text-bg-warning">Business</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <div class="profile_menu_section_for_mobile">
+          <div
+            class="profile_menu d-flex flex-row justify-content-start align-items-start gap-3 border-bottom border-light-subtle"
+          >
+            <div class="profile_image">
+              <img class="mx-lg-auto" src="https://i.pravatar.cc/72" alt="" />
+            </div>
+            <div class="profile_details text-lg-start">
+              <h2 class="mt-lg-2">Roberto Danial 2</h2>
+              <h4>roberto34@gmail.com</h4>
+              <div class="solopreneur">
+                <img
+                  src="../../assets/images/freelance-dashboard/icons/Solopreneur.svg"
+                  alt=""
+                />
+                <span>Solopreneur</span>
+              </div>
+            </div>
+          </div>
+          <div class="referal_friend_card">
+            <h3>Refer a friend</h3>
+            <p>Introduce your friends to AltTribe!</p>
+          </div>
+          <div class="alt_bdb_sidebar">
+            <ul class="py-4 border-bottom border-light-subtle">
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Createfreelancerprofile.svg"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Create freelancer profile</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="active d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/building-city-town.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>My business profile</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Myprojectshistory.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>My projects history</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Saved.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Saved</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Settings.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Settings</span>
+                </a>
+              </li>
+            </ul>
+            <!--  -->
+            <ul class="py-2">
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Logout.svg"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Log out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- profile menu for mobile end -->
+
+    <!-- notification canvas start  -->
+    <div
+      class="offcanvas offcanvas-end notification_canvas_wrapper"
+      tabindex="-1"
+      id="notification_canvas"
+      aria-labelledby="notification_canvas"
+    >
+      <div class="offcanvas-header px-4">
+        <h5 class="offcanvas-title notification_title" id="notification_canvas">
+          Notification
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="notification_menu">
+          <ul
+            class="nav-pills border-bottom border-2 px-4"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="" role="presentation">
+              <button
+                class="active position-relative"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                All (7)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Invite and responses (2)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Updates (2)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-reminders-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-reminders"
+                type="button"
+                role="tab"
+                aria-controls="pills-reminders"
+                aria-selected="false"
+              >
+                Reminders (3)
+              </button>
+            </li>
+          </ul>
+          <div
+            class="tab-content notification_tab_content"
+            id="pills-tabContent"
+          >
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              <h2>Today</h2>
+              <div class="">
+                <!-- single_notification  -->
+                <div class="single_notification unread">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV </strong>is
+                        inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time"
+                        ><i class="fa-regular fa-clock"></i> 1m ago</span
+                      >
+                      <span class="dots"
+                        ><i class="fa-solid fa-ellipsis"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV </strong>is
+                        inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time"
+                        ><i class="fa-regular fa-clock"></i> 1m ago</span
+                      >
+                      <span class="dots"
+                        ><i class="fa-solid fa-ellipsis"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification unread">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV </strong>is
+                        inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time"
+                        ><i class="fa-regular fa-clock"></i> 1m ago</span
+                      >
+                      <span class="dots"
+                        ><i class="fa-solid fa-ellipsis"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV </strong>is
+                        inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time"
+                        ><i class="fa-regular fa-clock"></i> 1m ago</span
+                      >
+                      <span class="dots"
+                        ><i class="fa-solid fa-ellipsis"></i
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <h2>Profile</h2>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+            >
+              <h2>Contact</h2>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-reminders"
+              role="tabpanel"
+              aria-labelledby="pills-reminders-tab"
+            >
+              <h2>reminders</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- notification canvas end -->
+
+    <main class="main_section">
+      <div class="container-xxl">
+        <div class="row">
+          <!-- sidebar start -->
+          <div
+            class="col-12 col-lg-2 border-end border-light-subtle d-none d-lg-block"
+          >
+            <aside class="alt_bdb_sidebar">
+              <ul class="py-4 border-bottom border-light-subtle">
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/dashboard-icon.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Explore -Freelancers.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Explore Freelancers</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/leaderboard.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>My Projects</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Contests.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Contests</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Calendar.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Events</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Community.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Community</span>
+                  </a>
+                </li>
+              </ul>
+              <!--  -->
+              <ul class="py-2">
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/My tribes.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>My tribes</span>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- create tribe  -->
+              <div
+                class="sidebar_wizard wizard_bg d-flex flex-column justify-content-end bg-alt-gray-bg-clr rounded-3 p-2"
+              >
+                <h3 class="">Create a Tribe</h3>
+                <p class="">
+                  Make the most of Alt Tribe by forming your own tribe.
+                </p>
+                <a href=""
+                  >Start now
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+              </div>
+            </aside>
+          </div>
+          <!-- sidebar left end -->
+
+          <!-- main content start -->
+          <div class="col-12 col-lg-10 pb-5">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="bg-alt-bg-clr">
+                  <div class="">
+                    <div class="event_details_page_profile mt-0 p-3">
+                      <button
+                        class="position-absolute border border-light-subtle text-alt-text-clr eidit_profile_button top-0 end-0 mt-3 rounded-circle me-4"
+                      >
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </button>
+
+                      <div class="event_details_page_profile_content">
+                        <p
+                          class="text-uppercase text-decoration-underline p-font"
+                        >
+                          Pixel studio
+                        </p>
+                        <h2 class="h-font pt-3">
+                          Logo designing for Apparel E-commerce
+                        </h2>
+                        <div class="tags py-3">
+                          <span class="alt-badge alt-agreement">Draft</span>
+                          <span class="alt-badge alt-dark"
+                            ><span class="alt-dots alt-dots-green"></span>
+                            Publish project</span
+                          >
+                        </div>
+                        <div class="mb-3">
+                          <button
+                            class="btn btn-alt-outline border-0 rounded-pill"
+                          >
+                            $100-500
+                          </button>
+                        </div>
+
+                        <div
+                          class="border-bottom d-flex gap-2 border-light-subtle pb-3"
+                        >
+                          <button
+                            class="evetn-page-btn"
+                            type="button"
+                            data-bs-target="#editInfo"
+                            data-bs-toggle="modal"
+                          >
+                            Edit project
+                          </button>
+                          <button
+                            class="evetn-page-btn bg-alt-primary border-0"
+                            type="button"
+                            data-bs-target="#editInfo"
+                            data-bs-toggle="modal"
+                          >
+                            Publish
+                          </button>
+                        </div>
+
+                        <div class="pb-3 pt-3">
+                          <h5 class="p-font">Skills</h5>
+                          <div class="tags mt-2">
+                            <span class="alt-badge alt-dark">Graphic</span>
+                            <span class="alt-badge alt-dark">Wireframe</span>
+                            <span class="alt-badge alt-dark">Illustration</span>
+                          </div>
+                        </div>
+                        <div class="pb-3 pt-3">
+                          <h5 class="p-font">Project type</h5>
+                          <div class="tags mt-2">
+                            <span class="alt-badge alt-dark">full-time</span>
+                          </div>
+                        </div>
+                        <div class="pb-3 pt-3">
+                          <h5 class="p-font">Languages prefered</h5>
+                          <div class="tags mt-2">
+                            <span class="alt-badge alt-dark">English only</span>
+                            <span class="alt-badge alt-dark">+Add</span>
+                          </div>
+                        </div>
+                        <div class="pb-3 pt-3">
+                          <h5 class="p-font">Experience level</h5>
+                          <div class="tags mt-2">
+                            <span class="alt-badge alt-dark"
+                              >Intermediate onwards</span
+                            >
+                            <span class="alt-badge alt-dark">+Add</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <!-- search button start -->
+                <div class="d-flex align-items-center gap-3 pt-4 pt-lg-0 mb-4">
+                  <div class="flex-grow-1 position-relative tribe_search">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" placeholder="Search for projects here" />
+                  </div>
+
+                  <div class="position-relative dropdown_buttons">
+                    <button
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                      class="dropdown-toggle btn-lg alt-btn btn-alt-outline bg-alt-primary rounded-pill"
+                    >
+                      New project
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end m-0 p-0">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <span
+                            ><img
+                              src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                              alt=""
+                          /></span>
+                          Add new project
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <span
+                            ><img
+                              src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                              alt="" /></span
+                          >Add existing project</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          <span
+                            ><img
+                              src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                              alt="" /></span
+                          >Explore project</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- search button end -->
+
+                <!-- tab content start here  -->
+                <div class="event_details_page_content tab_content">
+                  <ul
+                    id="pills-tab"
+                    class="d-flex flex-wrap align-items-center justify-content-start gap-1 gap-lg-3 mb-4 border-bottom border-light-subtle"
+                    role="tablist"
+                  >
+                    <li role="presentation">
+                      <button
+                        class="active position-relative text-start"
+                        id="one-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#one"
+                        type="button"
+                        role="tab"
+                        aria-controls="one"
+                        aria-selected="true"
+                      >
+                        All
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="two-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#two"
+                        type="button"
+                        role="tab"
+                        aria-controls="two"
+                        aria-selected="true"
+                      >
+                        In progress
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="three-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#three"
+                        type="button"
+                        role="tab"
+                        aria-controls="three"
+                        aria-selected="true"
+                      >
+                        Agreements
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="four-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#four"
+                        type="button"
+                        role="tab"
+                        aria-controls="four"
+                        aria-selected="true"
+                      >
+                        Responded
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="five-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#five"
+                        type="button"
+                        role="tab"
+                        aria-controls="five"
+                        aria-selected="true"
+                      >
+                        Invitations
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="six-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#six"
+                        type="button"
+                        role="tab"
+                        aria-controls="six"
+                        aria-selected="true"
+                      >
+                        Completed
+                      </button>
+                    </li>
+                  </ul>
+
+                  <div
+                    class="tab-content tab_content_details"
+                    id="pills-tabContent"
+                  >
+                    <div
+                      class="tab-pane fade show active"
+                      id="one"
+                      role="tabpanel"
+                      aria-labelledby="one"
+                    >
+                      <!-- single tribe card -->
+                      <div
+                        class="tribe_card_wrapper bg-alt-bg-clr rounded-3 p-3 mb-3"
+                      >
+                        <div
+                          class="tribe_card_details d-flex gap-2 align-items-center mb-3"
+                        >
+                          <div class="avater_image flex-shrink-1">
+                            <img src="https://i.pravatar.cc/44" alt="" />
+                          </div>
+                          <div class="">
+                            <h5 class="">Logiology</h5>
+                            <h4>Branding design for Fintech startup</h4>
+                          </div>
+                        </div>
+                        <div class="tags mb-3">
+                          <span class="alt-badge alt-agreement">Agreement</span>
+                          <span
+                            class="alt-badge alt-badge-light d-inline-flex align-items-center"
+                          >
+                            <span class="alt-dots bg-primary me-1"></span>
+                            Agreement ready to sign</span
+                          >
+                          <span class="alt-badge alt-badge-outline"
+                            >$100-500</span
+                          >
+                        </div>
+                        <div class="mb-3">
+                          <p>Posted on : <strong>Jan 10, 2023</strong></p>
+                        </div>
+                        <div
+                          class="d-flex flex-wrap gap-3 justify-content-between align-items-center border-top border-light-subtle pt-3"
+                        >
+                          <div class="d-flex gap-2 align-items-center">
+                            <p>Last update:</p>
+                            <span class="avater_image_32 flex-shrink-1"
+                              ><img src="https://i.pravatar.cc/32" alt=""
+                            /></span>
+                            <p class="h-font"><strong>Abel Marshal</strong></p>
+                            <span class="dots"></span>
+                            <p class=""><strong>Nov 23, 2023</strong></p>
+                          </div>
+                          <div class="">
+                            <button
+                              class="alt-btn btn-alt-outline rounded-pill"
+                            >
+                              Sign agreement
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- for empty screen  -->
+                      <div
+                        class="bg-alt-bg-clr rounded-3 py-5 w-100 text-center h-auto d-flex flex-column gap-4 align-items-center justify-content-center"
+                      >
+                        <img
+                          src="../../assets/images/business-dashboard/tribe/empty-list-img.svg"
+                          alt=""
+                        />
+                        <p>
+                          There are no active projects. Once you start <br />
+                          applying to projects, they will appear here.
+                        </p>
+                        <div
+                          class="position-relative dropdown-center dropdown_buttons"
+                        >
+                          <button
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            class="dropdown-toggle alt-btn btn-alt-outline bg-alt-primary rounded-pill"
+                          >
+                            New project
+                          </button>
+                          <ul class="dropdown-menu m-0 p-0">
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span
+                                  ><img
+                                    src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                    alt=""
+                                /></span>
+                                Add new project
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span
+                                  ><img
+                                    src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                    alt="" /></span
+                                >Add existing project</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span
+                                  ><img
+                                    src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                    alt="" /></span
+                                >Explore project</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="two"
+                      role="tabpanel"
+                      aria-labelledby="two-tab"
+                    >
+                      <!-- single tribe card -->
+                      <div
+                        class="tribe_card_wrapper bg-alt-bg-clr rounded-3 p-3 mb-3"
+                      >
+                        <div
+                          class="tribe_card_details d-flex gap-2 align-items-center mb-3"
+                        >
+                          <div class="avater_image flex-shrink-1">
+                            <img src="https://i.pravatar.cc/44" alt="" />
+                          </div>
+                          <div class="">
+                            <h5 class="">Logiology</h5>
+                            <h4>
+                              G Trading social media design for e commerce
+                              platform
+                            </h4>
+                          </div>
+                        </div>
+                        <div class="tags mb-3">
+                          <span class="alt-badge alt-progress">progress</span>
+                          <span
+                            class="alt-badge alt-badge-light d-inline-flex align-items-center"
+                          >
+                            <span class="alt-dots bg-primary me-1"></span>
+                            Agreement ready to sign</span
+                          >
+                          <span class="alt-badge alt-badge-outline"
+                            >$100 / Hour</span
+                          >
+                        </div>
+                        <div
+                          class="mb-3 d-flex flex-wrap align-items-center align-items-lg-end gap-3 gap-lg-5"
+                        >
+                          <p>Duration: <strong>6 weeks </strong></p>
+                          <p>
+                            Next milestone on : <strong>Nov 23, 2023 </strong>
+                          </p>
+                          <div class="ms-lg-auto w-25">
+                            <p><strong>37%</strong> Complete</p>
+                            <div
+                              class="progress my-1"
+                              role="progressbar"
+                              aria-label="10px high"
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="height: 8px"
+                            >
+                              <div
+                                class="progress-bar bg-success"
+                                style="width: 37%"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="d-flex justify-content-between align-items-center border-top border-light-subtle pt-3"
+                        >
+                          <div
+                            class="d-flex flex-wrap gap-2 align-items-center"
+                          >
+                            <p>
+                              Next milestone on : <strong>Nov 23, 2023 </strong>
+                            </p>
+                            <p>Last update:</p>
+                            <span class="avater_image_32 flex-shrink-1"
+                              ><img src="https://i.pravatar.cc/32" alt=""
+                            /></span>
+                            <p class="h-font"><strong>Abel Marshal</strong></p>
+                            <span class="dots"></span>
+                            <p class=""><strong>Nov 23, 2023</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="three"
+                      role="tabpanel"
+                      aria-labelledby="three-tab"
+                    >
+                      <!-- single tribe card -->
+                      <div
+                        class="tribe_card_wrapper bg-alt-bg-clr rounded-3 p-3 mb-3"
+                      >
+                        <div
+                          class="tribe_card_details d-flex gap-2 align-items-center mb-3"
+                        >
+                          <div class="avater_image flex-shrink-1">
+                            <img src="https://i.pravatar.cc/44" alt="" />
+                          </div>
+                          <div class="">
+                            <h5 class="">Logiology</h5>
+                            <h4>Branding design for Fintech startup</h4>
+                          </div>
+                        </div>
+                        <div class="tags mb-3">
+                          <span class="alt-badge alt-agreement">Agreement</span>
+                          <span
+                            class="alt-badge alt-badge-light d-inline-flex align-items-center"
+                          >
+                            <span class="alt-dots bg-primary me-1"></span>
+                            Agreement ready to sign</span
+                          >
+                          <span class="alt-badge alt-badge-outline"
+                            >$100-500</span
+                          >
+                        </div>
+                        <div class="mb-3">
+                          <p>Posted on : <strong>Jan 10, 2023</strong></p>
+                        </div>
+                        <div
+                          class="d-flex flex-wrap gap-3 justify-content-between align-items-center border-top border-light-subtle pt-3"
+                        >
+                          <div class="d-flex gap-2 align-items-center">
+                            <p>Last update:</p>
+                            <span class="avater_image_32 flex-shrink-1"
+                              ><img src="https://i.pravatar.cc/32" alt=""
+                            /></span>
+                            <p class="h-font"><strong>Abel Marshal</strong></p>
+                            <span class="dots"></span>
+                            <p class=""><strong>Nov 23, 2023</strong></p>
+                          </div>
+                          <div class="">
+                            <button
+                              class="alt-btn btn-alt-outline rounded-pill"
+                            >
+                              Sign agreement
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="four"
+                      role="tabpanel"
+                      aria-labelledby="four-tab"
+                    >
+                      <!-- single tribe card -->
+                      <div
+                        class="tribe_card_wrapper bg-alt-bg-clr rounded-3 p-3 mb-3"
+                      >
+                        <div
+                          class="tribe_card_details d-flex gap-2 align-items-center mb-3"
+                        >
+                          <div class="avater_image flex-shrink-1">
+                            <img src="https://i.pravatar.cc/44" alt="" />
+                          </div>
+                          <div class="">
+                            <h5 class="">Logiology</h5>
+                            <h4>Branding design for Fintech startup</h4>
+                          </div>
+                        </div>
+                        <div class="tags mb-3">
+                          <span class="alt-badge alt-agreement">Agreement</span>
+                          <span
+                            class="alt-badge alt-badge-light d-inline-flex align-items-center"
+                          >
+                            <span class="alt-dots bg-primary me-1"></span>
+                            Agreement ready to sign</span
+                          >
+                          <span class="alt-badge alt-badge-outline"
+                            >$100-500</span
+                          >
+                        </div>
+                        <div class="mb-3">
+                          <p>Posted on : <strong>Jan 10, 2023</strong></p>
+                        </div>
+                        <div
+                          class="d-flex flex-wrap gap-3 justify-content-between align-items-center border-top border-light-subtle pt-3"
+                        >
+                          <div class="d-flex gap-2 align-items-center">
+                            <p>Last update:</p>
+                            <span class="avater_image_32 flex-shrink-1"
+                              ><img src="https://i.pravatar.cc/32" alt=""
+                            /></span>
+                            <p class="h-font"><strong>Abel Marshal</strong></p>
+                            <span class="dots"></span>
+                            <p class=""><strong>Nov 23, 2023</strong></p>
+                          </div>
+                          <div class="">
+                            <button
+                              class="alt-btn btn-alt-outline rounded-pill"
+                            >
+                              Sign agreement
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="five"
+                      role="tabpanel"
+                      aria-labelledby="five-tab"
+                    >
+                      <!-- single tribe card -->
+                      <div
+                        class="tribe_card_wrapper bg-alt-bg-clr rounded-3 p-3 mb-3"
+                      >
+                        <div
+                          class="tribe_card_details d-flex gap-2 align-items-center mb-3"
+                        >
+                          <div class="avater_image flex-shrink-1">
+                            <img src="https://i.pravatar.cc/44" alt="" />
+                          </div>
+                          <div class="">
+                            <h5 class="">Logiology</h5>
+                            <h4>Branding design for Fintech startup</h4>
+                          </div>
+                        </div>
+                        <div class="tags mb-3">
+                          <span class="alt-badge alt-agreement">Agreement</span>
+                          <span
+                            class="alt-badge alt-badge-light d-inline-flex align-items-center"
+                          >
+                            <span class="alt-dots bg-primary me-1"></span>
+                            Agreement ready to sign</span
+                          >
+                          <span class="alt-badge alt-badge-outline"
+                            >$100-500</span
+                          >
+                        </div>
+                        <div class="mb-3">
+                          <p>Posted on : <strong>Jan 10, 2023</strong></p>
+                        </div>
+                        <div
+                          class="d-flex flex-wrap gap-3 justify-content-between align-items-center border-top border-light-subtle pt-3"
+                        >
+                          <div class="d-flex gap-2 align-items-center">
+                            <p>Last update:</p>
+                            <span class="avater_image_32 flex-shrink-1"
+                              ><img src="https://i.pravatar.cc/32" alt=""
+                            /></span>
+                            <p class="h-font"><strong>Abel Marshal</strong></p>
+                            <span class="dots"></span>
+                            <p class=""><strong>Nov 23, 2023</strong></p>
+                          </div>
+                          <div class="">
+                            <button
+                              class="alt-btn btn-alt-outline rounded-pill"
+                            >
+                              Sign agreement
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="six"
+                      role="tabpanel"
+                      aria-labelledby="six-tab"
+                    >
+                      <!-- single tribe card -->
+                      <div
+                        class="tribe_card_wrapper bg-alt-bg-clr rounded-3 p-3 mb-3"
+                      >
+                        <div
+                          class="tribe_card_details d-flex gap-2 align-items-center mb-3"
+                        >
+                          <div class="avater_image flex-shrink-1">
+                            <img src="https://i.pravatar.cc/44" alt="" />
+                          </div>
+                          <div class="">
+                            <h5 class="">Logiology</h5>
+                            <h4>Branding design for Fintech startup</h4>
+                          </div>
+                        </div>
+                        <div class="tags mb-3">
+                          <span class="alt-badge alt-agreement">Agreement</span>
+                          <span
+                            class="alt-badge alt-badge-light d-inline-flex align-items-center"
+                          >
+                            <span class="alt-dots bg-primary me-1"></span>
+                            Agreement ready to sign</span
+                          >
+                          <span class="alt-badge alt-badge-outline"
+                            >$100-500</span
+                          >
+                        </div>
+                        <div class="mb-3">
+                          <p>Posted on : <strong>Jan 10, 2023</strong></p>
+                        </div>
+                        <div
+                          class="d-flex flex-wrap gap-3 justify-content-between align-items-center border-top border-light-subtle pt-3"
+                        >
+                          <div class="d-flex gap-2 align-items-center">
+                            <p>Last update:</p>
+                            <span class="avater_image_32 flex-shrink-1"
+                              ><img src="https://i.pravatar.cc/32" alt=""
+                            /></span>
+                            <p class="h-font"><strong>Abel Marshal</strong></p>
+                            <span class="dots"></span>
+                            <p class=""><strong>Nov 23, 2023</strong></p>
+                          </div>
+                          <div class="">
+                            <button
+                              class="alt-btn btn-alt-outline rounded-pill"
+                            >
+                              Sign agreement
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- tab content end here  -->
+              </div>
+            </div>
+          </div>
+          <!-- main content end -->
+        </div>
+      </div>
+    </main>
+
+    <!-- add manageMembers modal start -->
+
+    <div
+      class="modal fade"
+      id="manageMembersModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="managememnersModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="">
+              <h5 class="modal-title" id="managememnersModalLabel">
+                Who else you want to be in Aufait tribe?
+              </h5>
+              <p>5 members</p>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex gap-3 align-items-center mb-3">
+              <div class="flex-grow-1 position-relative tribe_search">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input
+                  type="text"
+                  placeholder="Search for an existing member or add new using email id"
+                />
+              </div>
+              <div class="">
+                <button class="btn-alt-outline rounded-pill">+ Add</button>
+              </div>
+            </div>
+            <!-- tab content start here  -->
+            <div class="event_details_page_content tab_content">
+              <ul
+                id="pills-tab"
+                class="d-flex align-items-center justify-content-start gap-1 gap-lg-3 mb-4 border-bottom border-light-subtle"
+                role="tablist"
+              >
+                <li role="presentation">
+                  <button
+                    class="active position-relative text-start"
+                    id="one-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#Members"
+                    type="button"
+                    role="tab"
+                    aria-controls="one"
+                    aria-selected="true"
+                  >
+                    Members
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    id="two-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#MyAgreements"
+                    type="button"
+                    role="tab"
+                    aria-controls="two"
+                    aria-selected="true"
+                  >
+                    My Agreements
+                  </button>
+                </li>
+              </ul>
+
+              <div
+                class="tab-content tab_content_details"
+                id="pills-tabContent"
+              >
+                <div
+                  class="tab-pane fade show active"
+                  id="Members"
+                  role="tabpanel"
+                  aria-labelledby="one"
+                >
+                  <div class="member_table">
+                    <table class="table align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">Members</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Role</th>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="">
+                          <th scope="row">
+                            <div class="d-flex gap-2 align-items-center">
+                              <div class="avater_image_32">
+                                <img src="https://i.pravatar.cc/32" alt="" />
+                              </div>
+                              <div class="d-flex gap-2 align-items-center">
+                                <p>Cooper Lipshutz</p>
+                                <span class="alt-badge alt-dark m-0"
+                                  >Admin</span
+                                >
+                              </div>
+                            </div>
+                          </th>
+                          <td class="">
+                            <p>pamelaj22@gmail.com</p>
+                          </td>
+                          <td>
+                            <p><strong>Developer</strong></p>
+                          </td>
+                          <td><a href="">View Profile</a></td>
+                          <td>
+                            <span class=""
+                              ><i class="fa-solid fa-ellipsis-vertical"></i
+                            ></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="MyAgreements"
+                  role="tabpanel"
+                  aria-labelledby="two-tab"
+                >
+                  <div class="member_table">
+                    <table class="table align-middle">
+                      <thead class="table-light">
+                        <tr>
+                          <th scope="col">Members</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Signed at</th>
+                          <th scope="col"></th>
+                          <th scope="col"></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="">
+                          <th scope="row">
+                            <div class="d-flex gap-2 align-items-center">
+                              <div class="avater_image_32">
+                                <img src="https://i.pravatar.cc/32" alt="" />
+                              </div>
+                              <div class="d-flex gap-2 align-items-center">
+                                <p>Cooper Lipshutz</p>
+                                <span class="alt-badge alt-dark m-0"
+                                  >Admin</span
+                                >
+                              </div>
+                            </div>
+                          </th>
+                          <td class="">
+                            <p>pamelaj22@gmail.com</p>
+                          </td>
+                          <td>
+                            <p>
+                              <span class="dot-status-success">Signed </span>
+                            </p>
+                          </td>
+                          <td><p>Nov 25,2023</p></td>
+                          <td><p>View Agreement</p></td>
+                          <td>
+                            <span class=""
+                              ><i class="fa-solid fa-ellipsis-vertical"></i
+                            ></span>
+                          </td>
+                        </tr>
+                        <tr class="">
+                          <th scope="row">
+                            <div class="d-flex gap-2 align-items-center">
+                              <div class="avater_image_32">
+                                <img src="https://i.pravatar.cc/32" alt="" />
+                              </div>
+                              <div class="d-flex gap-2 align-items-center">
+                                <p>Cooper Lipshutz</p>
+                                <span class="alt-badge alt-dark m-0"
+                                  >Admin</span
+                                >
+                              </div>
+                            </div>
+                          </th>
+                          <td class="">
+                            <p>pamelaj22@gmail.com</p>
+                          </td>
+                          <td>
+                            <p>
+                              <span class="dot-status-secondary">Pending </span>
+                            </p>
+                          </td>
+                          <td><a href="">Create Agreement</a></td>
+                          <td><p>View Agreement</p></td>
+                          <td>
+                            <span class=""
+                              ><i class="fa-solid fa-ellipsis-vertical"></i
+                            ></span>
+                          </td>
+                        </tr>
+                        <tr class="">
+                          <th scope="row">
+                            <div class="d-flex gap-2 align-items-center">
+                              <div class="avater_image_32">
+                                <img src="https://i.pravatar.cc/32" alt="" />
+                              </div>
+                              <div class="d-flex gap-2 align-items-center">
+                                <p>Cooper Lipshutz</p>
+                                <span class="alt-badge alt-dark m-0"
+                                  >Admin</span
+                                >
+                              </div>
+                            </div>
+                          </th>
+                          <td class="">
+                            <p>pamelaj22@gmail.com</p>
+                          </td>
+                          <td>
+                            <p>
+                              <span class="dot-status-danger">Not Signed </span>
+                            </p>
+                          </td>
+                          <td>
+                            <span class="alt-badge alt-dark m-0">
+                              <i class="fa-regular fa-clock"></i> Awaiting</span
+                            >
+                          </td>
+                          <td><p>View Agreement</p></td>
+                          <td>
+                            <span class=""
+                              ><i class="fa-solid fa-ellipsis-vertical"></i
+                            ></span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tab content end here  -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- add manageMembers modal end -->
+
+    <!-- edit info modal start -->
+
+    <div
+      class="modal fade"
+      id="editInfo"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="editInfo"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editInfo">Create a tribe</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <div class="mb-4">
+                <div
+                  class="alt-input-file py-5 rounded text-center position-relative overflow-hidden"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/tribe/create-tribe-modal-img.svg"
+                    alt=""
+                  />
+
+                  <input
+                    type="file"
+                    id="formFile"
+                    class="input-file-upload opacity-0 position-absolute w-100 h-100 top-0 start-0"
+                  />
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="tribe-title" class="input-label"
+                  >What you wanna call your tribe?
+                  <span class="input-label-required">*</span>
+                </label>
+                <input
+                  type="text"
+                  class="input-field"
+                  id="tribe-title"
+                  placeholder="Signature Design Tribe"
+                />
+              </div>
+              <!-- select skills  -->
+              <div class="mb-4 skills_select_input">
+                <label class="input-label" for="add-tags">Tribe skills</label>
+
+                <select
+                  class="w-100 input-select"
+                  multiple
+                  data-placeholder="Select Tags"
+                  data-allow-clear="1"
+                  id="add-tags"
+                >
+                  <option>tribe skills 1</option>
+                  <option>tribe skills 2</option>
+                  <option>tribe skills 3</option>
+                  <option>tribe skills 4</option>
+                  <option>tribe skills 5</option>
+                  <option>tribe skills 6</option>
+                  <option>tribe skills 7</option>
+                </select>
+              </div>
+
+              <div class="mb-2">
+                <label for="description" class="input-label"
+                  >Description
+                </label>
+
+                <textarea
+                  class="input-field"
+                  placeholder="Eg: My responsibilities include"
+                  id="description"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn-alt-outline rounded-pill"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#editInfo2"
+              class="btn-alt-outline bg-alt-primary rounded-pill"
+            >
+              Continue
+              <span class="ms-1"> <i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- edit info modal 2  -->
+    <div
+      class="modal fade"
+      id="editInfo2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="editInfo2title"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="editInfo2title">
+              Who else you want to be in Aufait tribe?
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <div class="flex-grow-1 position-relative tribe_search">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                <input
+                  type="text"
+                  placeholder="Search for an existing member or add new using email id"
+                />
+              </div>
+              <!-- single check box -->
+              <div
+                class="d-flex justify-content-between align-items-center border-bottom border-light-subtle mb-2"
+              >
+                <div
+                  class="tribe_single_check_box d-flex align-items-center gap-2"
+                >
+                  <input
+                    class="form_check_input"
+                    type="checkbox"
+                    value=""
+                    id="check1"
+                  />
+                  <label class="form_check_label" for="check1">
+                    <div class="label_content d-flex align-items-center gap-2">
+                      <div class="avater_image_48">
+                        <img
+                          src="https://i.pravatar.cc/48"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="">
+                        <h5 class="mb-1">Logiology</h5>
+                        <div class="d-flex align-items-center flex-wrap gap-2">
+                          <p>Graphic Designer</p>
+                          <span class="dots"></span>
+                          <p>jamesjacobe@gmail.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="">
+                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div>
+              <!-- single check box -->
+              <div
+                class="d-flex justify-content-between align-items-center border-bottom border-light-subtle mb-2"
+              >
+                <div
+                  class="tribe_single_check_box d-flex align-items-center gap-2"
+                >
+                  <input
+                    class="form_check_input"
+                    type="checkbox"
+                    value=""
+                    id="check2"
+                  />
+                  <label class="form_check_label" for="check2">
+                    <div class="label_content d-flex align-items-center gap-2">
+                      <div class="avater_image_48">
+                        <img
+                          src="https://i.pravatar.cc/48"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="">
+                        <h5 class="mb-1">Logiology</h5>
+                        <div class="d-flex align-items-center flex-wrap gap-2">
+                          <p>Graphic Designer</p>
+                          <span class="dots"></span>
+                          <p>jamesjacobe@gmail.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="">
+                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div>
+              <!-- single check box -->
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
+                <div
+                  class="tribe_single_check_box d-flex align-items-center gap-2"
+                >
+                  <input
+                    class="form_check_input"
+                    type="checkbox"
+                    value=""
+                    id="check3"
+                  />
+                  <label class="form_check_label" for="check3">
+                    <div class="label_content d-flex align-items-center gap-2">
+                      <div class="avater_image_48">
+                        <img
+                          src="https://i.pravatar.cc/48"
+                          class="img-fluid"
+                          alt=""
+                        />
+                      </div>
+                      <div class="">
+                        <h5 class="mb-1">Logiology</h5>
+                        <div class="d-flex align-items-center flex-wrap gap-2">
+                          <p>Graphic Designer</p>
+                          <span class="dots"></span>
+                          <p>jamesjacobe@gmail.com</p>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <div class="">
+                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn-alt-outline rounded-pill"
+              data-bs-dismiss="modal"
+            >
+              Copy invite link
+            </button>
+            <button
+              type="button"
+              class="btn-alt-outline bg-alt-primary rounded-pill"
+            >
+              Send invite
+              <span class="ms-1"> <i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- edit info modal end -->
+
+    <script src="../../assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../../assets/vendor/js/popper.min.js"></script>
+    <script src="../../assets/vendor/js/bootstrap.min.js"></script>
+    <script src="../../assets/vendor/js/select2.min.js"></script>
+    <script src="../../assets/vendor/js/script.js"></script>
+  </body>
+</html>
