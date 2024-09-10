@@ -1139,142 +1139,527 @@ bdb = business dashboard;
                 </div>
               </div>
               <div class="col-md-8">
-                <div class="event_details_page_content">
+                <!-- tab content start here  -->
+                <div class="event_details_page_content tab_content">
+                  <ul
+                    id="pills-tab"
+                    class="d-flex flex-wrap align-items-center justify-content-start gap-1 gap-lg-3 mb-4 border-bottom border-light-subtle"
+                    role="tablist"
+                  >
+                    <li role="presentation">
+                      <button
+                        class="active position-relative text-start"
+                        id="one-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#one"
+                        type="button"
+                        role="tab"
+                        aria-controls="one"
+                        aria-selected="true"
+                      >
+                        All
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="two-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#two"
+                        type="button"
+                        role="tab"
+                        aria-controls="two"
+                        aria-selected="true"
+                      >
+                        In progress
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="three-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#three"
+                        type="button"
+                        role="tab"
+                        aria-controls="three"
+                        aria-selected="true"
+                      >
+                        Agreements
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="four-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#four"
+                        type="button"
+                        role="tab"
+                        aria-controls="four"
+                        aria-selected="true"
+                      >
+                        Responded
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="five-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#five"
+                        type="button"
+                        role="tab"
+                        aria-controls="five"
+                        aria-selected="true"
+                      >
+                        Invitations
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="six-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#six"
+                        type="button"
+                        role="tab"
+                        aria-controls="six"
+                        aria-selected="true"
+                      >
+                        Completed
+                      </button>
+                    </li>
+                  </ul>
+
                   <div
-                    class="tribe_card_wrapper card_bg bg-alt-bg-hover-clr rounded-3 p-3 mb-3"
+                    class="tab-content tab_content_details"
+                    id="pills-tabContent"
                   >
                     <div
-                      class="tribe_card_details d-flex gap-2 align-items-center mb-3"
+                      class="tab-pane fade show active"
+                      id="one"
+                      role="tabpanel"
+                      aria-labelledby="one"
                     >
-                      <div class="">
-                        <h4 class="h-font text-white fs-5">Project status</h4>
-                      </div>
-                    </div>
-
-                    <div class="me-lg-auto w-50 pb-4">
-                      <p class="text-white"><strong>90%</strong> Complete</p>
+                      <!-- single tribe card -->
                       <div
-                        class="progress my-1 bg-transparent border border-light-subtle rounded-3"
-                        role="progressbar"
-                        aria-label="10px high"
-                        aria-valuenow="25"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                        style="height: 8px"
+                        class="tribe_card_wrapper bg-alt-bg-clr rounded-3 p-3 mb-3"
                       >
                         <div
-                          class="progress-bar bg-success"
-                          style="width: 90%"
-                        ></div>
-                      </div>
-                    </div>
-
-                    <div
-                      class="d-flex flex-wrap gap-3 justify-content-between align-items-center border-top border-light-subtle pt-3"
-                    >
-                      <div class="d-flex gap-2 align-items-center text-white">
-                        <p class="text-white">Last update:</p>
-                        <span class="avater_image_32 flex-shrink-1"
-                          ><img src="https://i.pravatar.cc/32" alt=""
-                        /></span>
-                        <p class="h-font text-white">
-                          <strong>Abel Marshal</strong>
-                        </p>
-                        <span class="dots"></span>
-                        <p class="text-white"><strong>Nov 23, 2023</strong></p>
-                      </div>
-                      <div class="">
-                        <button
-                          class="alt-btn btn-alt-outline bg-alt-primary rounded-pill"
+                          class="tribe_card_details d-flex gap-2 align-items-center mb-3"
                         >
-                          Publish project
-                        </button>
+                          <div class="avater_image flex-shrink-1">
+                            <img src="https://i.pravatar.cc/44" alt="" />
+                          </div>
+                          <div class="">
+                            <h5 class="">Logiology mmm</h5>
+                            <h4 class="h-font">Project status</h4>
+                          </div>
+                        </div>
+                        <div class="tags mb-3">
+                          <span class="alt-badge alt-agreement">Agreement</span>
+                          <span
+                            class="alt-badge alt-badge-light d-inline-flex align-items-center"
+                          >
+                            <span class="alt-dots bg-primary me-1"></span>
+                            Agreement ready to sign</span
+                          >
+                          <span class="alt-badge alt-badge-outline"
+                            >$100-500</span
+                          >
+                        </div>
+                        <div class="mb-3">
+                          <p>Posted on : <strong>Jan 10, 2023</strong></p>
+                        </div>
+                        <div
+                          class="d-flex flex-wrap gap-3 justify-content-between align-items-center border-top border-light-subtle pt-3"
+                        >
+                          <div class="d-flex gap-2 align-items-center">
+                            <p>Last update:</p>
+                            <span class="avater_image_32 flex-shrink-1"
+                              ><img src="https://i.pravatar.cc/32" alt=""
+                            /></span>
+                            <p class="h-font"><strong>Abel Marshal</strong></p>
+                            <span class="dots"></span>
+                            <p class=""><strong>Nov 23, 2023</strong></p>
+                          </div>
+                          <div class="">
+                            <button
+                              class="alt-btn btn-alt-outline rounded-pill"
+                            >
+                              Sign agreement
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- for empty screen  -->
+                      <div
+                        class="bg-alt-bg-clr rounded-3 py-5 w-100 text-center h-auto d-flex flex-column gap-4 align-items-center justify-content-center"
+                      >
+                        <img
+                          src="../../assets/images/business-dashboard/tribe/empty-list-img.svg"
+                          alt=""
+                        />
+                        <p>
+                          There are no active projects. Once you start <br />
+                          applying to projects, they will appear here.
+                        </p>
+                        <div
+                          class="position-relative dropdown-center dropdown_buttons"
+                        >
+                          <button
+                            type="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false"
+                            class="dropdown-toggle alt-btn btn-alt-outline bg-alt-primary rounded-pill"
+                          >
+                            New project
+                          </button>
+                          <ul class="dropdown-menu m-0 p-0">
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span
+                                  ><img
+                                    src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                    alt=""
+                                /></span>
+                                Add new project
+                              </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span
+                                  ><img
+                                    src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                    alt="" /></span
+                                >Add existing project</a
+                              >
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#">
+                                <span
+                                  ><img
+                                    src="../../assets/images/business-dashboard/tribe/dropdown-icon-1.svg"
+                                    alt="" /></span
+                                >Explore project</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="tribe_card_wrapper bg-alt-bg-clr rounded-3 p-3 mb-3"
-                  >
                     <div
-                      class="tribe_card_details overview_card d-flex flex-column gap-4 align-items-start mb-3"
+                      class="tab-pane fade pb-5"
+                      id="two"
+                      role="tabpanel"
+                      aria-labelledby="two-tab"
                     >
-                      <div class="">
-                        <h4 class="h-font">Overview</h4>
-                      </div>
-                      <div class="">
-                        <h6 class="p-font pb-2">Project description</h6>
-                        <p>
-                          Calling all graphic designers with a lot of experience
-                          in logo design. We’re a prominent luxury apparel brand
-                          based in UK. Our goal is to refresh our branding for
-                          our entire product line and our future offering.
-                        </p>
-                      </div>
-                      <div class="">
-                        <h6 class="p-font pb-2">Notes</h6>
-                        <p>
-                          Urgent requirement, if interested please apply before
-                          the 24th of September
-                        </p>
-                      </div>
-                      <div class="">
-                        <h6 class="p-font pb-3">Attachments</h6>
-                        <div class="d-flex flex-column gap-3">
-                          <div class="uploaded-file p-3 rounded">
+                      <!-- single tribe card -->
+                      <div
+                        class="tribe_card_wrapper bg-alt-bg-clr rounded-3 p-3 mb-3"
+                      >
+                        <div
+                          class="tribe_card_details d-flex gap-2 align-items-center mb-3"
+                        >
+                          <div class="avater_image flex-shrink-1">
+                            <img src="https://i.pravatar.cc/44" alt="" />
+                          </div>
+                          <div class="">
+                            <h5 class="">Logiology</h5>
+                            <h4>
+                              G Trading social media design for e commerce
+                              platform
+                            </h4>
+                          </div>
+                        </div>
+                        <div class="tags mb-3">
+                          <span class="alt-badge alt-progress">progress</span>
+                          <span
+                            class="alt-badge alt-badge-light d-inline-flex align-items-center"
+                          >
+                            <span class="alt-dots bg-primary me-1"></span>
+                            Agreement ready to sign</span
+                          >
+                          <span class="alt-badge alt-badge-outline"
+                            >$100 / Hour</span
+                          >
+                        </div>
+                        <div
+                          class="mb-3 d-flex flex-wrap align-items-center align-items-lg-end gap-3 gap-lg-5"
+                        >
+                          <p>Duration: <strong>6 weeks </strong></p>
+                          <p>
+                            Next milestone on : <strong>Nov 23, 2023 </strong>
+                          </p>
+                          <div class="ms-lg-auto w-25">
+                            <p><strong>37%</strong> Complete</p>
                             <div
-                              class="d-flex align-items-center justify-content-between"
+                              class="progress my-1"
+                              role="progressbar"
+                              aria-label="10px high"
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                              style="height: 8px"
                             >
-                              <div class="d-flex align-items-start gap-2">
-                                <img
-                                  src="../../assets/images/icons/pdf-icon.svg"
-                                  alt=""
-                                />
-                                <h4>
-                                  Example1attatchment.pdf
-                                  <span><p>1.2MB</p></span>
-                                </h4>
-                              </div>
-                              <div class="">
-                                <a class="text-secondary" href="">
-                                  <span
-                                    ><i
-                                      class="fa-solid fa-ellipsis-vertical"
-                                    ></i
-                                  ></span>
-                                </a>
-                              </div>
+                              <div
+                                class="progress-bar bg-success"
+                                style="width: 37%"
+                              ></div>
                             </div>
                           </div>
-                          <div class="uploaded-file p-3 rounded">
-                            <div
-                              class="d-flex align-items-center justify-content-between"
+                        </div>
+                        <div
+                          class="d-flex justify-content-between align-items-center border-top border-light-subtle pt-3"
+                        >
+                          <div
+                            class="d-flex flex-wrap gap-2 align-items-center"
+                          >
+                            <p>
+                              Next milestone on : <strong>Nov 23, 2023 </strong>
+                            </p>
+                            <p>Last update:</p>
+                            <span class="avater_image_32 flex-shrink-1"
+                              ><img src="https://i.pravatar.cc/32" alt=""
+                            /></span>
+                            <p class="h-font"><strong>Abel Marshal</strong></p>
+                            <span class="dots"></span>
+                            <p class=""><strong>Nov 23, 2023</strong></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="three"
+                      role="tabpanel"
+                      aria-labelledby="three-tab"
+                    >
+                      <!-- single tribe card -->
+                      <div
+                        class="tribe_card_wrapper bg-alt-bg-clr rounded-3 p-3 mb-3"
+                      >
+                        <div
+                          class="tribe_card_details d-flex gap-2 align-items-center mb-3"
+                        >
+                          <div class="avater_image flex-shrink-1">
+                            <img src="https://i.pravatar.cc/44" alt="" />
+                          </div>
+                          <div class="">
+                            <h5 class="">Logiology</h5>
+                            <h4>Branding design for Fintech startup</h4>
+                          </div>
+                        </div>
+                        <div class="tags mb-3">
+                          <span class="alt-badge alt-agreement">Agreement</span>
+                          <span
+                            class="alt-badge alt-badge-light d-inline-flex align-items-center"
+                          >
+                            <span class="alt-dots bg-primary me-1"></span>
+                            Agreement ready to sign</span
+                          >
+                          <span class="alt-badge alt-badge-outline"
+                            >$100-500</span
+                          >
+                        </div>
+                        <div class="mb-3">
+                          <p>Posted on : <strong>Jan 10, 2023</strong></p>
+                        </div>
+                        <div
+                          class="d-flex flex-wrap gap-3 justify-content-between align-items-center border-top border-light-subtle pt-3"
+                        >
+                          <div class="d-flex gap-2 align-items-center">
+                            <p>Last update:</p>
+                            <span class="avater_image_32 flex-shrink-1"
+                              ><img src="https://i.pravatar.cc/32" alt=""
+                            /></span>
+                            <p class="h-font"><strong>Abel Marshal</strong></p>
+                            <span class="dots"></span>
+                            <p class=""><strong>Nov 23, 2023</strong></p>
+                          </div>
+                          <div class="">
+                            <button
+                              class="alt-btn btn-alt-outline rounded-pill"
                             >
-                              <div class="d-flex align-items-start gap-2">
-                                <img
-                                  src="../../assets/images/icons/pdf-icon.svg"
-                                  alt=""
-                                />
-                                <h4>
-                                  Example1attatchment.pdf
-                                  <span><p>1.2MB</p></span>
-                                </h4>
-                              </div>
-                              <div class="">
-                                <a class="text-secondary" href="">
-                                  <span
-                                    ><i
-                                      class="fa-solid fa-ellipsis-vertical"
-                                    ></i
-                                  ></span>
-                                </a>
-                              </div>
-                            </div>
+                              Sign agreement
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="four"
+                      role="tabpanel"
+                      aria-labelledby="four-tab"
+                    >
+                      <!-- single tribe card -->
+                      <div
+                        class="tribe_card_wrapper bg-alt-bg-clr rounded-3 p-3 mb-3"
+                      >
+                        <div
+                          class="tribe_card_details d-flex gap-2 align-items-center mb-3"
+                        >
+                          <div class="avater_image flex-shrink-1">
+                            <img src="https://i.pravatar.cc/44" alt="" />
+                          </div>
+                          <div class="">
+                            <h5 class="">Logiology</h5>
+                            <h4>Branding design for Fintech startup</h4>
+                          </div>
+                        </div>
+                        <div class="tags mb-3">
+                          <span class="alt-badge alt-agreement">Agreement</span>
+                          <span
+                            class="alt-badge alt-badge-light d-inline-flex align-items-center"
+                          >
+                            <span class="alt-dots bg-primary me-1"></span>
+                            Agreement ready to sign</span
+                          >
+                          <span class="alt-badge alt-badge-outline"
+                            >$100-500</span
+                          >
+                        </div>
+                        <div class="mb-3">
+                          <p>Posted on : <strong>Jan 10, 2023</strong></p>
+                        </div>
+                        <div
+                          class="d-flex flex-wrap gap-3 justify-content-between align-items-center border-top border-light-subtle pt-3"
+                        >
+                          <div class="d-flex gap-2 align-items-center">
+                            <p>Last update:</p>
+                            <span class="avater_image_32 flex-shrink-1"
+                              ><img src="https://i.pravatar.cc/32" alt=""
+                            /></span>
+                            <p class="h-font"><strong>Abel Marshal</strong></p>
+                            <span class="dots"></span>
+                            <p class=""><strong>Nov 23, 2023</strong></p>
+                          </div>
+                          <div class="">
+                            <button
+                              class="alt-btn btn-alt-outline rounded-pill"
+                            >
+                              Sign agreement
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="five"
+                      role="tabpanel"
+                      aria-labelledby="five-tab"
+                    >
+                      <!-- single tribe card -->
+                      <div
+                        class="tribe_card_wrapper bg-alt-bg-clr rounded-3 p-3 mb-3"
+                      >
+                        <div
+                          class="tribe_card_details d-flex gap-2 align-items-center mb-3"
+                        >
+                          <div class="avater_image flex-shrink-1">
+                            <img src="https://i.pravatar.cc/44" alt="" />
+                          </div>
+                          <div class="">
+                            <h5 class="">Logiology</h5>
+                            <h4>Branding design for Fintech startup</h4>
+                          </div>
+                        </div>
+                        <div class="tags mb-3">
+                          <span class="alt-badge alt-agreement">Agreement</span>
+                          <span
+                            class="alt-badge alt-badge-light d-inline-flex align-items-center"
+                          >
+                            <span class="alt-dots bg-primary me-1"></span>
+                            Agreement ready to sign</span
+                          >
+                          <span class="alt-badge alt-badge-outline"
+                            >$100-500</span
+                          >
+                        </div>
+                        <div class="mb-3">
+                          <p>Posted on : <strong>Jan 10, 2023</strong></p>
+                        </div>
+                        <div
+                          class="d-flex flex-wrap gap-3 justify-content-between align-items-center border-top border-light-subtle pt-3"
+                        >
+                          <div class="d-flex gap-2 align-items-center">
+                            <p>Last update:</p>
+                            <span class="avater_image_32 flex-shrink-1"
+                              ><img src="https://i.pravatar.cc/32" alt=""
+                            /></span>
+                            <p class="h-font"><strong>Abel Marshal</strong></p>
+                            <span class="dots"></span>
+                            <p class=""><strong>Nov 23, 2023</strong></p>
+                          </div>
+                          <div class="">
+                            <button
+                              class="alt-btn btn-alt-outline rounded-pill"
+                            >
+                              Sign agreement
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="six"
+                      role="tabpanel"
+                      aria-labelledby="six-tab"
+                    >
+                      <!-- single tribe card -->
+                      <div
+                        class="tribe_card_wrapper bg-alt-bg-clr rounded-3 p-3 mb-3"
+                      >
+                        <div
+                          class="tribe_card_details d-flex gap-2 align-items-center mb-3"
+                        >
+                          <div class="avater_image flex-shrink-1">
+                            <img src="https://i.pravatar.cc/44" alt="" />
+                          </div>
+                          <div class="">
+                            <h5 class="">Logiology</h5>
+                            <h4>Branding design for Fintech startup</h4>
+                          </div>
+                        </div>
+                        <div class="tags mb-3">
+                          <span class="alt-badge alt-agreement">Agreement</span>
+                          <span
+                            class="alt-badge alt-badge-light d-inline-flex align-items-center"
+                          >
+                            <span class="alt-dots bg-primary me-1"></span>
+                            Agreement ready to sign</span
+                          >
+                          <span class="alt-badge alt-badge-outline"
+                            >$100-500</span
+                          >
+                        </div>
+                        <div class="mb-3">
+                          <p>Posted on : <strong>Jan 10, 2023</strong></p>
+                        </div>
+                        <div
+                          class="d-flex flex-wrap gap-3 justify-content-between align-items-center border-top border-light-subtle pt-3"
+                        >
+                          <div class="d-flex gap-2 align-items-center">
+                            <p>Last update:</p>
+                            <span class="avater_image_32 flex-shrink-1"
+                              ><img src="https://i.pravatar.cc/32" alt=""
+                            /></span>
+                            <p class="h-font"><strong>Abel Marshal</strong></p>
+                            <span class="dots"></span>
+                            <p class=""><strong>Nov 23, 2023</strong></p>
+                          </div>
+                          <div class="">
+                            <button
+                              class="alt-btn btn-alt-outline rounded-pill"
+                            >
+                              Sign agreement
+                            </button>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <!-- tab content end here  -->
               </div>
             </div>
           </div>

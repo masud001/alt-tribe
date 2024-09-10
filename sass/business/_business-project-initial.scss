@@ -1,3 +1,24 @@
 .event_details_page_profile.project_initial_details {
   margin-top: 0 !important;
 }
+
+.card_bg {
+  background-color: red;
+  background-image: url("../../assets/images/business-project/card-corner-bg.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 14%;
+  background-attachment: scroll;
+}
+.overview_card {
+  font-family: var(--bs-body-font-family);
+  h6 {
+    color: #5c5e63;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  p {
+    font-size: 14px;
+    color: var(--alt-text-clr);
+  }
+}
