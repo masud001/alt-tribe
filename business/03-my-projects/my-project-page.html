@@ -125,7 +125,12 @@ bdb = business dashboard;
                 </form>
               </div>
               <!--  -->
-              <div class="alt_bdb_plus_icon rounded-pill bg-black">
+              <div
+                class="alt_bdb_plus_icon rounded-pill bg-black"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#createProjectModal"
+              >
                 <img
                   src="../../assets/images/business-dashboard/plus-icons.svg"
                   alt="notification icon"
@@ -2504,6 +2509,369 @@ bdb = business dashboard;
       </div>
     </div>
     <!-- filter option-->
+
+    <!-- create new project modal  -->
+
+    <div
+      class="modal fade"
+      id="createProjectModal"
+      tabindex="-1"
+      aria-labelledby="createProjectModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog create-project-modal">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <h1 class="modal-title fs-5" id="createProjectModalTitle">
+              Create New Project
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-between align-content-center">
+              <div class="mb-3">
+                <h6 class="text-uppercase fs-6">Step 1 of 2</h6>
+                <h5>Define your project</h5>
+              </div>
+              <a class="d-none d-lg-block" href="/#">
+                Duplicate another project?
+              </a>
+            </div>
+            <div class="">
+              <div class="mb-4">
+                <label for="project-name" class="input-label">
+                  What's the name of the new project ?
+                </label>
+                <input
+                  type="text"
+                  class="input-field"
+                  id="project-name"
+                  placeholder="Eg:Social media manager"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="description" class="input-label">
+                  More details about the project ?
+                </label>
+
+                <textarea
+                  class="input-field"
+                  placeholder="Eg:Let people know more about your project. what is the goal? etc."
+                  id="description"
+                  rows="3"
+                  autocomplete="off"
+                  spellcheck="false"
+                ></textarea>
+              </div>
+              <div class="mb-4">
+                <label for="professional-experience" class="input-label">
+                  Select project type*
+                </label>
+                <div class="position-relative mt-2">
+                  <div
+                    class="btn btn-outline-secondary rounded-pill me-1 my-1 alt-input-check-btn-secondary"
+                  >
+                    <div class="form-check mb-0">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="professional-experience"
+                        id="full-time"
+                      />
+                      <label class="form-check-label" for="full-time">
+                        Full time
+                      </label>
+                    </div>
+                  </div>
+                  <div
+                    class="btn btn-outline-secondary rounded-pill me-1 my-1 alt-input-check-btn-secondary"
+                  >
+                    <div class="form-check mb-0">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="professional-experience"
+                        id="part-time"
+                      />
+                      <label class="form-check-label" for="part-time">
+                        Part time
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <h5>Budget range</h5>
+                <div class="row gy-4 gx-4">
+                  <div class="col-6">
+                    <label for="preferred-hourly" class="input-label">
+                      Minimum amount
+                    </label>
+                    <input
+                      type="text"
+                      class="input-field"
+                      id="preferred-hourly"
+                      placeholder="$0.00"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="col-6">
+                    <label for="preferred-hourly" class="input-label">
+                      Maximum amount
+                    </label>
+                    <input
+                      type="text"
+                      class="input-field"
+                      id="preferred-hourly"
+                      placeholder="$0.00"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#createProjectModal2"
+              class="alt-btn btn-alt-outline bg-alt-primary rounded-pill"
+            >
+              Continue
+              <span class="ms-2"><i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="createProjectModal2"
+      tabindex="-1"
+      aria-labelledby="createProjectModal2"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog create-project-modal">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <h1 class="modal-title fs-5" id="createProjectModal2Title">
+              Create New Project
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="d-flex justify-content-between align-content-center">
+              <div class="mb-3">
+                <h6 class="text-uppercase fs-6">Step 2 of 2</h6>
+                <h5>Describe what you are looking for</h5>
+              </div>
+            </div>
+            <div class="">
+              <div class="mb-4">
+                <label for="project-category" class="input-label">
+                  Select the category
+                </label>
+                <div class="d-flex gap-2">
+                  <button class="btn-alt-outline rounded-pill">
+                    Web Designing
+                  </button>
+                  <button class="btn-alt-outline rounded-pill">Branding</button>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="project-category" class="input-label">
+                  Skills required for the project ?
+                </label>
+                <div class="d-flex gap-2">
+                  <button class="btn-alt-outline rounded-pill">
+                    Project management
+                  </button>
+                  <button class="btn-alt-outline rounded-pill">
+                    UX design
+                  </button>
+                  <button
+                    class="btn-alt-outline rounded-pill bg-alt-gray-bg-clr"
+                  >
+                    +Add
+                  </button>
+                </div>
+              </div>
+
+              <div class="mb-4">
+                <label for="professional-experience" class="input-label">
+                  Minimum Experience level required
+                </label>
+                <div class="position-relative mt-2">
+                  <div
+                    class="btn btn-outline-secondary rounded-pill me-1 my-1 alt-input-check-btn-secondary"
+                  >
+                    <div class="form-check mb-0">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="professional-experience"
+                        id="start"
+                      />
+                      <label class="form-check-label" for="fstarte">Star</label>
+                    </div>
+                  </div>
+                  <div
+                    class="btn btn-outline-secondary rounded-pill me-1 my-1 alt-input-check-btn-secondary"
+                  >
+                    <div class="form-check mb-0">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="professional-experience"
+                        id="Upcoming star"
+                      />
+                      <label class="form-check-label" for="Upcoming star">
+                        Upcoming star
+                      </label>
+                    </div>
+                  </div>
+                  <div
+                    class="btn btn-outline-secondary rounded-pill me-1 my-1 alt-input-check-btn-secondary"
+                  >
+                    <div class="form-check mb-0">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="professional-experience"
+                        id="Super-star"
+                      />
+                      <label class="form-check-label" for="Super-star">
+                        Super star
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="professional-experience" class="input-label">
+                  Language preferred
+                </label>
+                <div class="position-relative mt-2">
+                  <div
+                    class="btn btn-outline-secondary rounded-pill me-1 my-1 alt-input-check-btn-secondary"
+                  >
+                    <div class="form-check mb-0">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="professional-experience"
+                        id="Hindi"
+                      />
+                      <label class="form-check-label" for="Hindi">Hindi</label>
+                    </div>
+                  </div>
+                  <div
+                    class="btn btn-outline-secondary rounded-pill me-1 my-1 alt-input-check-btn-secondary"
+                  >
+                    <div class="form-check mb-0">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="professional-experience"
+                        id="English"
+                      />
+                      <label class="form-check-label" for="English">
+                        English
+                      </label>
+                    </div>
+                  </div>
+                  <div
+                    class="btn btn-outline-secondary rounded-pill me-1 my-1 alt-input-check-btn-secondary"
+                  >
+                    <div class="form-check mb-0">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="professional-experience"
+                        id="Malayalam"
+                      />
+                      <label class="form-check-label" for="Malayalam">
+                        Malayalam
+                      </label>
+                    </div>
+                  </div>
+                  <button
+                    class="btn-alt-outline rounded-pill bg-alt-gray-bg-clr"
+                  >
+                    +Add
+                  </button>
+                </div>
+              </div>
+              <div class="mb-4">
+                <label for="description" class="input-label">Notes</label>
+
+                <textarea
+                  class="input-field"
+                  placeholder="Eg:Let people know more about your project. what is the goal? etc."
+                  id="description"
+                  rows="3"
+                  autocomplete="off"
+                  spellcheck="false"
+                ></textarea>
+              </div>
+              <div class="mb-4">
+                <label for="formFile" class="input-label">
+                  Upload examples
+                  <span class="input-label-required">*</span>
+                </label>
+                <div
+                  class="alt-input-file rounded text-center position-relative overflow-hidden"
+                >
+                  <img
+                    src="../../assets/images/icons/image-upload.svg"
+                    alt=""
+                  />
+                  <p class="mb-0">
+                    Drag and drop your files here or
+                    <a href=""><strong>Browse</strong></a>
+                  </p>
+                  <small>
+                    (support .png, .jpg, .jpeg Max.file size : 20MB )
+                  </small>
+                  <p>
+                    Kindly avoid sharing confidential material as it will be
+                    posted for the public
+                  </p>
+                  <input
+                    type="file"
+                    id="formFile"
+                    class="input-file-upload opacity-0 position-absolute w-100 h-100 top-0 start-0"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button class="alt-btn btn-alt-outline rounded-pill">Back</button>
+            <button class="alt-btn btn-alt-outline rounded-pill">
+              Save as draft
+            </button>
+            <button class="alt-btn btn-alt-outline bg-alt-primary rounded-pill">
+              Save and publish
+              <span class="ms-2"><i class="fa-solid fa-arrow-right"></i></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="../../assets/vendor/js/bootstrap.bundle.min.js"></script>
   </body>

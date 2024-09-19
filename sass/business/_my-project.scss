@@ -1,4 +1,27 @@
 
+.create-project-modal{
+    h6{
+        font-size: 12px;
+        text-transform: uppercase;
+        color: #595959;
+    }
+    h5{
+        font-size: 20px;
+        font-weight: 500;
+        color: #232529;
+    }
+    a{
+        font-size: 16px;
+        font-weight: 500;
+        color: #232529;
+        text-decoration: underline;
+    }
+}
+
+
+
+
+
 
 @media (min-width: 992px) {
 .offcanvas.offcanvas-end.filter_canvas_wrapper{
