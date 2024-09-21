@@ -55,6 +55,7 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
 @import "business/my-project";
 @import "business/explore-freelancer";
 @import "business/business-community";
+@import "business/business-project-started";
 @import "search-page";
 @import "buttons";
 @import "badges";
