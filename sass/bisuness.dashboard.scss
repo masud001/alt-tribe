@@ -68,6 +68,10 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
 @import "timeline";
 @import "chat-box";
 
+
+// custom design for the freelance pages.
+@import "freelancer/explore-project";
+
 // custom design for the business dashboard
 .p-font {
   font-family: var(--bs-body-font-family);
