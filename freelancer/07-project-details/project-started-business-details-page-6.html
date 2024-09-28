@@ -24,7 +24,7 @@ bdb = business dashboard;
 
     <!-- custom style sheet  -->
     <link rel="stylesheet" href="../../css/bisuness.dashboard.min.css" />
-    <title>Business project started business details page</title>
+    <title>Freelancers project details page</title>
   </head>
   <body class="tribe_page">
     <header class="alt_bdb_header">
@@ -61,7 +61,7 @@ bdb = business dashboard;
                   <!-- role badge  -->
                   <div class="ms-2 ms-lg-0">
                     <span class="badge rounded-pill text-bg-warning">
-                      Business
+                      Freelancer
                     </span>
                   </div>
                 </div>
@@ -1074,38 +1074,14 @@ bdb = business dashboard;
                           Logo designing for Apparel E-commerce
                         </h2>
                         <div class="tags py-3">
-                          <span class="alt-badge alt-agreement">Draft</span>
-                          <span class="alt-badge alt-dark">
-                            <span class="alt-dots alt-dots-green"></span>
-                            Publish project
-                          </span>
+                          <span class="alt-badge alt-agreement">Hiring</span>
                         </div>
                         <div class="mb-3">
-                          <button
-                            class="btn btn-alt-outline border-0 rounded-pill"
-                          >
+                          <button class="border-0 bg-transparent fs-4">
                             $100-500
                           </button>
                         </div>
-
-                        <div
-                          class="border-bottom d-flex gap-2 border-light-subtle pb-3"
-                        >
-                          <button
-                            class="evetn-page-btn"
-                            type="button"
-                            data-bs-target="#editInfo"
-                            data-bs-toggle="modal"
-                          >
-                            Edit project
-                          </button>
-                          <button
-                            class="evetn-page-btn bg-alt-primary border-0"
-                            type="button"
-                          >
-                            Publish
-                          </button>
-                        </div>
+                        <hr />
 
                         <div class="pb-3 pt-3">
                           <h5 class="p-font">Skills</h5>
@@ -1166,6 +1142,20 @@ bdb = business dashboard;
                     <li role="presentation">
                       <button
                         class="position-relative text-start"
+                        id="three-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#three"
+                        type="button"
+                        role="tab"
+                        aria-controls="three"
+                        aria-selected="true"
+                      >
+                        Activity history
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        class="position-relative text-start"
                         id="two-tab"
                         data-bs-toggle="pill"
                         data-bs-target="#two"
@@ -1197,7 +1187,11 @@ bdb = business dashboard;
                             class="tribe_card_details d-flex gap-2 align-items-center mb-3"
                           >
                             <div class="">
-                              <h4 class="h-font text-white fs-5">Agreement</h4>
+                              <h4
+                                class="h-font text-white text-capitalize fs-5"
+                              >
+                                Agreement
+                              </h4>
                             </div>
                           </div>
                           <div class="d-flex gap-2 align-items-center">
@@ -1231,39 +1225,31 @@ bdb = business dashboard;
                                 <span class="text-white">$12353</span>
                               </span>
                             </div>
-                            <div class="ms-lg-auto w-50">
-                              <p class="text-white">
-                                <strong>90%</strong>
-                                Complete
-                              </p>
-                              <div
-                                class="progress my-1 bg-transparent border border-light-subtle rounded-3"
-                                role="progressbar"
-                                aria-label="10px high"
-                                aria-valuenow="25"
-                                aria-valuemin="0"
-                                aria-valuemax="100"
-                                style="height: 8px"
-                              >
-                                <div
-                                  class="progress-bar bg-success"
-                                  style="width: 90%"
-                                ></div>
-                              </div>
-                            </div>
                           </div>
 
                           <div
                             class="d-flex flex-wrap gap-3 justify-content-between align-items-center border-top border-light-subtle pt-3"
                           >
+                            <div
+                              class="text-white d-flex gap-3 align-items-center"
+                            >
+                              <span>
+                                <a
+                                  class="text-reset text-white fs-6 text-decoration-underline"
+                                  href="./#"
+                                >
+                                  WJ Studio
+                                </a>
+                              </span>
+                              <span class="dots"></span>
+                              <span class="fs-6">Signed on Nov 23, 2023</span>
+                            </div>
                             <div class="align-self-end ms-auto">
                               <button
                                 type="button"
-                                data-bs-toggle="modal"
-                                data-bs-target="#updateAgreement"
                                 class="alt-btn btn-alt-outline bg-alt-primary rounded-pill"
                               >
-                                Start Agreement
+                                Sign agreement
                               </button>
                             </div>
                           </div>
@@ -1281,6 +1267,242 @@ bdb = business dashboard;
                             <br />
                             them to your agreement
                           </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade show"
+                      id="three"
+                      role="tabpanel"
+                      aria-labelledby="three"
+                    >
+                      <!-- activity history -->
+                      <div class="">
+                        <div
+                          class="tab_content tab_wrapper_section event_page_content"
+                        >
+                          <ul
+                            id="pills-tab"
+                            class="pb-2 d-flex content_tabs align-items-center justify-content-start gap-1 gap-lg-3"
+                            role="tablist"
+                          >
+                            <li role="presentation">
+                              <button
+                                class="active position-relative text-start"
+                                id="all-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#all"
+                                type="button"
+                                role="tab"
+                                aria-controls="all"
+                                aria-selected="true"
+                              >
+                                All
+                              </button>
+                            </li>
+                            <li role="presentation">
+                              <button
+                                id="Payments-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#Payments"
+                                type="button"
+                                role="tab"
+                                aria-controls="Payments"
+                                aria-selected="false"
+                                tabindex="-1"
+                              >
+                                Payments
+                              </button>
+                            </li>
+                            <li role="presentation" class="mb-2">
+                              <button
+                                id="Deliverables-tab"
+                                data-bs-toggle="pill"
+                                data-bs-target="#Deliverables"
+                                type="button"
+                                role="tab"
+                                aria-controls="Deliverables"
+                                aria-selected="false"
+                                tabindex="-1"
+                              >
+                                Deliverables
+                              </button>
+                            </li>
+                          </ul>
+                          <div
+                            class="tab-content tab_content_details"
+                            id="pills-tabContent"
+                          >
+                            <!-- activity logs  -->
+                            <div
+                              class="tab-pane fade show active"
+                              id="all"
+                              role="tabpanel"
+                              aria-labelledby="all"
+                            >
+                              <div class="pt-3">
+                                <!-- activity logs section -->
+                                <div class="d-flex flex-column gap-5">
+                                  <div class="d-flex flex-column gap-3">
+                                    <div class="">
+                                      <h6 class="alt-badge alt-dark">
+                                        <span class="me-1">
+                                          <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                        Today
+                                      </h6>
+                                    </div>
+                                    <div id="content">
+                                      <ul class="timeline">
+                                        <li class="event" data-date="">
+                                          <h3>
+                                            Payment generated for Milestone 1
+                                          </h3>
+                                          <h4>
+                                            Payment of $2200 against ‘Milestone
+                                            2’ done
+                                          </h4>
+                                          <p>11:30 AM</p>
+                                        </li>
+                                        <li class="event" data-date="">
+                                          <div
+                                            class="mb-2 d-flex align-items-center gap-2"
+                                          >
+                                            <div
+                                              class="avater_image_32 flex-shrink-1"
+                                            >
+                                              <img
+                                                src="https://i.pravatar.cc/32"
+                                                alt=""
+                                              />
+                                            </div>
+                                            <h5 class="">Abel Marshal</h5>
+                                          </div>
+                                          <h3>
+                                            Approved deliverables for Milestone
+                                            1
+                                          </h3>
+                                          <h4>
+                                            Approved two files: Branding, Style
+                                            guide.pdf, Mockups.pdf
+                                          </h4>
+                                          <p>11:30 AM</p>
+                                        </li>
+                                        <li class="event" data-date="">
+                                          <div
+                                            class="mb-2 d-flex align-items-center gap-2"
+                                          >
+                                            <div
+                                              class="avater_image_32 flex-shrink-1"
+                                            >
+                                              <img
+                                                src="https://i.pravatar.cc/32"
+                                                alt=""
+                                              />
+                                            </div>
+                                            <h5 class="h-font">Abel Marshal</h5>
+                                          </div>
+                                          <h3>Delivered Milestone 2</h3>
+                                          <h4>
+                                            Uploaded two files: Branding, Style
+                                            guide.pdf, Mockups.pdf
+                                          </h4>
+                                          <p>11:30 AM</p>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <div class="d-flex flex-column gap-3">
+                                    <div class="">
+                                      <h6 class="alt-badge alt-dark">
+                                        <span class="me-1">
+                                          <i class="fa-solid fa-caret-down"></i>
+                                        </span>
+                                        Nov 24, 2023
+                                      </h6>
+                                    </div>
+                                    <div id="content">
+                                      <ul class="timeline">
+                                        <li class="event" data-date="">
+                                          <h3>
+                                            Payment generated for Milestone 1
+                                          </h3>
+                                          <h4>
+                                            Payment of $2200 against ‘Milestone
+                                            2’ done
+                                          </h4>
+                                          <p>11:30 AM</p>
+                                        </li>
+                                        <li class="event" data-date="">
+                                          <div
+                                            class="mb-2 d-flex align-items-center gap-2"
+                                          >
+                                            <div
+                                              class="avater_image_32 flex-shrink-1"
+                                            >
+                                              <img
+                                                src="https://i.pravatar.cc/32"
+                                                alt=""
+                                              />
+                                            </div>
+                                            <h5 class="">Abel Marshal</h5>
+                                          </div>
+                                          <h3>
+                                            Approved deliverables for Milestone
+                                            1
+                                          </h3>
+                                          <h4>
+                                            Approved two files: Branding, Style
+                                            guide.pdf, Mockups.pdf
+                                          </h4>
+                                          <p>11:30 AM</p>
+                                        </li>
+                                        <li class="event" data-date="">
+                                          <div
+                                            class="mb-2 d-flex align-items-center gap-2"
+                                          >
+                                            <div
+                                              class="avater_image_32 flex-shrink-1"
+                                            >
+                                              <img
+                                                src="https://i.pravatar.cc/32"
+                                                alt=""
+                                              />
+                                            </div>
+                                            <h5 class="h-font">Abel Marshal</h5>
+                                          </div>
+                                          <h3>Delivered Milestone 2</h3>
+                                          <h4>
+                                            Uploaded two files: Branding, Style
+                                            guide.pdf, Mockups.pdf
+                                          </h4>
+                                          <p>11:30 AM</p>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- payment section  -->
+                            <div
+                              class="tab-pane fade"
+                              id="Payments"
+                              role="tabpanel"
+                              aria-labelledby="Payments"
+                            >
+                              Payments
+                            </div>
+                            <!-- deliverable section  -->
+                            <div
+                              class="tab-pane fade"
+                              id="Deliverables"
+                              role="tabpanel"
+                              aria-labelledby="Deliverables"
+                            >
+                              Deliverables
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1387,333 +1609,6 @@ bdb = business dashboard;
     </main>
 
     <!-- add manageMembers modal end -->
-
-    <!-- edit info modal start -->
-
-    <div
-      class="modal fade"
-      id="editInfo"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="editInfo"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="editInfo">Create a tribe</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="">
-              <div class="mb-4">
-                <div
-                  class="alt-input-file py-5 rounded text-center position-relative overflow-hidden"
-                >
-                  <img
-                    src="../../assets/images/business-dashboard/tribe/create-tribe-modal-img.svg"
-                    alt=""
-                  />
-
-                  <input
-                    type="file"
-                    id="formFile"
-                    class="input-file-upload opacity-0 position-absolute w-100 h-100 top-0 start-0"
-                  />
-                </div>
-              </div>
-              <div class="mb-4">
-                <label for="tribe-title" class="input-label">
-                  What you wanna call your tribe?
-                  <span class="input-label-required">*</span>
-                </label>
-                <input
-                  type="text"
-                  class="input-field"
-                  id="tribe-title"
-                  placeholder="Signature Design Tribe"
-                />
-              </div>
-              <!-- select skills  -->
-              <div class="mb-4 skills_select_input">
-                <label class="input-label" for="add-tags">Tribe skills</label>
-
-                <select
-                  class="w-100 input-select"
-                  multiple
-                  data-placeholder="Select Tags"
-                  data-allow-clear="1"
-                  id="add-tags"
-                >
-                  <option>tribe skills 1</option>
-                  <option>tribe skills 2</option>
-                  <option>tribe skills 3</option>
-                  <option>tribe skills 4</option>
-                  <option>tribe skills 5</option>
-                  <option>tribe skills 6</option>
-                  <option>tribe skills 7</option>
-                </select>
-              </div>
-
-              <div class="mb-2">
-                <label for="description" class="input-label">Description</label>
-
-                <textarea
-                  class="input-field"
-                  placeholder="Eg: My responsibilities include"
-                  id="description"
-                  rows="3"
-                ></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn-alt-outline rounded-pill"
-              data-bs-dismiss="modal"
-            >
-              Cancel
-            </button>
-            <button
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#editInfo2"
-              class="btn-alt-outline bg-alt-primary rounded-pill"
-            >
-              Continue
-              <span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- edit info modal 2  -->
-    <div
-      class="modal fade"
-      id="editInfo2"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="editInfo2title"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="editInfo2title">
-              Who else you want to be in Aufait tribe?
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="">
-              <div class="flex-grow-1 position-relative tribe_search">
-                <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                <input
-                  type="text"
-                  placeholder="Search for an existing member or add new using email id"
-                />
-              </div>
-              <!-- single check box -->
-              <div
-                class="d-flex justify-content-between align-items-center border-bottom border-light-subtle mb-2"
-              >
-                <div
-                  class="tribe_single_check_box d-flex align-items-center gap-2"
-                >
-                  <input
-                    class="form_check_input"
-                    type="checkbox"
-                    value=""
-                    id="check1"
-                  />
-                  <label class="form_check_label" for="check1">
-                    <div class="label_content d-flex align-items-center gap-2">
-                      <div class="avater_image_48">
-                        <img
-                          src="https://i.pravatar.cc/48"
-                          class="img-fluid"
-                          alt=""
-                        />
-                      </div>
-                      <div class="">
-                        <h5 class="mb-1">Logiology</h5>
-                        <div class="d-flex align-items-center flex-wrap gap-2">
-                          <p>Graphic Designer</p>
-                          <span class="dots"></span>
-                          <p>jamesjacobe@gmail.com</p>
-                        </div>
-                      </div>
-                    </div>
-                  </label>
-                </div>
-                <div class="">
-                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                </div>
-              </div>
-              <!-- single check box -->
-              <div
-                class="d-flex justify-content-between align-items-center border-bottom border-light-subtle mb-2"
-              >
-                <div
-                  class="tribe_single_check_box d-flex align-items-center gap-2"
-                >
-                  <input
-                    class="form_check_input"
-                    type="checkbox"
-                    value=""
-                    id="check2"
-                  />
-                  <label class="form_check_label" for="check2">
-                    <div class="label_content d-flex align-items-center gap-2">
-                      <div class="avater_image_48">
-                        <img
-                          src="https://i.pravatar.cc/48"
-                          class="img-fluid"
-                          alt=""
-                        />
-                      </div>
-                      <div class="">
-                        <h5 class="mb-1">Logiology</h5>
-                        <div class="d-flex align-items-center flex-wrap gap-2">
-                          <p>Graphic Designer</p>
-                          <span class="dots"></span>
-                          <p>jamesjacobe@gmail.com</p>
-                        </div>
-                      </div>
-                    </div>
-                  </label>
-                </div>
-                <div class="">
-                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                </div>
-              </div>
-              <!-- single check box -->
-              <div
-                class="d-flex justify-content-between align-items-center mb-2"
-              >
-                <div
-                  class="tribe_single_check_box d-flex align-items-center gap-2"
-                >
-                  <input
-                    class="form_check_input"
-                    type="checkbox"
-                    value=""
-                    id="check3"
-                  />
-                  <label class="form_check_label" for="check3">
-                    <div class="label_content d-flex align-items-center gap-2">
-                      <div class="avater_image_48">
-                        <img
-                          src="https://i.pravatar.cc/48"
-                          class="img-fluid"
-                          alt=""
-                        />
-                      </div>
-                      <div class="">
-                        <h5 class="mb-1">Logiology</h5>
-                        <div class="d-flex align-items-center flex-wrap gap-2">
-                          <p>Graphic Designer</p>
-                          <span class="dots"></span>
-                          <p>jamesjacobe@gmail.com</p>
-                        </div>
-                      </div>
-                    </div>
-                  </label>
-                </div>
-                <div class="">
-                  <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn-alt-outline rounded-pill"
-              data-bs-dismiss="modal"
-            >
-              Copy invite link
-            </button>
-            <button
-              type="button"
-              class="btn-alt-outline bg-alt-primary rounded-pill"
-            >
-              Send invite
-              <span class="ms-1"><i class="fa-solid fa-arrow-right"></i></span>
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- edit info modal end -->
-
-    <!-- publish project modal -->
-    <div
-      class="modal fade"
-      id="publishProject"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modalTitleId"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="btn-close text-black"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="container-fluid">
-              <div
-                class="rounded-3 py-5 w-100 text-center h-auto d-flex flex-column gap-4 align-items-center justify-content-center"
-              >
-                <img
-                  src="../../assets/images/business-project/project-publish-modal-img.svg"
-                  alt=""
-                />
-                <h2 class="fs-3">Project posted successfully!</h2>
-                <p>
-                  You’re one step closer to achieving your vision! Start
-                  inviting freelancers now.
-                </p>
-                <div class="d-flex gap-3">
-                  <button
-                    type="button"
-                    aria-expanded="false"
-                    class="alt-btn btn-alt-outline rounded-pill"
-                  >
-                    Done
-                  </button>
-                  <button
-                    type="button"
-                    aria-expanded="false"
-                    class="alt-btn btn-alt-outline bg-alt-primary rounded-pill"
-                  >
-                    Explore freelancers
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <script src="../../assets/vendor/js/bootstrap.bundle.min.js"></script>
     <script src="../../assets/vendor/js/jquery-3.5.1.slim.min.js"></script>
