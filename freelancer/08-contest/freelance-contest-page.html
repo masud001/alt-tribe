@@ -1,0 +1,3185 @@
+<!-- 
+bdb = business dashboard; 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome icons links  -->
+    <link
+      rel="stylesheet"
+      href="../../assets/fontawesomes/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/fontawesomes/css/all.min.css" />
+    <!-- slider css  -->
+    <link rel="stylesheet" href="../../assets/vendor/css/slick.css" />
+    <link rel="stylesheet" href="../../assets/vendor/css/slick-theme.css" />
+    <!-- select 2 css -->
+    <link
+      rel="stylesheet"
+      href="../../assets/vendor/css/select2-bootstrap4.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/vendor/css/select2.min.css" />
+    <title>Business Contest page</title>
+    <link rel="stylesheet" href="../../css/bisuness.dashboard.min.css" />
+  </head>
+  <body>
+    <header class="alt_bdb_header">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-lg-2 border-end border-light-subtle">
+            <div
+              class="alt_bdb_logo d-flex justify-content-between align-items-lg-start"
+            >
+              <div class="d-flex flex-row gap-2 align-items-start">
+                <!-- mobile menu bar  -->
+                <button
+                  class="btn bg-light bg-transparent p-0 me-2 d-lg-none"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                  aria-controls="offcanvasExample"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/menu-bar-icons.svg"
+                    alt=""
+                  />
+                </button>
+                <!-- logo  -->
+                <div
+                  class="d-flex flex-row flex-lg-column align-items-center align-items-lg-start justify-content-start"
+                >
+                  <a href="/#">
+                    <img
+                      src="../../assets/images/business-dashboard/logo.svg"
+                      alt="logo"
+                    />
+                  </a>
+                  <!-- role badge  -->
+                  <div class="ms-2 ms-lg-0">
+                    <span class="badge rounded-pill text-bg-warning">
+                      Business
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- notification for mobile  -->
+              <div class="d-flex align-items-center gap-3">
+                <a href="" class="d-lg-none">
+                  <img
+                    src="../../assets/images/business-dashboard/Search.svg"
+                    alt="search icon"
+                  />
+                </a>
+                <div class="notification_icon d-lg-none">
+                  <div
+                    type="button"
+                    class="position-relative"
+                    class="position-relative"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#notification_canvas"
+                    aria-controls="notification_canvas"
+                  >
+                    <img
+                      src="../../assets/images/business-dashboard/notification.svg"
+                      alt=""
+                    />
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-1"
+                    >
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </div>
+                </div>
+                <button
+                  class="d-none d-lg-block btn bg-light bg-transparent p-0"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/menu_open-icon.svg"
+                    alt="mobile icons"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 pt-3 pt-lg-0">
+            <div class="breadcrumb d-flex ps-2 mt-1 align-items-center">
+              <a href="" class="fs-6">
+                <span class="icon">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </span>
+                <span class="m-1 fs-5"><strong>Contests</strong></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div
+              class="alt_bdb_notification d-none d-lg-flex gap-4 justify-content-end align-items-center"
+            >
+              <!-- search bar -->
+              <div class="alt_bdb_header_search position-relative">
+                <form action="">
+                  <input
+                    class="position-relative bg-alt-gray-bg-clr border-0"
+                    type="text"
+                    placeholder="Search"
+                  />
+                  <button type="submit">
+                    <img
+                      src="../../assets/images/business-dashboard/Search.svg"
+                      alt="search icon"
+                    />
+                  </button>
+                </form>
+              </div>
+              <!--  -->
+              <div class="alt_bdb_plus_icon rounded-pill bg-black">
+                <img
+                  src="../../assets/images/business-dashboard/plus-icons.svg"
+                  alt="notification icon"
+                />
+              </div>
+              <!-- notification for desktop -->
+              <div class="notification_icon">
+                <button
+                  type="button"
+                  class="position-relative"
+                  type="button"
+                  class="position-relative"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#notification_canvas"
+                  aria-controls="notification_canvas"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/notification.svg"
+                    alt=""
+                  />
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-1"
+                  >
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+              </div>
+              <!--  -->
+              <div class="alt_bdb_avatar position-relative">
+                <button
+                  type="button"
+                  class=""
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://via.placeholder.com/32x32"
+                    alt="user icon"
+                    class="rounded-circle"
+                  />
+                </button>
+
+                <!-- PROFILE MENU  -->
+                <div class="dropdown-menu dropdown-menu-end">
+                  <div class="profile_menu_section">
+                    <div
+                      class="profile_menu text-lg-center border-bottom border-light-subtle"
+                    >
+                      <div class="profile_image">
+                        <img
+                          class="mx-lg-auto"
+                          src="https://i.pravatar.cc/72"
+                          alt=""
+                        />
+                      </div>
+                      <div class="profile_details text-lg-center">
+                        <h2 class="mt-lg-2">Roberto Danial</h2>
+                        <h4>roberto34@gmail.com</h4>
+                        <div class="solopreneur">
+                          <img
+                            src="../../assets/images/freelance-dashboard/icons/Solopreneur.svg"
+                            alt=""
+                          />
+                          <span>Solopreneur</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="referal_friend_card">
+                      <h3>Refer a friend</h3>
+                      <p>Introduce your friends to AltTribe!</p>
+                    </div>
+                    <div class="alt_bdb_sidebar">
+                      <ul class="py-4 border-bottom border-light-subtle">
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Createfreelancerprofile.svg"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Create freelancer profile</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="active d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/building-city-town.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>My business profile</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Myprojectshistory.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>My projects history</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Saved.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Saved</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Settings.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Settings</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--  -->
+                      <ul class="py-2">
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Logout.svg"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Log out</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- mobile menu  -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header mobile_canvas">
+        <div class="d-flex align-items-center gap-3">
+          <button
+            type="button"
+            class="btn-close fs-5 text-dark"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <div
+            class="offcanvas-title d-flex align-items-center"
+            id="offcanvasExampleLabel"
+          >
+            <img src="../../assets/images/business-dashboard/logo.svg" alt="" />
+            <div class="ms-2 ms-lg-0">
+              <span class="badge rounded-pill text-bg-warning">Business</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-2 ms-auto">
+          <div class="alt_bdb_plus_icon rounded-pill bg-black">
+            <img
+              src="../../assets/images/business-dashboard/plus-icons.svg"
+              alt="notification icon"
+            />
+          </div>
+          <div class="alt_bdb_avatar">
+            <button
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#businessProfileMenu"
+              aria-controls="businessProfileMenu"
+            >
+              <img
+                src="https://i.pravatar.cc/32"
+                alt="user icon"
+                class="rounded-circle"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="alt_bdb_sidebar">
+          <ul class="py-4 border-bottom border-light-subtle">
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/dashboard-icon.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Explore -Freelancers.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Explore Freelancers</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/leaderboard.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>My Projects</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Contests.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Contests</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Calendar.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Events</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Community.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Community</span>
+              </a>
+            </li>
+          </ul>
+          <!--  -->
+          <ul class="py-2">
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/My tribes.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>My tribes</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- create tribe  -->
+          <div
+            class="sidebar_wizard wizard_bg d-flex flex-column justify-content-end bg-alt-gray-bg-clr rounded-3 p-2"
+          >
+            <h3 class="">Create a Tribe</h3>
+            <p class="">
+              Make the most of Alt Tribe by forming your own tribe.
+            </p>
+            <a href="">
+              Start now
+              <span><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <!-- mobile menu end -->
+
+    <!-- profile menu for mobile  -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="businessProfileMenu"
+      aria-labelledby="profilemenu_for_business"
+    >
+      <div class="offcanvas-header">
+        <div class="d-flex align-items-center gap-3">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <div
+            class="offcanvas-title d-flex align-items-center"
+            id="profilemenu_for_business"
+          >
+            <img src="../../assets/images/business-dashboard/logo.svg" alt="" />
+            <div class="ms-2 ms-lg-0">
+              <span class="badge rounded-pill text-bg-warning">Business</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <div class="profile_menu_section_for_mobile">
+          <div
+            class="profile_menu d-flex flex-row justify-content-start align-items-start gap-3 border-bottom border-light-subtle"
+          >
+            <div class="profile_image">
+              <img class="mx-lg-auto" src="https://i.pravatar.cc/72" alt="" />
+            </div>
+            <div class="profile_details text-lg-start">
+              <h2 class="mt-lg-2">Roberto Danial 2</h2>
+              <h4>roberto34@gmail.com</h4>
+              <div class="solopreneur">
+                <img
+                  src="../../assets/images/freelance-dashboard/icons/Solopreneur.svg"
+                  alt=""
+                />
+                <span>Solopreneur</span>
+              </div>
+            </div>
+          </div>
+          <div class="referal_friend_card">
+            <h3>Refer a friend</h3>
+            <p>Introduce your friends to AltTribe!</p>
+          </div>
+          <div class="alt_bdb_sidebar">
+            <ul class="py-4 border-bottom border-light-subtle">
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Createfreelancerprofile.svg"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Create freelancer profile</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="active d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/building-city-town.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>My business profile</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Myprojectshistory.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>My projects history</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Saved.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Saved</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Settings.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Settings</span>
+                </a>
+              </li>
+            </ul>
+            <!--  -->
+            <ul class="py-2">
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Logout.svg"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Log out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- profile menu for mobile end -->
+
+    <!-- notification canvas start  -->
+    <div
+      class="offcanvas offcanvas-end notification_canvas_wrapper"
+      tabindex="-1"
+      id="notification_canvas"
+      aria-labelledby="notification_canvas"
+    >
+      <div class="offcanvas-header px-4">
+        <h5 class="offcanvas-title notification_title" id="notification_canvas">
+          Notification
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="notification_menu">
+          <ul
+            class="nav-pills border-bottom border-2 px-4"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="" role="presentation">
+              <button
+                class="active position-relative"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                All (7)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Invite and responses (2)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Updates (2)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-reminders-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-reminders"
+                type="button"
+                role="tab"
+                aria-controls="pills-reminders"
+                aria-selected="false"
+              >
+                Reminders (3)
+              </button>
+            </li>
+          </ul>
+          <div
+            class="tab-content notification_tab_content"
+            id="pills-tabContent"
+          >
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              <h2>Today</h2>
+              <div class="">
+                <!-- single_notification  -->
+                <div class="single_notification unread">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV</strong>
+                        is inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        1m ago
+                      </span>
+                      <span class="dots">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV</strong>
+                        is inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        1m ago
+                      </span>
+                      <span class="dots">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification unread">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV</strong>
+                        is inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        1m ago
+                      </span>
+                      <span class="dots">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV</strong>
+                        is inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        1m ago
+                      </span>
+                      <span class="dots">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <h2>Profile</h2>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+            >
+              <h2>Contact</h2>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-reminders"
+              role="tabpanel"
+              aria-labelledby="pills-reminders-tab"
+            >
+              <h2>reminders</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- notification canvas end -->
+
+    <main class="main_section">
+      <div class="container-xxl">
+        <div class="row">
+          <!-- sidebar start -->
+          <div
+            class="col-12 col-lg-2 border-end border-light-subtle d-none d-lg-block"
+          >
+            <aside class="alt_bdb_sidebar">
+              <ul class="py-4 border-bottom border-light-subtle">
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/dashboard-icon.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Explore -Freelancers.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Explore Freelancers</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/leaderboard.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>My Projects</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2 active">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Contests.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Contests</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Calendar.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Events</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Community.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Community</span>
+                  </a>
+                </li>
+              </ul>
+              <!--  -->
+              <ul class="py-2">
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/My tribes.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>My tribes</span>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- create tribe  -->
+              <div
+                class="sidebar_wizard wizard_bg d-flex flex-column justify-content-end bg-alt-gray-bg-clr rounded-3 p-2"
+              >
+                <h3 class="">Create a Tribe</h3>
+                <p class="">
+                  Make the most of Alt Tribe by forming your own tribe.
+                </p>
+                <a href="">
+                  Start now
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+              </div>
+            </aside>
+          </div>
+          <!-- sidebar left end -->
+
+          <!-- main content start -->
+          <div class="col-12 col-lg-10 pb-5">
+            <!-- tab content start here  -->
+            <div class="event_page_content">
+              <ul
+                id="pills-tab"
+                class="content_tabs d-flex align-items-center justify-content-start gap-3 mb-4"
+                role="tablist"
+              >
+                <li role="presentation">
+                  <button
+                    class="active position-relative text-start"
+                    id="all-event-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#all-event"
+                    type="button"
+                    role="tab"
+                    aria-controls="all-event"
+                    aria-selected="true"
+                  >
+                    All
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    id="published-event-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#published-event"
+                    type="button"
+                    role="tab"
+                    aria-controls="published-event"
+                    aria-selected="true"
+                  >
+                    Published
+                  </button>
+                </li>
+                <li role="presentation">
+                  <button
+                    id="registered-event-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#registered-event"
+                    type="button"
+                    role="tab"
+                    aria-controls="registered-event"
+                    aria-selected="true"
+                  >
+                    Registered
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="all-event"
+                  role="tabpanel"
+                  aria-labelledby="all-events"
+                >
+                  <!-- tranding event slider  -->
+                  <div class="tranding_event_slider mt-4 mb-5">
+                    <div class="row gy-4">
+                      <div class="col-12 col-md-3">
+                        <div class="tranding_content">
+                          <h3>Trending events</h3>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Sed do.
+                          </p>
+                          <div class="">
+                            <button
+                              class="btn btn-alt-outline rounded-pill border border-secondary-subtle"
+                            >
+                              View all
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-9">
+                        <div class="tranding_event_slider_wrapper js_slider">
+                          <!-- single slider item -->
+                          <div
+                            class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                          >
+                            <div class="d-flex gap-2">
+                              <img
+                                src="https://i.pravatar.cc/42"
+                                class="rounded-circle flex-shrink-0"
+                                alt=""
+                              />
+                              <div class="">
+                                <p>Quick Atmos</p>
+                                <h3>UI/UX Design Conference</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- single slider item -->
+                          <div
+                            class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                          >
+                            <div class="d-flex gap-2">
+                              <img
+                                src="https://i.pravatar.cc/42"
+                                class="rounded-circle flex-shrink-0"
+                                alt=""
+                              />
+                              <div class="">
+                                <p>Quick Atmos</p>
+                                <h3>UI/UX Design Conference</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- single slider item -->
+                          <div
+                            class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                          >
+                            <div class="d-flex gap-2">
+                              <img
+                                src="https://i.pravatar.cc/42"
+                                class="rounded-circle flex-shrink-0"
+                                alt=""
+                              />
+                              <div class="">
+                                <p>Quick Atmos</p>
+                                <h3>UI/UX Design Conference</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- single slider item -->
+                          <div
+                            class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                          >
+                            <div class="d-flex gap-2">
+                              <img
+                                src="https://i.pravatar.cc/42"
+                                class="rounded-circle flex-shrink-0"
+                                alt=""
+                              />
+                              <div class="">
+                                <p>Quick Atmos</p>
+                                <h3>UI/UX Design Conference</h3>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- single slider item -->
+                          <div
+                            class="slider_item slider_items_bg_1 d-flex flex-column justify-content-end rounded-3 bg-danger"
+                          >
+                            <div class="d-flex gap-2">
+                              <img
+                                src="https://i.pravatar.cc/42"
+                                class="rounded-circle flex-shrink-0"
+                                alt=""
+                              />
+                              <div class="">
+                                <p>Quick Atmos</p>
+                                <h3>UI/UX Design Conference</h3>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- filter tools bar -->
+                  <div class="row">
+                    <div
+                      class="col-12 d-flex gap-2 gap-md-3 align-items-center"
+                    >
+                      <!-- search box  -->
+                      <div class="search_box d-flex justify-content-center">
+                        <span class="pe-md-1">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input
+                          class="d-none d-md-flex"
+                          type="text"
+                          placeholder="Search for contests here"
+                        />
+                      </div>
+                      <!-- filter box  -->
+                      <button
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#filterOffcanvas"
+                        aria-controls="filterOffcanvas"
+                        class="filter_box border-0 d-flex justify-content-center d-flex"
+                      >
+                        <span>
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/filter_list_icon.svg"
+                            alt=""
+                          />
+                        </span>
+                        <span class="d-none d-sm-flex">filters</span>
+                      </button>
+                      <!-- sort box -->
+                      <div class="position-relative">
+                        <button
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                          class="sort_box border-0 d-flex align-items-center justify-content-center"
+                        >
+                          <span>Sort by:</span>
+                          <span>
+                            <strong class="d-none d-sm-flex">
+                              Recommended
+                            </strong>
+                          </span>
+                          <span class="ms-md-2">
+                            <i class="fa-solid fa-caret-down"></i>
+                          </span>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-end">
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Recommended
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Latest
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Oldest
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Low to high
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              High to low
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Most entries
+                            </button>
+                          </li>
+                          <li>
+                            <button class="dropdown-item" type="button">
+                              Fewest entries
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="create_new_btn ms-auto">
+                        <button
+                          class="btn btn-alt-outline bg-alt-primary border border-alt-primary rounded-pill"
+                          type="button"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#createEventCanvas"
+                          aria-controls="createEventCanvas"
+                        >
+                          Create new
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- event tags row -->
+                  <div class="row pt-4 pb-5">
+                    <div
+                      class="col-12 d-flex gap-2 flex-wrap justify-content-start justify-content-lg-between"
+                    >
+                      <div
+                        class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_1"
+                      >
+                        <h3>Web Development</h3>
+                      </div>
+                      <div
+                        class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_2"
+                      >
+                        <h3>App Development</h3>
+                      </div>
+                      <div
+                        class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_3"
+                      >
+                        <h3>Graphic Design</h3>
+                      </div>
+                      <div
+                        class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_4"
+                      >
+                        <h3>Product Design</h3>
+                      </div>
+                      <div
+                        class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_5"
+                      >
+                        <h3>Illustration</h3>
+                      </div>
+                      <div
+                        class="event_tags flex-grow-1 px-4 py-4 text-center rounded-3 event_tags_bg_6"
+                      >
+                        <h3>3D Art & Animation</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single event card -->
+                  <div class="row gy-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                            >
+                              online
+                            </span>
+                            <span class="registration text-capitalize">
+                              registration fee
+                            </span>
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs
+                            </span>
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                            >
+                              online
+                            </span>
+                            <span class="registration text-capitalize">
+                              registration fee
+                            </span>
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs
+                            </span>
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                            >
+                              online
+                            </span>
+                            <span class="registration text-capitalize">
+                              registration fee
+                            </span>
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs
+                            </span>
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                            >
+                              online
+                            </span>
+                            <span class="registration text-capitalize">
+                              registration fee
+                            </span>
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs
+                            </span>
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span class="card_location">
+                              <span>
+                                <i class="fa-solid fa-location-dot"></i>
+                              </span>
+                              Kochi, India
+                            </span>
+                            <span class="registration text-capitalize">
+                              registration fee
+                            </span>
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs
+                            </span>
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                            >
+                              online
+                            </span>
+                            <span class="registration text-capitalize">
+                              registration fee
+                            </span>
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs
+                            </span>
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                            >
+                              online
+                            </span>
+                            <span class="registration text-capitalize">
+                              registration fee
+                            </span>
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs
+                            </span>
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                            >
+                              online
+                            </span>
+                            <span class="registration text-capitalize">
+                              registration fee
+                            </span>
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs
+                            </span>
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                            >
+                              online
+                            </span>
+                            <span class="registration text-capitalize">
+                              registration fee
+                            </span>
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex justify-content-between align-items-center"
+                          >
+                            <span class="card_end_time">
+                              <span class="alt-dots alt-dots-danger"></span>
+                              Ends in 03:00 hrs
+                            </span>
+                            <button class="card_register_now_btn">
+                              Register now
+                            </button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade pb-5"
+                  id="published-event"
+                  role="tabpanel"
+                  aria-labelledby="published-event-tab"
+                >
+                  <!-- single event card -->
+                  <div class="row gy-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <div class="">
+                              <h4>DesignSpectra Expo</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                            >
+                              online
+                            </span>
+                            <span class="registration text-capitalize">
+                              registration fee
+                            </span>
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <div class="">
+                              <h4>PixelFusion Festival</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                            >
+                              online
+                            </span>
+                            <span class="registration text-capitalize">
+                              registration fee
+                            </span>
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade pb-5"
+                  id="registered-event"
+                  role="tabpanel"
+                  aria-labelledby="registered-event-tab"
+                >
+                  <div class="row gy-4">
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                            >
+                              online
+                            </span>
+                            <span class="registration text-capitalize">
+                              registration fee
+                            </span>
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex gap-3 justify-content-end align-items-center"
+                          >
+                            <button class="card_register_now_btn">View</button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                            >
+                              online
+                            </span>
+                            <span class="registration text-capitalize">
+                              registration fee
+                            </span>
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex gap-3 justify-content-end align-items-center"
+                          >
+                            <button class="card_register_now_btn">View</button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6 col-xl-4">
+                      <div
+                        class="single_event_card_wrapper rounded-3 bg-alt-bg-clr"
+                      >
+                        <div class="card_image_thumb">
+                          <img
+                            src="../../assets/images/business-dashboard/events-page/card_img_1.jpg"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div class="p-3">
+                          <div
+                            class="card_avater mb-3 d-flex gap-2 align-items-start"
+                          >
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle flex-shrink-0 img-fluid"
+                              alt=""
+                            />
+                            <div class="">
+                              <p>WJ Studio</p>
+                              <h4>DesignSpectra Challenge</h4>
+                            </div>
+                          </div>
+                          <div class="card_tags">
+                            <span
+                              class="online alt-badge alt-completed text-capitalize"
+                            >
+                              online
+                            </span>
+                            <span class="registration text-capitalize">
+                              registration fee
+                            </span>
+                            <span class="registration_fee">$20</span>
+                          </div>
+                          <div class="date_time mt-3">
+                            <span><i class="fa-regular fa-calendar"></i></span>
+                            <span>Nov 12, 9:00am - Nov 12, 10:00pm, 2023</span>
+                          </div>
+                          <div
+                            class="card_footer mt-3 pt-3 border-top border-light-subtle d-flex gap-3 justify-content-end align-items-center"
+                          >
+                            <button class="card_register_now_btn">View</button>
+                            <button class="card_bookmark">
+                              <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- tab content end here  -->
+          </div>
+          <!-- main content end -->
+        </div>
+      </div>
+    </main>
+
+    <!-- filter option -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="filterOffcanvas"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Filters</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="sidebar_filter_section">
+          <!-- filater group (skills) -->
+          <div
+            class="sidebar_filter_group gap-3 pt-3 border-bottom border-light-subtle"
+          >
+            <h5>skills</h5>
+            <div class="d-flex align-items-start gap-3 flex-wrap">
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="Graphic-designing"
+                />
+                <label class="form_check_label" for="Graphic-designing">
+                  Graphic designing
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="Logo-designing"
+                />
+                <label class="form_check_label" for="Logo-designing">
+                  Logo designing
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="Illustration"
+                />
+                <label class="form_check_label" for="Illustration">
+                  Illustration
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="UI-UX-Designing"
+                />
+                <label class="form_check_label" for="UI-UX-Designing">
+                  UI UX Designing
+                </label>
+              </div>
+              <!-- hidden content -->
+              <div class="hidden-content pb-3">
+                <div class="d-flex align-items-start gap-3 flex-wrap">
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="Designing"
+                    />
+                    <label class="form_check_label" for="Designing">
+                      Designing
+                    </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UI"
+                    />
+                    <label class="form_check_label" for="UI">UI</label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UX"
+                    />
+                    <label class="form_check_label" for="UX">UX</label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="html"
+                    />
+                    <label class="form_check_label" for="html">html</label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="css"
+                    />
+                    <label class="form_check_label" for="css">css</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="text-capitalize more_btn view-more-btn"
+              id="view-more-btn"
+            >
+              +10 More
+            </button>
+          </div>
+          <!-- filater group (budget) -->
+          <div class="sidebar_filter_group pt-3">
+            <h5>budget</h5>
+            <div class="budget-range">
+              <div class="range-slider">
+                <input
+                  type="range"
+                  class="form-range"
+                  id="minBudgetRange"
+                  min="0"
+                  max="100"
+                  step="1"
+                  value="0"
+                />
+                <input
+                  type="range"
+                  class="form-range"
+                  id="maxBudgetRange"
+                  min="0"
+                  max="100"
+                  step="1"
+                  value="100"
+                />
+              </div>
+              <div
+                class="budget_input_range d-flex justify-content-between align-items-center mt-2"
+              >
+                <div>
+                  <label for="minBudget">Min</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="minBudget"
+                    value="$0.00"
+                  />
+                </div>
+                <div class="to">to</div>
+                <div>
+                  <label for="maxBudget">Max</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="maxBudget"
+                    value="$100.00"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- filater group (category) -->
+          <div
+            class="sidebar_filter_group pt-3 border-bottom border-light-subtle"
+          >
+            <h5>Category</h5>
+            <!-- single check box -->
+            <div class="d-flex align-items-start gap-3 flex-wrap">
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="Category-Product-Design"
+                />
+                <label class="form_check_label" for="Category-Product-Design">
+                  Product Design
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="Category-Illustration"
+                />
+                <label class="form_check_label" for="Category-Illustration">
+                  Illustration
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="Category-branding"
+                />
+                <label class="form_check_label" for="Category-branding">
+                  Branding
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="category-all"
+                />
+                <label class="form_check_label" for="category-all">All</label>
+              </div>
+              <!-- hidden content -->
+              <div class="hidden-content-category pb-3">
+                <div class="d-flex align-items-start gap-3 flex-wrap">
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="Designing"
+                    />
+                    <label class="form_check_label" for="Designing">
+                      Designing
+                    </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UI"
+                    />
+                    <label class="form_check_label" for="UI">UI</label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UX"
+                    />
+                    <label class="form_check_label" for="UX">UX</label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="html"
+                    />
+                    <label class="form_check_label" for="html">html</label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="css"
+                    />
+                    <label class="form_check_label" for="css">css</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="text-capitalize more_btn view-more-btn-category"
+              id="view-more-btn"
+            >
+              +10 More
+            </button>
+          </div>
+          <!-- filater group (Posted date) -->
+          <div
+            class="sidebar_filter_group pt-3 border-bottom border-light-subtle"
+          >
+            <h5>Posted date</h5>
+            <div class="d-flex align-items-start gap-3 flex-wrap">
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="date-Today"
+                />
+                <label class="form_check_label" for="date-Today">Today</label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="date-Yesterday"
+                />
+                <label class="form_check_label" for="date-Yesterday">
+                  Yesterday
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="date-This-week"
+                />
+                <label class="form_check_label" for="date-This-week">
+                  This week
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="date-This-month"
+                />
+                <label class="form_check_label" for="date-This-month">
+                  This month
+                </label>
+              </div>
+              <!-- hidden content -->
+              <div class="hidden-content-time pb-3">
+                <div class="d-flex align-items-start gap-3 flex-wrap">
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="time-example-1"
+                    />
+                    <label class="form_check_label" for="time-example-1">
+                      time example 1
+                    </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="time-example-2"
+                    />
+                    <label class="form_check_label" for="time-example-2">
+                      time-example-2
+                    </label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="UX"
+                    />
+                    <label class="form_check_label" for="UX">UX</label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="html"
+                    />
+                    <label class="form_check_label" for="html">html</label>
+                  </div>
+                  <!-- single check box -->
+                  <div class="single_check_box d-flex align-items-center gap-2">
+                    <input
+                      class="filter_check_input"
+                      type="checkbox"
+                      value=""
+                      id="css"
+                    />
+                    <label class="form_check_label" for="css">css</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="text-capitalize more_btn view-more-btn-time">
+              +10 More
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-100 py-3 border-top border-light-subtle px-3 d-flex">
+        <button
+          class="filter_apply_btn_mobile bg-alt-primary btn alt-btn-light-primary rounded-pill w-25"
+        >
+          Apply
+        </button>
+      </div>
+    </div>
+    <!-- filter option-->
+
+    <!-- create contest canvas start-->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="createEventCanvas"
+      aria-labelledby="createEventCanvas"
+    >
+      <div class="offcanvas-header border-bottom border-light-subtle">
+        <h5 class="offcanvas-title fs-5 fw-bold" id="createEventCanvas">
+          Create contest
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <h4 class="text-uppercase input-label">Step 1 of 2</h4>
+        <h5>New contest</h5>
+        <!-- switcher  -->
+        <div class="events_container mb-3 mt-4">
+          <h4>Contest visibility</h4>
+          <div class="toggle-switch">
+            <input
+              type="radio"
+              id="freelancer"
+              name="visibility_toggle"
+              checked
+            />
+            <label for="freelancer" class="toggle-label text-capitalize">
+              public
+            </label>
+            <input type="radio" id="business" name="visibility_toggle" />
+            <label for="business" class="toggle-label text-capitalize">
+              Private
+            </label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="title" class="input-label">Contest title</label>
+          <input
+            type="text"
+            class="input-field"
+            id="title"
+            placeholder="Graphic Design Contest"
+          />
+        </div>
+        <!-- skills  -->
+        <div class="mb-3">
+          <div class="row">
+            <div class="col">
+              <div class="mb-0">
+                <label class="input-label" for="country_name">Skills</label>
+
+                <select
+                  class="w-100 input-select"
+                  multiple
+                  data-placeholder="Select Skills"
+                  data-allow-clear="1"
+                  id="country_name"
+                >
+                  <option>Skills 1</option>
+                  <option>Skills 2</option>
+                  <option>Skills 3</option>
+                  <option>Skills 4</option>
+                  <option>Skills 5</option>
+                  <option>Skills 6</option>
+                  <option>Skills 7</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- switcher  -->
+        <div class="events_container mb-3">
+          <h4>Participant limit</h4>
+          <div class="toggle-switch">
+            <input type="radio" id="no_limit" name="limit" checked />
+            <label for="no_limit" class="toggle-label text-capitalize">
+              No limits
+            </label>
+            <input type="radio" id="set_limit" name="limit" />
+            <label for="set_limit" class="toggle-label text-capitalize">
+              Set limits
+            </label>
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="set-limits" class="input-label">
+            Maximum number of participants
+          </label>
+          <input
+            type="number"
+            class="input-field"
+            id="set-limits"
+            placeholder="100"
+          />
+        </div>
+
+        <div class="mb-2">
+          <label for="description" class="input-label">Description</label>
+
+          <textarea
+            class="input-field"
+            placeholder="Description of your contest "
+            id="description"
+            rows="3"
+          ></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="Criteria" class="input-label">
+            Criteria for selection (Options)
+          </label>
+          <input
+            type="text"
+            class="input-field"
+            id="Criteria"
+            placeholder="First criteria"
+          />
+        </div>
+
+        <button class="text-capitalize add_more_btn" id="view-more-btn">
+          + Add more
+        </button>
+        <div class="mb-3">
+          <label for="contest-rule" class="input-label">
+            Rules for contest
+          </label>
+          <input
+            type="text"
+            class="input-field"
+            id="contest-rule"
+            placeholder="First rule"
+          />
+        </div>
+
+        <button class="text-capitalize add_more_btn" id="view-more-btn">
+          + Add more
+        </button>
+
+        <div class="mb-3">
+          <label for="formFile" class="input-label">Thumbnail</label>
+          <div
+            class="alt-input-file rounded text-center position-relative overflow-hidden"
+          >
+            <img src="../../assets/images/icons/image-upload.svg" alt="" />
+            <p class="mb-0">
+              Drag and drop your files here or
+              <a href=""><strong>Browse</strong></a>
+            </p>
+            <small>(support .png, .jpg, .jpeg Max.file size : 20MB )</small>
+            <input
+              type="file"
+              id="formFile"
+              class="input-file-upload opacity-0 position-absolute w-100 h-100 top-0 start-0"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="w-100 py-3 border-top border-light-subtle px-3 d-flex">
+        <!-- <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#eventCreationModal"
+          class="filter_apply_btn_mobile bg-alt-primary btn alt-btn-light-primary rounded-pill w-25"
+        >
+          Continue
+        </button> -->
+        <button
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#contest-2"
+          aria-controls="contest-2"
+          class="filter_apply_btn_mobile bg-alt-primary btn alt-btn-light-primary rounded-pill w-25"
+        >
+          Continue
+        </button>
+      </div>
+    </div>
+    <!-- create contest canvas end-->
+
+    <!-- create contest canvas 2 phase start  -->
+
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="contest-2"
+      aria-labelledby="staticBackdropLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Create contest</h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+          <h4 class="text-uppercase input-label">Step 2 of 2</h4>
+          <h5>New contest</h5>
+        </div>
+        <div class="mb-3">
+          <label for="amount" class="input-label">First prize amount</label>
+          <input
+            type="text"
+            class="input-field"
+            id="amount"
+            placeholder="$100.00"
+          />
+        </div>
+        <button class="text-capitalize add_more_btn" id="view-more-btn">
+          + Add more
+        </button>
+        <!-- date  -->
+        <div class="mb-3">
+          <div class="row">
+            <div class="col">
+              <label for="start_date" class="input-label text-capitalize">
+                start date
+              </label>
+              <input
+                type="date"
+                class="input-field"
+                id="start_date"
+                placeholder="10-10-2021"
+              />
+            </div>
+            <div class="col">
+              <label for="end_date" class="input-label text-capitalize">
+                end date
+              </label>
+              <input
+                type="date"
+                class="input-field"
+                id="end_date"
+                placeholder="10-10-2021"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="formFile" class="input-label">Reference image</label>
+          <div
+            class="alt-input-file rounded text-center position-relative overflow-hidden"
+          >
+            <img src="../../assets/images/icons/image-upload.svg" alt="" />
+            <p class="mb-0">
+              Drag and drop here or
+              <a href=""><strong>Browse</strong></a>
+            </p>
+            <small>(support .png, .jpg, .jpeg Max.file size : 20MB )</small>
+            <input
+              type="file"
+              id="formFile"
+              class="input-file-upload opacity-0 position-absolute w-100 h-100 top-0 start-0"
+            />
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <div class="row">
+            <div class="col-6">
+              <label for="email" class="input-label">Registration fee</label>
+              <input
+                type="email"
+                class="input-field"
+                id="email"
+                placeholder="$0.00 "
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="sidebar_filter_section">
+            <h6 class="input-label">Details to captured on registration</h6>
+            <div
+              class="sidebar_filter_group d-flex align-items-start flex-wrap gap-3"
+            >
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="mobile"
+                />
+                <label class="form_check_label" for="mobile">
+                  Mobile number
+                </label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="email-add"
+                />
+                <label class="form_check_label" for="email-add">
+                  Email address
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3">
+          <div class="sidebar_filter_section">
+            <h6 class="input-label">Enable coupons</h6>
+            <div
+              class="sidebar_filter_group d-flex align-items-start flex-wrap gap-3"
+            >
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="50off"
+                />
+                <label class="form_check_label" for="50off">Get 50% off</label>
+              </div>
+              <!-- single check box -->
+              <div class="single_check_box d-flex align-items-center gap-2">
+                <input
+                  class="filter_check_input"
+                  type="checkbox"
+                  value=""
+                  id="25off"
+                />
+                <label class="form_check_label" for="25off">$25 off</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-100 py-3 border-top border-light-subtle px-3 d-flex justify-content-end gap-3"
+      >
+        <button type="button" class="btn alt-btn-light-primary rounded-pill">
+          Back
+        </button>
+        <button
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#eventCreationModal"
+          class="bg-alt-primary btn alt-btn-light-primary rounded-pill"
+        >
+          Publish contest
+        </button>
+      </div>
+    </div>
+
+    <!-- create contest canvas 2 phase end  -->
+
+    <!-- event creation modal start -->
+    <div
+      class="modal fade"
+      id="eventCreationModal"
+      tabindex="-1"
+      aria-labelledby="eventCreationModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="text-center">
+              <img
+                src="../../assets/images/business-dashboard/events-page/modal-icon.svg"
+                alt="success icon"
+              />
+              <h3 class="mt-3 fs-4 fw-bold">Contest has been created..</h3>
+              <p>
+                Your official Contest has been created.
+                <br />
+                successfully
+              </p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="">
+              <button
+                type="button"
+                class="filter_apply_btn_mobile bg-white btn alt-btn-light-primary rounded-pill border border-light-subtle"
+                data-bs-dismiss="modal"
+              >
+                Skip
+              </button>
+
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#invitepeopleModal"
+                class="filter_apply_btn_mobile bg-alt-primary btn alt-btn-light-primary rounded-pill"
+              >
+                Invite people
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- event creation modal  end-->
+
+    <!-- invite people modal start -->
+    <div
+      class="modal fade"
+      id="invitepeopleModal"
+      tabindex="-1"
+      aria-labelledby="invitepeopleModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="d-flex gap-2 align-items-center">
+              <h5 class="fs-6 fw-bold">Graphic Designers Meet up</h5>
+              <span
+                class="alt-badge alt-badge-outline bg-white alt-dark mb-0 bg-secondary-subtle"
+              >
+                Private
+              </span>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="">
+              <div class="modal_search_box">
+                <span class="pe-2">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </span>
+                <input
+                  type="text"
+                  placeholder="Search for an existing member or add new using email id"
+                />
+              </div>
+
+              <div class="my-3">
+                <h5 class="mb-4">Selected members (4)</h5>
+                <!-- single people  -->
+                <div
+                  class="modal_single_people d-flex justify-content-between border-bottom border-light-subtle pb-3 mb-3"
+                >
+                  <div class="d-flex gap-2 align-items-start">
+                    <img
+                      src="https://i.pravatar.cc/42"
+                      class="rounded-circle flex-shrink-0"
+                      alt=""
+                    />
+                    <div class="">
+                      <h4 class="">James Jacobe</h4>
+                      <p class="d-flex gap-3 align-items-center">
+                        <span>Graphic Designer</span>
+                        <span class="dots"></span>
+                        <span>jamesjacobe@gmail.com</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <!-- single people  -->
+                <div
+                  class="modal_single_people d-flex justify-content-between border-bottom border-light-subtle pb-3 mb-3"
+                >
+                  <div class="d-flex gap-2 align-items-start">
+                    <img
+                      src="https://i.pravatar.cc/42"
+                      class="rounded-circle flex-shrink-0"
+                      alt=""
+                    />
+                    <div class="">
+                      <h4 class="">James Jacobe</h4>
+                      <p class="d-flex gap-3 align-items-center">
+                        <span>Graphic Designer</span>
+                        <span class="dots"></span>
+                        <span>jamesjacobe@gmail.com</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <!-- single people  -->
+                <div
+                  class="modal_single_people d-flex justify-content-between border-bottom border-light-subtle pb-3 mb-3"
+                >
+                  <div class="d-flex gap-2 align-items-start">
+                    <img
+                      src="https://i.pravatar.cc/42"
+                      class="rounded-circle flex-shrink-0"
+                      alt=""
+                    />
+                    <div class="">
+                      <h4 class="">James Jacobe</h4>
+                      <p class="d-flex gap-3 align-items-center">
+                        <span>Graphic Designer</span>
+                        <span class="dots"></span>
+                        <span>jamesjacobe@gmail.com</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+                <!-- single people  -->
+                <div
+                  class="modal_single_people d-flex justify-content-between border-bottom border-light-subtle pb-3 mb-3"
+                >
+                  <div class="d-flex gap-2 align-items-start">
+                    <img
+                      src="https://i.pravatar.cc/42"
+                      class="rounded-circle flex-shrink-0"
+                      alt=""
+                    />
+                    <div class="">
+                      <h4 class="">James Jacobe</h4>
+                      <p class="d-flex gap-3 align-items-center">
+                        <span>Graphic Designer</span>
+                        <span class="dots"></span>
+                        <span>jamesjacobe@gmail.com</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="">
+              <button
+                type="button"
+                class="filter_apply_btn_mobile bg-white btn alt-btn-light-primary rounded-pill border border-light-subtle"
+                data-bs-dismiss="modal"
+              >
+                Copy invite link
+              </button>
+
+              <button
+                type="button"
+                class="filter_apply_btn_mobile bg-alt-primary btn alt-btn-light-primary rounded-pill"
+              >
+                Send invite
+                <span><i class="fa-solid fa-arrow-right-long"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- invite people modal end -->
+
+    <script src="../../assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="../../assets/vendor/js/jquery-1.11.0.min.js"></script>
+    <script src="../../assets/vendor/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../../assets/vendor/js/slick.min.js"></script>
+    <script src="../../assets/vendor/js/select2.min.js"></script>
+    <script src="../../assets/vendor/js/script.js"></script>
+    <script src="../../assets/js/main.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".js_slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 2,
+          centerMode: true,
+          adaptiveHeight: true,
+          variableWidth: false,
+          prevArrow:
+            "<button class='arrow_prev'><i class='fa-solid fa-angle-left'></i></button>",
+          nextArrow:
+            "<button class='arrow_next'><i class='fa-solid fa-angle-right'></i></button>",
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+                centerMode: false,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                centerMode: false,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>

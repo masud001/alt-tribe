@@ -1,0 +1,1954 @@
+<!-- 
+bdb = business dashboard; 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome icons links  -->
+    <link
+      rel="stylesheet"
+      href="../../assets/fontawesomes/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/fontawesomes/css/all.min.css" />
+    <!-- custom style sheet  -->
+    <link rel="stylesheet" href="../../css/bisuness.dashboard.min.css" />
+    <title>Freelencer Contest Details page</title>
+  </head>
+  <body>
+    <header class="alt_bdb_header">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-lg-2 border-end border-light-subtle">
+            <div
+              class="alt_bdb_logo d-flex justify-content-between align-items-lg-start"
+            >
+              <div class="d-flex flex-row gap-2 align-items-start">
+                <!-- mobile menu bar  -->
+                <button
+                  class="btn bg-light bg-transparent p-0 me-2 d-lg-none"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                  aria-controls="offcanvasExample"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/menu-bar-icons.svg"
+                    alt=""
+                  />
+                </button>
+                <!-- logo  -->
+                <div
+                  class="d-flex flex-row flex-lg-column align-items-center align-items-lg-start justify-content-start"
+                >
+                  <a href="/#">
+                    <img
+                      src="../../assets/images/business-dashboard/logo.svg"
+                      alt="logo"
+                    />
+                  </a>
+                  <!-- role badge  -->
+                  <div class="ms-2 ms-lg-0">
+                    <span class="badge rounded-pill text-bg-warning">
+                      Freelancer
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- notification for mobile  -->
+              <div class="d-flex align-items-center gap-3">
+                <a href="" class="d-lg-none">
+                  <img
+                    src="../../assets/images/business-dashboard/Search.svg"
+                    alt="search icon"
+                  />
+                </a>
+                <div class="notification_icon d-lg-none">
+                  <div
+                    type="button"
+                    class="position-relative"
+                    class="position-relative"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#notification_canvas"
+                    aria-controls="notification_canvas"
+                  >
+                    <img
+                      src="../../assets/images/business-dashboard/notification.svg"
+                      alt=""
+                    />
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-1"
+                    >
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </div>
+                </div>
+                <button
+                  class="d-none d-lg-block btn bg-light bg-transparent p-0"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/menu_open-icon.svg"
+                    alt="mobile icons"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 pt-3 pt-lg-0">
+            <div class="breadcrumb d-flex ps-2 mt-1 align-items-center">
+              <a href="" class="fs-6">
+                <span class="icon">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </span>
+                <span class="m-1 fs-5"><strong>Contest Details</strong></span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div
+              class="alt_bdb_notification d-none d-lg-flex gap-4 justify-content-end align-items-center"
+            >
+              <!-- search bar -->
+              <div class="alt_bdb_header_search position-relative">
+                <form action="">
+                  <input
+                    class="position-relative bg-alt-gray-bg-clr border-0"
+                    type="text"
+                    placeholder="Search"
+                  />
+                  <button type="submit">
+                    <img
+                      src="../../assets/images/business-dashboard/Search.svg"
+                      alt="search icon"
+                    />
+                  </button>
+                </form>
+              </div>
+              <!--  -->
+              <div class="alt_bdb_plus_icon rounded-pill bg-black">
+                <img
+                  src="../../assets/images/business-dashboard/plus-icons.svg"
+                  alt="notification icon"
+                />
+              </div>
+              <!-- notification for desktop -->
+              <div class="notification_icon">
+                <button
+                  type="button"
+                  class="position-relative"
+                  type="button"
+                  class="position-relative"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#notification_canvas"
+                  aria-controls="notification_canvas"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/notification.svg"
+                    alt=""
+                  />
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-1"
+                  >
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+              </div>
+              <!--  -->
+              <div class="alt_bdb_avatar position-relative">
+                <button
+                  type="button"
+                  class=""
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://via.placeholder.com/32x32"
+                    alt="user icon"
+                    class="rounded-circle"
+                  />
+                </button>
+
+                <!-- PROFILE MENU  -->
+                <div class="dropdown-menu dropdown-menu-end">
+                  <div class="profile_menu_section">
+                    <div
+                      class="profile_menu text-lg-center border-bottom border-light-subtle"
+                    >
+                      <div class="profile_image">
+                        <img
+                          class="mx-lg-auto"
+                          src="https://i.pravatar.cc/72"
+                          alt=""
+                        />
+                      </div>
+                      <div class="profile_details text-lg-center">
+                        <h2 class="mt-lg-2">Roberto Danial</h2>
+                        <h4>roberto34@gmail.com</h4>
+                        <div class="solopreneur">
+                          <img
+                            src="../../assets/images/freelance-dashboard/icons/Solopreneur.svg"
+                            alt=""
+                          />
+                          <span>Solopreneur</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="referal_friend_card">
+                      <h3>Refer a friend</h3>
+                      <p>Introduce your friends to AltTribe!</p>
+                    </div>
+                    <div class="alt_bdb_sidebar">
+                      <ul class="py-4 border-bottom border-light-subtle">
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Createfreelancerprofile.svg"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Create freelancer profile</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="active d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/building-city-town.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>My business profile</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Myprojectshistory.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>My projects history</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Saved.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Saved</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Settings.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Settings</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--  -->
+                      <ul class="py-2">
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Logout.svg"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Log out</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- mobile menu  -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header mobile_canvas">
+        <div class="d-flex align-items-center gap-3">
+          <button
+            type="button"
+            class="btn-close fs-5 text-dark"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <div
+            class="offcanvas-title d-flex align-items-center"
+            id="offcanvasExampleLabel"
+          >
+            <img src="../../assets/images/business-dashboard/logo.svg" alt="" />
+            <div class="ms-2 ms-lg-0">
+              <span class="badge rounded-pill text-bg-warning">Business</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-2 ms-auto">
+          <div class="alt_bdb_plus_icon rounded-pill bg-black">
+            <img
+              src="../../assets/images/business-dashboard/plus-icons.svg"
+              alt="notification icon"
+            />
+          </div>
+          <div class="alt_bdb_avatar">
+            <button
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#businessProfileMenu"
+              aria-controls="businessProfileMenu"
+            >
+              <img
+                src="https://i.pravatar.cc/32"
+                alt="user icon"
+                class="rounded-circle"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="alt_bdb_sidebar">
+          <ul class="py-4 border-bottom border-light-subtle">
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/dashboard-icon.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Explore -Freelancers.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Explore Freelancers</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/leaderboard.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>My Projects</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Contests.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Contests</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Calendar.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Events</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Community.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Community</span>
+              </a>
+            </li>
+          </ul>
+          <!--  -->
+          <ul class="py-2">
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/My tribes.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>My tribes</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- create tribe  -->
+          <div
+            class="sidebar_wizard wizard_bg d-flex flex-column justify-content-end bg-alt-gray-bg-clr rounded-3 p-2"
+          >
+            <h3 class="">Create a Tribe</h3>
+            <p class="">
+              Make the most of Alt Tribe by forming your own tribe.
+            </p>
+            <a href="">
+              Start now
+              <span><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <!-- mobile menu end -->
+
+    <!-- profile menu for mobile  -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="businessProfileMenu"
+      aria-labelledby="profilemenu_for_business"
+    >
+      <div class="offcanvas-header">
+        <div class="d-flex align-items-center gap-3">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <div
+            class="offcanvas-title d-flex align-items-center"
+            id="profilemenu_for_business"
+          >
+            <img src="../../assets/images/business-dashboard/logo.svg" alt="" />
+            <div class="ms-2 ms-lg-0">
+              <span class="badge rounded-pill text-bg-warning">Business</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <div class="profile_menu_section_for_mobile">
+          <div
+            class="profile_menu d-flex flex-row justify-content-start align-items-start gap-3 border-bottom border-light-subtle"
+          >
+            <div class="profile_image">
+              <img class="mx-lg-auto" src="https://i.pravatar.cc/72" alt="" />
+            </div>
+            <div class="profile_details text-lg-start">
+              <h2 class="mt-lg-2">Roberto Danial 2</h2>
+              <h4>roberto34@gmail.com</h4>
+              <div class="solopreneur">
+                <img
+                  src="../../assets/images/freelance-dashboard/icons/Solopreneur.svg"
+                  alt=""
+                />
+                <span>Solopreneur</span>
+              </div>
+            </div>
+          </div>
+          <div class="referal_friend_card">
+            <h3>Refer a friend</h3>
+            <p>Introduce your friends to AltTribe!</p>
+          </div>
+          <div class="alt_bdb_sidebar">
+            <ul class="py-4 border-bottom border-light-subtle">
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Createfreelancerprofile.svg"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Create freelancer profile</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="active d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/building-city-town.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>My business profile</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Myprojectshistory.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>My projects history</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Saved.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Saved</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Settings.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Settings</span>
+                </a>
+              </li>
+            </ul>
+            <!--  -->
+            <ul class="py-2">
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Logout.svg"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Log out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- profile menu for mobile end -->
+
+    <!-- notification canvas start  -->
+    <div
+      class="offcanvas offcanvas-end notification_canvas_wrapper"
+      tabindex="-1"
+      id="notification_canvas"
+      aria-labelledby="notification_canvas"
+    >
+      <div class="offcanvas-header px-4">
+        <h5 class="offcanvas-title notification_title" id="notification_canvas">
+          Notification
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="notification_menu">
+          <ul
+            class="nav-pills border-bottom border-2 px-4"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="" role="presentation">
+              <button
+                class="active position-relative"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                All (7)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Invite and responses (2)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Updates (2)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-reminders-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-reminders"
+                type="button"
+                role="tab"
+                aria-controls="pills-reminders"
+                aria-selected="false"
+              >
+                Reminders (3)
+              </button>
+            </li>
+          </ul>
+          <div
+            class="tab-content notification_tab_content"
+            id="pills-tabContent"
+          >
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              <h2>Today</h2>
+              <div class="">
+                <!-- single_notification  -->
+                <div class="single_notification unread">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV</strong>
+                        is inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        1m ago
+                      </span>
+                      <span class="dots">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV</strong>
+                        is inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        1m ago
+                      </span>
+                      <span class="dots">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification unread">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV</strong>
+                        is inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        1m ago
+                      </span>
+                      <span class="dots">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV</strong>
+                        is inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        1m ago
+                      </span>
+                      <span class="dots">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <h2>Profile</h2>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+            >
+              <h2>Contact</h2>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-reminders"
+              role="tabpanel"
+              aria-labelledby="pills-reminders-tab"
+            >
+              <h2>reminders</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- notification canvas end -->
+
+    <main class="main_section">
+      <div class="container-xxl">
+        <div class="row">
+          <!-- sidebar start -->
+          <div
+            class="col-12 col-lg-2 border-end border-light-subtle d-none d-lg-block"
+          >
+            <aside class="alt_bdb_sidebar">
+              <ul class="py-4 border-bottom border-light-subtle">
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/dashboard-icon.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Explore -Freelancers.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Explore Freelancers</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/leaderboard.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>My Projects</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2 active">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Contests.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Contests</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Calendar.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Events</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Community.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Community</span>
+                  </a>
+                </li>
+              </ul>
+              <!--  -->
+              <ul class="py-2">
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/My tribes.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>My tribes</span>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- create tribe  -->
+              <div
+                class="sidebar_wizard wizard_bg d-flex flex-column justify-content-end bg-alt-gray-bg-clr rounded-3 p-2"
+              >
+                <h3 class="">Create a Tribe</h3>
+                <p class="">
+                  Make the most of Alt Tribe by forming your own tribe.
+                </p>
+                <a href="">
+                  Start now
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+              </div>
+            </aside>
+          </div>
+          <!-- sidebar left end -->
+
+          <!-- main content start -->
+          <div class="col-12 col-lg-10 pb-5">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="bg-alt-bg-clr">
+                  <div class="">
+                    <div class="event_bg">
+                      <img
+                        src="../../assets/images/business-dashboard/events-page/event-details-bg.jpg"
+                        alt=""
+                        class="img-fluid"
+                      />
+                    </div>
+                    <div class="event_details_page_profile p-3">
+                      <div class="event_details_page_profile_img mb-2">
+                        <img
+                          src="https://i.pravatar.cc/72"
+                          alt="profile image"
+                          class="rounded-circle"
+                        />
+                      </div>
+                      <div class="event_details_page_profile_content">
+                        <p
+                          class="text-uppercase text-decoration-underline p-font"
+                        >
+                          Pixel studio
+                        </p>
+                        <h2 class="h-font mt-2">Graphic Designers Meet up</h2>
+                        <div class="tags py-3">
+                          <span class="alt-badge alt-completed">online</span>
+                          <span class="alt-badge alt-dark">Private</span>
+                          <span class="alt-badge alt-dark">
+                            <span class="alt-dots alt-dots-danger"></span>
+                            Ends in 03:00 hrs
+                          </span>
+                        </div>
+                        <div class="mb-3 d-flex gap-2 align-items-center">
+                          <span class="p-font fs-6 text-capitalize">price</span>
+                          <button class="fs-4 border-0 bg-transparent">
+                            $100-500
+                          </button>
+                        </div>
+
+                        <div class="border-bottom border-light-subtle pb-3">
+                          <button
+                            type="button"
+                            data-bs-toggle="modal"
+                            data-bs-target="#joinCompititions"
+                            class="evetn-page-btn"
+                          >
+                            join now
+                          </button>
+                        </div>
+                        <!-- skills and preferences -->
+                        <div class="pb-3 pt-3">
+                          <h5 class="p-font">Skills</h5>
+                          <div class="tags mt-2">
+                            <span class="alt-badge alt-dark">Graphic</span>
+                            <span class="alt-badge alt-dark">Wireframe</span>
+                            <span class="alt-badge alt-dark">Illustration</span>
+                          </div>
+                        </div>
+                        <!-- Registration fee-->
+                        <div class="pb-3">
+                          <h5 class="p-font">Registration fee</h5>
+                          <div class="mt-2">
+                            <span class="registration_fee fw-bold">$20</span>
+                          </div>
+                        </div>
+                        <!--Maximum entries -->
+                        <div class="pb-3">
+                          <h5 class="p-font">Maximum entries</h5>
+                          <div class="mt-2">
+                            <span
+                              class="registration_fee border-0 bg-transparent fw-bold"
+                            >
+                              500
+                            </span>
+                          </div>
+                        </div>
+                        <!--Number of Entries -->
+                        <div class="pb-3">
+                          <h5 class="p-font">Number of Entries</h5>
+                          <div class="mt-2">
+                            <span
+                              class="registration_fee border-0 bg-transparent fw-bold"
+                            >
+                              253 Entries
+                            </span>
+                          </div>
+                        </div>
+                        <!--Event period -->
+                        <div class="pb-3">
+                          <h5 class="p-font">Event period</h5>
+                          <div class="mt-2">
+                            <span
+                              class="registration_fee border-0 bg-transparent fw-bold"
+                            >
+                              Nov 12, 9:00am - Nov 12, 10:00pm, 2023
+                            </span>
+                          </div>
+                        </div>
+                        <!--Created on -->
+                        <div class="pb-3">
+                          <h5 class="p-font">Created on</h5>
+                          <div class="mt-2">
+                            <span
+                              class="registration_fee border-0 bg-transparent fw-bold"
+                            >
+                              Jan 10, 2023
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8">
+                <!-- tab content start here  -->
+                <div class="event_details_page_content tab_content">
+                  <ul
+                    id="pills-tab"
+                    class="d-flex align-items-center justify-content-start gap-1 gap-lg-3 mb-4 border-bottom border-light-subtle"
+                    role="tablist"
+                  >
+                    <li role="presentation">
+                      <button
+                        class="active position-relative text-start"
+                        id="event-details-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#event-details"
+                        type="button"
+                        role="tab"
+                        aria-controls="event-details"
+                        aria-selected="true"
+                      >
+                        Contest details
+                      </button>
+                    </li>
+                    <li role="presentation">
+                      <button
+                        id="event-discussion-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#event-discussion"
+                        type="button"
+                        role="tab"
+                        aria-controls="event-discussion"
+                        aria-selected="true"
+                      >
+                        Contest discussion
+                      </button>
+                    </li>
+
+                    <li role="presentation">
+                      <button
+                        id="speaker-profile-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#speaker-profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="speaker-profile"
+                        aria-selected="true"
+                      >
+                        Jury profile
+                      </button>
+                    </li>
+                  </ul>
+
+                  <div
+                    class="tab-content tab_content_details"
+                    id="pills-tabContent"
+                  >
+                    <div
+                      class="tab-pane fade show active"
+                      id="event-details"
+                      role="tabpanel"
+                      aria-labelledby="event-details"
+                    >
+                      <div class="bg-alt-bg-clr rounded-3 p-3">
+                        <div class="">
+                          <h3>Contest description</h3>
+                          <p>
+                            This LeetCode contest is sponsored by Hesai.
+                            <br />
+                            The top 500 contestants would be shortlisted as
+                            Employee Referrals if they apply for the job
+                            opportunities with Hesai.
+                            <br />
+                            Register for the contest in advance! You can fill
+                            out the contact information at the registration
+                            step.
+                          </p>
+                        </div>
+                        <div class="py-3">
+                          <h3>Criteria for selection</h3>
+                          <ul>
+                            <li>
+                              One user submitting with multiple accounts during
+                              a contest. LCUS
+                            </li>
+                            <li>
+                              Multiple accounts submitting similar code for the
+                              same problem.
+                            </li>
+                            <li>
+                              (leetcode.com) account and LCCN (leetcode-cn.com)
+                              account are
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="py-3">
+                          <h3>Rules for contest</h3>
+                          <ul class="" style="list-style-type: decimal">
+                            <li>
+                              To provide a better contest and ensure fairness,
+                              we listened to LeetCoders' feedback and put in
+                              lots of thoughts behind the updated contest rule.
+                              Please check out our new contest rule which covers
+                              more scenarios with details explained
+                            </li>
+                            <li>
+                              The penalty time of 5 minutes will be applied for
+                              each wrong submission.
+                            </li>
+                            <li>
+                              To ensure the fairness of the contest, LeetCode
+                              will hide some test cases during the contest.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="event-discussion"
+                      role="tabpanel"
+                      aria-labelledby="event-discussion-tab"
+                    >
+                      <div
+                        class="bg-alt-bg-clr comment_discussion_section rounded-3 p-3"
+                      >
+                        <div class="d-flex align-items-center gap-2 w-100 pb-3">
+                          <div class="avater_image">
+                            <img
+                              src="https://i.pravatar.cc/48"
+                              class="rounded-circle"
+                              alt=""
+                            />
+                          </div>
+                          <div class="">
+                            <h5>Pixel Studio</h5>
+                            <p>Media & Entertainment</p>
+                          </div>
+                          <div
+                            class="ms-auto align-self-start d-flex align-items-center gap-2"
+                          >
+                            <p>1w ago</p>
+                            <span>
+                              <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </span>
+                          </div>
+                        </div>
+                        <p class="p-font pb-3">
+                          Hi, For as long as I can remember, Electrode has been
+                          plagued by TLEs in python. As a top competitor (max
+                          rating of 3381), this means that almost half of my
+                          penalties now come from python being too slow, forcing
+                          me to recode in a different language or make some
+                          minor heuristics.
+                        </p>
+
+                        <div
+                          class="border-top border-light-subtle pt-3 comments_details"
+                        >
+                          <div class="d-flex align-items-center gap-2 pb-3">
+                            <span><i class="fa-regular fa-comment"></i></span>
+                            <span class="p-font">Comment</span>
+                          </div>
+                          <div
+                            class="comment_input d-flex gap-2 align-items-center pb-3"
+                          >
+                            <input
+                              type="text"
+                              class="w-100 p-2"
+                              placeholder="Type a message..."
+                            />
+                            <button
+                              class="alt-btn-light-primary rounded-pill px-5 py-2"
+                            >
+                              <i class="fa-regular fa-paper-plane"></i>
+                            </button>
+                          </div>
+                          <div class="pb-2">
+                            <h3>Comments (12)</h3>
+                          </div>
+                          <!-- comments here -->
+                          <div
+                            class="border-bottom border-light-subtle pb-3 mb-3"
+                          >
+                            <div class="d-flex align-items-start gap-2">
+                              <div class="avater_image flex-shrink-0">
+                                <img
+                                  src="https://i.pravatar.cc/48"
+                                  class="rounded-circle"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="">
+                                <h5 class="mb-2">Pixel Studio</h5>
+                                <p>
+                                  Hi there, it sounds like you've been dealing
+                                  with TLEs in Python for quite some time, and
+                                  as a top competitor with an impressive max
+                                  rating of 3381.
+                                </p>
+                              </div>
+                              <div
+                                class="ms-auto w-50 align-self-start justify-content-end d-flex align-items-center gap-2"
+                              >
+                                <p>1w ago</p>
+                                <span>
+                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="reply_btn ms-5 mt-2">
+                              <button>Reply</button>
+                            </div>
+                            <div class="">
+                              <div class="reply_btn ms-5 mt-2">
+                                <button class="view-reply-btn-js">
+                                  <span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                  </span>
+                                  View replys (2)
+                                </button>
+                              </div>
+                              <div
+                                style="display: none"
+                                class="reply_comments ms-5 ps-2 mt-2 flex-column gap-3"
+                              >
+                                <div class="d-flex align-items-start gap-2">
+                                  <div class="avater_image flex-shrink-0">
+                                    <img
+                                      src="https://i.pravatar.cc/48"
+                                      class="rounded-circle"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="">
+                                    <h5 class="mb-2">Pixel Studio</h5>
+                                    <p>
+                                      Hi there, it sounds like you've been
+                                      dealing with TLEs in Python for quite some
+                                      time, and as a top competitor with an
+                                      impressive max rating of 3381.
+                                    </p>
+                                  </div>
+                                  <div
+                                    class="ms-auto w-50 align-self-start justify-content-end d-flex align-items-center gap-2"
+                                  >
+                                    <p>1w ago</p>
+                                    <span>
+                                      <i
+                                        class="fa-solid fa-ellipsis-vertical"
+                                      ></i>
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="reply_btn ms-5">
+                                  <button>Reply</button>
+                                </div>
+                                <div class="d-flex align-items-start gap-2">
+                                  <div class="avater_image flex-shrink-0">
+                                    <img
+                                      src="https://i.pravatar.cc/48"
+                                      class="rounded-circle"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="">
+                                    <h5 class="mb-2">Pixel Studio</h5>
+                                    <p>
+                                      Hi there, it sounds like you've been
+                                      dealing with TLEs in Python for quite some
+                                      time, and as a top competitor with an
+                                      impressive max rating of 3381.
+                                    </p>
+                                  </div>
+                                  <div
+                                    class="ms-auto w-50 align-self-start justify-content-end d-flex align-items-center gap-2"
+                                  >
+                                    <p>1w ago</p>
+                                    <span>
+                                      <i
+                                        class="fa-solid fa-ellipsis-vertical"
+                                      ></i>
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="reply_btn ms-5">
+                                  <button>Reply</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- comments here -->
+                          <div
+                            class="border-bottom border-light-subtle pb-3 mb-3"
+                          >
+                            <div class="d-flex align-items-start gap-2">
+                              <div class="avater_image flex-shrink-0">
+                                <img
+                                  src="https://i.pravatar.cc/48"
+                                  class="rounded-circle"
+                                  alt=""
+                                />
+                              </div>
+                              <div class="">
+                                <h5 class="mb-2">Pixel Studio</h5>
+                                <p>
+                                  Hi there, it sounds like you've been dealing
+                                  with TLEs in Python for quite some time, and
+                                  as a top competitor with an impressive max
+                                  rating of 3381.
+                                </p>
+                              </div>
+                              <div
+                                class="ms-auto w-50 align-self-start justify-content-end d-flex align-items-center gap-2"
+                              >
+                                <p>1w ago</p>
+                                <span>
+                                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="reply_btn ms-5 mt-2">
+                              <button>Reply</button>
+                            </div>
+                            <div class="">
+                              <div class="reply_btn ms-5 mt-2">
+                                <button class="view-reply-btn-js">
+                                  <span>
+                                    <i class="fa-solid fa-angle-down"></i>
+                                  </span>
+                                  View replys (2)
+                                </button>
+                              </div>
+                              <div
+                                style="display: none"
+                                class="reply_comments ms-5 ps-2 mt-2 flex-column gap-3"
+                              >
+                                <div class="d-flex align-items-start gap-2">
+                                  <div class="avater_image flex-shrink-0">
+                                    <img
+                                      src="https://i.pravatar.cc/48"
+                                      class="rounded-circle"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="">
+                                    <h5 class="mb-2">Pixel Studio</h5>
+                                    <p>
+                                      Hi there, it sounds like you've been
+                                      dealing with TLEs in Python for quite some
+                                      time, and as a top competitor with an
+                                      impressive max rating of 3381.
+                                    </p>
+                                  </div>
+                                  <div
+                                    class="ms-auto w-50 align-self-start justify-content-end d-flex align-items-center gap-2"
+                                  >
+                                    <p>1w ago</p>
+                                    <span>
+                                      <i
+                                        class="fa-solid fa-ellipsis-vertical"
+                                      ></i>
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="reply_btn ms-5">
+                                  <button>Reply</button>
+                                </div>
+                                <div class="d-flex align-items-start gap-2">
+                                  <div class="avater_image flex-shrink-0">
+                                    <img
+                                      src="https://i.pravatar.cc/48"
+                                      class="rounded-circle"
+                                      alt=""
+                                    />
+                                  </div>
+                                  <div class="">
+                                    <h5 class="mb-2">Pixel Studio</h5>
+                                    <p>
+                                      Hi there, it sounds like you've been
+                                      dealing with TLEs in Python for quite some
+                                      time, and as a top competitor with an
+                                      impressive max rating of 3381.
+                                    </p>
+                                  </div>
+                                  <div
+                                    class="ms-auto w-50 align-self-start justify-content-end d-flex align-items-center gap-2"
+                                  >
+                                    <p>1w ago</p>
+                                    <span>
+                                      <i
+                                        class="fa-solid fa-ellipsis-vertical"
+                                      ></i>
+                                    </span>
+                                  </div>
+                                </div>
+                                <div class="reply_btn ms-5">
+                                  <button>Reply</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="tab-pane speaker_profile fade pb-5"
+                      id="speaker-profile"
+                      role="tabpanel"
+                      aria-labelledby="speaker-profile-tab"
+                    >
+                      <div class="d-flex flex-column gap-3">
+                        <!-- single speaker profile -->
+                        <div class="bg-alt-bg-clr rounded-3 p-3">
+                          <div class="d-flex align-items-start gap-2 mb-3">
+                            <div class="avater_image flex-shrink-0">
+                              <img
+                                src="https://i.pravatar.cc/48"
+                                class="rounded-circle"
+                                alt=""
+                              />
+                            </div>
+                            <div class="">
+                              <h5 class="mb-1">James Jacobe</h5>
+                              <p>Author</p>
+                            </div>
+                            <div class="social_links ms-auto">
+                              <span>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                              </span>
+                              <span>
+                                <i class="fa-brands fa-facebook-f"></i>
+                              </span>
+                              <span>
+                                <i class="fa-brands fa-instagram"></i>
+                              </span>
+                            </div>
+                          </div>
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's.
+                          </p>
+                        </div>
+                        <!-- single speaker profile -->
+                        <div class="bg-alt-bg-clr rounded-3 p-3">
+                          <div class="d-flex align-items-start gap-2 mb-3">
+                            <div class="avater_image flex-shrink-0">
+                              <img
+                                src="https://i.pravatar.cc/48"
+                                class="rounded-circle"
+                                alt=""
+                              />
+                            </div>
+                            <div class="">
+                              <h5 class="mb-1">James Jacobe</h5>
+                              <p>Author</p>
+                            </div>
+                            <div class="social_links ms-auto">
+                              <span>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                              </span>
+                              <span>
+                                <i class="fa-brands fa-facebook-f"></i>
+                              </span>
+                              <span>
+                                <i class="fa-brands fa-instagram"></i>
+                              </span>
+                            </div>
+                          </div>
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's.
+                          </p>
+                        </div>
+                        <!-- single speaker profile -->
+                        <div class="bg-alt-bg-clr rounded-3 p-3">
+                          <div class="d-flex align-items-start gap-2 mb-3">
+                            <div class="avater_image flex-shrink-0">
+                              <img
+                                src="https://i.pravatar.cc/48"
+                                class="rounded-circle"
+                                alt=""
+                              />
+                            </div>
+                            <div class="">
+                              <h5 class="mb-1">James Jacobe</h5>
+                              <p>Author</p>
+                            </div>
+                            <div class="social_links ms-auto">
+                              <span>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                              </span>
+                              <span>
+                                <i class="fa-brands fa-facebook-f"></i>
+                              </span>
+                              <span>
+                                <i class="fa-brands fa-instagram"></i>
+                              </span>
+                            </div>
+                          </div>
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's.
+                          </p>
+                        </div>
+                        <!-- single speaker profile -->
+                        <div class="bg-alt-bg-clr rounded-3 p-3">
+                          <div class="d-flex align-items-start gap-2 mb-3">
+                            <div class="avater_image flex-shrink-0">
+                              <img
+                                src="https://i.pravatar.cc/48"
+                                class="rounded-circle"
+                                alt=""
+                              />
+                            </div>
+                            <div class="">
+                              <h5 class="mb-1">James Jacobe</h5>
+                              <p>Author</p>
+                            </div>
+                            <div class="social_links ms-auto">
+                              <span>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                              </span>
+                              <span>
+                                <i class="fa-brands fa-facebook-f"></i>
+                              </span>
+                              <span>
+                                <i class="fa-brands fa-instagram"></i>
+                              </span>
+                            </div>
+                          </div>
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's.
+                          </p>
+                        </div>
+                        <!-- single speaker profile -->
+                        <div class="bg-alt-bg-clr rounded-3 p-3">
+                          <div class="d-flex align-items-start gap-2 mb-3">
+                            <div class="avater_image flex-shrink-0">
+                              <img
+                                src="https://i.pravatar.cc/48"
+                                class="rounded-circle"
+                                alt=""
+                              />
+                            </div>
+                            <div class="">
+                              <h5 class="mb-1">James Jacobe</h5>
+                              <p>Author</p>
+                            </div>
+                            <div class="social_links ms-auto">
+                              <span>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                              </span>
+                              <span>
+                                <i class="fa-brands fa-facebook-f"></i>
+                              </span>
+                              <span>
+                                <i class="fa-brands fa-instagram"></i>
+                              </span>
+                            </div>
+                          </div>
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's.
+                          </p>
+                        </div>
+                        <!-- single speaker profile -->
+                        <div class="bg-alt-bg-clr rounded-3 p-3">
+                          <div class="d-flex align-items-start gap-2 mb-3">
+                            <div class="avater_image flex-shrink-0">
+                              <img
+                                src="https://i.pravatar.cc/48"
+                                class="rounded-circle"
+                                alt=""
+                              />
+                            </div>
+                            <div class="">
+                              <h5 class="mb-1">James Jacobe</h5>
+                              <p>Author</p>
+                            </div>
+                            <div class="social_links ms-auto">
+                              <span>
+                                <i class="fa-brands fa-linkedin-in"></i>
+                              </span>
+                              <span>
+                                <i class="fa-brands fa-facebook-f"></i>
+                              </span>
+                              <span>
+                                <i class="fa-brands fa-instagram"></i>
+                              </span>
+                            </div>
+                          </div>
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and
+                            typesetting industry. Lorem Ipsum has been the
+                            industry's.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- tab content end here  -->
+              </div>
+            </div>
+          </div>
+          <!-- main content end -->
+        </div>
+      </div>
+    </main>
+
+    <!-- join competetions modal -->
+    <div
+      class="modal fade"
+      id="joinCompititions"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="joinCompititionsTitleId"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="fs-5 h-font">Competition entry form</h5>
+            <button
+              type="button"
+              class="btn-close text-black"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="mb-4">
+                <label for="f-name" class="input-label">First name</label>
+                <input
+                  type="text"
+                  class="input-field"
+                  id="f-name"
+                  placeholder=" Enter First name"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="l-name" class="input-label">Last name</label>
+                <input
+                  type="text"
+                  class="input-field"
+                  id="l-name"
+                  placeholder=" Enter Last name"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="phone-number" class="input-label">
+                  phone number
+                </label>
+                <input
+                  type="text"
+                  class="input-field"
+                  id="phone-number"
+                  placeholder=" +099 999 9999"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="input-label">Email</label>
+                <input
+                  type="text"
+                  class="input-field"
+                  id="email"
+                  placeholder=" xyz@example.com"
+                  autocomplete="off"
+                />
+              </div>
+            </form>
+            <div
+              class="modal-footer d-flex gap-3 justify-content-end align-items-center"
+            >
+              <button
+                type="button"
+                aria-expanded="false"
+                class="alt-btn btn-alt-outline rounded-pill"
+              >
+                cancel
+              </button>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#registrationsCompleted"
+                aria-expanded="false"
+                class="alt-btn btn-alt-outline bg-alt-primary rounded-pill"
+              >
+                Pay now
+                <span class="ms-2">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="registrationsCompleted"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="registrationsCompletedTitleId"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close text-black"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div
+                class="rounded-3 py-5 w-100 text-center h-auto d-flex flex-column gap-4 align-items-center justify-content-center"
+              >
+                <img
+                  src="../../assets/images/business-project/project-publish-modal-img.svg"
+                  alt=""
+                />
+                <h2 class="fs-3">Registration has completed</h2>
+                <p>
+                  You are all set to be a part of this contest
+                  <br />
+                  with
+                  <a class="text-reset text-decoration-underline" href="./#">
+                    Pixel Studio
+                  </a>
+                </p>
+                <div class="d-flex gap-3 w-75">
+                  <button
+                    type="button"
+                    aria-expanded="false"
+                    class="alt-btn btn-alt-outline w-100 bg-alt-primary rounded-pill"
+                  >
+                    Continue
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Get all buttons with class '.view-reply-btn-js'
+      const viewReplyButtons = document.querySelectorAll(".view-reply-btn-js");
+
+      // Add click event listener to each button
+      viewReplyButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          // Find the next sibling with class '.reply_comments'
+          const replyComments = button.closest("div").nextElementSibling;
+
+          // Toggle the display style
+          if (
+            replyComments.style.display === "none" ||
+            !replyComments.style.display
+          ) {
+            replyComments.style.display = "flex"; // Show the replies
+            button
+              .querySelector("i")
+              .classList.replace("fa-angle-down", "fa-angle-up"); // Update icon
+          } else {
+            replyComments.style.display = "none"; // Hide the replies
+            button
+              .querySelector("i")
+              .classList.replace("fa-angle-up", "fa-angle-down"); // Update icon
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
