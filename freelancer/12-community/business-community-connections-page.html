@@ -1,0 +1,2150 @@
+<!-- 
+bdb = business dashboard; 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome icons links  -->
+    <link
+      rel="stylesheet"
+      href="../../assets/fontawesomes/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="../../assets/fontawesomes/css/all.min.css" />
+    <!-- custom style sheet  -->
+    <link rel="stylesheet" href="../../css/bisuness.dashboard.min.css" />
+    <title>Freelancer Community Connections page</title>
+  </head>
+  <body>
+    <header class="alt_bdb_header">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-lg-2 border-end border-light-subtle">
+            <div
+              class="alt_bdb_logo d-flex justify-content-between align-items-lg-start"
+            >
+              <div class="d-flex flex-row gap-2 align-items-start">
+                <!-- mobile menu bar  -->
+                <button
+                  class="btn bg-light bg-transparent p-0 me-2 d-lg-none"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasExample"
+                  aria-controls="offcanvasExample"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/menu-bar-icons.svg"
+                    alt=""
+                  />
+                </button>
+                <!-- logo  -->
+                <div
+                  class="d-flex flex-row flex-lg-column align-items-center align-items-lg-start justify-content-start"
+                >
+                  <a href="/#">
+                    <img
+                      src="../../assets/images/business-dashboard/logo.svg"
+                      alt="logo"
+                    />
+                  </a>
+                  <!-- role badge  -->
+                  <div class="ms-2 ms-lg-0">
+                    <span class="badge rounded-pill text-bg-warning">
+                      Freelancer
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- notification for mobile  -->
+              <div class="d-flex align-items-center gap-3">
+                <a href="" class="d-lg-none">
+                  <img
+                    src="../../assets/images/business-dashboard/Search.svg"
+                    alt="search icon"
+                  />
+                </a>
+                <div class="notification_icon d-lg-none">
+                  <div
+                    type="button"
+                    class="position-relative"
+                    class="position-relative"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#notification_canvas"
+                    aria-controls="notification_canvas"
+                  >
+                    <img
+                      src="../../assets/images/business-dashboard/notification.svg"
+                      alt=""
+                    />
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-1"
+                    >
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </div>
+                </div>
+                <button
+                  class="d-none d-lg-block btn bg-light bg-transparent p-0"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/menu_open-icon.svg"
+                    alt="mobile icons"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 pt-3 pt-lg-0">
+            <div class="breadcrumb d-flex ps-2 mt-1 align-items-center">
+              <a href="" class="fs-6">
+                <span class="m-1 fs-5">
+                  <strong>Connections</strong>
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <div
+              class="alt_bdb_notification d-none d-lg-flex gap-4 justify-content-end align-items-center"
+            >
+              <!-- search bar -->
+              <div class="alt_bdb_header_search position-relative">
+                <form action="">
+                  <input
+                    class="position-relative bg-alt-gray-bg-clr border-0"
+                    type="text"
+                    placeholder="Search"
+                  />
+                  <button type="submit">
+                    <img
+                      src="../../assets/images/business-dashboard/Search.svg"
+                      alt="search icon"
+                    />
+                  </button>
+                </form>
+              </div>
+              <!--  -->
+              <div class="alt_bdb_plus_icon rounded-pill bg-black">
+                <img
+                  src="../../assets/images/business-dashboard/plus-icons.svg"
+                  alt="notification icon"
+                />
+              </div>
+              <!-- notification for desktop -->
+              <div class="notification_icon">
+                <button
+                  type="button"
+                  class="position-relative"
+                  type="button"
+                  class="position-relative"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#notification_canvas"
+                  aria-controls="notification_canvas"
+                >
+                  <img
+                    src="../../assets/images/business-dashboard/notification.svg"
+                    alt=""
+                  />
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-1"
+                  >
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+              </div>
+              <!--  -->
+              <div class="alt_bdb_avatar position-relative">
+                <button
+                  type="button"
+                  class=""
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="https://via.placeholder.com/32x32"
+                    alt="user icon"
+                    class="rounded-circle"
+                  />
+                </button>
+
+                <!-- PROFILE MENU  -->
+                <div class="dropdown-menu dropdown-menu-end">
+                  <div class="profile_menu_section">
+                    <div
+                      class="profile_menu text-lg-center border-bottom border-light-subtle"
+                    >
+                      <div class="profile_image">
+                        <img
+                          class="mx-lg-auto"
+                          src="https://i.pravatar.cc/72"
+                          alt=""
+                        />
+                      </div>
+                      <div class="profile_details text-lg-center">
+                        <h2 class="mt-lg-2">Roberto Danial</h2>
+                        <h4>roberto34@gmail.com</h4>
+                        <div class="solopreneur">
+                          <img
+                            src="../../assets/images/freelance-dashboard/icons/Solopreneur.svg"
+                            alt=""
+                          />
+                          <span>Solopreneur</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="referal_friend_card">
+                      <h3>Refer a friend</h3>
+                      <p>Introduce your friends to AltTribe!</p>
+                    </div>
+                    <div class="alt_bdb_sidebar">
+                      <ul class="py-4 border-bottom border-light-subtle">
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Createfreelancerprofile.svg"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Create freelancer profile</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="active d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/building-city-town.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>My business profile</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Myprojectshistory.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>My projects history</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Saved.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Saved</span>
+                          </a>
+                        </li>
+                        <!--  -->
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Settings.png"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Settings</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--  -->
+                      <ul class="py-2">
+                        <li class="py-2">
+                          <a
+                            href="/#"
+                            class="d-flex align-items-center justify-content-start gap-2"
+                          >
+                            <div class="alt_dbd_menu_icon shadow-sm">
+                              <img
+                                src="../../assets/images/freelance-dashboard/icons/Logout.svg"
+                                alt="dashboard icon"
+                              />
+                            </div>
+                            <span>Log out</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- mobile menu  -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header mobile_canvas">
+        <div class="d-flex align-items-center gap-3">
+          <button
+            type="button"
+            class="btn-close fs-5 text-dark"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <div
+            class="offcanvas-title d-flex align-items-center"
+            id="offcanvasExampleLabel"
+          >
+            <img src="../../assets/images/business-dashboard/logo.svg" alt="" />
+            <div class="ms-2 ms-lg-0">
+              <span class="badge rounded-pill text-bg-warning">Business</span>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex gap-2 ms-auto">
+          <div class="alt_bdb_plus_icon rounded-pill bg-black">
+            <img
+              src="../../assets/images/business-dashboard/plus-icons.svg"
+              alt="notification icon"
+            />
+          </div>
+          <div class="alt_bdb_avatar">
+            <button
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#businessProfileMenu"
+              aria-controls="businessProfileMenu"
+            >
+              <img
+                src="https://i.pravatar.cc/32"
+                alt="user icon"
+                class="rounded-circle"
+              />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <aside class="alt_bdb_sidebar">
+          <ul class="py-4 border-bottom border-light-subtle">
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/dashboard-icon.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Explore -Freelancers.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Explore Freelancers</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/leaderboard.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>My Projects</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Contests.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Contests</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Calendar.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Events</span>
+              </a>
+            </li>
+            <!--  -->
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/Community.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>Community</span>
+              </a>
+            </li>
+          </ul>
+          <!--  -->
+          <ul class="py-2">
+            <li class="py-2">
+              <a
+                href="/#"
+                class="d-flex align-items-center justify-content-start gap-2"
+              >
+                <div class="alt_dbd_menu_icon shadow-sm">
+                  <img
+                    src="../../assets/images/business-dashboard/My tribes.svg"
+                    alt="dashboard icon"
+                  />
+                </div>
+                <span>My tribes</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- create tribe  -->
+          <div
+            class="sidebar_wizard wizard_bg d-flex flex-column justify-content-end bg-alt-gray-bg-clr rounded-3 p-2"
+          >
+            <h3 class="">Create a Tribe</h3>
+            <p class="">
+              Make the most of Alt Tribe by forming your own tribe.
+            </p>
+            <a href="">
+              Start now
+              <span><i class="fa-solid fa-angle-right"></i></span>
+            </a>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <!-- mobile menu end -->
+
+    <!-- profile menu for mobile  -->
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="businessProfileMenu"
+      aria-labelledby="profilemenu_for_business"
+    >
+      <div class="offcanvas-header">
+        <div class="d-flex align-items-center gap-3">
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+          <div
+            class="offcanvas-title d-flex align-items-center"
+            id="profilemenu_for_business"
+          >
+            <img src="../../assets/images/business-dashboard/logo.svg" alt="" />
+            <div class="ms-2 ms-lg-0">
+              <span class="badge rounded-pill text-bg-warning">Business</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="offcanvas-body">
+        <div class="profile_menu_section_for_mobile">
+          <div
+            class="profile_menu d-flex flex-row justify-content-start align-items-start gap-3 border-bottom border-light-subtle"
+          >
+            <div class="profile_image">
+              <img class="mx-lg-auto" src="https://i.pravatar.cc/72" alt="" />
+            </div>
+            <div class="profile_details text-lg-start">
+              <h2 class="mt-lg-2">Roberto Danial 2</h2>
+              <h4>roberto34@gmail.com</h4>
+              <div class="solopreneur">
+                <img
+                  src="../../assets/images/freelance-dashboard/icons/Solopreneur.svg"
+                  alt=""
+                />
+                <span>Solopreneur</span>
+              </div>
+            </div>
+          </div>
+          <div class="referal_friend_card">
+            <h3>Refer a friend</h3>
+            <p>Introduce your friends to AltTribe!</p>
+          </div>
+          <div class="alt_bdb_sidebar">
+            <ul class="py-4 border-bottom border-light-subtle">
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Createfreelancerprofile.svg"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Create freelancer profile</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="active d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/building-city-town.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>My business profile</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Myprojectshistory.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>My projects history</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Saved.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Saved</span>
+                </a>
+              </li>
+              <!--  -->
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Settings.png"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Settings</span>
+                </a>
+              </li>
+            </ul>
+            <!--  -->
+            <ul class="py-2">
+              <li class="py-2">
+                <a
+                  href="/#"
+                  class="d-flex align-items-center justify-content-start gap-2"
+                >
+                  <div class="alt_dbd_menu_icon shadow-sm">
+                    <img
+                      src="../../assets/images/freelance-dashboard/icons/Logout.svg"
+                      alt="dashboard icon"
+                    />
+                  </div>
+                  <span>Log out</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- profile menu for mobile end -->
+
+    <!-- notification canvas start  -->
+    <div
+      class="offcanvas offcanvas-end notification_canvas_wrapper"
+      tabindex="-1"
+      id="notification_canvas"
+      aria-labelledby="notification_canvas"
+    >
+      <div class="offcanvas-header px-4">
+        <h5 class="offcanvas-title notification_title" id="notification_canvas">
+          Notification
+        </h5>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body p-0">
+        <div class="notification_menu">
+          <ul
+            class="nav-pills border-bottom border-2 px-4"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="" role="presentation">
+              <button
+                class="active position-relative"
+                id="pills-home-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-home"
+                type="button"
+                role="tab"
+                aria-controls="pills-home"
+                aria-selected="true"
+              >
+                All (7)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="pills-profile"
+                aria-selected="false"
+              >
+                Invite and responses (2)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-contact-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-contact"
+                type="button"
+                role="tab"
+                aria-controls="pills-contact"
+                aria-selected="false"
+              >
+                Updates (2)
+              </button>
+            </li>
+            <li class="" role="presentation">
+              <button
+                class="position-relative"
+                id="pills-reminders-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#pills-reminders"
+                type="button"
+                role="tab"
+                aria-controls="pills-reminders"
+                aria-selected="false"
+              >
+                Reminders (3)
+              </button>
+            </li>
+          </ul>
+          <div
+            class="tab-content notification_tab_content"
+            id="pills-tabContent"
+          >
+            <div
+              class="tab-pane fade show active"
+              id="pills-home"
+              role="tabpanel"
+              aria-labelledby="pills-home-tab"
+            >
+              <h2>Today</h2>
+              <div class="">
+                <!-- single_notification  -->
+                <div class="single_notification unread">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV</strong>
+                        is inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        1m ago
+                      </span>
+                      <span class="dots">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV</strong>
+                        is inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        1m ago
+                      </span>
+                      <span class="dots">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification unread">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV</strong>
+                        is inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        1m ago
+                      </span>
+                      <span class="dots">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- single_notification  -->
+                <div class="single_notification">
+                  <div class="d-flex align-items-start">
+                    <!-- profile  -->
+                    <div class="profile_avater flex-grow-1">
+                      <img src="https://i.pravatar.cc/32" alt="" />
+                      <h4>
+                        <strong>New connection invite: John KV</strong>
+                        is inviting you to connect Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Dicta, dolores.
+                      </h4>
+                    </div>
+                    <div class="w-100 d-flex flex-column align-items-end">
+                      <span class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        1m ago
+                      </span>
+                      <span class="dots">
+                        <i class="fa-solid fa-ellipsis"></i>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="notification_buttons pt-4">
+                    <div
+                      class="d-flex gap-2 justify-content-start align-items-center"
+                    >
+                      <button
+                        class="border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                      >
+                        Approve
+                      </button>
+                      <div class="d-flex gap-2 align-items-center">
+                        <a href="">View profile</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-profile"
+              role="tabpanel"
+              aria-labelledby="pills-profile-tab"
+            >
+              <h2>Profile</h2>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-contact"
+              role="tabpanel"
+              aria-labelledby="pills-contact-tab"
+            >
+              <h2>Contact</h2>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="pills-reminders"
+              role="tabpanel"
+              aria-labelledby="pills-reminders-tab"
+            >
+              <h2>reminders</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- notification canvas end -->
+
+    <main class="main_section">
+      <div class="container-xxl">
+        <div class="row">
+          <!-- sidebar start -->
+          <div
+            class="col-12 col-lg-2 border-end border-light-subtle d-none d-lg-block"
+          >
+            <aside class="alt_bdb_sidebar">
+              <ul class="py-4 border-bottom border-light-subtle">
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/dashboard-icon.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Explore -Freelancers.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Explore Freelancers</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/leaderboard.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>My Projects</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Contests.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Contests</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Calendar.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Events</span>
+                  </a>
+                </li>
+                <!--  -->
+                <li class="py-2 active">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/Community.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>Community</span>
+                  </a>
+                </li>
+              </ul>
+              <!--  -->
+              <ul class="py-2">
+                <li class="py-2">
+                  <a
+                    href="/#"
+                    class="d-flex align-items-center justify-content-start gap-2"
+                  >
+                    <div class="alt_dbd_menu_icon shadow-sm">
+                      <img
+                        src="../../assets/images/business-dashboard/My tribes.svg"
+                        alt="dashboard icon"
+                      />
+                    </div>
+                    <span>My tribes</span>
+                  </a>
+                </li>
+              </ul>
+
+              <!-- create tribe  -->
+              <div
+                class="sidebar_wizard wizard_bg d-flex flex-column justify-content-end bg-alt-gray-bg-clr rounded-3 p-2"
+              >
+                <h3 class="">Create a Tribe</h3>
+                <p class="">
+                  Make the most of Alt Tribe by forming your own tribe.
+                </p>
+                <a href="">
+                  Start now
+                  <span><i class="fa-solid fa-angle-right"></i></span>
+                </a>
+              </div>
+            </aside>
+          </div>
+          <!-- sidebar left end -->
+
+          <!-- main content start -->
+          <div class="col-12 col-lg-10 pb-5">
+            <div class="row">
+              <div class="col-md-8">
+                <div class="tab_content tab_wrapper_section event_page_content">
+                  <div
+                    class="d-flex align-items-center justify-content-between flex-wrap mb-3"
+                  >
+                    <ul
+                      id="pills-tab"
+                      class="d-flex content_tabs align-items-center justify-content-start gap-1 gap-lg-3"
+                      role="tablist"
+                    >
+                      <li role="presentation">
+                        <button
+                          class="active position-relative text-start"
+                          id="all-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#all"
+                          type="button"
+                          role="tab"
+                          aria-controls="all"
+                          aria-selected="true"
+                        >
+                          My connections
+                        </button>
+                      </li>
+                      <li role="presentation">
+                        <button
+                          id="Product-Design-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#Product-Design"
+                          type="button"
+                          role="tab"
+                          aria-controls="Product-Design"
+                          aria-selected="false"
+                          tabindex="-1"
+                        >
+                          Recommended
+                        </button>
+                      </li>
+                      <li role="presentation">
+                        <button
+                          id="Illustration-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#Illustration"
+                          type="button"
+                          role="tab"
+                          aria-controls="Illustration"
+                          aria-selected="false"
+                          tabindex="-1"
+                          class="position-relative"
+                        >
+                          Invitations(3)
+                          <span
+                            class="position-absolute top-0 end-0 badge border border-light rounded-circle bg-danger p-1"
+                          >
+                            <span class="visually-hidden">unread messages</span>
+                          </span>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="row">
+                    <!-- filter row  -->
+                    <div class="col-12 mb-4">
+                      <div
+                        class="filter_section d-flex align-items-center gap-3"
+                      >
+                        <div class="filter_input flex-grow-1">
+                          <span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                          </span>
+                          <input
+                            type="text"
+                            placeholder="Search for freelancers here"
+                            autocomplete="off"
+                          />
+                        </div>
+                        <div class="filter_button">
+                          <button type="button">
+                            <span class="me-1">
+                              <img
+                                src="../../assets/images/business-dashboard/events-page/filter_list_icon.svg"
+                                alt=""
+                              />
+                            </span>
+                            Filters
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row pb-4">
+                    <div class="tags">
+                      <span class="alt-badge alt-dark">
+                        Tagname1
+                        <i class="fa-solid fa-xmark"></i>
+                      </span>
+                      <span class="alt-badge alt-dark">
+                        Tagname1
+                        <i class="fa-solid fa-xmark"></i>
+                      </span>
+                      <span class="alt-badge alt-dark">
+                        Tagname1
+                        <i class="fa-solid fa-xmark"></i>
+                      </span>
+                      <span
+                        class="btn btn-link text-decoration-underline text-dark"
+                      >
+                        Clear all
+                      </span>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-content tab_content_details"
+                    id="pills-tabContent"
+                  >
+                    <!-- tab content  -->
+                    <div
+                      class="tab-pane fade show active"
+                      id="all"
+                      role="tabpanel"
+                      aria-labelledby="all"
+                    >
+                      <div class="row gy-4">
+                        <!--  -->
+                        <div class="col col-sm-6 col-lg-4">
+                          <div
+                            class="telant_content_wrapper border border-light-subtle"
+                          >
+                            <div
+                              class="talent_content position-relative text-center"
+                            >
+                              <span
+                                class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                              >
+                                <span class="">
+                                  <img
+                                    class=""
+                                    src="../../assets/images/business-dashboard/bookmark.svg"
+                                    alt=""
+                                  />
+                                </span>
+                              </span>
+                              <div class="talent_img pb-3">
+                                <img
+                                  src="https://via.placeholder.com/74x74"
+                                  class="rounded-circle"
+                                  alt=""
+                                />
+                              </div>
+                              <h3 class="pb-2">John Doe</h3>
+                              <h4 class="pb-3">UI/UX designer</h4>
+                              <button
+                                class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                              >
+                                <strong>$45 / Hour</strong>
+                              </button>
+                              <div class="rising_start mt-3">
+                                <button
+                                  class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                >
+                                  <span>
+                                    <img
+                                      src="../../assets/images/business-dashboard/Star.svg"
+                                      alt=""
+                                    />
+                                  </span>
+                                  Rising Star
+                                </button>
+                              </div>
+                              <div
+                                class="pt-4 review d-flex gap-2 justify-content-center align-items-center"
+                              >
+                                <span class="star">
+                                  <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="number">4.0</span>
+                                <span class="text-body-tertiary">|</span>
+                                <span class="review">25 Reviews</span>
+                              </div>
+                              <button
+                                class="mt-3 border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                              >
+                                Invite to Project
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <div class="col col-sm-6 col-lg-4">
+                          <div
+                            class="telant_content_wrapper border border-light-subtle"
+                          >
+                            <div
+                              class="talent_content position-relative text-center"
+                            >
+                              <span
+                                class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                              >
+                                <span class="">
+                                  <img
+                                    class=""
+                                    src="../../assets/images/business-dashboard/bookmark.svg"
+                                    alt=""
+                                  />
+                                </span>
+                              </span>
+                              <div class="talent_img pb-3">
+                                <img
+                                  src="https://via.placeholder.com/74x74"
+                                  class="rounded-circle"
+                                  alt=""
+                                />
+                              </div>
+                              <h3 class="pb-2">John Doe</h3>
+                              <h4 class="pb-3">UI/UX designer</h4>
+                              <button
+                                class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                              >
+                                <strong>$45 / Hour</strong>
+                              </button>
+                              <div class="rising_start mt-3">
+                                <button
+                                  class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                >
+                                  <span>
+                                    <img
+                                      src="../../assets/images/business-dashboard/Star.svg"
+                                      alt=""
+                                    />
+                                  </span>
+                                  Rising Star
+                                </button>
+                              </div>
+                              <div
+                                class="pt-4 review d-flex gap-2 justify-content-center align-items-center"
+                              >
+                                <span class="star">
+                                  <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="number">4.0</span>
+                                <span class="text-body-tertiary">|</span>
+                                <span class="review">25 Reviews</span>
+                              </div>
+                              <button
+                                class="mt-3 border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                              >
+                                Invite to Project
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <div class="col col-sm-6 col-lg-4">
+                          <div
+                            class="telant_content_wrapper border border-light-subtle"
+                          >
+                            <div
+                              class="talent_content position-relative text-center"
+                            >
+                              <span
+                                class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                              >
+                                <span class="">
+                                  <img
+                                    class=""
+                                    src="../../assets/images/business-dashboard/bookmark.svg"
+                                    alt=""
+                                  />
+                                </span>
+                              </span>
+                              <div class="talent_img pb-3">
+                                <img
+                                  src="https://via.placeholder.com/74x74"
+                                  class="rounded-circle"
+                                  alt=""
+                                />
+                              </div>
+                              <h3 class="pb-2">John Doe</h3>
+                              <h4 class="pb-3">UI/UX designer</h4>
+                              <button
+                                class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                              >
+                                <strong>$45 / Hour</strong>
+                              </button>
+                              <div class="rising_start mt-3">
+                                <button
+                                  class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                >
+                                  <span>
+                                    <img
+                                      src="../../assets/images/business-dashboard/Star.svg"
+                                      alt=""
+                                    />
+                                  </span>
+                                  Rising Star
+                                </button>
+                              </div>
+                              <div
+                                class="pt-4 review d-flex gap-2 justify-content-center align-items-center"
+                              >
+                                <span class="star">
+                                  <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="number">4.0</span>
+                                <span class="text-body-tertiary">|</span>
+                                <span class="review">25 Reviews</span>
+                              </div>
+                              <button
+                                class="mt-3 border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                              >
+                                Invite to Project
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- tab content -->
+                    <div
+                      class="tab-pane fade pb-5"
+                      id="Product-Design"
+                      role="tabpanel"
+                      aria-labelledby="Product-Design-tab"
+                    >
+                      <div class="row gy-4">
+                        <!--  -->
+                        <div class="col col-sm-6 col-lg-4">
+                          <div
+                            class="telant_content_wrapper border border-light-subtle"
+                          >
+                            <div
+                              class="talent_content position-relative text-center"
+                            >
+                              <span
+                                class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                              >
+                                <span class="">
+                                  <img
+                                    class=""
+                                    src="../../assets/images/business-dashboard/bookmark.svg"
+                                    alt=""
+                                  />
+                                </span>
+                              </span>
+                              <div class="talent_img pb-3">
+                                <img
+                                  src="https://via.placeholder.com/74x74"
+                                  class="rounded-circle"
+                                  alt=""
+                                />
+                              </div>
+                              <h3 class="pb-2">John Doe</h3>
+                              <h4 class="pb-3">UI/UX designer</h4>
+                              <button
+                                class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                              >
+                                <strong>$45 / Hour</strong>
+                              </button>
+                              <div class="rising_start mt-3">
+                                <button
+                                  class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                >
+                                  <span>
+                                    <img
+                                      src="../../assets/images/business-dashboard/Star.svg"
+                                      alt=""
+                                    />
+                                  </span>
+                                  Rising Star
+                                </button>
+                              </div>
+                              <div
+                                class="pt-4 review d-flex gap-2 justify-content-center align-items-center"
+                              >
+                                <span class="star">
+                                  <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="number">4.0</span>
+                                <span class="text-body-tertiary">|</span>
+                                <span class="review">25 Reviews</span>
+                              </div>
+                              <button
+                                class="mt-3 border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                              >
+                                Invite to Project
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <div class="col col-sm-6 col-lg-4">
+                          <div
+                            class="telant_content_wrapper border border-light-subtle"
+                          >
+                            <div
+                              class="talent_content position-relative text-center"
+                            >
+                              <span
+                                class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                              >
+                                <span class="">
+                                  <img
+                                    class=""
+                                    src="../../assets/images/business-dashboard/bookmark.svg"
+                                    alt=""
+                                  />
+                                </span>
+                              </span>
+                              <div class="talent_img pb-3">
+                                <img
+                                  src="https://via.placeholder.com/74x74"
+                                  class="rounded-circle"
+                                  alt=""
+                                />
+                              </div>
+                              <h3 class="pb-2">John Doe</h3>
+                              <h4 class="pb-3">UI/UX designer</h4>
+                              <button
+                                class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                              >
+                                <strong>$45 / Hour</strong>
+                              </button>
+                              <div class="rising_start mt-3">
+                                <button
+                                  class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                >
+                                  <span>
+                                    <img
+                                      src="../../assets/images/business-dashboard/Star.svg"
+                                      alt=""
+                                    />
+                                  </span>
+                                  Rising Star
+                                </button>
+                              </div>
+                              <div
+                                class="pt-4 review d-flex gap-2 justify-content-center align-items-center"
+                              >
+                                <span class="star">
+                                  <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="number">4.0</span>
+                                <span class="text-body-tertiary">|</span>
+                                <span class="review">25 Reviews</span>
+                              </div>
+                              <button
+                                class="mt-3 border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                              >
+                                Invite to Project
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <div class="col col-sm-6 col-lg-4">
+                          <div
+                            class="telant_content_wrapper border border-light-subtle"
+                          >
+                            <div
+                              class="talent_content position-relative text-center"
+                            >
+                              <span
+                                class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                              >
+                                <span class="">
+                                  <img
+                                    class=""
+                                    src="../../assets/images/business-dashboard/bookmark.svg"
+                                    alt=""
+                                  />
+                                </span>
+                              </span>
+                              <div class="talent_img pb-3">
+                                <img
+                                  src="https://via.placeholder.com/74x74"
+                                  class="rounded-circle"
+                                  alt=""
+                                />
+                              </div>
+                              <h3 class="pb-2">John Doe</h3>
+                              <h4 class="pb-3">UI/UX designer</h4>
+                              <button
+                                class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                              >
+                                <strong>$45 / Hour</strong>
+                              </button>
+                              <div class="rising_start mt-3">
+                                <button
+                                  class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                >
+                                  <span>
+                                    <img
+                                      src="../../assets/images/business-dashboard/Star.svg"
+                                      alt=""
+                                    />
+                                  </span>
+                                  Rising Star
+                                </button>
+                              </div>
+                              <div
+                                class="pt-4 review d-flex gap-2 justify-content-center align-items-center"
+                              >
+                                <span class="star">
+                                  <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="number">4.0</span>
+                                <span class="text-body-tertiary">|</span>
+                                <span class="review">25 Reviews</span>
+                              </div>
+                              <button
+                                class="mt-3 border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                              >
+                                Invite to Project
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- tab content -->
+                    <div
+                      class="tab-pane booking_section fade pb-5"
+                      id="Illustration"
+                      role="tabpanel"
+                      aria-labelledby="Illustration-tab"
+                    >
+                      <div class="row gy-4">
+                        <!--  -->
+                        <div class="col col-sm-6 col-lg-4">
+                          <div
+                            class="telant_content_wrapper border border-light-subtle"
+                          >
+                            <div
+                              class="talent_content position-relative text-center"
+                            >
+                              <span
+                                class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                              >
+                                <span class="">
+                                  <img
+                                    class=""
+                                    src="../../assets/images/business-dashboard/bookmark.svg"
+                                    alt=""
+                                  />
+                                </span>
+                              </span>
+                              <div class="talent_img pb-3">
+                                <img
+                                  src="https://via.placeholder.com/74x74"
+                                  class="rounded-circle"
+                                  alt=""
+                                />
+                              </div>
+                              <h3 class="pb-2">John Doe</h3>
+                              <h4 class="pb-3">UI/UX designer</h4>
+                              <button
+                                class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                              >
+                                <strong>$45 / Hour</strong>
+                              </button>
+                              <div class="rising_start mt-3">
+                                <button
+                                  class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                >
+                                  <span>
+                                    <img
+                                      src="../../assets/images/business-dashboard/Star.svg"
+                                      alt=""
+                                    />
+                                  </span>
+                                  Rising Star
+                                </button>
+                              </div>
+                              <div
+                                class="pt-4 review d-flex gap-2 justify-content-center align-items-center"
+                              >
+                                <span class="star">
+                                  <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="number">4.0</span>
+                                <span class="text-body-tertiary">|</span>
+                                <span class="review">25 Reviews</span>
+                              </div>
+                              <button
+                                class="mt-3 border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                              >
+                                Invite to Project
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <div class="col col-sm-6 col-lg-4">
+                          <div
+                            class="telant_content_wrapper border border-light-subtle"
+                          >
+                            <div
+                              class="talent_content position-relative text-center"
+                            >
+                              <span
+                                class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                              >
+                                <span class="">
+                                  <img
+                                    class=""
+                                    src="../../assets/images/business-dashboard/bookmark.svg"
+                                    alt=""
+                                  />
+                                </span>
+                              </span>
+                              <div class="talent_img pb-3">
+                                <img
+                                  src="https://via.placeholder.com/74x74"
+                                  class="rounded-circle"
+                                  alt=""
+                                />
+                              </div>
+                              <h3 class="pb-2">John Doe</h3>
+                              <h4 class="pb-3">UI/UX designer</h4>
+                              <button
+                                class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                              >
+                                <strong>$45 / Hour</strong>
+                              </button>
+                              <div class="rising_start mt-3">
+                                <button
+                                  class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                >
+                                  <span>
+                                    <img
+                                      src="../../assets/images/business-dashboard/Star.svg"
+                                      alt=""
+                                    />
+                                  </span>
+                                  Rising Star
+                                </button>
+                              </div>
+                              <div
+                                class="pt-4 review d-flex gap-2 justify-content-center align-items-center"
+                              >
+                                <span class="star">
+                                  <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="number">4.0</span>
+                                <span class="text-body-tertiary">|</span>
+                                <span class="review">25 Reviews</span>
+                              </div>
+                              <button
+                                class="mt-3 border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                              >
+                                Invite to Project
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <!--  -->
+                        <div class="col col-sm-6 col-lg-4">
+                          <div
+                            class="telant_content_wrapper border border-light-subtle"
+                          >
+                            <div
+                              class="talent_content position-relative text-center"
+                            >
+                              <span
+                                class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                              >
+                                <span class="">
+                                  <img
+                                    class=""
+                                    src="../../assets/images/business-dashboard/bookmark.svg"
+                                    alt=""
+                                  />
+                                </span>
+                              </span>
+                              <div class="talent_img pb-3">
+                                <img
+                                  src="https://via.placeholder.com/74x74"
+                                  class="rounded-circle"
+                                  alt=""
+                                />
+                              </div>
+                              <h3 class="pb-2">John Doe</h3>
+                              <h4 class="pb-3">UI/UX designer</h4>
+                              <button
+                                class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                              >
+                                <strong>$45 / Hour</strong>
+                              </button>
+                              <div class="rising_start mt-3">
+                                <button
+                                  class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                >
+                                  <span>
+                                    <img
+                                      src="../../assets/images/business-dashboard/Star.svg"
+                                      alt=""
+                                    />
+                                  </span>
+                                  Rising Star
+                                </button>
+                              </div>
+                              <div
+                                class="pt-4 review d-flex gap-2 justify-content-center align-items-center"
+                              >
+                                <span class="star">
+                                  <i class="fa-solid fa-star"></i>
+                                </span>
+                                <span class="number">4.0</span>
+                                <span class="text-body-tertiary">|</span>
+                                <span class="review">25 Reviews</span>
+                              </div>
+                              <button
+                                class="mt-3 border border-light-subtle bg-white p-2 px-3 rounded-pill"
+                              >
+                                Invite to Project
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex flex-column gap-3">
+                  <!-- single sections -->
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h5 class="h-font fs-6 fw-bold d-flex align-items-center">
+                        <span class="me-1">
+                          <img
+                            src="../../assets/images/business-community/globe-earth 1.svg"
+                            alt=""
+                          />
+                        </span>
+                        <span>Companies you may like</span>
+                      </h5>
+                      <a href="" class="text-dark btn btn-link">View all</a>
+                    </div>
+                    <div class="bg-alt-gray-bg-clr p-3 rounded-3">
+                      <!-- single item -->
+                      <div
+                        class="sidebar_single_items border-bottom border-light-subtle py-2"
+                      >
+                        <div class="d-flex gap-3 align-items-start">
+                          <div class="avater_image_32">
+                            <img src="https://i.pravatar.cc/32" alt="" />
+                          </div>
+                          <div class="name d-flex flex-column">
+                            <h4 class="text-capitalize">Talan Lipshutz</h4>
+                            <p class="text-capitalize">Product Designer</p>
+                          </div>
+                        </div>
+                        <div class="tags pt-2">
+                          <span class="alt-badge alt-dark">Graphic</span>
+                          <span class="alt-badge alt-dark">Wireframe</span>
+                          <span class="alt-badge alt-dark">Illustration</span>
+                        </div>
+                      </div>
+                      <!-- single item -->
+                      <div
+                        class="sidebar_single_items border-bottom border-light-subtle py-2"
+                      >
+                        <div class="d-flex gap-3 align-items-start">
+                          <div class="avater_image_32">
+                            <img src="https://i.pravatar.cc/32" alt="" />
+                          </div>
+                          <div class="name d-flex flex-column">
+                            <h4 class="text-capitalize">Talan Lipshutz</h4>
+                            <p class="text-capitalize">Product Designer</p>
+                          </div>
+                        </div>
+                        <div class="tags pt-2">
+                          <span class="alt-badge alt-dark">Graphic</span>
+                          <span class="alt-badge alt-dark">Wireframe</span>
+                          <span class="alt-badge alt-dark">Illustration</span>
+                        </div>
+                      </div>
+                      <!-- single item -->
+                      <div class="sidebar_single_items py-2">
+                        <div class="d-flex gap-3 align-items-start">
+                          <div class="avater_image_32">
+                            <img src="https://i.pravatar.cc/32" alt="" />
+                          </div>
+                          <div class="name d-flex flex-column">
+                            <h4 class="text-capitalize">Talan Lipshutz</h4>
+                            <p class="text-capitalize">Product Designer</p>
+                          </div>
+                        </div>
+                        <div class="tags pt-2">
+                          <span class="alt-badge alt-dark">Graphic</span>
+                          <span class="alt-badge alt-dark">Wireframe</span>
+                          <span class="alt-badge alt-dark">Illustration</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single sections -->
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h5 class="h-font fs-6 fw-bold d-flex align-items-center">
+                        <span class="me-1">
+                          <img
+                            src="../../assets/images/business-community/recommadations.svg"
+                            alt=""
+                          />
+                        </span>
+                        <span>Recommended connections</span>
+                      </h5>
+                      <a href="" class="text-dark btn btn-link">View all</a>
+                    </div>
+                    <div class="bg-alt-gray-bg-clr p-3 rounded-3">
+                      <!-- single item -->
+                      <div
+                        class="sidebar_single_items border-bottom border-light-subtle py-2"
+                      >
+                        <div class="d-flex gap-3 align-items-start">
+                          <div class="avater_image_32">
+                            <img src="https://i.pravatar.cc/32" alt="" />
+                          </div>
+                          <div class="name d-flex flex-column">
+                            <h4 class="text-capitalize">Talan Lipshutz</h4>
+                            <p class="text-capitalize">Product Designer</p>
+                          </div>
+                        </div>
+                        <div class="tags pt-2">
+                          <span class="alt-badge alt-dark">Graphic</span>
+                          <span class="alt-badge alt-dark">Wireframe</span>
+                          <span class="alt-badge alt-dark">Illustration</span>
+                        </div>
+                      </div>
+                      <!-- single item -->
+                      <div
+                        class="sidebar_single_items border-bottom border-light-subtle py-2"
+                      >
+                        <div class="d-flex gap-3 align-items-start">
+                          <div class="avater_image_32">
+                            <img src="https://i.pravatar.cc/32" alt="" />
+                          </div>
+                          <div class="name d-flex flex-column">
+                            <h4 class="text-capitalize">Talan Lipshutz</h4>
+                            <p class="text-capitalize">Product Designer</p>
+                          </div>
+                        </div>
+                        <div class="tags pt-2">
+                          <span class="alt-badge alt-dark">Graphic</span>
+                          <span class="alt-badge alt-dark">Wireframe</span>
+                          <span class="alt-badge alt-dark">Illustration</span>
+                        </div>
+                      </div>
+                      <!-- single item -->
+                      <div class="sidebar_single_items py-2">
+                        <div class="d-flex gap-3 align-items-start">
+                          <div class="avater_image_32">
+                            <img src="https://i.pravatar.cc/32" alt="" />
+                          </div>
+                          <div class="name d-flex flex-column">
+                            <h4 class="text-capitalize">Talan Lipshutz</h4>
+                            <p class="text-capitalize">Product Designer</p>
+                          </div>
+                        </div>
+                        <div class="tags pt-2">
+                          <span class="alt-badge alt-dark">Graphic</span>
+                          <span class="alt-badge alt-dark">Wireframe</span>
+                          <span class="alt-badge alt-dark">Illustration</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- single sections -->
+                  <div class="d-flex flex-column gap-2">
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                    >
+                      <h5 class="h-font fs-6 fw-bold d-flex align-items-center">
+                        <span class="me-1">
+                          <img
+                            src="../../assets/images/business-community/recent-post.svg"
+                            alt=""
+                          />
+                        </span>
+                        <span>Recently posted resources</span>
+                      </h5>
+                      <a href="" class="text-dark btn btn-link">View all</a>
+                    </div>
+                    <div class="bg-alt-gray-bg-clr p-3 rounded-3">
+                      <!-- single item -->
+                      <div
+                        class="sidebar_single_items border-bottom border-light-subtle py-2"
+                      >
+                        <div
+                          class="d-flex justify-content-between align-items-center pb-3"
+                        >
+                          <div class="tags">
+                            <span class="alt-badge alt-dark">Graphic</span>
+                          </div>
+                          <span class="fs-6 text-black-50">
+                            <span><i class="fa-regular fa-clock"></i></span>
+                            5 days ago
+                          </span>
+                        </div>
+                        <div class="d-flex gap-3 align-items-start">
+                          <div class="">
+                            <img
+                              class="rounded-3"
+                              src="https://via.placeholder.com/95X76"
+                              alt=""
+                            />
+                          </div>
+                          <div class="name d-flex flex-column">
+                            <h4 class="text-capitalize">Talan Lipshutz</h4>
+                            <p class="text-capitalize">Product Designer</p>
+                            <div class="d-flex align-items-center gap-2">
+                              <div class="avater_image_32">
+                                <img src="https://i.pravatar.cc/32" alt="" />
+                              </div>
+                              <h4 class="text-capitalize">Talan Lipshutz</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- single item -->
+                      <div
+                        class="sidebar_single_items border-bottom border-light-subtle py-2"
+                      >
+                        <div
+                          class="d-flex justify-content-between align-items-center pb-3"
+                        >
+                          <div class="tags">
+                            <span class="alt-badge alt-dark">Graphic</span>
+                          </div>
+                          <span class="fs-6 text-black-50">
+                            <span><i class="fa-regular fa-clock"></i></span>
+                            5 days ago
+                          </span>
+                        </div>
+                        <div class="d-flex gap-3 align-items-start">
+                          <div class="">
+                            <img
+                              class="rounded-3"
+                              src="https://via.placeholder.com/95X76"
+                              alt=""
+                            />
+                          </div>
+                          <div class="name d-flex flex-column">
+                            <h4 class="text-capitalize">Talan Lipshutz</h4>
+                            <p class="text-capitalize">Product Designer</p>
+                            <div class="d-flex align-items-center gap-2">
+                              <div class="avater_image_32">
+                                <img src="https://i.pravatar.cc/32" alt="" />
+                              </div>
+                              <h4 class="text-capitalize">Talan Lipshutz</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- single item -->
+                      <div
+                        class="sidebar_single_items border-bottom border-light-subtle py-2"
+                      >
+                        <div
+                          class="d-flex justify-content-between align-items-center pb-3"
+                        >
+                          <div class="tags">
+                            <span class="alt-badge alt-dark">Graphic</span>
+                          </div>
+                          <span class="fs-6 text-black-50">
+                            <span><i class="fa-regular fa-clock"></i></span>
+                            5 days ago
+                          </span>
+                        </div>
+                        <div class="d-flex gap-3 align-items-start">
+                          <div class="">
+                            <img
+                              class="rounded-3"
+                              src="https://via.placeholder.com/95X76"
+                              alt=""
+                            />
+                          </div>
+                          <div class="name d-flex flex-column">
+                            <h4 class="text-capitalize">Talan Lipshutz</h4>
+                            <p class="text-capitalize">Product Designer</p>
+                            <div class="d-flex align-items-center gap-2">
+                              <div class="avater_image_32">
+                                <img src="https://i.pravatar.cc/32" alt="" />
+                              </div>
+                              <h4 class="text-capitalize">Talan Lipshutz</h4>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- main content end -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="sidebar_single_items">
+              <div class="d-flex gap-3 align-items-start">
+                <div class="avater_image_32">
+                  <img src="https://i.pravatar.cc/32" alt="" />
+                </div>
+                <div class="name d-flex flex-column">
+                  <h4 class="text-capitalize">James Jacobe</h4>
+                  <p class="text-capitalize d-flex align-items-center gap-2">
+                    <span>Post to: Anyone</span>
+                    <span class="mb-1 text-dark">
+                      <i class="fa-solid fa-sort-down"></i>
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex flex-column gap-3">
+            <p class="fs-6">
+              Big things are happening in the Healthcare UX space. Join Aufait
+              UX for a talk on ‘Fast-tracking user Adoption’. Find event details
+              in this link aufaitux.com/healthcare-ux.
+            </p>
+            <img
+              class="img-fluid rounded-3"
+              src="https://via.placeholder.com/590X311"
+              alt=""
+            />
+            <div class="sidebar_single_items">
+              <div class="name d-flex flex-column">
+                <h4 class="text-capitalize">James Jacobe</h4>
+                <p class="text-capitalize">
+                  <span>Post to: Anyone</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer justify-content-between">
+            <div
+              class="d-flex py-2 gap-3 justify-content-start align-items-center"
+            >
+              <button class="btn btn-alt-outline rounded-pill text-capitalize">
+                <span class="me-2">
+                  <img
+                    src="../../assets/images/business-community/photo-icon.svg"
+                    alt=""
+                  />
+                </span>
+                Photos
+              </button>
+              <button class="btn btn-alt-outline rounded-pill text-capitalize">
+                <span class="me-2">
+                  <img
+                    src="../../assets/images/business-community/video-icon.svg"
+                    alt=""
+                  />
+                </span>
+                Video
+              </button>
+            </div>
+            <div class="">
+              <button
+                class="btn btn-alt-outline bg-alt-primary rounded-pill text-capitalize"
+              >
+                post
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../../assets/vendor/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
