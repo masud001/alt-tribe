@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome icons  -->
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesomes/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/fontawesomes/css/all.min.css" />
+
+    <!-- slider css  -->
+    <link rel="stylesheet" href="./assets/vendor/css/slick.css" />
+    <link rel="stylesheet" href="./assets/vendor/css/slick-theme.css" />
+
+    <title>Blog page</title>
+    <link rel="stylesheet" href="./css/custom.min.css" />
+  </head>
+  <body class="light_theme about_us_page">
+    <section class="alt_header_section">
+      <!-- header  -->
+      <header class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <div
+              class="d-flex flex-row w-100 align-items-center justify-content-between py-4"
+            >
+              <div class="d-flex align-items-center">
+                <!-- logo  -->
+                <div class="brand_logo">
+                  <a href="./#">
+                    <img
+                      src="./assets/images/freelance-landing-page/alt-logo-white.svg"
+                      alt="logo white"
+                    />
+                  </a>
+                </div>
+                <!-- menu  -->
+                <nav class="header_nav d-none d-md-block">
+                  <ul>
+                    <li><a href="/#">About us</a></li>
+                    <li><a href="/#">FAQ</a></li>
+                    <li><a href="/#">Blogs</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="d-flex align-items-center justify-content-end">
+                <!-- search bar -->
+                <div
+                  class="alt_header_search position-relative d-none d-lg-flex"
+                >
+                  <form action="">
+                    <input
+                      class="position-relative"
+                      type="text"
+                      placeholder="Search"
+                    />
+                    <button type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </form>
+                </div>
+                <!-- buttons  -->
+                <div class="alt_header_button ms-md-2 d-flex gap-2">
+                  <a
+                    href="/#"
+                    class="rounded-pill text-capitalize alt-btn-light-outline-primary d-none d-sm-block"
+                  >
+                    login
+                  </a>
+                  <a
+                    href="/#"
+                    class="rounded-pill text-capitalize alt-btn-light-primary"
+                  >
+                    Sign up
+                  </a>
+                  <!-- mobile menu active button -->
+                  <button
+                    class="mobile_nav_btn d-md-none"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample"
+                  >
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- mobile menu  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <a href="" class="offcanvas-title" id="offcanvasExampleLabel">
+            <img src="./assets/images/logo/all-tribe-logo.png" alt="" />
+          </a>
+          <div class="ms-auto"></div>
+
+          <div class="">
+            <button class="btn btn-outline-light text-secondary" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+        <div class="offcanvas-body position-relative">
+          <div class="h-100 d-flex flex-column justify-content-between">
+            <div class="mobile_nav">
+              <ul>
+                <li><a href="/#">About us</a></li>
+                <li><a href="/#">FAQ</a></li>
+                <li><a href="/#">Blogs</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <div class="d-flex flex-column gap-3">
+                <a href="" class="btn alt-btn-light-primary rounded-pill">
+                  Sign up
+                </a>
+                <a
+                  href=""
+                  class="btn alt-btn-light-outline-primary rounded-pill"
+                >
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu  -->
+    </section>
+    <!-- header section end  -->
+
+    <!-- blog post page section -->
+    <section class="blog_post_page pt-lg-5">
+      <div class="container-xxl">
+        <div class="row pb-4">
+          <div class="col-12 col-md-8 pe-lg-4">
+            <div class="blog-post-title">
+              <h1>Alt tribe blog</h1>
+              <p>Stay up-to-date and navigate the freelance market with ease</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-8 pe-lg-4">
+            <div class="d-flex flex-column gap-4">
+              <div class="blog_post_text">
+                <h3 class="mb-2 mt-2">Featured blogs</h3>
+              </div>
+              <div class="blog_post_img">
+                <img
+                  width="814"
+                  height="472"
+                  src="https://via.placeholder.com/814x472"
+                  class="img-fluid rounded-2"
+                  alt=""
+                />
+              </div>
+              <div class="resource_content">
+                <div class="d-flex flex-column gap-3">
+                  <div class="">
+                    <span class="alt-badge alt-dark">Inspiration</span>
+                  </div>
+                  <h3 class="m-0">
+                    Navigating the Freelance Frontier: A Guide to Top
+                    Freelancing Websites
+                  </h3>
+                  <div
+                    class="d-flex justify-content-start align-items-center gap-3"
+                  >
+                    <div class="flex-shrink-0">
+                      <img
+                        width="40"
+                        height="40"
+                        class="img-fluid flex-shrink-0 rounded-circle"
+                        src="https://via.placeholder.com/40x40"
+                        alt=" "
+                      />
+                    </div>
+                    <div class="d-flex flex-column gap-1">
+                      <h5>By Lincoln Rosser</h5>
+                      <div class="d-flex align-items-center gap-2">
+                        <span>Nov 23, 2023</span>
+                        <div class="dots"></div>
+                        <span>5 mins read</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="border-start border-light-subtle">
+              <div class="blog_post_text py-4 px-lg-4">
+                <h3 class="text-capitalize mb-4 mt-0">news</h3>
+                <div class="d-flex flex-column gap-3">
+                  <div class="resource_content">
+                    <div class="d-flex flex-column gap-3">
+                      <div class="">
+                        <span class="alt-badge alt-dark">Inspiration</span>
+                      </div>
+                      <h3 class="m-0">
+                        Navigating the Freelance Frontier: A Guide to Top
+                        Freelancing Websites
+                      </h3>
+                      <div class="d-flex flex-column gap-1">
+                        <h5>By Lincoln Rosser</h5>
+                        <div class="d-flex align-items-center gap-2">
+                          <span>Nov 23, 2023</span>
+                          <div class="dots"></div>
+                          <span>5 mins read</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="resource_content">
+                    <div class="d-flex flex-column gap-3">
+                      <div class="">
+                        <span class="alt-badge alt-dark">Inspiration</span>
+                      </div>
+                      <h3 class="m-0">
+                        Navigating the Freelance Frontier: A Guide to Top
+                        Freelancing Websites
+                      </h3>
+                      <div class="d-flex flex-column gap-1">
+                        <h5>By Lincoln Rosser</h5>
+                        <div class="d-flex align-items-center gap-2">
+                          <span>Nov 23, 2023</span>
+                          <div class="dots"></div>
+                          <span>5 mins read</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="resource_content">
+                    <div class="d-flex flex-column gap-3">
+                      <div class="">
+                        <span class="alt-badge alt-dark">Inspiration</span>
+                      </div>
+                      <h3 class="m-0">
+                        Navigating the Freelance Frontier: A Guide to Top
+                        Freelancing Websites
+                      </h3>
+                      <div class="d-flex flex-column gap-1">
+                        <h5>By Lincoln Rosser</h5>
+                        <div class="d-flex align-items-center gap-2">
+                          <span>Nov 23, 2023</span>
+                          <div class="dots"></div>
+                          <span>5 mins read</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="resource_content">
+                    <div class="d-flex flex-column gap-3">
+                      <div class="">
+                        <span class="alt-badge alt-dark">Inspiration</span>
+                      </div>
+                      <h3 class="m-0">
+                        Navigating the Freelance Frontier: A Guide to Top
+                        Freelancing Websites
+                      </h3>
+                      <div class="d-flex flex-column gap-1">
+                        <h5>By Lincoln Rosser</h5>
+                        <div class="d-flex align-items-center gap-2">
+                          <span>Nov 23, 2023</span>
+                          <div class="dots"></div>
+                          <span>5 mins read</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- resource section -->
+    <section class="resource_section bg-transparent">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="section_title pb-4">
+              <h4 class="fs-4">Category</h4>
+            </div>
+          </div>
+        </div>
+        <div class="row pb-4">
+          <div class="col-12">
+            <div
+              class="buttons_container d-flex flex-wrap gap-2 gap-lg-3 align-items-center"
+            >
+              <!-- single check btn  -->
+              <div class="check_button">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="btn-check-all"
+                  autocomplete="off"
+                />
+                <label class="btn" for="btn-check-all">all</label>
+              </div>
+              <!-- single check btn  -->
+              <div class="check_button">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="News"
+                  autocomplete="off"
+                />
+                <label class="btn" for="News">News</label>
+              </div>
+              <!-- single check btn  -->
+              <div class="check_button">
+                <input
+                  type="checkbox"
+                  class="btn-check rounded-pill"
+                  id="Industry"
+                  autocomplete="off"
+                />
+                <label class="btn" for="Industry">Industry</label>
+              </div>
+              <!-- single check btn  -->
+              <div class="check_button">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="Tech"
+                  autocomplete="off"
+                />
+                <label class="btn" for="Tech">Tech</label>
+              </div>
+              <!-- single check btn  -->
+              <div class="check_button">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="Leaders"
+                  autocomplete="off"
+                />
+                <label class="btn" for="Leaders">Leaders</label>
+              </div>
+              <!-- single check btn  -->
+              <div class="check_button">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="Guides"
+                  autocomplete="off"
+                />
+                <label class="btn" for="Guides">Guides</label>
+              </div>
+              <!-- single check btn  -->
+              <div class="check_button">
+                <input
+                  type="checkbox"
+                  class="btn-check"
+                  id="Inspiration"
+                  autocomplete="off"
+                />
+                <label class="btn" for="Inspiration">Inspiration</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="resource_content">
+              <div class="resource_img">
+                <img
+                  src="./assets/images/about-us-page/resource-1.jpg"
+                  class="rounded-4"
+                  alt=""
+                />
+              </div>
+              <div class="py-4">
+                <span class="alt-badge alt-dark">Leader</span>
+                <h3 class="pt-1">
+                  Digital Nomad Dreams: Your Gateway to Freelance Success on
+                  These Websites
+                </h3>
+                <div class="d-flex flex-column gap-2=1 pt-3">
+                  <h5>By Lincoln Rosser</h5>
+                  <div class="d-flex align-items-center gap-2">
+                    <span>Nov 23, 2023</span>
+                    <div class="dots"></div>
+                    <span>5 mins read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="resource_content">
+              <div class="resource_img">
+                <img
+                  src="./assets/images/about-us-page/resource-2.jpg"
+                  class="rounded-4"
+                  alt=""
+                />
+              </div>
+              <div class="py-4">
+                <span class="alt-badge alt-dark">Inspiration</span>
+                <h3 class="pt-1">
+                  Navigating the Freelance Frontier: A Guide to Top Freelancing
+                  Websites
+                </h3>
+                <div class="d-flex flex-column gap-2=1 pt-3">
+                  <h5>By Lincoln Rosser</h5>
+                  <div class="d-flex align-items-center gap-2">
+                    <span>Nov 23, 2023</span>
+                    <div class="dots"></div>
+                    <span>5 mins read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="resource_content">
+              <div class="resource_img">
+                <img
+                  src="./assets/images/about-us-page/resource-3.jpg"
+                  class="rounded-4"
+                  alt=""
+                />
+              </div>
+              <div class="py-4">
+                <span class="alt-badge alt-dark">Tech</span>
+                <h3 class="pt-1">
+                  Unlocking Your Freelance Potential: The Ultimate List of
+                  Freelancing Websites
+                </h3>
+                <div class="d-flex flex-column gap-2=1 pt-3">
+                  <h5>By Nolan Stanton</h5>
+                  <div class="d-flex align-items-center gap-2">
+                    <span>Nov 23, 2023</span>
+                    <div class="dots"></div>
+                    <span>5 mins read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="resource_content">
+              <div class="resource_img">
+                <img
+                  src="./assets/images/about-us-page/resource-1.jpg"
+                  class="rounded-4"
+                  alt=""
+                />
+              </div>
+              <div class="py-4">
+                <span class="alt-badge alt-dark">Leader</span>
+                <h3 class="pt-1">
+                  Digital Nomad Dreams: Your Gateway to Freelance Success on
+                  These Websites
+                </h3>
+                <div class="d-flex flex-column gap-2=1 pt-3">
+                  <h5>By Lincoln Rosser</h5>
+                  <div class="d-flex align-items-center gap-2">
+                    <span>Nov 23, 2023</span>
+                    <div class="dots"></div>
+                    <span>5 mins read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="resource_content">
+              <div class="resource_img">
+                <img
+                  src="./assets/images/about-us-page/resource-2.jpg"
+                  class="rounded-4"
+                  alt=""
+                />
+              </div>
+              <div class="py-4">
+                <span class="alt-badge alt-dark">Inspiration</span>
+                <h3 class="pt-1">
+                  Navigating the Freelance Frontier: A Guide to Top Freelancing
+                  Websites
+                </h3>
+                <div class="d-flex flex-column gap-2=1 pt-3">
+                  <h5>By Lincoln Rosser</h5>
+                  <div class="d-flex align-items-center gap-2">
+                    <span>Nov 23, 2023</span>
+                    <div class="dots"></div>
+                    <span>5 mins read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="resource_content">
+              <div class="resource_img">
+                <img
+                  src="./assets/images/about-us-page/resource-3.jpg"
+                  class="rounded-4"
+                  alt=""
+                />
+              </div>
+              <div class="py-4">
+                <span class="alt-badge alt-dark">Tech</span>
+                <h3 class="pt-1">
+                  Unlocking Your Freelance Potential: The Ultimate List of
+                  Freelancing Websites
+                </h3>
+                <div class="d-flex flex-column gap-2=1 pt-3">
+                  <h5>By Nolan Stanton</h5>
+                  <div class="d-flex align-items-center gap-2">
+                    <span>Nov 23, 2023</span>
+                    <div class="dots"></div>
+                    <span>5 mins read</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer_section">
+      <div class="container-xxl">
+        <div class="row gy-2 gy-md-0">
+          <div class="col-12 col-md-6">
+            <div class="footer_logo">
+              <a href="">
+                <img src="./assets/images/logo/all-tribe-logo.png" alt="" />
+              </a>
+              <p>&copy; 2024 Alt tribe, All rights reserved.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div
+              class="footer_nav d-flex flex-column align-items-start align-items-md-end"
+            >
+              <ul
+                class="d-flex flex-wrap gap-3 justify-content-start justify-content-lg-end"
+              >
+                <li><a href="/#">About us</a></li>
+                <li><a href="/#">FAQ</a></li>
+                <li><a href="/#">Terms & Conditions</a></li>
+                <li><a href="/#">Privacy policy</a></li>
+              </ul>
+              <p>
+                Need help? Contact us at
+                <strong>+91 804 112 1109</strong>
+                or
+                <strong>alttribe.world@gmail.com</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/js/jquery-1.11.0.min.js"></script>
+    <script src="./assets/vendor/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./assets/vendor/js/slick.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".js_slider").slick({
+          dots: false,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 3,
+          centerMode: false,
+          adaptiveHeight: true,
+          variableWidth: false,
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+  </body>
+</html>

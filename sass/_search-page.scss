@@ -190,7 +190,9 @@ input:checked + .slider:before {
     margin-top: 32px;
     margin-bottom: 32px;
   }
-  .buttons_container {
+ 
+}
+ .buttons_container {
     .check_button {
       .btn-check:checked + .btn {
         background-color: #161d3b;
@@ -214,7 +216,6 @@ input:checked + .slider:before {
       }
     }
   }
-}
 
 .sort_container {
   .sort_dropdown {
