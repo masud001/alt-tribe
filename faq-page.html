@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font-awesome icons  -->
+    <link
+      rel="stylesheet"
+      href="./assets/fontawesomes/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="./assets/fontawesomes/css/all.min.css" />
+
+    <!-- slider css  -->
+    <link rel="stylesheet" href="./assets/vendor/css/slick.css" />
+    <link rel="stylesheet" href="./assets/vendor/css/slick-theme.css" />
+
+    <title>FAQ page</title>
+    <link rel="stylesheet" href="./css/custom.min.css" />
+  </head>
+  <body class="light_theme search_page">
+    <section class="alt_header_section">
+      <!-- header  -->
+      <header class="container-xxl">
+        <div class="row">
+          <div class="col">
+            <div
+              class="d-flex flex-row w-100 align-items-center justify-content-between py-4"
+            >
+              <div class="d-flex align-items-center">
+                <!-- logo  -->
+                <div class="brand_logo">
+                  <a href="./#">
+                    <img
+                      src="./assets/images/freelance-landing-page/alt-logo-white.svg"
+                      alt="logo white"
+                    />
+                  </a>
+                </div>
+                <!-- menu  -->
+                <nav class="header_nav d-none d-md-block">
+                  <ul>
+                    <li><a href="/#">About us</a></li>
+                    <li><a href="/#">FAQ</a></li>
+                    <li><a href="/#">Blogs</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="d-flex align-items-center justify-content-end">
+                <!-- search bar -->
+                <div
+                  class="alt_header_search position-relative d-none d-lg-flex"
+                >
+                  <form action="">
+                    <input
+                      class="position-relative"
+                      type="text"
+                      placeholder="Search"
+                    />
+                    <button type="submit">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </form>
+                </div>
+                <!-- buttons  -->
+                <div class="alt_header_button ms-md-2 d-flex gap-2">
+                  <a
+                    href="/#"
+                    class="rounded-pill text-capitalize alt-btn-light-outline-primary d-none d-sm-block"
+                  >
+                    login
+                  </a>
+                  <a
+                    href="/#"
+                    class="rounded-pill text-capitalize alt-btn-light-primary"
+                  >
+                    Sign up
+                  </a>
+                  <!-- mobile menu active button -->
+                  <button
+                    class="mobile_nav_btn d-md-none"
+                    type="button"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample"
+                  >
+                    <i class="fa-solid fa-bars"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- mobile menu  -->
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel"
+      >
+        <div class="offcanvas-header">
+          <a href="" class="offcanvas-title" id="offcanvasExampleLabel">
+            <img src="./assets/images/logo/all-tribe-logo.png" alt="" />
+          </a>
+          <div class="ms-auto"></div>
+
+          <div class="">
+            <button class="btn btn-outline-light text-secondary" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+        </div>
+        <div class="offcanvas-body position-relative">
+          <div class="h-100 d-flex flex-column justify-content-between">
+            <div class="mobile_nav">
+              <ul>
+                <li><a href="/#">About us</a></li>
+                <li><a href="/#">FAQ</a></li>
+                <li><a href="/#">Blogs</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <div class="d-flex flex-column gap-3">
+                <a href="" class="btn alt-btn-light-primary rounded-pill">
+                  Sign up
+                </a>
+                <a
+                  href=""
+                  class="btn alt-btn-light-outline-primary rounded-pill"
+                >
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- mobile menu  -->
+    </section>
+
+    <!-- search page content  -->
+    <div class="search_hero_section">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12 col-md-8 offset-md-2">
+            <div
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <div class="text-center faq-heading">
+                <h1 class="text-center">Frequently asked questions</h1>
+                <p>A comprehensive guide for Alt tribe users</p>
+              </div>
+              <div class="search-container">
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="How can we help?"
+                />
+                <button class="search-button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  Search
+                </button>
+              </div>
+              <div class="switch-container">
+                <div class="switch-labels for_business">
+                  <span id="offLabel" class="text-muted">for Business</span>
+                </div>
+                <label class="switch">
+                  <input type="checkbox" id="toggleSwitch" />
+                  <span class="slider"></span>
+                </label>
+                <div class="switch-labels for_freelancer">
+                  <span id="onLabel" class="text-dark">for freelancer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="faq-main-section py-lg-5 py-4">
+      <div class="container-xxl">
+        <div class="row">
+          <div class="col-12 col-md-3">
+            <div class="faq-sidebar">
+              <div class="faq-sidebar-links">
+                <ul>
+                  <li class="active"><a href="/#">General</a></li>
+                  <li><a href="/#">Work</a></li>
+                  <li><a href="/#">Payment</a></li>
+                  <li><a href="/#">Profile</a></li>
+                  <li><a href="/#">Subscription</a></li>
+                  <li><a href="/#">Settings</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-8 d-flex gap-4 gap-lg-5 flex-column">
+            <!-- General -->
+            <div class="faq-single-accordion">
+              <div class="faq-sidebar-heading mb-3">
+                <h3>General</h3>
+              </div>
+              <div class="accordion bg-transparent" id="accordionExample">
+                <div
+                  class="accordion-item bg-transparent border-bottom border-bottom"
+                >
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button bg-transparent collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#generalCollapseOne"
+                      aria-expanded="false"
+                      aria-controls="generalCollapseOne"
+                    >
+                      How to get started on Alt tribe?
+                    </button>
+                  </h2>
+                  <div
+                    id="generalCollapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                    style=""
+                  >
+                    <div class="accordion-body">
+                      Flexibility &amp; freedom are the cornerstones of the Alt
+                      tribe mission. We wanted people to have the opportunity to
+                      connect with great talent and clients no matter their
+                      circumstances, location and skillset.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button bg-transparent collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#generalCollapseTwo"
+                      aria-expanded="false"
+                      aria-controls="generalCollapseTwo"
+                    >
+                      How to start offering my services as a freelancer on Alt
+                      tribe?
+                    </button>
+                  </h2>
+                  <div
+                    id="generalCollapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                    style=""
+                  >
+                    <div class="accordion-body">
+                      We at Alt tribe run a thorough verification for anyone who
+                      signs up. Furthermore, we have a points system that
+                      promotes only the very best talent to the higher levels
+                      like Star and Superstar.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-transparent"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#generalCollapseThree"
+                      aria-expanded="false"
+                      aria-controls="generalCollapseThree"
+                    >
+                      Is Alt tribe free?
+                    </button>
+                  </h2>
+                  <div
+                    id="generalCollapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      We at Alt tribe run a thorough verification for anyone who
+                      signs up. Furthermore, we have a points system that
+                      promotes only the very best talent to the higher levels
+                      like Star and Superstar.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-transparent"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#generalCollapseFour"
+                      aria-expanded="false"
+                      aria-controls="generalCollapseFour"
+                    >
+                      AccouDo I have to be a professional to start freelancing
+                      on Alt tribentability
+                    </button>
+                  </h2>
+                  <div
+                    id="generalCollapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      We at Alt tribe run a thorough verification for anyone who
+                      signs up. Furthermore, we have a points system that
+                      promotes only the very best talent to the higher levels
+                      like Star and Superstar.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-transparent"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#generalCollapseFive"
+                      aria-expanded="false"
+                      aria-controls="generalCollapseFive"
+                    >
+                      Can I use Alt tribe to get a job?
+                    </button>
+                  </h2>
+                  <div
+                    id="generalCollapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      We at Alt tribe run a thorough verification for anyone who
+                      signs up. Furthermore, we have a points system that
+                      promotes only the very best talent to the higher levels
+                      like Star and Superstar.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- work -->
+            <div class="faq-single-accordion">
+              <div class="faq-sidebar-heading mb-3">
+                <h3>work</h3>
+              </div>
+              <div class="accordion bg-transparent" id="accordionExample">
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button bg-transparent collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#workCollapseOne"
+                      aria-expanded="false"
+                      aria-controls="workCollapseOne"
+                    >
+                      What constitutes a project on Alt tribe?
+                    </button>
+                  </h2>
+                  <div
+                    id="workCollapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                    style=""
+                  >
+                    <div class="accordion-body">
+                      Flexibility &amp; freedom are the cornerstones of the Alt
+                      tribe mission. We wanted people to have the opportunity to
+                      connect with great talent and clients no matter their
+                      circumstances, location and skillset.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button bg-transparent collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#workCollapseTwo"
+                      aria-expanded="false"
+                      aria-controls="workCollapseTwo"
+                    >
+                      How does Alt tribe guarantee good quality work on the
+                      platform?
+                    </button>
+                  </h2>
+                  <div
+                    id="workCollapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                    style=""
+                  >
+                    <div class="accordion-body">
+                      We at Alt tribe run a thorough verification for anyone who
+                      signs up. Furthermore, we have a points system that
+                      promotes only the very best talent to the higher levels
+                      like Star and Superstar.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-transparent"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#workCollapseThree"
+                      aria-expanded="false"
+                      aria-controls="workCollapseThree"
+                    >
+                      How does Alt tribe ensure the genuineness of the clients?
+                    </button>
+                  </h2>
+                  <div
+                    id="workCollapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      We at Alt tribe run a thorough verification for anyone who
+                      signs up. Furthermore, we have a points system that
+                      promotes only the very best talent to the higher levels
+                      like Star and Superstar.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-transparent"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#workCollapseFour"
+                      aria-expanded="false"
+                      aria-controls="workCollapseFour"
+                    >
+                      What if I’m not satisfied with the work done for a
+                      project?
+                    </button>
+                  </h2>
+                  <div
+                    id="workCollapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      We at Alt tribe run a thorough verification for anyone who
+                      signs up. Furthermore, we have a points system that
+                      promotes only the very best talent to the higher levels
+                      like Star and Superstar.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed bg-transparent"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#workCollapseFive"
+                      aria-expanded="false"
+                      aria-controls="workCollapseFive"
+                    >
+                      Who has the rights to the work created via Alt tribe?
+                    </button>
+                  </h2>
+                  <div
+                    id="workCollapseFive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      We at Alt tribe run a thorough verification for anyone who
+                      signs up. Furthermore, we have a points system that
+                      promotes only the very best talent to the higher levels
+                      like Star and Superstar.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Payment -->
+            <div class="faq-single-accordion">
+              <div class="faq-sidebar-heading mb-3">
+                <h3>Payment</h3>
+              </div>
+              <div class="accordion bg-transparent" id="accordionExample">
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button bg-transparent collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#PaymentCollapseOne"
+                      aria-expanded="false"
+                      aria-controls="PaymentCollapseOne"
+                    >
+                      What kind of payment system is followed on Alt tribe?
+                    </button>
+                  </h2>
+                  <div
+                    id="PaymentCollapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                    style=""
+                  >
+                    <div class="accordion-body">
+                      Flexibility &amp; freedom are the cornerstones of the Alt
+                      tribe mission. We wanted people to have the opportunity to
+                      connect with great talent and clients no matter their
+                      circumstances, location and skillset.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button bg-transparent collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#PaymentCollapseTwo"
+                      aria-expanded="false"
+                      aria-controls="PaymentCollapseTwo"
+                    >
+                      What are the accepted payment methods on Alt tribe
+                    </button>
+                  </h2>
+                  <div
+                    id="PaymentCollapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                    style=""
+                  >
+                    <div class="accordion-body">
+                      We at Alt tribe run a thorough verification for anyone who
+                      signs up. Furthermore, we have a points system that
+                      promotes only the very best talent to the higher levels
+                      like Star and Superstar.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Profile -->
+            <div class="faq-single-accordion">
+              <div class="faq-sidebar-heading mb-3">
+                <h3>Profile</h3>
+              </div>
+              <div class="accordion bg-transparent" id="accordionExample">
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button bg-transparent collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#ProfileCollapseOne"
+                      aria-expanded="false"
+                      aria-controls="ProfileCollapseOne"
+                    >
+                      What if I want to both hire freelancers and do freelance
+                      work myself?
+                    </button>
+                  </h2>
+                  <div
+                    id="ProfileCollapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                    style=""
+                  >
+                    <div class="accordion-body">
+                      Flexibility &amp; freedom are the cornerstones of the Alt
+                      tribe mission. We wanted people to have the opportunity to
+                      connect with great talent and clients no matter their
+                      circumstances, location and skillset.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button bg-transparent collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#ProfileCollapseTwo"
+                      aria-expanded="false"
+                      aria-controls="ProfileCollapseTwo"
+                    >
+                      Why should I verify my identity to start using Alt tribe?
+                    </button>
+                  </h2>
+                  <div
+                    id="ProfileCollapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                    style=""
+                  >
+                    <div class="accordion-body">
+                      We at Alt tribe run a thorough verification for anyone who
+                      signs up. Furthermore, we have a points system that
+                      promotes only the very best talent to the higher levels
+                      like Star and Superstar.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Subscription -->
+            <div class="faq-single-accordion">
+              <div class="faq-sidebar-heading mb-3">
+                <h3>Subscription</h3>
+              </div>
+              <div class="accordion bg-transparent" id="accordionExample">
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button bg-transparent collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#SubscriptionCollapseOne"
+                      aria-expanded="false"
+                      aria-controls="SubscriptionCollapseOne"
+                    >
+                      Is the platform free to use for businesses?
+                    </button>
+                  </h2>
+                  <div
+                    id="SubscriptionCollapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                    style=""
+                  >
+                    <div class="accordion-body">
+                      Flexibility &amp; freedom are the cornerstones of the Alt
+                      tribe mission. We wanted people to have the opportunity to
+                      connect with great talent and clients no matter their
+                      circumstances, location and skillset.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button bg-transparent collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#SubscriptionCollapseTwo"
+                      aria-expanded="false"
+                      aria-controls="SubscriptionCollapseTwo"
+                    >
+                      Is the platform free to use for freelancers?
+                    </button>
+                  </h2>
+                  <div
+                    id="SubscriptionCollapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                    style=""
+                  >
+                    <div class="accordion-body">
+                      We at Alt tribe run a thorough verification for anyone who
+                      signs up. Furthermore, we have a points system that
+                      promotes only the very best talent to the higher levels
+                      like Star and Superstar.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Settings -->
+            <div class="faq-single-accordion">
+              <div class="faq-sidebar-heading mb-3">
+                <h3>Settings</h3>
+              </div>
+              <div class="accordion bg-transparent" id="accordionExample">
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button bg-transparent collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#SettingsCollapseOne"
+                      aria-expanded="false"
+                      aria-controls="SettingsCollapseOne"
+                    >
+                      Can I change my preferred language on the platform?
+                    </button>
+                  </h2>
+                  <div
+                    id="SettingsCollapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                    style=""
+                  >
+                    <div class="accordion-body">
+                      Flexibility &amp; freedom are the cornerstones of the Alt
+                      tribe mission. We wanted people to have the opportunity to
+                      connect with great talent and clients no matter their
+                      circumstances, location and skillset.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button bg-transparent collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#SettingsCollapseTwo"
+                      aria-expanded="false"
+                      aria-controls="SettingsCollapseTwo"
+                    >
+                      Can I change the currency on the platform?
+                    </button>
+                  </h2>
+                  <div
+                    id="SettingsCollapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                    style=""
+                  >
+                    <div class="accordion-body">
+                      We at Alt tribe run a thorough verification for anyone who
+                      signs up. Furthermore, we have a points system that
+                      promotes only the very best talent to the higher levels
+                      like Star and Superstar.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button bg-transparent collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#SettingsCollapseThree"
+                      aria-expanded="false"
+                      aria-controls="SettingsCollapseThree"
+                    >
+                      What if I don’t want to be a part of the business anymore?
+                    </button>
+                  </h2>
+                  <div
+                    id="SettingsCollapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                    style=""
+                  >
+                    <div class="accordion-body">
+                      We at Alt tribe run a thorough verification for anyone who
+                      signs up. Furthermore, we have a points system that
+                      promotes only the very best talent to the higher levels
+                      like Star and Superstar.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-transparent border-bottom">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button bg-transparent collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#SettingsCollapseFour"
+                      aria-expanded="false"
+                      aria-controls="SettingsCollapseFour"
+                    >
+                      Can I adjust the hours I work as a freelancer on Alt
+                      tribe?
+                    </button>
+                  </h2>
+                  <div
+                    id="SettingsCollapseFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionExample"
+                    style=""
+                  >
+                    <div class="accordion-body">
+                      We at Alt tribe run a thorough verification for anyone who
+                      signs up. Furthermore, we have a points system that
+                      promotes only the very best talent to the higher levels
+                      like Star and Superstar.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer top section (promo) -->
+
+    <footer class="footer_section">
+      <div class="container-xxl">
+        <div class="row gy-2 gy-md-0">
+          <div class="col-12 col-md-6">
+            <div class="footer_logo">
+              <a href="">
+                <img src="./assets/images/logo/all-tribe-logo.png" alt="" />
+              </a>
+              <p>&copy; 2024 Alt tribe, All rights reserved.</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div
+              class="footer_nav d-flex flex-column align-items-start align-items-md-end"
+            >
+              <ul
+                class="d-flex flex-wrap gap-3 justify-content-start justify-content-lg-end"
+              >
+                <li><a href="/#">About us</a></li>
+                <li><a href="/#">FAQ</a></li>
+                <li><a href="/#">Terms & Conditions</a></li>
+                <li><a href="/#">Privacy policy</a></li>
+              </ul>
+              <p>
+                Need help? Contact us at
+                <strong>+91 804 112 1109</strong>
+                or
+                <strong>alttribe.world@gmail.com</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./assets/vendor/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/js/jquery-1.11.0.min.js"></script>
+
+    <script>
+      // toggle switch js
+      document
+        .getElementById("toggleSwitch")
+        .addEventListener("change", function () {
+          const isChecked = this.checked;
+          document
+            .getElementById("offLabel")
+            .classList.toggle("text-dark", !isChecked);
+          document
+            .getElementById("offLabel")
+            .classList.toggle("text-muted", isChecked);
+          document
+            .getElementById("onLabel")
+            .classList.toggle("text-dark", isChecked);
+          document
+            .getElementById("onLabel")
+            .classList.toggle("text-muted", !isChecked);
+        });
+
+      // range slider js
+      document.addEventListener("DOMContentLoaded", function () {
+        const minRange = document.getElementById("minBudgetRange");
+        const maxRange = document.getElementById("maxBudgetRange");
+        const minBudget = document.getElementById("minBudget");
+        const maxBudget = document.getElementById("maxBudget");
+
+        minRange.addEventListener("input", updateBudgetsFromSlider);
+        maxRange.addEventListener("input", updateBudgetsFromSlider);
+        minBudget.addEventListener("input", updateSlidersFromInput);
+        maxBudget.addEventListener("input", updateSlidersFromInput);
+
+        function updateBudgetsFromSlider() {
+          let minValue = parseInt(minRange.value);
+          let maxValue = parseInt(maxRange.value);
+
+          if (minValue > maxValue) {
+            minValue = maxValue;
+            minRange.value = minValue;
+          }
+
+          minBudget.value = `$${minValue}.00`;
+          maxBudget.value = `$${maxValue}.00`;
+        }
+
+        function updateSlidersFromInput() {
+          let minValue = parseInt(
+            minBudget.value.replace("$", "").replace(".00", "")
+          );
+          let maxValue = parseInt(
+            maxBudget.value.replace("$", "").replace(".00", "")
+          );
+
+          if (isNaN(minValue)) minValue = 0;
+          if (isNaN(maxValue)) maxValue = 100;
+
+          if (minValue > maxValue) {
+            minValue = maxValue;
+          }
+
+          minRange.value = minValue;
+          maxRange.value = maxValue;
+
+          minBudget.value = `$${minValue}.00`;
+          maxBudget.value = `$${maxValue}.00`;
+        }
+
+        updateBudgetsFromSlider();
+      });
+
+      // view more button js
+      document.addEventListener("DOMContentLoaded", function () {
+        const viewMoreBtn = document.querySelector(".view-more-btn");
+        const viewMoreBtnCategory = document.querySelector(
+          ".view-more-btn-category"
+        );
+        const viewMoreBtnTime = document.querySelector(".view-more-btn-time");
+        const hiddenContent = document.querySelector(".hidden-content");
+        const hiddenContentCategory = document.querySelector(
+          ".hidden-content-category"
+        );
+        const hiddenContentTime = document.querySelector(
+          ".hidden-content-time"
+        );
+        // skils view more button
+        viewMoreBtn.addEventListener("click", function () {
+          hiddenContent.style.transition = "all 0.5s ease";
+          console.log("this is clicked");
+          if (
+            hiddenContent.style.display === "none" ||
+            hiddenContent.style.display === ""
+          ) {
+            hiddenContent.style.display = "block";
+            viewMoreBtn.textContent = "View Less";
+          } else {
+            hiddenContent.style.display = "none";
+            viewMoreBtn.textContent = "+10 More";
+          }
+        });
+        // category view more button
+        viewMoreBtnCategory.addEventListener("click", function () {
+          hiddenContentCategory.style.transition = "all 0.5s ease";
+          console.log("this is clicked");
+          if (
+            hiddenContentCategory.style.display === "none" ||
+            hiddenContentCategory.style.display === ""
+          ) {
+            hiddenContentCategory.style.display = "block";
+            viewMoreBtnCategory.textContent = "View Less";
+          } else {
+            hiddenContentCategory.style.display = "none";
+            viewMoreBtnCategory.textContent = "+10 More";
+          }
+        });
+        // time view more button
+        viewMoreBtnTime.addEventListener("click", function () {
+          hiddenContentTime.style.transition = "all 0.5s ease";
+          console.log("this is clicked");
+          if (
+            hiddenContentTime.style.display === "none" ||
+            hiddenContentTime.style.display === ""
+          ) {
+            hiddenContentTime.style.display = "block";
+            viewMoreBtnTime.textContent = "View Less";
+          } else {
+            hiddenContentTime.style.display = "none";
+            viewMoreBtnTime.textContent = "+10 More";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

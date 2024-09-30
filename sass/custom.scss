@@ -49,12 +49,12 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
 
 // custom google font import
 @import url("https://fonts.googleapis.com/css2?family=Alice&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
 :root {
   --bs-body-font-family: "Inter", sans-serif;
   --bs-heading-font-family: "Merriweather", serif;
   --bs-secondary-font-family: "Alice", serif;
-  --bs-blog-font-family: "Alice", serif;
+  --bs-blog-font-family: var(--bs-secondary-font-family);
   // color scheme
   --alt-primary: #ffd600;
   --alt-primary-bg-light: #fcf8e4;
@@ -117,6 +117,7 @@ h6 {
 @import "landing-page";
 @import "about-us-page";
 @import "search-page";
+@import "faq-page";
 @import "blog-post-page";
 @import "business/business-tribe";
 @import "business/start-agreement";

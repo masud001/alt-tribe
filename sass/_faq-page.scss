@@ -1,0 +1,113 @@
+
+
+.faq-heading{
+    h1{
+        font-size: 68px;
+        font-family: var(--bs-blog-font-family);
+        font-weight: 400;
+        @media (max-width: 576px) {
+            font-size: 40px;
+        }
+
+    }
+    p{
+        font-size: 20px;
+    }
+}
+
+.faq-sidebar-heading{
+    margin-left: 16px;
+    h3{
+        font-size: 28px;
+        font-family: var(--bs-body-font-family);
+        font-weight: 500;
+        color: #232529;
+    }
+}
+.faq-sidebar-links{
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+    }
+    ul{
+        li{
+            &.active{
+                a{
+                    font-weight: 500;
+                    color: #232529;
+                }
+            }
+            a{
+                font-size: 16px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                font-weight: 400;
+                display: inline-block;
+                color: #595959;
+                font-family: var(--bs-body-font-family);
+                &:hover{
+                    color: #232529;
+                }
+            }
+            @media (max-width: 768px) {
+                display: inline;
+                a{
+                    display: inline-block;
+                    font-size: 14px;
+                    padding: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+:root{
+    --bs-accordion-btn-icon: url("https://via.placeholder.com/20");
+    --bs-accordion-btn-active-icon: url("https://via.placeholder.com/20");
+}
+.faq-single-accordion{
+    .accordion{
+        .accordion-item{
+            .accordion-header{
+                .accordion-button{
+                    padding-left: 30px;
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #232529 !important;
+                    &:not(.collapsed){
+                        &::after{
+                            content: "-";
+                            width: 20px;
+                            height: 20px;
+                            background-image: unset !important;
+                            background-size: cover;
+                            margin-left: auto;   
+                            transform: unset !important;
+                            font-size: 25px;
+                            position: absolute;
+                            top: 16%;
+                            left: 0; 
+                        }
+
+                    }
+                    &::after{
+                        content: "+";
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        background-image: unset !important;
+                        background-size: cover;
+                        margin-left: auto;   
+                        transform: unset !important; 
+                        font-size: 25px;  
+                        position: absolute;
+                        top: 16%;
+                        left: 0;          
+                    }
+                }
+            }
+        }
+    }
+}
+
+
