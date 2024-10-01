@@ -38,5 +38,6 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
 @import "freelancer/_reset-browser";
 @import "freelancer/_dashboard-home";
 
+
 // common css for all pages
 @import "badges";
