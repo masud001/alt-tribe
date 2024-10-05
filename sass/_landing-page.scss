@@ -105,12 +105,13 @@
   &.hero_business_section {
     background-image: url("../assets/images/business-landing-page/hero-section/hero-left-bg.svg"),
       url("../assets/images/business-landing-page/hero-section/hero-right-bg.svg");
+    background-size: 20%, 20%;
   }
   background-image: url(../assets/images/freelance-landing-page/hero-left.svg),
     url(../assets/images/freelance-landing-page/hero-right.svg);
   background-position: top 26% left 0%, top 26% right 0%;
   background-repeat: no-repeat, no-repeat;
-  background-size: 20%, 20%;
+  background-size: 26%, 20%;
   background-attachment: scroll, scroll;
   @media (max-width: 992px) {
     background-image: unset;
@@ -175,10 +176,23 @@
     button {
       margin-top: 56px;
       padding: 16px 40px !important;
+
     }
   }
 }
-
+.dark_theme{
+  .hero_content{
+    .hero_getstarted_btn{
+      button{
+        &.alt-btn-light-primary{
+          &:hover{
+            color:white !important;
+          }
+        }
+      }
+    }
+  }
+}
 // company logos
 .company_logo_section {
   margin-top: -200px;
