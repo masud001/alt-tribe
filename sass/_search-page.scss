@@ -501,6 +501,14 @@ input:checked + .slider:before {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    &:hover {
+      border: 1px solid var(--alt-primary);
+      span{
+        i{
+          color: var(--alt-primary);
+        }
+      }
+    }
     @media (max-width: 768px) {
       position: absolute;
       top: 15px;
