@@ -1,7 +1,5 @@
 .alt_header_section {
   background-color: transparent;
-  background-image: url("../assets/images/freelance-landing-page/hero-bg.svg"),
-    url("../assets/images/freelance-landing-page/header-right-bg.svg");
   background-size: cover, 29% 45%;
   background-position: center center, top right;
   background-repeat: no-repeat, no-repeat;
@@ -99,7 +97,18 @@
     }
   }
 }
-
+.dark_theme{
+  .alt_header_section{
+    background-image: url("../assets/images/freelance-landing-page/hero-bg.png"),
+      url("../assets/images/business-landing-page/hero-section/top-right-corner-bg-dark.svg");
+  }
+}
+.light_theme{
+  .alt_header_section{
+    background-image: url("../assets/images/freelance-landing-page/hero-bg.png"),
+      url("../assets/images/freelance-landing-page/header-right-bg.svg");
+  }
+}
 // hero section
 .hero_section {
   &.hero_business_section {
