@@ -16,7 +16,7 @@ $custom-theme-colors: (
 $theme-colors: map-merge($custom-theme-colors, $theme-colors);
 
 $custom-grid-breakpoints: (
-  xxl: 1440px,
+  xxl: 1580px,
 );
 $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
 
