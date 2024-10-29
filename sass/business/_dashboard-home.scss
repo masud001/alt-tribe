@@ -2,6 +2,8 @@
   .container-custom {
     max-width: 1440px;
     width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
   }
 }
@@ -17,13 +19,17 @@
     }
     .custom-border{
       &::after{
+        @media (min-width: 992px) {
           content: "";
           position: absolute;
-          top: -23px;
+          bottom: -23px;
           right: 0;
           width: 1px;
           height: 72px;
           background-color: #e9ecef;
+          
+        }
+          
   
       }
     }
