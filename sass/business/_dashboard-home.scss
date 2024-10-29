@@ -1,6 +1,25 @@
 .alt_bdb_header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  @media (max-width: 992px) {
+    padding-top: 7px;
+    margin-bottom: 25px;
+    }
+    .custom-border{
+      &::after{
+          content: "";
+          position: absolute;
+          top: -23px;
+          right: 0;
+          width: 1px;
+          height: 72px;
+          background-color: #e9ecef;
+  
+      }
+    }
+   
   .alt_bdb_header_search {
     input {
       border-radius: 25px;
@@ -43,6 +62,20 @@
     padding: 0;
   }
 }
+
+ .custom-padding{
+      padding-left: 40px;
+      padding-right: 48px;
+    }
+
+.user-role{
+ @media (min-width: 992px) {
+   position: absolute;
+   top: 25px;
+   left: 0;
+ }
+}
+
 // dropdown profile menu section
 
 .profile_menu_section {
