@@ -20,11 +20,11 @@ bdb = business dashboard;
   </head>
   <body>
     <header class="alt_bdb_header">
-      <div class="container-xxl">
-        <div class="row">
-          <div class="col-lg-2 border-end border-light-subtle">
+      <div class="container-custom container">
+        <div class="row align-items-center">
+          <div class="col-lg-2 position-relative left-column">
             <div
-              class="alt_bdb_logo d-flex justify-content-between align-items-lg-start"
+              class="alt_bdb_logo d-flex justify-content-between align-items-lg-start custom-border"
             >
               <div class="d-flex flex-row gap-2 align-items-start">
                 <!-- mobile menu bar  -->
@@ -42,7 +42,7 @@ bdb = business dashboard;
                 </button>
                 <!-- logo  -->
                 <div
-                  class="d-flex flex-row flex-lg-column align-items-center align-items-lg-start justify-content-start"
+                  class="position-relative d-flex flex-row flex-lg-column align-items-center align-items-lg-start justify-content-start"
                 >
                   <a href="/#">
                     <img
@@ -51,7 +51,7 @@ bdb = business dashboard;
                     />
                   </a>
                   <!-- role badge  -->
-                  <div class="ms-2 ms-lg-0">
+                  <div class="user-role ms-2 ms-lg-0">
                     <span class="badge rounded-pill text-bg-warning">
                       Business
                     </span>
@@ -97,16 +97,21 @@ bdb = business dashboard;
               </div>
             </div>
           </div>
-          <div class="col-lg-7 pt-3 pt-lg-0">
-            <div class="breadcrumb d-flex ps-2 mt-1 align-items-center">
-              <a href="" class="fs-6">
-                <span class="m-1 fs-5">
-                  <strong>Explore freelancers</strong>
+          <div class="col-lg-7 pt-3 pt-lg-0 middle_column">
+            <div class="wellcome_message d-flex align-items-center">
+              <p class="fs-6">
+                Hi, Good evening
+                <strong>James Jacobe</strong>
+                <span>
+                  <img
+                    src="../../assets/images/business-dashboard/Waving Hand.svg"
+                    alt=""
+                  />
                 </span>
-              </a>
+              </p>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 right-column">
             <div
               class="alt_bdb_notification d-none d-lg-flex gap-4 justify-content-end align-items-center"
             >
@@ -114,7 +119,7 @@ bdb = business dashboard;
               <div class="alt_bdb_header_search position-relative">
                 <form action="">
                   <input
-                    class="position-relative bg-alt-gray-bg-clr border-0"
+                    class="position-relative bg-white border-0"
                     type="text"
                     placeholder="Search"
                   />
@@ -164,7 +169,7 @@ bdb = business dashboard;
                   aria-expanded="false"
                 >
                   <img
-                    src="https://via.placeholder.com/32x32"
+                    src="https://placehold.co/32x32"
                     alt="user icon"
                     class="rounded-circle"
                   />
@@ -908,11 +913,11 @@ bdb = business dashboard;
     <!-- notification canvas end -->
 
     <main class="main_section">
-      <div class="container-xxl">
+      <div class="container-custom container">
         <div class="row">
           <!-- sidebar start -->
           <div
-            class="col-12 col-lg-2 border-end border-light-subtle d-none d-lg-block"
+            class="col-12 col-lg-2 border-end border-light-subtle d-none d-lg-block left-column"
           >
             <aside class="alt_bdb_sidebar">
               <ul class="py-4 border-bottom border-light-subtle">
@@ -1027,7 +1032,7 @@ bdb = business dashboard;
 
               <!-- create tribe  -->
               <div
-                class="sidebar_wizard wizard_bg d-flex flex-column justify-content-end bg-alt-gray-bg-clr rounded-3 p-2"
+                class="sidebar_wizard wizard_bg d-flex flex-column justify-content-end bg-alt-gray-bg-clr rounded-3 p-3"
               >
                 <h3 class="">Create a Tribe</h3>
                 <p class="">
@@ -1043,7 +1048,7 @@ bdb = business dashboard;
           <!-- sidebar left end -->
 
           <!-- main content start -->
-          <div class="col-12 col-lg-10 pb-5">
+          <div class="col-12 col-lg-10 pb-5 middle_column">
             <div class="row">
               <!-- filter row  -->
               <div class="col-12 mb-4">
@@ -1139,7 +1144,7 @@ bdb = business dashboard;
                   >
                     <ul
                       id="pills-tab"
-                      class="d-flex content_tabs align-items-center justify-content-start gap-1 gap-lg-3"
+                      class="d-flex flex-wrap gap-2 content_tabs align-items-center justify-content-start gap-lg-3"
                       role="tablist"
                     >
                       <li role="presentation">
@@ -1487,14 +1492,12 @@ bdb = business dashboard;
                         <div class="row gy-4">
                           <!--  -->
                           <div class="col col-sm-6 col-lg-3">
-                            <div
-                              class="telant_content_wrapper border border-light-subtle"
-                            >
+                            <div class="telant_content_wrapper">
                               <div
                                 class="talent_content position-relative text-center"
                               >
                                 <span
-                                  class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                                  class="ratting btn-alt-outline border-0 py-1 px-1 rounded-pill"
                                 >
                                   <span class="">
                                     <img
@@ -1504,26 +1507,28 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img mb-3">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
                                     alt=""
                                   />
                                 </div>
-                                <h3 class="pb-2">John Doe</h3>
+                                <h3 class="m-0">John Doe</h3>
                                 <h4 class="pb-3">UI/UX designer</h4>
                                 <button
-                                  class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                                  class="btn-alt-outline fw-semibold py-1 px-2 border border-light-subtle bg-white rounded-pill"
                                 >
-                                  <strong>$45 / Hour</strong>
+                                  $45 / Hour
                                 </button>
                                 <div class="rising_start mt-3">
                                   <button
-                                    class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                    class="btn-alt-outline fw-semibold px-2 py-1 text-white border border-light-subtle rounded-pill"
                                   >
-                                    <span>
+                                    <span class="position-relative">
                                       <img
+                                        width="16"
+                                        height="16"
                                         src="../../assets/images/business-dashboard/Star.svg"
                                         alt=""
                                       />
@@ -1551,14 +1556,12 @@ bdb = business dashboard;
                           </div>
                           <!--  -->
                           <div class="col col-sm-6 col-lg-3">
-                            <div
-                              class="telant_content_wrapper border border-light-subtle"
-                            >
+                            <div class="telant_content_wrapper">
                               <div
                                 class="talent_content position-relative text-center"
                               >
                                 <span
-                                  class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                                  class="ratting btn-alt-outline border-0 py-1 px-1 rounded-pill"
                                 >
                                   <span class="">
                                     <img
@@ -1568,26 +1571,28 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img mb-3">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
                                     alt=""
                                   />
                                 </div>
-                                <h3 class="pb-2">John Doe</h3>
+                                <h3 class="m-0">John Doe</h3>
                                 <h4 class="pb-3">UI/UX designer</h4>
                                 <button
-                                  class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                                  class="btn-alt-outline fw-semibold py-1 px-2 border border-light-subtle bg-white rounded-pill"
                                 >
-                                  <strong>$45 / Hour</strong>
+                                  $45 / Hour
                                 </button>
                                 <div class="rising_start mt-3">
                                   <button
-                                    class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                    class="btn-alt-outline fw-semibold px-2 py-1 text-white border border-light-subtle rounded-pill"
                                   >
-                                    <span>
+                                    <span class="position-relative">
                                       <img
+                                        width="16"
+                                        height="16"
                                         src="../../assets/images/business-dashboard/Star.svg"
                                         alt=""
                                       />
@@ -1615,14 +1620,12 @@ bdb = business dashboard;
                           </div>
                           <!--  -->
                           <div class="col col-sm-6 col-lg-3">
-                            <div
-                              class="telant_content_wrapper border border-light-subtle"
-                            >
+                            <div class="telant_content_wrapper">
                               <div
                                 class="talent_content position-relative text-center"
                               >
                                 <span
-                                  class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                                  class="ratting btn-alt-outline border-0 py-1 px-1 rounded-pill"
                                 >
                                   <span class="">
                                     <img
@@ -1632,26 +1635,28 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img mb-3">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
                                     alt=""
                                   />
                                 </div>
-                                <h3 class="pb-2">John Doe</h3>
+                                <h3 class="m-0">John Doe</h3>
                                 <h4 class="pb-3">UI/UX designer</h4>
                                 <button
-                                  class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                                  class="btn-alt-outline fw-semibold py-1 px-2 border border-light-subtle bg-white rounded-pill"
                                 >
-                                  <strong>$45 / Hour</strong>
+                                  $45 / Hour
                                 </button>
                                 <div class="rising_start mt-3">
                                   <button
-                                    class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                    class="btn-alt-outline fw-semibold px-2 py-1 text-white border border-light-subtle rounded-pill"
                                   >
-                                    <span>
+                                    <span class="position-relative">
                                       <img
+                                        width="16"
+                                        height="16"
                                         src="../../assets/images/business-dashboard/Star.svg"
                                         alt=""
                                       />
@@ -1679,14 +1684,12 @@ bdb = business dashboard;
                           </div>
                           <!--  -->
                           <div class="col col-sm-6 col-lg-3">
-                            <div
-                              class="telant_content_wrapper border border-light-subtle"
-                            >
+                            <div class="telant_content_wrapper">
                               <div
                                 class="talent_content position-relative text-center"
                               >
                                 <span
-                                  class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                                  class="ratting btn-alt-outline border-0 py-1 px-1 rounded-pill"
                                 >
                                   <span class="">
                                     <img
@@ -1696,26 +1699,28 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img mb-3">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
                                     alt=""
                                   />
                                 </div>
-                                <h3 class="pb-2">John Doe</h3>
+                                <h3 class="m-0">John Doe</h3>
                                 <h4 class="pb-3">UI/UX designer</h4>
                                 <button
-                                  class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                                  class="btn-alt-outline fw-semibold py-1 px-2 border border-light-subtle bg-white rounded-pill"
                                 >
-                                  <strong>$45 / Hour</strong>
+                                  $45 / Hour
                                 </button>
                                 <div class="rising_start mt-3">
                                   <button
-                                    class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                    class="btn-alt-outline fw-semibold px-2 py-1 text-white border border-light-subtle rounded-pill"
                                   >
-                                    <span>
+                                    <span class="position-relative">
                                       <img
+                                        width="16"
+                                        height="16"
                                         src="../../assets/images/business-dashboard/Star.svg"
                                         alt=""
                                       />
@@ -1743,14 +1748,12 @@ bdb = business dashboard;
                           </div>
                           <!--  -->
                           <div class="col col-sm-6 col-lg-3">
-                            <div
-                              class="telant_content_wrapper border border-light-subtle"
-                            >
+                            <div class="telant_content_wrapper">
                               <div
                                 class="talent_content position-relative text-center"
                               >
                                 <span
-                                  class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                                  class="ratting btn-alt-outline border-0 py-1 px-1 rounded-pill"
                                 >
                                   <span class="">
                                     <img
@@ -1760,26 +1763,28 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img mb-3">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
                                     alt=""
                                   />
                                 </div>
-                                <h3 class="pb-2">John Doe</h3>
+                                <h3 class="m-0">John Doe</h3>
                                 <h4 class="pb-3">UI/UX designer</h4>
                                 <button
-                                  class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                                  class="btn-alt-outline fw-semibold py-1 px-2 border border-light-subtle bg-white rounded-pill"
                                 >
-                                  <strong>$45 / Hour</strong>
+                                  $45 / Hour
                                 </button>
                                 <div class="rising_start mt-3">
                                   <button
-                                    class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                    class="btn-alt-outline fw-semibold px-2 py-1 text-white border border-light-subtle rounded-pill"
                                   >
-                                    <span>
+                                    <span class="position-relative">
                                       <img
+                                        width="16"
+                                        height="16"
                                         src="../../assets/images/business-dashboard/Star.svg"
                                         alt=""
                                       />
@@ -1807,14 +1812,12 @@ bdb = business dashboard;
                           </div>
                           <!--  -->
                           <div class="col col-sm-6 col-lg-3">
-                            <div
-                              class="telant_content_wrapper border border-light-subtle"
-                            >
+                            <div class="telant_content_wrapper">
                               <div
                                 class="talent_content position-relative text-center"
                               >
                                 <span
-                                  class="ratting btn-alt-outline border border-light-subtle py-1 px-1 rounded-pill"
+                                  class="ratting btn-alt-outline border-0 py-1 px-1 rounded-pill"
                                 >
                                   <span class="">
                                     <img
@@ -1824,26 +1827,28 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img mb-3">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
                                     alt=""
                                   />
                                 </div>
-                                <h3 class="pb-2">John Doe</h3>
+                                <h3 class="m-0">John Doe</h3>
                                 <h4 class="pb-3">UI/UX designer</h4>
                                 <button
-                                  class="btn-alt-outline border border-light-subtle bg-white rounded-pill"
+                                  class="btn-alt-outline fw-semibold py-1 px-2 border border-light-subtle bg-white rounded-pill"
                                 >
-                                  <strong>$45 / Hour</strong>
+                                  $45 / Hour
                                 </button>
                                 <div class="rising_start mt-3">
                                   <button
-                                    class="btn-alt-outline text-white border border-light-subtle rounded-pill"
+                                    class="btn-alt-outline fw-semibold px-2 py-1 text-white border border-light-subtle rounded-pill"
                                   >
-                                    <span>
+                                    <span class="position-relative">
                                       <img
+                                        width="16"
+                                        height="16"
                                         src="../../assets/images/business-dashboard/Star.svg"
                                         alt=""
                                       />
@@ -2126,7 +2131,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -2190,7 +2195,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -2254,7 +2259,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -2318,7 +2323,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -2382,7 +2387,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -2446,7 +2451,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -2748,7 +2753,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -2812,7 +2817,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -2876,7 +2881,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -2940,7 +2945,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -3004,7 +3009,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -3068,7 +3073,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -3370,7 +3375,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -3434,7 +3439,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -3498,7 +3503,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -3562,7 +3567,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -3626,7 +3631,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -3690,7 +3695,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -3992,7 +3997,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -4056,7 +4061,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -4120,7 +4125,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -4184,7 +4189,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -4248,7 +4253,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -4312,7 +4317,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -4614,7 +4619,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -4678,7 +4683,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -4742,7 +4747,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -4806,7 +4811,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -4870,7 +4875,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"
@@ -4934,7 +4939,7 @@ bdb = business dashboard;
                                     />
                                   </span>
                                 </span>
-                                <div class="talent_img pb-3">
+                                <div class="talent_img">
                                   <img
                                     src="https://via.placeholder.com/74x74"
                                     class="rounded-circle"

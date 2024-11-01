@@ -20,11 +20,11 @@ bdb = business dashboard;
   </head>
   <body>
     <header class="alt_bdb_header">
-      <div class="container-xxl">
-        <div class="row">
-          <div class="col-lg-2 border-end border-light-subtle">
+      <div class="container-custom container">
+        <div class="row align-items-center">
+          <div class="col-lg-2 position-relative left-column">
             <div
-              class="alt_bdb_logo d-flex justify-content-between align-items-lg-start"
+              class="alt_bdb_logo d-flex justify-content-between align-items-lg-start custom-border"
             >
               <div class="d-flex flex-row gap-2 align-items-start">
                 <!-- mobile menu bar  -->
@@ -42,7 +42,7 @@ bdb = business dashboard;
                 </button>
                 <!-- logo  -->
                 <div
-                  class="d-flex flex-row flex-lg-column align-items-center align-items-lg-start justify-content-start"
+                  class="position-relative d-flex flex-row flex-lg-column align-items-center align-items-lg-start justify-content-start"
                 >
                   <a href="/#">
                     <img
@@ -51,7 +51,7 @@ bdb = business dashboard;
                     />
                   </a>
                   <!-- role badge  -->
-                  <div class="ms-2 ms-lg-0">
+                  <div class="user-role ms-2 ms-lg-0">
                     <span class="badge rounded-pill text-bg-warning">
                       Business
                     </span>
@@ -97,16 +97,21 @@ bdb = business dashboard;
               </div>
             </div>
           </div>
-          <div class="col-lg-7 pt-3 pt-lg-0">
-            <div class="breadcrumb d-flex ps-2 mt-1 align-items-center">
-              <a href="" class="fs-6">
-                <span class="m-1 fs-5">
-                  <strong>Community Feeds</strong>
+          <div class="col-lg-7 pt-3 pt-lg-0 middle_column">
+            <div class="wellcome_message d-flex align-items-center">
+              <p class="fs-6">
+                Hi, Good evening
+                <strong>James Jacobe</strong>
+                <span>
+                  <img
+                    src="../../assets/images/business-dashboard/Waving Hand.svg"
+                    alt=""
+                  />
                 </span>
-              </a>
+              </p>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 right-column">
             <div
               class="alt_bdb_notification d-none d-lg-flex gap-4 justify-content-end align-items-center"
             >
@@ -114,7 +119,7 @@ bdb = business dashboard;
               <div class="alt_bdb_header_search position-relative">
                 <form action="">
                   <input
-                    class="position-relative bg-alt-gray-bg-clr border-0"
+                    class="position-relative bg-white border-0"
                     type="text"
                     placeholder="Search"
                   />
@@ -164,7 +169,7 @@ bdb = business dashboard;
                   aria-expanded="false"
                 >
                   <img
-                    src="https://via.placeholder.com/32x32"
+                    src="https://placehold.co/32x32"
                     alt="user icon"
                     class="rounded-circle"
                   />
@@ -908,11 +913,11 @@ bdb = business dashboard;
     <!-- notification canvas end -->
 
     <main class="main_section">
-      <div class="container-xxl">
+      <div class="container-custom container">
         <div class="row">
           <!-- sidebar start -->
           <div
-            class="col-12 col-lg-2 border-end border-light-subtle d-none d-lg-block"
+            class="col-12 col-lg-2 border-end border-light-subtle d-none d-lg-block left-column"
           >
             <aside class="alt_bdb_sidebar">
               <ul class="py-4 border-bottom border-light-subtle">
@@ -1027,7 +1032,7 @@ bdb = business dashboard;
 
               <!-- create tribe  -->
               <div
-                class="sidebar_wizard wizard_bg d-flex flex-column justify-content-end bg-alt-gray-bg-clr rounded-3 p-2"
+                class="sidebar_wizard wizard_bg d-flex flex-column justify-content-end bg-alt-gray-bg-clr rounded-3 p-3"
               >
                 <h3 class="">Create a Tribe</h3>
                 <p class="">
@@ -1043,544 +1048,534 @@ bdb = business dashboard;
           <!-- sidebar left end -->
 
           <!-- main content start -->
-          <div class="col-12 col-lg-10 pb-5">
-            <div class="row">
-              <div class="col-md-8">
-                <div class="d-flex flex-column gap-4">
-                  <!-- 1 -->
+          <div class="col-lg-7 middle_column">
+            <div class="d-flex flex-column gap-4">
+              <!-- 1 -->
+              <div
+                class="d-flex shadow-sm flex-column gap-2 bg-alt-gray-bg-clr p-3 rounded-3"
+              >
+                <div class="d-flex align-items-center gap-3">
+                  <div class="avater_image_48">
+                    <img src="https://i.pravatar.cc/48" alt="" />
+                  </div>
                   <div
-                    class="d-flex shadow-sm flex-column gap-2 bg-alt-gray-bg-clr p-3 rounded-3"
+                    class="w-100"
+                    data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop"
+                    type="button"
                   >
-                    <div class="d-flex align-items-center gap-3">
+                    <input
+                      class="w-100 form-control form-control-lg fs-6"
+                      type="text"
+                      placeholder="Type an update for your community"
+                      autocomplete="off"
+                    />
+                  </div>
+                </div>
+                <div
+                  class="d-flex py-2 gap-3 justify-content-end align-items-center"
+                >
+                  <button
+                    class="btn btn-alt-outline rounded-pill text-capitalize"
+                  >
+                    <span class="me-2">
+                      <img
+                        src="../../assets/images/business-community/photo-icon.svg"
+                        alt=""
+                      />
+                    </span>
+                    Photos
+                  </button>
+                  <button
+                    class="btn btn-alt-outline rounded-pill text-capitalize"
+                  >
+                    <span class="me-2">
+                      <img
+                        src="../../assets/images/business-community/video-icon.svg"
+                        alt=""
+                      />
+                    </span>
+                    Video
+                  </button>
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div
+                class="single_filter_option shadow-sm w-100 d-flex flex-column flex-md-row gap-3"
+              >
+                <div class="d-flex gap-3">
+                  <!-- content  -->
+                  <div
+                    class="filter_content position-relative w-100 p-3 d-flex flex-column gap-3"
+                  >
+                    <div
+                      class="business_update_time d-flex align-items-center gap-2 p-font"
+                    >
+                      <span><small>10 d ago</small></span>
+                      <span>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </span>
+                    </div>
+                    <div class="d-flex gap-3 align-items-start">
                       <div class="avater_image_48">
-                        <img src="https://i.pravatar.cc/48" alt="" />
+                        <img src="https://i.pravatar.cc/74" alt="" />
                       </div>
-                      <div
-                        class="w-100"
-                        data-bs-toggle="modal"
-                        data-bs-target="#staticBackdrop"
-                        type="button"
-                      >
-                        <input
-                          class="w-100 form-control form-control-lg fs-6"
-                          type="text"
-                          placeholder="Type an update for your community"
-                          autocomplete="off"
-                        />
+                      <div class="name d-flex flex-column gap-1">
+                        <div class="d-flex gap-2 align-items-center">
+                          <h4>Talan Lipshutz</h4>
+                          <span
+                            class="ratting btn-alt-outline p-1 rounded-pill"
+                          >
+                            <span class="">
+                              <img
+                                src="../../assets/images/search-page/icons/Star.svg"
+                                alt=""
+                              />
+                            </span>
+                            <span class="ms-1 position-relative ranking">
+                              Superstar
+                            </span>
+                          </span>
+                        </div>
+                        <div class="">
+                          <p>Product Designer</p>
+                        </div>
                       </div>
+                    </div>
+                    <div class="">
+                      <p>
+                        ZenDesign is organizing a 3 day hackathon for all
+                        interaction designers, in Crown Plaza, Mumbai. Book your
+                        spot today, before registration closes.
+                      </p>
+                    </div>
+                    <div class="w-100">
+                      <img
+                        src="https://via.placeholder.com/652X449"
+                        class="img-fluid rounded-3 w-100"
+                        alt=""
+                      />
                     </div>
                     <div
-                      class="d-flex py-2 gap-3 justify-content-end align-items-center"
+                      class="d-flex justify-content-between align-items-center"
                     >
-                      <button
-                        class="btn btn-alt-outline rounded-pill text-capitalize"
-                      >
-                        <span class="me-2">
-                          <img
-                            src="../../assets/images/business-community/photo-icon.svg"
-                            alt=""
-                          />
-                        </span>
-                        Photos
-                      </button>
-                      <button
-                        class="btn btn-alt-outline rounded-pill text-capitalize"
-                      >
-                        <span class="me-2">
-                          <img
-                            src="../../assets/images/business-community/video-icon.svg"
-                            alt=""
-                          />
-                        </span>
-                        Video
-                      </button>
+                      <p>
+                        Liked by
+                        <strong>Mindy Jenner</strong>
+                        and
+                        <strong>150 others</strong>
+                      </p>
+                      <p>13 Comments</p>
                     </div>
-                  </div>
-
-                  <!-- 2 -->
-                  <div
-                    class="single_filter_option shadow-sm w-100 d-flex flex-column flex-md-row gap-3"
-                  >
-                    <div class="d-flex gap-3">
-                      <!-- content  -->
-                      <div
-                        class="filter_content position-relative w-100 p-3 d-flex flex-column gap-3"
-                      >
-                        <div
-                          class="business_update_time d-flex align-items-center gap-2 p-font"
+                    <!-- like/comments/share  -->
+                    <div class="border-top border-light-subtle pt-3">
+                      <div class="d-flex gap-3 align-items-center">
+                        <button
+                          class="text-alt-text-gray-clr p-font fw-light border-0 bg-transparent"
                         >
-                          <span><small>10 d ago</small></span>
                           <span>
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                            <i class="fa-regular fa-thumbs-up"></i>
                           </span>
-                        </div>
-                        <div class="d-flex gap-3 align-items-start">
-                          <div class="avater_image_48">
-                            <img src="https://i.pravatar.cc/74" alt="" />
-                          </div>
-                          <div class="name d-flex flex-column gap-1">
-                            <div class="d-flex gap-2 align-items-center">
-                              <h4>Talan Lipshutz</h4>
-                              <span
-                                class="ratting btn-alt-outline p-1 rounded-pill"
-                              >
-                                <span class="">
-                                  <img
-                                    src="../../assets/images/search-page/icons/Star.svg"
-                                    alt=""
-                                  />
-                                </span>
-                                <span class="ms-1 position-relative ranking">
-                                  Superstar
-                                </span>
-                              </span>
-                            </div>
-                            <div class="">
-                              <p>Product Designer</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="">
-                          <p>
-                            ZenDesign is organizing a 3 day hackathon for all
-                            interaction designers, in Crown Plaza, Mumbai. Book
-                            your spot today, before registration closes.
-                          </p>
-                        </div>
-                        <div class="w-100">
-                          <img
-                            src="https://via.placeholder.com/652X449"
-                            class="img-fluid rounded-3 w-100"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="d-flex justify-content-between align-items-center"
+                          <span>Like</span>
+                        </button>
+                        <button
+                          class="text-alt-text-gray-clr p-font fw-light border-0 bg-transparent"
                         >
-                          <p>
-                            Liked by
-                            <strong>Mindy Jenner</strong>
-                            and
-                            <strong>150 others</strong>
-                          </p>
-                          <p>13 Comments</p>
-                        </div>
-                        <!-- like/comments/share  -->
-                        <div class="border-top border-light-subtle pt-3">
-                          <div class="d-flex gap-3 align-items-center">
-                            <button
-                              class="text-alt-text-gray-clr p-font fw-light border-0 bg-transparent"
-                            >
-                              <span>
-                                <i class="fa-regular fa-thumbs-up"></i>
-                              </span>
-                              <span>Like</span>
-                            </button>
-                            <button
-                              class="text-alt-text-gray-clr p-font fw-light border-0 bg-transparent"
-                            >
-                              <span><i class="fa-regular fa-comment"></i></span>
-                              <span>comment</span>
-                            </button>
-                            <button
-                              class="text-alt-text-gray-clr p-font fw-light border-0 bg-transparent"
-                            >
-                              <span>
-                                <i class="fa-regular fa-paper-plane"></i>
-                              </span>
-                              <span>share</span>
-                            </button>
-                            <button
-                              class="bookmakr position-relative top-0 start-0 ms-auto rounded-circle"
-                            >
-                              <span>
-                                <i class="fa-regular fa-bookmark"></i>
-                              </span>
-                            </button>
-                          </div>
-                          <div class=""></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- 3 -->
-                  <div
-                    class="single_filter_option shadow-sm w-100 d-flex flex-column flex-md-row gap-3"
-                  >
-                    <div class="d-flex gap-3">
-                      <!-- content  -->
-                      <div
-                        class="filter_content position-relative w-100 p-3 d-flex flex-column gap-3"
-                      >
-                        <div
-                          class="business_update_time d-flex align-items-center gap-2 p-font"
+                          <span><i class="fa-regular fa-comment"></i></span>
+                          <span>comment</span>
+                        </button>
+                        <button
+                          class="text-alt-text-gray-clr p-font fw-light border-0 bg-transparent"
                         >
-                          <span><small>10 d ago</small></span>
                           <span>
-                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                            <i class="fa-regular fa-paper-plane"></i>
                           </span>
-                        </div>
-                        <div class="d-flex gap-3 align-items-start">
-                          <div class="avater_image_48">
-                            <img src="https://i.pravatar.cc/74" alt="" />
-                          </div>
-                          <div class="name d-flex flex-column gap-1">
-                            <div class="d-flex gap-2 align-items-center">
-                              <h4>Talan Lipshutz</h4>
-                              <span
-                                class="ratting btn-alt-outline p-1 rounded-pill"
-                              >
-                                <span class="">
-                                  <img
-                                    src="../../assets/images/search-page/icons/Star.svg"
-                                    alt=""
-                                  />
-                                </span>
-                                <span class="ms-1 position-relative ranking">
-                                  Superstar
-                                </span>
-                              </span>
-                            </div>
-                            <div class="">
-                              <p>Product Designer</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="">
-                          <p>
-                            ZenDesign is organizing a 3 day hackathon for all
-                            interaction designers, in Crown Plaza, Mumbai. Book
-                            your spot today, before registration closes.
-                          </p>
-                        </div>
-                        <div class="w-100">
-                          <img
-                            src="https://via.placeholder.com/652X449"
-                            class="img-fluid rounded-3 w-100"
-                            alt=""
-                          />
-                        </div>
-                        <div
-                          class="d-flex justify-content-between align-items-center"
+                          <span>share</span>
+                        </button>
+                        <button
+                          class="bookmakr position-relative top-0 start-0 ms-auto rounded-circle"
                         >
-                          <p>
-                            Liked by
-                            <strong>Mindy Jenner</strong>
-                            and
-                            <strong>150 others</strong>
-                          </p>
-                          <p>13 Comments</p>
-                        </div>
-                        <!-- like/comments/share  -->
-                        <div class="border-top border-light-subtle pt-3">
-                          <div class="d-flex gap-3 align-items-center">
-                            <button
-                              class="text-alt-text-gray-clr p-font fw-light border-0 bg-transparent"
-                            >
-                              <span>
-                                <i class="fa-regular fa-thumbs-up"></i>
-                              </span>
-                              <span>Like</span>
-                            </button>
-                            <button
-                              class="text-alt-text-gray-clr p-font fw-light border-0 bg-transparent"
-                            >
-                              <span><i class="fa-regular fa-comment"></i></span>
-                              <span>comment</span>
-                            </button>
-                            <button
-                              class="text-alt-text-gray-clr p-font fw-light border-0 bg-transparent"
-                            >
-                              <span>
-                                <i class="fa-regular fa-paper-plane"></i>
-                              </span>
-                              <span>share</span>
-                            </button>
-                            <button
-                              class="bookmakr position-relative top-0 start-0 ms-auto rounded-circle"
-                            >
-                              <span>
-                                <i class="fa-regular fa-bookmark"></i>
-                              </span>
-                            </button>
-                          </div>
-                          <div class=""></div>
-                        </div>
+                          <span>
+                            <i class="fa-regular fa-bookmark"></i>
+                          </span>
+                        </button>
                       </div>
+                      <div class=""></div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="d-flex flex-column gap-3">
-                  <!-- single sections -->
-                  <div class="d-flex flex-column gap-2">
+              <!-- 3 -->
+              <div
+                class="single_filter_option shadow-sm w-100 d-flex flex-column flex-md-row gap-3"
+              >
+                <div class="d-flex gap-3">
+                  <!-- content  -->
+                  <div
+                    class="filter_content position-relative w-100 p-3 d-flex flex-column gap-3"
+                  >
+                    <div
+                      class="business_update_time d-flex align-items-center gap-2 p-font"
+                    >
+                      <span><small>10 d ago</small></span>
+                      <span>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </span>
+                    </div>
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="avater_image_48">
+                        <img src="https://i.pravatar.cc/74" alt="" />
+                      </div>
+                      <div class="name d-flex flex-column gap-1">
+                        <div class="d-flex gap-2 align-items-center">
+                          <h4>Talan Lipshutz</h4>
+                          <span
+                            class="ratting btn-alt-outline p-1 rounded-pill"
+                          >
+                            <span class="">
+                              <img
+                                src="../../assets/images/search-page/icons/Star.svg"
+                                alt=""
+                              />
+                            </span>
+                            <span class="ms-1 position-relative ranking">
+                              Superstar
+                            </span>
+                          </span>
+                        </div>
+                        <div class="">
+                          <p>Product Designer</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="">
+                      <p>
+                        ZenDesign is organizing a 3 day hackathon for all
+                        interaction designers, in Crown Plaza, Mumbai. Book your
+                        spot today, before registration closes.
+                      </p>
+                    </div>
+                    <div class="w-100">
+                      <img
+                        src="https://via.placeholder.com/652X449"
+                        class="img-fluid rounded-3 w-100"
+                        alt=""
+                      />
+                    </div>
                     <div
                       class="d-flex justify-content-between align-items-center"
                     >
-                      <h5 class="h-font fs-6 fw-bold d-flex align-items-center">
-                        <span class="me-1">
-                          <img
-                            src="../../assets/images/business-community/globe-earth 1.svg"
-                            alt=""
-                          />
-                        </span>
-                        <span>Companies you may like</span>
-                      </h5>
-                      <a href="" class="text-dark btn btn-link">View all</a>
+                      <p>
+                        Liked by
+                        <strong>Mindy Jenner</strong>
+                        and
+                        <strong>150 others</strong>
+                      </p>
+                      <p>13 Comments</p>
                     </div>
-                    <div class="bg-alt-gray-bg-clr p-3 rounded-3">
-                      <!-- single item -->
-                      <div
-                        class="sidebar_single_items border-bottom border-light-subtle py-2"
-                      >
-                        <div class="d-flex gap-3 align-items-start">
-                          <div class="avater_image_32">
-                            <img src="https://i.pravatar.cc/32" alt="" />
-                          </div>
-                          <div class="name d-flex flex-column">
-                            <h4 class="text-capitalize">Talan Lipshutz</h4>
-                            <p class="text-capitalize">Product Designer</p>
-                          </div>
-                        </div>
-                        <div class="tags pt-2">
-                          <span class="alt-badge alt-dark">Graphic</span>
-                          <span class="alt-badge alt-dark">Wireframe</span>
-                          <span class="alt-badge alt-dark">Illustration</span>
-                        </div>
+                    <!-- like/comments/share  -->
+                    <div class="border-top border-light-subtle pt-3">
+                      <div class="d-flex gap-3 align-items-center">
+                        <button
+                          class="text-alt-text-gray-clr p-font fw-light border-0 bg-transparent"
+                        >
+                          <span>
+                            <i class="fa-regular fa-thumbs-up"></i>
+                          </span>
+                          <span>Like</span>
+                        </button>
+                        <button
+                          class="text-alt-text-gray-clr p-font fw-light border-0 bg-transparent"
+                        >
+                          <span><i class="fa-regular fa-comment"></i></span>
+                          <span>comment</span>
+                        </button>
+                        <button
+                          class="text-alt-text-gray-clr p-font fw-light border-0 bg-transparent"
+                        >
+                          <span>
+                            <i class="fa-regular fa-paper-plane"></i>
+                          </span>
+                          <span>share</span>
+                        </button>
+                        <button
+                          class="bookmakr position-relative top-0 start-0 ms-auto rounded-circle"
+                        >
+                          <span>
+                            <i class="fa-regular fa-bookmark"></i>
+                          </span>
+                        </button>
                       </div>
-                      <!-- single item -->
-                      <div
-                        class="sidebar_single_items border-bottom border-light-subtle py-2"
-                      >
-                        <div class="d-flex gap-3 align-items-start">
-                          <div class="avater_image_32">
-                            <img src="https://i.pravatar.cc/32" alt="" />
-                          </div>
-                          <div class="name d-flex flex-column">
-                            <h4 class="text-capitalize">Talan Lipshutz</h4>
-                            <p class="text-capitalize">Product Designer</p>
-                          </div>
-                        </div>
-                        <div class="tags pt-2">
-                          <span class="alt-badge alt-dark">Graphic</span>
-                          <span class="alt-badge alt-dark">Wireframe</span>
-                          <span class="alt-badge alt-dark">Illustration</span>
-                        </div>
+                      <div class=""></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 right-column">
+            <div class="d-flex flex-column gap-3">
+              <!-- single sections -->
+              <div class="d-flex flex-column gap-2">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h6 class="card_title fw-700 d-flex align-items-center">
+                    <span class="me-1">
+                      <img
+                        src="../../assets/images/business-community/globe-earth 1.svg"
+                        alt=""
+                      />
+                    </span>
+                    <span>Companies you may like</span>
+                  </h6>
+                  <a href="" class="text-dark btn-link">View all</a>
+                </div>
+                <div class="bg-alt-gray-bg-clr p-3 rounded-3">
+                  <!-- single item -->
+                  <div
+                    class="sidebar_single_items border-bottom border-light-subtle py-2"
+                  >
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="avater_image_32">
+                        <img src="https://i.pravatar.cc/32" alt="" />
                       </div>
-                      <!-- single item -->
-                      <div class="sidebar_single_items py-2">
-                        <div class="d-flex gap-3 align-items-start">
+                      <div class="name d-flex flex-column">
+                        <h4 class="text-capitalize">Talan Lipshutz</h4>
+                        <p class="text-capitalize">Product Designer</p>
+                      </div>
+                    </div>
+                    <div class="tags pt-2">
+                      <span class="alt-badge alt-dark">Graphic</span>
+                      <span class="alt-badge alt-dark">Wireframe</span>
+                      <span class="alt-badge alt-dark">Illustration</span>
+                    </div>
+                  </div>
+                  <!-- single item -->
+                  <div
+                    class="sidebar_single_items border-bottom border-light-subtle py-2"
+                  >
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="avater_image_32">
+                        <img src="https://i.pravatar.cc/32" alt="" />
+                      </div>
+                      <div class="name d-flex flex-column">
+                        <h4 class="text-capitalize">Talan Lipshutz</h4>
+                        <p class="text-capitalize">Product Designer</p>
+                      </div>
+                    </div>
+                    <div class="tags pt-2">
+                      <span class="alt-badge alt-dark">Graphic</span>
+                      <span class="alt-badge alt-dark">Wireframe</span>
+                      <span class="alt-badge alt-dark">Illustration</span>
+                    </div>
+                  </div>
+                  <!-- single item -->
+                  <div class="sidebar_single_items py-2">
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="avater_image_32">
+                        <img src="https://i.pravatar.cc/32" alt="" />
+                      </div>
+                      <div class="name d-flex flex-column">
+                        <h4 class="text-capitalize">Talan Lipshutz</h4>
+                        <p class="text-capitalize">Product Designer</p>
+                      </div>
+                    </div>
+                    <div class="tags pt-2">
+                      <span class="alt-badge alt-dark">Graphic</span>
+                      <span class="alt-badge alt-dark">Wireframe</span>
+                      <span class="alt-badge alt-dark">Illustration</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- single sections -->
+              <div class="d-flex flex-column gap-2">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h6 class="card_title fw-700 d-flex align-items-center">
+                    <span class="me-1">
+                      <img
+                        src="../../assets/images/business-community/recommadations.svg"
+                        alt=""
+                      />
+                    </span>
+                    <span>Recommended connections</span>
+                  </h6>
+                  <a href="" class="text-dark btn-link">View all</a>
+                </div>
+                <div class="bg-alt-gray-bg-clr p-3 rounded-3">
+                  <!-- single item -->
+                  <div
+                    class="sidebar_single_items border-bottom border-light-subtle py-2"
+                  >
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="avater_image_32">
+                        <img src="https://i.pravatar.cc/32" alt="" />
+                      </div>
+                      <div class="name d-flex flex-column">
+                        <h4 class="text-capitalize">Talan Lipshutz</h4>
+                        <p class="text-capitalize">Product Designer</p>
+                      </div>
+                    </div>
+                    <div class="tags pt-2">
+                      <span class="alt-badge alt-dark">Graphic</span>
+                      <span class="alt-badge alt-dark">Wireframe</span>
+                      <span class="alt-badge alt-dark">Illustration</span>
+                    </div>
+                  </div>
+                  <!-- single item -->
+                  <div
+                    class="sidebar_single_items border-bottom border-light-subtle py-2"
+                  >
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="avater_image_32">
+                        <img src="https://i.pravatar.cc/32" alt="" />
+                      </div>
+                      <div class="name d-flex flex-column">
+                        <h4 class="text-capitalize">Talan Lipshutz</h4>
+                        <p class="text-capitalize">Product Designer</p>
+                      </div>
+                    </div>
+                    <div class="tags pt-2">
+                      <span class="alt-badge alt-dark">Graphic</span>
+                      <span class="alt-badge alt-dark">Wireframe</span>
+                      <span class="alt-badge alt-dark">Illustration</span>
+                    </div>
+                  </div>
+                  <!-- single item -->
+                  <div class="sidebar_single_items py-2">
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="avater_image_32">
+                        <img src="https://i.pravatar.cc/32" alt="" />
+                      </div>
+                      <div class="name d-flex flex-column">
+                        <h4 class="text-capitalize">Talan Lipshutz</h4>
+                        <p class="text-capitalize">Product Designer</p>
+                      </div>
+                    </div>
+                    <div class="tags pt-2">
+                      <span class="alt-badge alt-dark">Graphic</span>
+                      <span class="alt-badge alt-dark">Wireframe</span>
+                      <span class="alt-badge alt-dark">Illustration</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- single sections -->
+              <div class="d-flex flex-column gap-2">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="h-font fs-6 fw-bold d-flex align-items-center">
+                    <span class="me-1">
+                      <img
+                        src="../../assets/images/business-community/recent-post.svg"
+                        alt=""
+                      />
+                    </span>
+                    <span>Recently posted resources</span>
+                  </h5>
+                  <a href="" class="text-dark btn btn-link">View all</a>
+                </div>
+                <div class="bg-alt-gray-bg-clr p-3 rounded-3">
+                  <!-- single item -->
+                  <div
+                    class="sidebar_single_items border-bottom border-light-subtle py-2"
+                  >
+                    <div
+                      class="d-flex justify-content-between align-items-center pb-3"
+                    >
+                      <div class="tags">
+                        <span class="alt-badge alt-dark">Graphic</span>
+                      </div>
+                      <span class="fs-6 text-black-50">
+                        <span><i class="fa-regular fa-clock"></i></span>
+                        5 days ago
+                      </span>
+                    </div>
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="">
+                        <img
+                          class="rounded-3"
+                          src="https://via.placeholder.com/95X76"
+                          alt=""
+                        />
+                      </div>
+                      <div class="name d-flex flex-column">
+                        <h4 class="text-capitalize">Talan Lipshutz</h4>
+                        <p class="text-capitalize">Product Designer</p>
+                        <div class="d-flex align-items-center gap-2">
                           <div class="avater_image_32">
                             <img src="https://i.pravatar.cc/32" alt="" />
                           </div>
-                          <div class="name d-flex flex-column">
-                            <h4 class="text-capitalize">Talan Lipshutz</h4>
-                            <p class="text-capitalize">Product Designer</p>
-                          </div>
-                        </div>
-                        <div class="tags pt-2">
-                          <span class="alt-badge alt-dark">Graphic</span>
-                          <span class="alt-badge alt-dark">Wireframe</span>
-                          <span class="alt-badge alt-dark">Illustration</span>
+                          <h4 class="text-capitalize">Talan Lipshutz</h4>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- single sections -->
-                  <div class="d-flex flex-column gap-2">
+                  <!-- single item -->
+                  <div
+                    class="sidebar_single_items border-bottom border-light-subtle py-2"
+                  >
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pb-3"
                     >
-                      <h5 class="h-font fs-6 fw-bold d-flex align-items-center">
-                        <span class="me-1">
-                          <img
-                            src="../../assets/images/business-community/recommadations.svg"
-                            alt=""
-                          />
-                        </span>
-                        <span>Recommended connections</span>
-                      </h5>
-                      <a href="" class="text-dark btn btn-link">View all</a>
+                      <div class="tags">
+                        <span class="alt-badge alt-dark">Graphic</span>
+                      </div>
+                      <span class="fs-6 text-black-50">
+                        <span><i class="fa-regular fa-clock"></i></span>
+                        5 days ago
+                      </span>
                     </div>
-                    <div class="bg-alt-gray-bg-clr p-3 rounded-3">
-                      <!-- single item -->
-                      <div
-                        class="sidebar_single_items border-bottom border-light-subtle py-2"
-                      >
-                        <div class="d-flex gap-3 align-items-start">
-                          <div class="avater_image_32">
-                            <img src="https://i.pravatar.cc/32" alt="" />
-                          </div>
-                          <div class="name d-flex flex-column">
-                            <h4 class="text-capitalize">Talan Lipshutz</h4>
-                            <p class="text-capitalize">Product Designer</p>
-                          </div>
-                        </div>
-                        <div class="tags pt-2">
-                          <span class="alt-badge alt-dark">Graphic</span>
-                          <span class="alt-badge alt-dark">Wireframe</span>
-                          <span class="alt-badge alt-dark">Illustration</span>
-                        </div>
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="">
+                        <img
+                          class="rounded-3"
+                          src="https://via.placeholder.com/95X76"
+                          alt=""
+                        />
                       </div>
-                      <!-- single item -->
-                      <div
-                        class="sidebar_single_items border-bottom border-light-subtle py-2"
-                      >
-                        <div class="d-flex gap-3 align-items-start">
+                      <div class="name d-flex flex-column">
+                        <h4 class="text-capitalize">Talan Lipshutz</h4>
+                        <p class="text-capitalize">Product Designer</p>
+                        <div class="d-flex align-items-center gap-2">
                           <div class="avater_image_32">
                             <img src="https://i.pravatar.cc/32" alt="" />
                           </div>
-                          <div class="name d-flex flex-column">
-                            <h4 class="text-capitalize">Talan Lipshutz</h4>
-                            <p class="text-capitalize">Product Designer</p>
-                          </div>
-                        </div>
-                        <div class="tags pt-2">
-                          <span class="alt-badge alt-dark">Graphic</span>
-                          <span class="alt-badge alt-dark">Wireframe</span>
-                          <span class="alt-badge alt-dark">Illustration</span>
-                        </div>
-                      </div>
-                      <!-- single item -->
-                      <div class="sidebar_single_items py-2">
-                        <div class="d-flex gap-3 align-items-start">
-                          <div class="avater_image_32">
-                            <img src="https://i.pravatar.cc/32" alt="" />
-                          </div>
-                          <div class="name d-flex flex-column">
-                            <h4 class="text-capitalize">Talan Lipshutz</h4>
-                            <p class="text-capitalize">Product Designer</p>
-                          </div>
-                        </div>
-                        <div class="tags pt-2">
-                          <span class="alt-badge alt-dark">Graphic</span>
-                          <span class="alt-badge alt-dark">Wireframe</span>
-                          <span class="alt-badge alt-dark">Illustration</span>
+                          <h4 class="text-capitalize">Talan Lipshutz</h4>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- single sections -->
-                  <div class="d-flex flex-column gap-2">
+                  <!-- single item -->
+                  <div
+                    class="sidebar_single_items border-bottom border-light-subtle py-2"
+                  >
                     <div
-                      class="d-flex justify-content-between align-items-center"
+                      class="d-flex justify-content-between align-items-center pb-3"
                     >
-                      <h5 class="h-font fs-6 fw-bold d-flex align-items-center">
-                        <span class="me-1">
-                          <img
-                            src="../../assets/images/business-community/recent-post.svg"
-                            alt=""
-                          />
-                        </span>
-                        <span>Recently posted resources</span>
-                      </h5>
-                      <a href="" class="text-dark btn btn-link">View all</a>
+                      <div class="tags">
+                        <span class="alt-badge alt-dark">Graphic</span>
+                      </div>
+                      <span class="fs-6 text-black-50">
+                        <span><i class="fa-regular fa-clock"></i></span>
+                        5 days ago
+                      </span>
                     </div>
-                    <div class="bg-alt-gray-bg-clr p-3 rounded-3">
-                      <!-- single item -->
-                      <div
-                        class="sidebar_single_items border-bottom border-light-subtle py-2"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center pb-3"
-                        >
-                          <div class="tags">
-                            <span class="alt-badge alt-dark">Graphic</span>
-                          </div>
-                          <span class="fs-6 text-black-50">
-                            <span><i class="fa-regular fa-clock"></i></span>
-                            5 days ago
-                          </span>
-                        </div>
-                        <div class="d-flex gap-3 align-items-start">
-                          <div class="">
-                            <img
-                              class="rounded-3"
-                              src="https://via.placeholder.com/95X76"
-                              alt=""
-                            />
-                          </div>
-                          <div class="name d-flex flex-column">
-                            <h4 class="text-capitalize">Talan Lipshutz</h4>
-                            <p class="text-capitalize">Product Designer</p>
-                            <div class="d-flex align-items-center gap-2">
-                              <div class="avater_image_32">
-                                <img src="https://i.pravatar.cc/32" alt="" />
-                              </div>
-                              <h4 class="text-capitalize">Talan Lipshutz</h4>
-                            </div>
-                          </div>
-                        </div>
+                    <div class="d-flex gap-3 align-items-start">
+                      <div class="">
+                        <img
+                          class="rounded-3"
+                          src="https://via.placeholder.com/95X76"
+                          alt=""
+                        />
                       </div>
-                      <!-- single item -->
-                      <div
-                        class="sidebar_single_items border-bottom border-light-subtle py-2"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center pb-3"
-                        >
-                          <div class="tags">
-                            <span class="alt-badge alt-dark">Graphic</span>
+                      <div class="name d-flex flex-column">
+                        <h4 class="text-capitalize">Talan Lipshutz</h4>
+                        <p class="text-capitalize">Product Designer</p>
+                        <div class="d-flex align-items-center gap-2">
+                          <div class="avater_image_32">
+                            <img src="https://i.pravatar.cc/32" alt="" />
                           </div>
-                          <span class="fs-6 text-black-50">
-                            <span><i class="fa-regular fa-clock"></i></span>
-                            5 days ago
-                          </span>
-                        </div>
-                        <div class="d-flex gap-3 align-items-start">
-                          <div class="">
-                            <img
-                              class="rounded-3"
-                              src="https://via.placeholder.com/95X76"
-                              alt=""
-                            />
-                          </div>
-                          <div class="name d-flex flex-column">
-                            <h4 class="text-capitalize">Talan Lipshutz</h4>
-                            <p class="text-capitalize">Product Designer</p>
-                            <div class="d-flex align-items-center gap-2">
-                              <div class="avater_image_32">
-                                <img src="https://i.pravatar.cc/32" alt="" />
-                              </div>
-                              <h4 class="text-capitalize">Talan Lipshutz</h4>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- single item -->
-                      <div
-                        class="sidebar_single_items border-bottom border-light-subtle py-2"
-                      >
-                        <div
-                          class="d-flex justify-content-between align-items-center pb-3"
-                        >
-                          <div class="tags">
-                            <span class="alt-badge alt-dark">Graphic</span>
-                          </div>
-                          <span class="fs-6 text-black-50">
-                            <span><i class="fa-regular fa-clock"></i></span>
-                            5 days ago
-                          </span>
-                        </div>
-                        <div class="d-flex gap-3 align-items-start">
-                          <div class="">
-                            <img
-                              class="rounded-3"
-                              src="https://via.placeholder.com/95X76"
-                              alt=""
-                            />
-                          </div>
-                          <div class="name d-flex flex-column">
-                            <h4 class="text-capitalize">Talan Lipshutz</h4>
-                            <p class="text-capitalize">Product Designer</p>
-                            <div class="d-flex align-items-center gap-2">
-                              <div class="avater_image_32">
-                                <img src="https://i.pravatar.cc/32" alt="" />
-                              </div>
-                              <h4 class="text-capitalize">Talan Lipshutz</h4>
-                            </div>
-                          </div>
+                          <h4 class="text-capitalize">Talan Lipshutz</h4>
                         </div>
                       </div>
                     </div>

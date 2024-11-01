@@ -9,15 +9,30 @@
 }
 .middle_column{
   @media (min-width: 1200px) {
-    padding-left: 28px;
-    padding-right: 36px;
+    padding-left: 40px;
+    padding-right: 28px;
   }
 }
+
 .alt_bdb_header {
   height: 72px;
   display: flex;
   align-items: center;
   position: relative;
+  .container-custom{
+    @media (min-width: 1400px) {
+      .col-lg-2{
+        &.left-column{
+          width: 260px !important;
+        }
+      }
+      .col-lg-3{
+        &.right-column{
+          width: 21.8% !important;
+        }
+      }
+    }
+  }
   @media (max-width: 992px) {
     padding-top: 7px;
     margin-bottom: 25px;
@@ -80,10 +95,6 @@
   }
 }
 
- .custom-padding{
-      padding-left: 40px;
-      padding-right: 48px;
-    }
 
 .user-role{
  @media (min-width: 992px) {
@@ -92,7 +103,32 @@
    left: 0;
  }
 }
-
+.main_section{
+    .container-custom{
+    @media (min-width: 1400px) {
+      .col-lg-2{
+        &.left-column{
+          width: 260px !important;
+        }
+      }
+      .col-lg-7{
+        &.middle_column{
+          width:57.55555% !important;
+        }
+      } 
+      .col-lg-10{
+        &.middle_column{
+          width: 81.55555% !important;
+        }
+      }
+      .col-lg-3{
+        &.right-column{
+          width: 342px !important;
+        }
+      }
+    }
+  }
+}
 // dropdown profile menu section
 
 .profile_menu_section {
@@ -610,16 +646,16 @@
     }
     h3 {
       font-family: var(--bs-body-font-family);
-      font-size: 16px;
+      font-size: 16px !important;
       font-weight: 700;
-      color: #232529;
+      color: #232529 !important;
       line-height: 24px;
     }
     h4 {
       font-family: var(--bs-body-font-family);
-      font-size: 14px;
+      font-size: 14px !important;
       font-weight: 400;
-      color: #5C5E63;
+      color: #5C5E63 !important;
       line-height: 22.4px;
     }
    

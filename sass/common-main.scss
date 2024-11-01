@@ -69,7 +69,7 @@ $grid-breakpoints: map-merge($grid-breakpoints, $custom-grid-breakpoints);
 @import "start-journy-page";
 
 @import "freelancer/_reset-browser";
-// @import "freelancer/_dashboard-home";
+@import "freelancer/_dashboard-home";
 @import "freelancer/explore-project";
 
 
