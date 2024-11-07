@@ -1,9 +1,9 @@
-@media (min-width: 1400px) {
+@media (min-width: 1440px) {
   .container-custom {
     max-width: 1440px;
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin: 0 auto;
   }
 }
@@ -15,17 +15,18 @@
   align-items: center;
   position: relative;
   .container-custom{
-    @media (min-width: 1400px) {
+    @media (min-width: 1440px) {
       .col-lg-2{
         &.left-column{
           width: 260px !important;
+          
         }
       }
       .col-lg-7{
         &.middle_column{
           width:710px !important;
           .wellcome_message{
-            margin-left: 27px;
+            margin-left: 40px;
           }
         }
       }
@@ -107,10 +108,11 @@
 }
 .main_section{
     .container-custom{
-    @media (min-width: 1400px) {
+    @media (min-width: 1440px) {
       .col-lg-2{
         &.left-column{
           width: 260px !important;
+          flex-shrink: 0;
         }
       }
       .col-lg-7{
@@ -118,8 +120,8 @@
           width:710px !important;
           padding-left: 0;
           padding-right: 0;
-          margin-left: 38px;
-          margin-right: 37px;
+          margin-left: 40px;
+          margin-right: 48px;
         }
       } 
       .col-lg-10{
@@ -129,24 +131,15 @@
       }
       .col-lg-3{
         &.right-column{
-          padding-left: 0;
+          
+          width: 342px !important;
           aside{
             width: 342px !important;
           }
         }
       }
     }
-    @media (min-width: 1440px) {
-      .col-lg-7{
-        &.middle_column{
-          width:710px !important;
-          padding-left: 0;
-          padding-right: 0;
-          margin-left: 40px;
-          margin-right: 65px;
-        }
-      } 
-    }
+    
   }
 }
 // dropdown profile menu section
@@ -444,7 +437,7 @@
     height: 388px;
   }
   &.promo_bg {
-    background-image: url("../../assets/images/business-dashboard/alt_bdb_promo-bg.svg");
+    background-image: url("../../assets/images/business-dashboard/alt_bdb_promo-bg.png");
     background-position: bottom right;
     background-size: 39%;
     background-repeat: no-repeat;
