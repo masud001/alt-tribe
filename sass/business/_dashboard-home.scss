@@ -25,7 +25,7 @@
         &.middle_column{
           width:710px !important;
           .wellcome_message{
-            margin-left: -36px;
+            margin-left: 27px;
           }
         }
       }
@@ -98,7 +98,6 @@
   }
 }
 
-
 .user-role{
  @media (min-width: 992px) {
    position: absolute;
@@ -119,6 +118,8 @@
           width:710px !important;
           padding-left: 0;
           padding-right: 0;
+          margin-left: 38px;
+          margin-right: 37px;
         }
       } 
       .col-lg-10{
@@ -134,6 +135,17 @@
           }
         }
       }
+    }
+    @media (min-width: 1440px) {
+      .col-lg-7{
+        &.middle_column{
+          width:710px !important;
+          padding-left: 0;
+          padding-right: 0;
+          margin-left: 40px;
+          margin-right: 65px;
+        }
+      } 
     }
   }
 }
