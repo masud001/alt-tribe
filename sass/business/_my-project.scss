@@ -22,9 +22,11 @@
     @media (min-width: 1440px) {
         
             #project-page{
-                .col-lg-7{
-                    &.middle_column{
-                        width:865px !important;
+                main{
+                    .col-lg-7{
+                        &.middle_column{
+                            width:865px !important;
+                        }
                     }
                 }
             }
