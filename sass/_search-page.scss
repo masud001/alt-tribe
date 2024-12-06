@@ -379,8 +379,9 @@ input:checked + .slider:before {
   border: 3px solid #000;
 }
 .budget_input_range input[type="text"] {
-  width: 100px;
-  text-align: center;
+  max-width: 200px;
+  min-width: 100px;
+  text-align: left;
   border: 1px solid #d9d9d9;
   background: transparent;
   font-weight: 400;

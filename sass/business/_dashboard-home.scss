@@ -449,7 +449,7 @@
     transition: ease-in-out 0.3s;
     @media (max-width: 576px) {
       background-position: bottom center;
-      background-size: 45%;
+      background-size: 65% !important;
     }
   }
   h3 {

@@ -21,15 +21,16 @@
 
     @media (min-width: 1440px) {
         
-            #project-page{
-                main{
+            
+                main#main_template{
+
                     .col-lg-7{
                         &.middle_column{
                             width:865px !important;
                         }
                     }
                 }
-            }
+           
                 
     }
 
