@@ -61,7 +61,7 @@
     input {
       border-radius: 25px;
       padding: 6px 11px 6px 35px;
-      width: 150px;
+      width: 110px;
       &:focus {
         outline: none;
       }
@@ -123,6 +123,9 @@
           padding-right: 0;
           margin-left: 40px;
           margin-right: 48px;
+          &:last-child{
+            margin-right: 0;
+          }
         }
       } 
       .col-lg-10{
