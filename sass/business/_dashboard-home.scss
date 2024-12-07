@@ -523,6 +523,9 @@
     @media (min-width: 576px) {
       font-size: 16px;
     }
+    @media (min-width: 992px) and (max-width: 1366px) {
+          font-size: 13px !important;
+    }
   }
 
   .alt_bdb_badge {
@@ -565,6 +568,9 @@
         font-family: var(--bs-body-font-family);
         font-size: 16px;
         color: var(--alt-text-clr);
+        @media (min-width: 992px) and (max-width: 1366px) {
+          font-size: 12px !important;
+        }
       }
     }
     .milestone {
@@ -645,6 +651,10 @@
       line-height: 23px;
       background-color: #f3f3f3;
       text-align: center;
+      @media (min-width: 992px) and (max-width: 1366px) {
+          top: 10px !important;
+          right: 10px !important;
+      }
     }
     .talent_img {
       width: 60px;
@@ -655,6 +665,11 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media (min-width: 992px) and (max-width: 1366px) {
+          width: 40px !important;
+          height: 40px !important;
+          line-height: 40px !important;
+        }
       img {
         width: 100%;
         height: 100%;
@@ -675,6 +690,14 @@
       color: #5C5E63 !important;
       line-height: 22.4px;
     }
+
+    button{
+      &.border-light-subtle{
+        @media (min-width: 992px) and (max-width: 1366px) {
+          font-size: 10px !important;
+        }
+      }
+    }
    
     .rising_start {
       button {
@@ -689,6 +712,9 @@
     }
     .review {
       color: var(--alt-gray-dark);
+      @media (min-width: 992px) and (max-width: 1366px) {
+          font-size: 10px !important;
+        }
 
       .star {
         color: var(--alt-gold);
@@ -719,6 +745,10 @@
   border-radius: 16px;
   background-attachment: scroll;
   background-size: auto;
+  @media (min-width: 992px) and (max-width: 1366px) {
+      background-size: 48%, auto,auto !important;
+      
+    }
   h3 {
     font-size: 20px;
     font-weight: 700;
@@ -735,6 +765,10 @@
   }
   button {
     border: 1px solid #cacaca;
+    @media (min-width: 992px) and (max-width: 1366px) {
+      font-size: 10px !important;
+      
+    }
   }
   a {
     font-family: var(--bs-body-font-family);
@@ -742,6 +776,10 @@
     font-size: 14px;
     color: var(--alt-text-clr);
     text-decoration: underline;
+    @media (min-width: 992px) and (max-width: 1366px) {
+      font-size: 10px !important;
+      
+    }
   }
 }
 
@@ -756,10 +794,16 @@
       font-family: var(--bs-body-font-family);
       font-size: 16px;
       color: var(--alt-text-clr);
+      @media (min-width: 992px) and (max-width: 1366px) {
+        font-size: 12px !important;
+      }
     }
     span {
       font-size: 12px;
       color: var(--alt-text-clr);
+      @media (min-width: 992px) and (max-width: 1366px) {
+        font-size: 7px !important;
+      }
     }
     .update_badge {
       background-color: #ecedf0;
@@ -769,6 +813,9 @@
       font-family: var(--bs-body-font-family);
       color: var(--alt-text-clr);
       border-radius: 25px;
+      @media (min-width: 992px) and (max-width: 1366px) {
+        font-size: 10px !important;
+      }
     }
   }
 
@@ -791,6 +838,9 @@
         font-weight: 500;
         font-family: var(--bs-body-font-family);
         color: var(--alt-text-clr);
+        @media (min-width: 992px) and (max-width: 1366px) {
+          font-size: 12px !important;
+        }
       }
     }
 
@@ -806,12 +856,20 @@
           flex-shrink: 0;
           border-radius: 50%;
           object-fit: cover;
+          @media (min-width: 992px) and (max-width: 1366px) {
+          width: 24px !important;
+          height: 24px !important;
+          line-height: 24px !important;
+        }
         }
         h5 {
           font-weight: 500;
           font-family: var(--bs-body-font-family);
-          font-size: 14px;
+          font-size: 14px !important;
           color: var(--alt-text-clr);
+          @media (min-width: 992px) and (max-width: 1366px) {
+          font-size: 10px !important;
+        }
         }
       }
       .dots {
@@ -827,8 +885,13 @@
           font-weight: normal;
           font-size: 10px;
           color: #595959;
+          @media (min-width: 992px) and (max-width: 1366px) {
+          font-size: 7px !important;
+        }
         }
       }
     }
   }
 }
+
+
