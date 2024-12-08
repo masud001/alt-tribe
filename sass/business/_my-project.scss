@@ -19,20 +19,15 @@
 }
 
 
-    @media (min-width: 1440px) {
-        
-            
-                main#main_template{
-
-                    .col-lg-7{
-                        &.middle_column{
-                            width:865px !important;
-                        }
-                    }
-                }
-           
-                
-    }
+@media (min-width: 1440px) {
+    main#main_template{
+        .col-lg-7{
+            &.middle_column{
+                width:865px !important;
+            }
+        }
+    }        
+}
 
 
 
@@ -40,10 +35,25 @@
 
 
 @media (min-width: 992px) {
-.offcanvas.offcanvas-end.filter_canvas_wrapper{
-    width: 45% !important;
+    .offcanvas.offcanvas-end.filter_canvas_wrapper{
+        width: 45% !important;
+    }
+    .filter_apply_btn_mobile{
+        margin-left: unset !important;
+    }
 }
-.filter_apply_btn_mobile{
-    margin-left: unset !important;
+
+@media (min-width: 992px) and (max-width: 1366px) {
+    .event_details_page_content{
+      &.tab_content{
+        ul{
+            li{
+                button{
+                    font-size: 11px !important;
+                }
+            }
+        }
+      }  
+    } 
 }
-}
+
