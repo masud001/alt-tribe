@@ -43,17 +43,5 @@
     }
 }
 
-@media (min-width: 992px) and (max-width: 1366px) {
-    .event_details_page_content{
-      &.tab_content{
-        ul{
-            li{
-                button{
-                    font-size: 11px !important;
-                }
-            }
-        }
-      }  
-    } 
-}
+
 
