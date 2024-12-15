@@ -16,6 +16,14 @@
   align-items: center;
   position: relative;
   .container-custom{
+    .wellcome_message{
+      a{
+        color: #232529;
+        font-size: 24px;
+        font-weight: 700;
+        font-family: var(--bs-heading-font-family);
+      }
+    }
     @media (min-width: 1200px) and (max-width: 1439px) {  
       .col-lg-7{
         &.middle_column{
@@ -26,6 +34,12 @@
           margin-right: 48px;
           .wellcome_message{
             margin-left: 5px;
+            a{
+              color: #232529;
+              font-size: 24px;
+              font-weight: 700;
+              font-family: var(--bs-heading-font-family);
+            }
           }
         }
       }
@@ -46,6 +60,12 @@
           margin-right: 48px;
           .wellcome_message{
             margin-left: 0px;
+            a{
+              color: #232529;
+              font-size: 24px;
+              font-weight: 700;
+              font-family: var(--bs-heading-font-family);
+            }
           }
         }
       }
